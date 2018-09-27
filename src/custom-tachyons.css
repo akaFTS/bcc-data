@@ -4,6 +4,12 @@
   font-family: 'Open Sans', Arial, sans-serif;
 }
 
+.triangle {
+  border-top: 13px solid transparent !important;
+  border-bottom: 13px solid transparent !important;
+  border-left-width: 6px !important;
+}
+
 .mt-orange {
   color: #f57c00;
 }

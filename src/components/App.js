@@ -7,7 +7,7 @@ import AppRouter from './AppRouter'
 class App extends Component {
   render() {
     return (
-      <article className="bg-light-gray opensans">
+      <article className="bg-light-gray opensans min-vh-100">
         <Header />
         <AppRouter />
       </article>

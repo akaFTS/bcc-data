@@ -10,6 +10,7 @@ const AreaBubble = ({ top, left, name, color, size }) => {
         left: left,
         width: `${size * 3 + 50}px`,
         height: `${size * 3 + 50}px`,
+        transition: 'all 0.3s',
       }}
     >
       <span className="f7 mt2 center nowrap">{name}</span>

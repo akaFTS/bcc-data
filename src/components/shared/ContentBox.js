@@ -8,7 +8,9 @@ const ContentBox = ({ title, color, children }) => {
         <div className={`f4 fw6 mt-${color} mb3`}>{title}</div>
         {children}
       </div>
-      <div className={`pv2 bg-mt-light-green br--bottom br4 w-90 center mb4`} />
+      <div
+        className={`pv2 bg-mt-light-${color} br--bottom br4 w-90 center mb4`}
+      />
     </React.Fragment>
   )
 }

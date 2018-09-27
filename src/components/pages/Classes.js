@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import ClassList from '../classes/ClassList'
 import AreaBubbles from '../classes/AreaBubbles'
+import ClassesProvider from '../../providers/ClassesProvider'
 
 class Classes extends Component {
   constructor(props) {
@@ -12,14 +13,16 @@ class Classes extends Component {
   render() {
     const {} = this.props
     return (
-      <main className="flex">
-        <div className="w-50 ph2">
-          <ClassList />
-        </div>
-        <div className="w-50 ph2">
-          <AreaBubbles />
-        </div>
-      </main>
+      <ClassesProvider>
+        <main className="flex">
+          <div className="w-two-thirds ph2">
+            <ClassList />
+          </div>
+          <div className="w-third ph2">
+            <AreaBubbles />
+          </div>
+        </main>
+      </ClassesProvider>
     )
   }
 }

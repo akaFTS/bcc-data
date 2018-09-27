@@ -13,7 +13,7 @@ import LinkButton from './LinkButton'
 const AppRouter = () => {
   return (
     <BrowserRouter>
-      <main className="w-100 w-75-l center ph2 ph0-l">
+      <main className="w-100 w-80-l center ph2 ph0-l">
         <div className="flex mb4">
           <LinkButton
             text="Informações"
