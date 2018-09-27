@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin-ext');
+
+.opensans {
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.mt-orange {
+  color: #f57c00;
+}
+
+.bg-mt-orange {
+  background-color: #f57c00;
+}
+
+.mt-dark-orange {
+  color: #e65100;
+}
+
+.bg-mt-dark-orange {
+  background-color: #e65100;
+}
+
+.hover-bg-mt-dark-orange:hover {
+  background-color: #e65100;
+}
+
+.mt-light-orange {
+  background-color: #ffcc80;
+}
+
+.bg-mt-light-orange {
+  background-color: #ffcc80;
+}
+
+.mt-purple {
+  color: #7b1fa2;
+}
+
+.bg-mt-purple {
+  background-color: #7b1fa2;
+}
+
+.mt-dark-purple {
+  color: #4a148c;
+}
+
+.bg-mt-dark-purple {
+  background-color: #4a148c;
+}
+
+.hover-bg-mt-dark-purple:hover {
+  background-color: #4a148c;
+}
+
+.mt-light-purple {
+  background-color: #ce93d8;
+}
+
+.bg-mt-light-purple {
+  background-color: #ce93d8;
+}
+
+.mt-green {
+  color: #388e3c;
+}
+
+.bg-mt-green {
+  background-color: #388e3c;
+}
+
+.mt-dark-green {
+  color: #1b5e20;
+}
+
+.bg-mt-dark-green {
+  background-color: #1b5e20;
+}
+
+.hover-bg-mt-dark-green:hover {
+  background-color: #1b5e20;
+}
+
+.mt-light-green {
+  background-color: #a5d6a7;
+}
+
+.bg-mt-light-green {
+  background-color: #a5d6a7;
+}
