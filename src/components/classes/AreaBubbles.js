@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import ContentBox from '../shared/ContentBox'
 import AreaBubble from './AreaBubble'
 import YearPicker from '../shared/YearPicker'
-import { withClasses } from '../../providers/ClassesProvider'
+import { withClasses } from './ClassesProvider'
 
 class AreaBubbles extends Component {
   constructor(props) {

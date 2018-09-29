@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import ContentBox from '../shared/ContentBox'
 import ListFilters from './ListFilters'
-import { withClasses } from '../../providers/ClassesProvider'
+import { withClasses } from './ClassesProvider'
 import ClassEntry from './ClassEntry'
 
 class ClassList extends Component {

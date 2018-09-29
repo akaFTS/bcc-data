@@ -24,9 +24,9 @@ class YearPicker extends Component {
     const { inputYear } = this.state
     const { onYearChanged } = this.props
     const cleanInputYear =
-      inputYear > 2018 ? 2018 : inputYear < 1972 ? 1972 : inputYear
+      inputYear > 2018 ? 2018 : inputYear < 1972 ? 1972 : parseInt(inputYear)
 
-    this.setState({ currentYear: cleanInputYear })
+    this.setState({ currentYear: cleanInputYear, inputYear: cleanInputYear })
     onYearChanged(cleanInputYear)
   }
 
@@ -47,8 +47,8 @@ class YearPicker extends Component {
     const { onYearChanged } = this.props
     if (currentYear < 2018) {
       this.setState(prevState => ({
-        currentYear: prevState.currentYear + 1,
-        inputYear: prevState.inputYear + 1,
+        currentYear: parseInt(prevState.currentYear) + 1,
+        inputYear: parseInt(prevState.inputYear) + 1,
       }))
       onYearChanged(currentYear + 1)
     }

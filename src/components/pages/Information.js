@@ -1,17 +1,21 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React from 'react'
+import Propposal from '../information/Propposal'
+import Schedule from '../information/Schedule'
+import Evolution from '../information/Evolution'
 
-class Information extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {}
-  }
-
-  render() {
-    const {} = this.props
-    return <span>Information works!</span>
-  }
+const Information = () => {
+  return (
+    <main>
+      <div className="flex">
+        <div className="w-100 w-50-l ph2">
+          <Propposal />
+        </div>
+        <div className="w-100 w-50-l ph2">
+          <Schedule />
+        </div>
+      </div>
+    </main>
+  )
 }
-Information.propTypes = {}
 
 export default Information

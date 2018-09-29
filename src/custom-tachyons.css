@@ -4,6 +4,18 @@
   font-family: 'Open Sans', Arial, sans-serif;
 }
 
+.h2-3 {
+  height: 3rem;
+}
+
+.w2-3 {
+  width: 3rem;
+}
+
+.hover-db:hover {
+  display: block;
+}
+
 .triangle {
   border-top: 13px solid transparent !important;
   border-bottom: 13px solid transparent !important;
@@ -92,4 +104,8 @@
 
 .bg-mt-light-green {
   background-color: #a5d6a7;
+}
+
+.b--mt-light-green {
+  border-color: #a5d6a7;
 }

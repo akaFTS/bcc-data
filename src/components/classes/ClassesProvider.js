@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import classes from '../data/classes.json'
+import classes from '../../data/classes.json'
 
 export const ClassesContext = React.createContext()
 
@@ -16,7 +16,7 @@ class ClassesProvider extends Component {
     const yearData = []
     const allClasses = [...classes]
     for (let i = 1972; i <= 2018; i++) {
-      yearData.push((await import(`../data/classes/${i}.json`)).default)
+      yearData.push((await import(`../../data/classes/${i}.json`)).default)
     }
 
     yearData.map((year, index) => {
