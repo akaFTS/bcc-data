@@ -1,14 +1,24 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faComment } from '@fortawesome/free-solid-svg-icons'
+import ClassNamesModal from './ClassNamesModal'
 
 class ClassEntry extends Component {
   constructor(props) {
     super(props)
-    this.state = {}
+    this.state = {
+      isModalOpen: false,
+    }
   }
 
+  onOpenModal = () => this.setState({ isModalOpen: true })
+
+  onCloseModal = () => this.setState({ isModalOpen: false })
+
   render() {
-    const { classe, whiteStripe } = this.props
+    const { classe, whiteStripe, currentYear } = this.props
+    const { isModalOpen } = this.state
 
     const areaColor =
       classe.area === 0
@@ -39,6 +49,13 @@ class ClassEntry extends Component {
             ? 'red'
             : 'dark-red'
 
+    const classeName =
+      classe.names.reduce(
+        (acc, cur) =>
+          currentYear > 0 && cur.start <= currentYear ? cur.name : acc,
+        undefined
+      ) || classe.names[classe.names.length - 1].name
+
     return (
       <div
         className={`flex items-center ph3 pv3 gray ${
@@ -48,7 +65,31 @@ class ClassEntry extends Component {
         <div className={`white ph2 pv1 br-pill b f5 mr3 ${areaColor}`}>
           {classe.code}
         </div>
-        <div className="flex-auto fw3 pr2 lh-title">{classe.name}</div>
+        <div className="flex-auto fw3 pr2 lh-title">{classeName}</div>
+        {classe.names.length > 1 && (
+          <React.Fragment>
+            <div
+              className="mh3 light-silver pointer hover-gray"
+              onClick={this.onOpenModal}
+            >
+              <span className="fa-layers fa-fw">
+                <FontAwesomeIcon icon={faComment} transform="grow-15" />
+                <span
+                  className="fa-layers-text fa-inverse pb1"
+                  style={{ fontWeight: 900 }}
+                >
+                  {classe.names.length}
+                </span>
+              </span>
+            </div>
+            <ClassNamesModal
+              isOpen={isModalOpen}
+              onCloseModal={this.onCloseModal}
+              classe={classe}
+              color={areaColor}
+            />
+          </React.Fragment>
+        )}
         <div className="flex">
           <div
             className={`white br--left br2 pl2 pv1 f5 b bg-${beginYearColor}`}
@@ -71,6 +112,7 @@ class ClassEntry extends Component {
 ClassEntry.propTypes = {
   classe: PropTypes.object.isRequired,
   whiteStripe: PropTypes.bool,
+  currentYear: PropTypes.number.isRequired,
 }
 
 export default ClassEntry

@@ -48,9 +48,9 @@ const ProfessorBubble = ({
     >
       <img
         className={`br-100 h2-3 w2-3 ba bw1 b--${levelColor}`}
-        src={`professors/${code}.jpg`}
+        src={`/professors/${code}.jpg`}
         onError={e => {
-          e.target.src = 'professors/default.png'
+          e.target.src = '/professors/default.png'
         }}
       />
       <div

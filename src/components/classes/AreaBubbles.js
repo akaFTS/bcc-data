@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import ContentBox from '../shared/ContentBox'
 import AreaBubble from './AreaBubble'
 import YearPicker from '../shared/YearPicker'
-import { withClasses } from './ClassesProvider'
+import allClasses from '../../data/classes.json'
 
 class AreaBubbles extends Component {
   constructor(props) {
@@ -18,7 +17,6 @@ class AreaBubbles extends Component {
   }
 
   render() {
-    const { allClasses } = this.props
     const { currentYear } = this.state
 
     const yearClasses = allClasses.filter(
@@ -75,8 +73,5 @@ class AreaBubbles extends Component {
     )
   }
 }
-AreaBubbles.propTypes = {
-  allClasses: PropTypes.array.isRequired,
-}
 
-export default withClasses(AreaBubbles)
+export default AreaBubbles

@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import ContentBox from '../shared/ContentBox'
 import ListFilters from './ListFilters'
-import { withClasses } from './ClassesProvider'
+import allClasses from '../../data/classes.json'
 import ClassEntry from './ClassEntry'
 
 class ClassList extends Component {
@@ -23,7 +22,6 @@ class ClassList extends Component {
   }
 
   render() {
-    const { allClasses } = this.props
     const { activeArea, activeYear } = this.state
 
     const filteredClasses = allClasses
@@ -48,6 +46,7 @@ class ClassList extends Component {
               key={classe.code}
               classe={classe}
               whiteStripe={index % 2 == 1}
+              currentYear={activeYear}
             />
           ))}
         </main>
@@ -56,8 +55,4 @@ class ClassList extends Component {
   }
 }
 
-ClassList.propTypes = {
-  allClasses: PropTypes.array.isRequired,
-}
-
-export default withClasses(ClassList)
+export default ClassList

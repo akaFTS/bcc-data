@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { HashRouter, Switch, Route } from 'react-router-dom'
 import {
   faFileAlt,
   faGraduationCap,
@@ -12,7 +12,7 @@ import LinkButton from './LinkButton'
 
 const AppRouter = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <main className="w-100 w-80-l center ph2 ph0-l">
         <div className="flex mb4">
           <LinkButton
@@ -40,7 +40,7 @@ const AppRouter = () => {
           <Route exact path="/classes" component={Classes} />
         </Switch>
       </main>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
