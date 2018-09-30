@@ -1,0 +1,135 @@
+[
+  { "code": "MAC0101", "name": "Integração na Universidade e na Profissão" },
+  {
+    "code": "MAC0102",
+    "name": "Caminhos no Bacharelado em Ciência da Computação"
+  },
+  { "code": "MAC0105", "name": "Fundamentos de Matemática para a Computação" },
+  { "code": "MAC0110", "name": "Introdução à Computação" },
+  { "code": "MAC0121", "name": "Algoritmos e Estruturas de Dados I" },
+  { "code": "MAC0209", "name": "Modelagem e Simulação" },
+  { "code": "MAC0210", "name": "Laboratório de Métodos Numéricos" },
+  { "code": "MAC0213", "name": "Atividade Curricular em Comunidade" },
+  { "code": "MAC0214", "name": "Atividade Curricular em Cultura e Extensão" },
+  { "code": "MAC0215", "name": "Atividade Curricular em Pesquisa" },
+  { "code": "MAC0216", "name": "Técnicas de Programação I" },
+  { "code": "MAC0228", "name": "Combinatória e Teoria dos Grafos" },
+  {
+    "code": "MAC0239",
+    "name": "Introdução à Lógica e Verificação de Programas"
+  },
+  { "code": "MAC0242", "name": "Laboratório de Programação II" },
+  { "code": "MAC0300", "name": "Métodos Numéricos da Álgebra Linear" },
+  { "code": "MAC0315", "name": "Programação Linear" },
+  {
+    "code": "MAC0316",
+    "name": "Conceitos Fundamentais de Linguagens de Programação"
+  },
+  {
+    "code": "MAC0317",
+    "name": "Algoritmos para Processamento de Áudio, Imagem e Vídeo"
+  },
+  { "code": "MAC0318", "name": "Introdução à Programação de Robôs Móveis" },
+  { "code": "MAC0319", "name": "Programação Funcional Contemporânea" },
+  { "code": "MAC0320", "name": "Introdução à Teoria dos Grafos" },
+  {
+    "code": "MAC0321",
+    "name": "Laboratório de Programação Orientada a Objetos"
+  },
+  { "code": "MAC0322", "name": "Introdução à Análise de Sistemas" },
+  { "code": "MAC0323", "name": "Estruturas de Dados" },
+  { "code": "MAC0325", "name": "Otimização Combinatória" },
+  {
+    "code": "MAC0326",
+    "name": "Computação, Cibernética e Sistemas Cognitivos"
+  },
+  { "code": "MAC0327", "name": "Desafios de Programação" },
+  { "code": "MAC0328", "name": "Algoritmos em Grafos" },
+  { "code": "MAC0329", "name": "Álgebra Booleana e Aplicações" },
+  { "code": "MAC0331", "name": "Geometria Computacional" },
+  { "code": "MAC0332", "name": "Engenharia de Software" },
+  { "code": "MAC0333", "name": "Armazenamento e Recuperação da Informação" },
+  { "code": "MAC0335", "name": "Leitura Dramática" },
+  { "code": "MAC0336", "name": "Criptografia para Segurança de Dados" },
+  { "code": "MAC0337", "name": "Computação Musical" },
+  { "code": "MAC0338", "name": "Análise de Algoritmos" },
+  {
+    "code": "MAC0339",
+    "name": "Informação, Comunicação e a Sociedade do Conhecimento"
+  },
+  { "code": "MAC0340", "name": "Laboratório de Engenharia de Software" },
+  { "code": "MAC0341", "name": "Introdução à Bioinformática" },
+  { "code": "MAC0342", "name": "Laboratório de Programação Extrema" },
+  { "code": "MAC0343", "name": "Programação Semidefinida e Aplicações" },
+  {
+    "code": "MAC0350",
+    "name": "Introdução ao Desenvolvimento de Sistemas de Software"
+  },
+  { "code": "MAC0351", "name": "Algoritmos em Bioinformática" },
+  { "code": "MAC0352", "name": "Redes e Sistemas Distribuídos" },
+  { "code": "MAC0375", "name": "Biologia de Sistemas" },
+  { "code": "MAC0412", "name": "Organização de Computadores" },
+  { "code": "MAC0413", "name": "Tópicos de Programação Orientada a Objetos" },
+  { "code": "MAC0414", "name": "Autômatos, Computabilidade e Complexidade" },
+  { "code": "MAC0415", "name": "Projeto de Compiladores" },
+  { "code": "MAC0416", "name": "Tópicos em Sistemas Distribuídos" },
+  { "code": "MAC0417", "name": "Visão e Processamento de Imagens" },
+  { "code": "MAC0419", "name": "Métodos de Otimização em Finanças" },
+  { "code": "MAC0420", "name": "Introdução à Computação Gráfica" },
+  { "code": "MAC0422", "name": "Sistemas Operacionais" },
+  { "code": "MAC0424", "name": "O Computador na Sociedade e na Empresa" },
+  { "code": "MAC0425", "name": "Inteligência Artificial" },
+  { "code": "MAC0426", "name": "Sistemas de Banco de Dados" },
+  { "code": "MAC0427", "name": "Programação Não-Linear" },
+  { "code": "MAC0430", "name": "Algoritmos e Complexidade de Computação" },
+  {
+    "code": "MAC0431",
+    "name": "Introdução à Computação Paralela e Distribuída"
+  },
+  {
+    "code": "MAC0432",
+    "name": "Processamento Digital de Imagens: Teoria e Aplicações"
+  },
+  { "code": "MAC0434", "name": "Tópicos de Sistemas de Computação" },
+  {
+    "code": "MAC0435",
+    "name": "Métodos Formais para Especificação e Construção de Programas"
+  },
+  { "code": "MAC0436", "name": "Tópicos de Matemática Discreta" },
+  { "code": "MAC0438", "name": "Programação Concorrente" },
+  { "code": "MAC0439", "name": "Laboratório de Banco de Dados" },
+  { "code": "MAC0441", "name": "Programação Orientada a Objetos" },
+  { "code": "MAC0444", "name": "Sistemas Baseados em Conhecimento" },
+  { "code": "MAC0446", "name": "Princípios de Interação Humano-Computador" },
+  {
+    "code": "MAC0447",
+    "name": "Análise e Reconhecimento de Formas: Teoria e Prática"
+  },
+  { "code": "MAC0448", "name": "Programação para Redes de Computadores" },
+  { "code": "MAC0450", "name": "Algoritmos de Aproximação" },
+  {
+    "code": "MAC0451",
+    "name": "Tópicos Especiais em Desenvolvimento para Web"
+  },
+  { "code": "MAC0452", "name": "Tópicos de Otimização Combinatória" },
+  {
+    "code": "MAC0453",
+    "name": "Princípios de Pesquisa Operacional e Logística"
+  },
+  { "code": "MAC0456", "name": "Tópicos Especiais em Engenharia de Software" },
+  { "code": "MAC0457", "name": "Engenharia de Software Empírica" },
+  { "code": "MAC0458", "name": "Direito e Software Livre" },
+  { "code": "MAC0459", "name": "Ciência e Engenharia de Dados" },
+  {
+    "code": "MAC0460",
+    "name": "Aprendizado de Máquina: Modelos, Algoritmos e Aplicações"
+  },
+  { "code": "MAC0463", "name": "Computação Móvel" },
+  { "code": "MAC0464", "name": "Sistemas Humano-Computacionais" },
+  { "code": "MAC0465", "name": "Biologia Computacional" },
+  { "code": "MAC0466", "name": "Teoria dos Jogos Algorítmica" },
+  { "code": "MAC0467", "name": "Empreendedorismo Digital" },
+  { "code": "MAC0468", "name": "Tópicos em Computação Gráfica" },
+  { "code": "MAC0470", "name": "Desenvolvimento de Software Livre" },
+  { "code": "MAC0499", "name": "Trabalho de Formatura Supervisionado" }
+]

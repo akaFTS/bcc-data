@@ -32,6 +32,36 @@ class ClassList extends Component {
           (classe.beginYear <= activeYear && classe.endYear >= activeYear)
       )
 
+    if (activeYear > 0) {
+      ;(async function() {
+        const lastOne = (await import(`../../data/classeNames/${activeYear -
+          1}.json`)).default
+        const filterForName = filteredClasses.map(classe => {
+          const classeName = classe.names.reduce(
+            (acc, cur) => (cur.start <= activeYear ? cur.name : acc),
+            undefined
+          )
+          return { code: classe.code, name: classeName }
+        })
+
+        const lastOneWithoutEnd = lastOne.filter(
+          classe =>
+            allClasses.find(allclasse => allclasse.code === classe.code)
+              .endYear >= activeYear
+        )
+
+        const notInLast = filterForName.filter(
+          classe => !lastOne.some(lastClasse => classe.code === lastClasse.code)
+        )
+
+        const newList = [...notInLast, ...lastOneWithoutEnd].sort((a, b) =>
+          a.code.localeCompare(b.code)
+        )
+
+        console.log(JSON.stringify(newList))
+      })()
+    }
+
     return (
       <ContentBox title="Matérias" color="green">
         <ListFilters

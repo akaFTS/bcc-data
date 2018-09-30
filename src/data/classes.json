@@ -476,7 +476,7 @@
     "code": "MAC0414",
     "area": 0,
     "endYear": 2018,
-    "beginYear": 1973,
+    "beginYear": 1974,
     "names": [
       { "start": 1973, "name": "Autômatos, Computabilidade e Complexidade" }
     ]
@@ -596,9 +596,9 @@
     "code": "MAC0430",
     "area": 0,
     "endYear": 2018,
-    "beginYear": 1994,
+    "beginYear": 1995,
     "names": [
-      { "start": 1994, "name": "Algoritmos e Complexidade de Computação" }
+      { "start": 1995, "name": "Algoritmos e Complexidade de Computação" }
     ]
   },
   {

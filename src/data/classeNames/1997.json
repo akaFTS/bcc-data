@@ -1,0 +1,54 @@
+[
+  { "code": "MAC0110", "name": "Introdução à Computação" },
+  { "code": "MAC0122", "name": "Princípios de Desenvolvimento de Algoritmos" },
+  { "code": "MAC0211", "name": "Laboratório de Programação" },
+  { "code": "MAC0221", "name": "Construção de Montadores" },
+  { "code": "MAC0222", "name": "Sistemas de Programação" },
+  { "code": "MAC0228", "name": "Combinatória e Grafos" },
+  { "code": "MAC0230", "name": "Elementos de Matemática Discreta" },
+  { "code": "MAC0310", "name": "Matemática Concreta" },
+  { "code": "MAC0312", "name": "Processamento de Dados Administrativos" },
+  { "code": "MAC0315", "name": "Programação Linear" },
+  {
+    "code": "MAC0316",
+    "name": "Conceitos Fundamentais de Linguagens de Programação"
+  },
+  { "code": "MAC0322", "name": "Introdução à Análise de Sistemas" },
+  { "code": "MAC0323", "name": "Estruturas de Dados" },
+  { "code": "MAC0325", "name": "Otimização Combinatória" },
+  { "code": "MAC0328", "name": "Introdução à Teoria dos Grafos" },
+  { "code": "MAC0329", "name": "Álgebra Booleana e Aplicações" },
+  { "code": "MAC0330", "name": "Algoritmos Algébricos" },
+  { "code": "MAC0332", "name": "Engenharia de Software" },
+  { "code": "MAC0333", "name": "Armazenamento e Recuperação da Informação" },
+  { "code": "MAC0410", "name": "Introdução à Compilação" },
+  { "code": "MAC0412", "name": "Organização de Computadores" },
+  { "code": "MAC0414", "name": "Introdução à Teoria de Autômatos Finitos" },
+  { "code": "MAC0418", "name": "Tópicos Especiais de Programação Matemática" },
+  { "code": "MAC0419", "name": "Métodos de Otimização em Finanças" },
+  { "code": "MAC0420", "name": "Introdução à Computação Gráfica" },
+  { "code": "MAC0421", "name": "Computação Gráfica" },
+  { "code": "MAC0422", "name": "Sistemas Operacionais" },
+  { "code": "MAC0423", "name": "Introdução a Teoria da Computabilidade" },
+  { "code": "MAC0424", "name": "O Computador na Sociedade e na Empresa" },
+  { "code": "MAC0425", "name": "Introdução à Inteligência Artificial" },
+  { "code": "MAC0426", "name": "Sistemas de Banco de Dados" },
+  { "code": "MAC0427", "name": "Programação Não-Linear" },
+  { "code": "MAC0430", "name": "Algoritmos e Complexidade de Computação" },
+  {
+    "code": "MAC0431",
+    "name": "Introdução à Computação Paralela e Distribuída"
+  },
+  {
+    "code": "MAC0432",
+    "name": "Processamento Digital de Imagens: Teoria e Aplicações"
+  },
+  { "code": "MAC0433", "name": "Administração de Sistemas UNIX" },
+  { "code": "MAC0434", "name": "Tópicos de Sistemas de Computação" },
+  {
+    "code": "MAC0435",
+    "name": "Métodos Formais para Especificação e Construção de Programas"
+  },
+  { "code": "MAC0436", "name": "Tópicos de Matemática Discreta" },
+  { "code": "MAC0437", "name": "Redes de Dados" }
+]
