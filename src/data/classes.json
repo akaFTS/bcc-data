@@ -5,8 +5,8 @@
     "endYear": 2018,
     "beginYear": 2015,
     "names": [
-      { "start": 2015, "name": "Integração no BCC" },
-      { "start": 2017, "name": "Integração na Universidade e na Profissão" }
+      { "start": 2015, "name": "Introdução à Ciência da Computação" },
+      { "start": 2016, "name": "Integração na Universidade e na Profissão" }
     ]
   },
   {
@@ -35,7 +35,10 @@
     "area": 1,
     "endYear": 2018,
     "beginYear": 1972,
-    "names": [{ "start": 1972, "name": "Introdução à Computação" }]
+    "names": [
+      { "start": 1972, "name": "Introdução à Ciência da Computação" },
+      { "start": 1990, "name": "Introdução à Computação" }
+    ]
   },
   {
     "code": "MAC0121",
@@ -72,7 +75,10 @@
     "area": 1,
     "endYear": 2015,
     "beginYear": 1972,
-    "names": [{ "start": 1972, "name": "Laboratório de Programação I" }]
+    "names": [
+      { "start": 1972, "name": "Laboratório de Programação" },
+      { "start": 1998, "name": "Laboratório de Programação I" }
+    ]
   },
   {
     "code": "MAC0213",
@@ -123,7 +129,11 @@
     "area": 0,
     "endYear": 2005,
     "beginYear": 1972,
-    "names": [{ "start": 1972, "name": "Construção de Montadores" }]
+    "names": [
+      { "start": 1972, "name": "Programação em Linguagem de Montagem" },
+      { "start": 1974, "name": "Linguagem de Montagem" },
+      { "start": 1990, "name": "Construção de Montadores" }
+    ]
   },
   {
     "code": "MAC0222",
@@ -137,7 +147,10 @@
     "area": 0,
     "endYear": 2018,
     "beginYear": 1995,
-    "names": [{ "start": 1995, "name": "Combinatória e Teoria dos Grafos" }]
+    "names": [
+      { "start": 1995, "name": "Combinatória e Grafos" },
+      { "start": 2003, "name": "Combinatória e Teoria dos Grafos" }
+    ]
   },
   {
     "code": "MAC0230",
@@ -152,8 +165,9 @@
     "endYear": 2018,
     "beginYear": 1998,
     "names": [
+      { "start": 1998, "name": "Métodos Formais em Programação" },
       {
-        "start": 1998,
+        "start": 2016,
         "name": "Introdução à Lógica e Verificação de Programas"
       }
     ]
@@ -177,7 +191,10 @@
     "area": 0,
     "endYear": 2015,
     "beginYear": 1983,
-    "names": [{ "start": 1983, "name": "Matemática Concreta" }]
+    "names": [
+      { "start": 1983, "name": "Princípios de Enumeração" },
+      { "start": 1997, "name": "Matemática Concreta" }
+    ]
   },
   {
     "code": "MAC0312",
@@ -185,7 +202,8 @@
     "endYear": 1997,
     "beginYear": 1972,
     "names": [
-      { "start": 1972, "name": "Processamento de Dados Administrativos" }
+      { "start": 1972, "name": "Programação Comercial" },
+      { "start": 1990, "name": "Processamento de Dados Administrativos" }
     ]
   },
   {
@@ -193,7 +211,10 @@
     "area": 0,
     "endYear": 2018,
     "beginYear": 1973,
-    "names": [{ "start": 1973, "name": "Programação Linear" }]
+    "names": [
+      { "start": 1973, "name": "Programação Matemática I" },
+      { "start": 1997, "name": "Programação Linear" }
+    ]
   },
   {
     "code": "MAC0316",
@@ -266,14 +287,17 @@
     "area": 0,
     "endYear": 2018,
     "beginYear": 1972,
-    "names": [{ "start": 1972, "name": "Algoritmos e Estruturas de Dados II" }]
+    "names": [{ "start": 1972, "name": "Estruturas de Dados" }]
   },
   {
     "code": "MAC0325",
     "area": 0,
     "endYear": 2018,
     "beginYear": 1973,
-    "names": [{ "start": 1973, "name": "Otimização Combinatória" }]
+    "names": [
+      { "start": 1973, "name": "Programação Matemática II" },
+      { "start": 1997, "name": "Otimização Combinatória" }
+    ]
   },
   {
     "code": "MAC0326",
@@ -296,16 +320,18 @@
     "area": 0,
     "endYear": 2018,
     "beginYear": 1974,
-    "names": [{ "start": 1974, "name": "Algoritmos em Grafos" }]
+    "names": [
+      { "start": 1974, "name": "Introdução à Teoria dos Grafos" },
+      { "start": 1999, "name": "Teoria dos Grafos" },
+      { "start": 2000, "name": "Algoritmos em Grafos" }
+    ]
   },
   {
     "code": "MAC0329",
     "area": 2,
     "endYear": 2018,
     "beginYear": 1974,
-    "names": [
-      { "start": 1974, "name": "Álgebra Booleana e Circuitos Digitais" }
-    ]
+    "names": [{ "start": 1974, "name": "Álgebra Booleana e Aplicações" }]
   },
   {
     "code": "MAC0330",
@@ -363,7 +389,10 @@
     "area": 0,
     "endYear": 2018,
     "beginYear": 1998,
-    "names": [{ "start": 1998, "name": "Análise de Algoritmos" }]
+    "names": [
+      { "start": 1998, "name": "Introdução à Análise de Algoritmos" },
+      { "start": 1999, "name": "Análise de Algoritmos" }
+    ]
   },
   {
     "code": "MAC0339",
@@ -461,7 +490,13 @@
     "area": 1,
     "endYear": 2016,
     "beginYear": 1972,
-    "names": [{ "start": 1972, "name": "Organização de Computadores" }]
+    "names": [
+      {
+        "start": 1972,
+        "name": "Organização de Computadores e Álgebra de Boole"
+      },
+      { "start": 1973, "name": "Organização de Computadores" }
+    ]
   },
   {
     "code": "MAC0413",
@@ -478,7 +513,11 @@
     "endYear": 2018,
     "beginYear": 1974,
     "names": [
-      { "start": 1973, "name": "Autômatos, Computabilidade e Complexidade" }
+      { "start": 1974, "name": "Introdução à Teoria de Automata Finitos" },
+      { "start": 1978, "name": "Introdução à Teoria de Autômatos Finitos" },
+      { "start": 1998, "name": "Autômatos e Linguagens Formais" },
+      { "start": 2003, "name": "Linguagens Formais e Autômatos" },
+      { "start": 2016, "name": "Autômatos, Computabilidade e Complexidade" }
     ]
   },
   {
@@ -562,14 +601,20 @@
     "area": 2,
     "endYear": 2018,
     "beginYear": 1976,
-    "names": [{ "start": 1976, "name": "Inteligência Artificial" }]
+    "names": [
+      { "start": 1976, "name": "Introdução à Inteligência Artificial" },
+      { "start": 2004, "name": "Inteligência Artificial" }
+    ]
   },
   {
     "code": "MAC0426",
     "area": 1,
     "endYear": 2018,
     "beginYear": 1978,
-    "names": [{ "start": 1978, "name": "Sistemas de Bancos de Dados" }]
+    "names": [
+      { "start": 1978, "name": "Sistemas Administradores de Base de Dados" },
+      { "start": 1990, "name": "Sistemas de Banco de Dados" }
+    ]
   },
   {
     "code": "MAC0427",
@@ -753,7 +798,11 @@
     "endYear": 2018,
     "beginYear": 2000,
     "names": [
-      { "start": 2000, "name": "Programação para Redes de Computadores" }
+      {
+        "start": 2000,
+        "name": "Redes de Computadores: uma Perspectiva de Sistemas de Software"
+      },
+      { "start": 2003, "name": "Programação para Redes de Computadores" }
     ]
   },
   {
@@ -849,7 +898,13 @@
     "area": 2,
     "endYear": 2018,
     "beginYear": 2006,
-    "names": [{ "start": 2006, "name": "Introdução ao Aprendizado de Máquina" }]
+    "names": [
+      {
+        "start": 2006,
+        "name": "Aprendizado de Máquina: Modelos, Algoritmos e Aplicações"
+      },
+      { "start": 2018, "name": "Introdução ao Aprendizado de Máquina" }
+    ]
   },
   {
     "code": "MAC0461",
@@ -900,7 +955,10 @@
     "area": 1,
     "endYear": 2018,
     "beginYear": 2014,
-    "names": [{ "start": 2014, "name": "Empreendedorismo Digital" }]
+    "names": [
+      { "start": 2014, "name": "Empreendedorismo para Ciência da Computação" },
+      { "start": 2016, "name": "Empreendedorismo Digital" }
+    ]
   },
   {
     "code": "MAC0468",

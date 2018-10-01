@@ -19,6 +19,7 @@ const ClassNamesModal = ({ isOpen, onCloseModal, classe, color }) => {
             className={`flex pa3 items-center justify-between ${
               index % 2 === 0 ? 'bg-light-gray' : ''
             }`}
+            key={entry.start}
           >
             <div className="fw3 pr2 lh-title gray">{entry.name}</div>
             <div className="flex">
