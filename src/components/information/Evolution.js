@@ -58,6 +58,10 @@ const Evolution = () => {
             tempo
           </span>
         </li>
+        <li className="mb3 lh-title">
+          <span className="fw6">05/10: </span>
+          <span>Módulo de grades finalizado</span>
+        </li>
       </ul>
     </ContentBox>
   )
