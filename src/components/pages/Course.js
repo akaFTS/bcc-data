@@ -23,6 +23,4 @@ const Course = () => {
   )
 }
 
-Course.propTypes = {}
-
 export default Course

@@ -45,6 +45,7 @@ const Propposal = () => {
           todos esses dados serão também disponibilizados no site em forma de
           gráficos para fácil visualização.
         </p>
+        <p className="mt4"><span className="fw6">Nota:</span> em 12/09, em reunião com o prof. Carlinhos, foi definida uma mudança com relação à proposta inicial. A comparação com outros cursos pelo mundo foi adiada para uma pesquisa futura, fora do escopo deste trabalho, e incluiu-se uma pesquisa no corpo de ex-alunos do curso, para traçar um perfil de onde se encontram hoje. Assim, o título do trabalho foi alterado para <span className="fw6">"BCC IME-USP: evolução e perfil do ex-aluno"</span>. Também foi decidido que não será escrita uma monografia pois o próprio trabalho já terá valor documental.</p>
       </div>
     </ContentBox>
   )

@@ -68,7 +68,7 @@
   },
   {
     "year": 1975,
-    "date": null,
+    "date": "11/03",
     "text": "Bloco A é inaugurado",
     "featured": true
   },
@@ -99,6 +99,12 @@
     "text": "Prof. Setzer decide dar início ao processo de reconhecimento do curso."
   },
   {
+    "year": 1982,
+    "date": "12/01",
+    "text": "Bloco B é inaugurado",
+    "featured": true
+  },
+  {
     "year": 1984,
     "date": null,
     "text": "Fim do ciclo básico; BCC passa a ser acessível diretamente pela Fuvest."
@@ -126,6 +132,12 @@
     "year": 1999,
     "date": "12/04",
     "text": "BCC é campeão latino-americano da Maratona de Programação pela primeira vez."
+  },
+  {
+    "year": 2004,
+    "date": "11/02",
+    "text": "Bloco C é inaugurado",
+    "featured": true
   },
   {
     "year": 2009,

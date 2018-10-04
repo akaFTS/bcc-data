@@ -109,3 +109,31 @@
 .b--mt-light-green {
   border-color: #a5d6a7;
 }
+
+.mt-red {
+  color: #e53935;
+}
+
+.bg-mt-red {
+  background-color: #e53935;
+}
+
+.mt-dark-red {
+  color: #b71c1c;
+}
+
+.bg-mt-dark-red {
+  background-color: #b71c1c;
+}
+
+.hover-bg-mt-dark-red:hover {
+  background-color: #b71c1c;
+}
+
+.mt-light-red {
+  background-color: #ef9a9a;
+}
+
+.bg-mt-light-red {
+  background-color: #ef9a9a;
+}
