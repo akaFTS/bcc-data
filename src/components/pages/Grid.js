@@ -10,7 +10,7 @@ const Grid = () => {
         <ContentBox title="Grade Curricular" color="red">
           <GridPicker>
             {grid => (
-              <div className="flex flex-wrap">
+              <div className="flex flex-wrap items-stretch">
                 {grid.map((classes, index) => (
                   <div className="w-100 w-50-l pa2">
                     <GridBox

@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import grids from '../../data/grids.json'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faChevronRight,
@@ -11,54 +10,85 @@ class GridPicker extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      selectedIndex: 0,
+      selectedIndex: 7,
+      grids: [],
     }
+  }
+
+  async componentDidMount() {
+    const grids = []
+    for (let i = 1; i < 9; i++) {
+      grids.push((await import(`../../data/grids/${i}.json`)).default)
+    }
+
+    this.setState({ grids })
   }
 
   moveLeft = () => {
     this.setState(prevState => ({
-      selectedIndex: (prevState.selectedIndex - 1) % grids.length,
+      selectedIndex: (prevState.selectedIndex + 7) % 8,
     }))
   }
 
   moveRight = () => {
     this.setState(prevState => ({
-      selectedIndex: (prevState.selectedIndex + 1) % grids.length,
+      selectedIndex: (prevState.selectedIndex + 9) % 8,
     }))
   }
+
+  selectIndex = index => this.setState({ selectedIndex: index })
+
   render() {
     const { children } = this.props
-    const { selectedIndex } = this.state
-
+    const { selectedIndex, grids } = this.state
     const activeGrid = grids[selectedIndex]
+
+    if (!activeGrid) return null
 
     return (
       <div>
-        <div className="f4 fw6 tc dark-gray mb4">
-          Grade de {activeGrid.year}
-        </div>
-        <div className="flex justify-between items-center">
+        <div className="flex items-center justify-center mb3">
           <FontAwesomeIcon
             icon={faChevronLeft}
-            className="silver hover-mid-gray pointer pa2 f2 mr3"
+            className="silver hover-mid-gray pointer pa2 f2 mr4"
             onClick={this.moveLeft}
           />
-          <div className="flex-auto">{children(activeGrid.grid)}</div>
+          <span className="f4 fw6 tc dark-gray">
+            Grade de {activeGrid.year}
+          </span>
           <FontAwesomeIcon
             icon={faChevronRight}
-            className="silver hover-mid-gray pointer pa2 f2 ml3"
+            className="silver hover-mid-gray pointer pa2 f2 ml4"
             onClick={this.moveRight}
           />
         </div>
+        <div>{children(activeGrid.grid)}</div>
+
         <div className="flex justify-center items-center mt4">
-          {grids.map(
-            (_, index) =>
-              index === selectedIndex ? (
-                <div key={index} className="pa1 pl2 pt2 bg-red br-100 mh1" />
-              ) : (
-                <div key={index} className="pa1 br-100 bg-light-silver mh1" />
-              )
-          )}
+          <FontAwesomeIcon
+            icon={faChevronLeft}
+            className="silver hover-mid-gray pointer pa2 f2 mr4"
+            onClick={this.moveLeft}
+          />
+          <div className="flex items-center">
+            {grids.map(
+              (_, index) =>
+                index === selectedIndex ? (
+                  <div key={index} className="pa1 pl2 pt2 bg-red br-100 mh1" />
+                ) : (
+                  <div
+                    onClick={() => this.selectIndex(index)}
+                    key={index}
+                    className="pa1 br-100 bg-light-silver mh1 hover-bg-gray pointer"
+                  />
+                )
+            )}
+          </div>
+          <FontAwesomeIcon
+            icon={faChevronRight}
+            className="silver hover-mid-gray pointer pa2 f2 ml4"
+            onClick={this.moveRight}
+          />
         </div>
       </div>
     )

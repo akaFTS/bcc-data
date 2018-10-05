@@ -38,6 +38,17 @@ const Sources = () => {
           um ano da listagem e depois reaparecem).
         </p>
         <p>
+          Nos módulos de matérias e grade, as matérias são sempre tratadas como
+          MAC, apesar de serem do MAP até 1987. Para realizar a separação antes
+          da criação do departamento, foi necessário deduzir quais matérias
+          seriam "do MAC" a partir de sua ementa, e também acompanhando quais
+          matérias foram passadas para o MAC quando de sua criação e separá-las
+          retroativamente nos anos anteriores. Além disso, no módulo de grade,
+          os catálogos não informam em quais semestres algumas disciplinas mais
+          variadas deveriam ser cursadas (e.g. Educação Moral e Cívica) então
+          elas foram inseridas em semestres arbitrários.
+        </p>
+        <p>
           O módulo de alunos e alunas formados foi obtido acessando-se a página
           de ex-alunos do BCC (
           <span className="i">

@@ -30,6 +30,10 @@
   background-color: #f57c00;
 }
 
+.b--mt-orange {
+  border-color: #f57c00;
+}
+
 .mt-dark-orange {
   color: #e65100;
 }
@@ -56,6 +60,10 @@
 
 .bg-mt-purple {
   background-color: #7b1fa2;
+}
+
+.b--mt-purple {
+  border-color: #7b1fa2;
 }
 
 .mt-dark-purple {
