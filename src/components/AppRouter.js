@@ -5,12 +5,14 @@ import {
   faGraduationCap,
   faBook,
   faCalendarAlt,
+  faUser,
 } from '@fortawesome/free-solid-svg-icons'
 import Course from './pages/Course'
 import Information from './pages/Information'
 import Classes from './pages/Classes'
 import LinkButton from './LinkButton'
 import Grid from './pages/Grid'
+import Students from './pages/Students'
 
 const AppRouter = () => {
   return (
@@ -41,12 +43,19 @@ const AppRouter = () => {
             path="/grid"
             color="red"
           />
+          <LinkButton
+            text="Alunos"
+            icon={faUser}
+            path="/students"
+            color="blue"
+          />
         </div>
         <Switch>
           <Route exact path="/" component={Course} />
           <Route exact path="/info" component={Information} />
           <Route exact path="/classes" component={Classes} />
           <Route exact path="/grid" component={Grid} />
+          <Route exact path="/students" component={Students} />
         </Switch>
       </main>
     </HashRouter>

@@ -1,8 +1,8 @@
 import React from 'react'
 import ContentBox from '../shared/ContentBox'
 import { Line } from 'react-chartjs-2'
-import maleGraduates from '../../data/course/maleGraduates.json'
-import femaleGraduates from '../../data/course/femaleGraduates.json'
+import maleGraduates from '../../data/students/maleGraduates.json'
+import femaleGraduates from '../../data/students/femaleGraduates.json'
 
 const StudentGenders = () => {
   const accumulatedMales = []
@@ -22,7 +22,7 @@ const StudentGenders = () => {
     .map((x, y) => x + y)
 
   return (
-    <ContentBox title="Alunos Formados" color="purple">
+    <ContentBox title="Graduandos por Gênero" color="blue">
       <Line
         data={{
           labels: years,
