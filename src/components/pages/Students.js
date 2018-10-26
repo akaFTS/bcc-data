@@ -1,24 +1,45 @@
-import React from 'react'
+import React, { Component } from 'react'
 import StudentGenders from '../students/StudentGenders'
 import StudentLocations from '../students/StudentLocations'
 import StudentJobs from '../students/StudentJobs'
 import StudentEducations from '../students/StudentEducations'
 
-const Students = () => {
-  return (
-    <main>
-      <div className="flex">
-        <div className="w-100 w-50-l ph2">
-          <StudentJobs />
-          <StudentEducations />
+class Students extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      currentSelection: 0,
+    }
+  }
+
+  selectEpoch = epoch => this.setState({ currentSelection: epoch })
+
+  render() {
+    const { currentSelection } = this.state
+    return (
+      <main>
+        <div className="flex">
+          <div className="w-100 w-50-l ph2">
+            <StudentJobs
+              currentSelection={currentSelection}
+              onEpochSelected={this.selectEpoch}
+            />
+            <StudentEducations
+              currentSelection={currentSelection}
+              onEpochSelected={this.selectEpoch}
+            />
+          </div>
+          <div className="w-100 w-50-l ph2">
+            <StudentGenders />
+            <StudentLocations
+              currentSelection={currentSelection}
+              onEpochSelected={this.selectEpoch}
+            />
+          </div>
         </div>
-        <div className="w-100 w-50-l ph2">
-          <StudentGenders />
-          <StudentLocations />
-        </div>
-      </div>
-    </main>
-  )
+      </main>
+    )
+  }
 }
 
 export default Students

@@ -5,12 +5,11 @@ export default [
     code: 'sao_paulo',
     coordinates: [-46.6333, -23.5505],
   },
-  {
-    code: 'rio_de_janeiro',
-    coordinates: [-43.1729, -22.9068],
-  },
-  { code: 'seattle', coordinates: [-122.335167, 47.608013] },
   { code: 'san_francisco', coordinates: [-122.446747, 37.733795] },
-  { code: 'london', coordinates: [-0.118092, 51.509865] },
-  { code: 'recife', coordinates: [-34.8828969, -8.0578381] },
+  { code: 'fortaleza', coordinates: [-38.526669, -3.731862] },
+  { code: 'north_carolina', coordinates: [-80.793457, 35.782169] },
+  { code: 'toronto', coordinates: [-79.384293, 43.653908] },
+  { code: 'santa_catarina', coordinates: [-48.55854, -27.5935] },
+  { code: 'interior', coordinates: [-47.89083, -22.0175] },
+  { code: 'sydney', coordinates: [151.2099, -33.865143] },
 ]

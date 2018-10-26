@@ -49,16 +49,22 @@ const Sources = () => {
           elas foram inseridas em semestres arbitrários.
         </p>
         <p>
-          O módulo de alunos e alunas formados foi obtido acessando-se a página
-          de ex-alunos do BCC (
+          O módulo de alunos foi construído com ajuda da página de ex-alunos do
+          BCC (
           <span className="i">
             https://www.ime.usp.br/~cgmac/ex-alunos/res.html
           </span>
-          ) e contando-se o número de homens e mulheres formados a cada ano. Há
-          uma certa imprecisão nos dados pois alguns nomes estrangeiros
-          (especialmente orientais) são difíceis de precisar o sexo, porém a
-          ocorrência deles era baixa o suficiente para que isso não afete o
-          formato geral do gráfico.
+          ). Para montar o gráfico de alunos e alunas formados por ano, as
+          informações da página foram integralmente utilizadas. Há uma certa
+          imprecisão nos dados pois alguns nomes estrangeiros (especialmente
+          orientais) são difíceis de precisar o sexo, porém a ocorrência deles
+          era baixa o suficiente para que isso não afete o formato geral do
+          gráfico. Para os demais gráficos, os alunos formados foram divididos
+          em três grupos de acordo com a data de formatura, e de cada grupo foi
+          retirada uma amostra aleatória de 30 nomes. Esses nomes foram então
+          pesquisados no Linkedin, de onde eram tiradas as informações sobre
+          escolaridade, localização e emprego. Caso um nome não fosse encontrado
+          lá, era sorteado outro até atingir 30.
         </p>
       </div>
     </ContentBox>

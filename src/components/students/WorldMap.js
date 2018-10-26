@@ -30,10 +30,11 @@ class WorldMap extends Component {
       ...citySpecs.find(entry => entry.code === city),
       scale: cities[city] * 100,
     }))
+
     const values = cityBubbles.map(entry => entry.scale)
     const cityScale = scaleLinear()
-      .domain([Math.min(...values), Math.max(...values)])
-      .range([10, 50])
+      .domain([Math.min(...values), 70])
+      .range([10, 30])
 
     return (
       <div className="mt4">
@@ -103,7 +104,7 @@ class WorldMap extends Component {
 }
 
 WorldMap.propTypes = {
-  cities: PropTypes.array.isRequired,
+  cities: PropTypes.object.isRequired,
 }
 
 export default WorldMap

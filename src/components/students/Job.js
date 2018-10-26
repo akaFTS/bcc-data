@@ -7,13 +7,15 @@ import {
   faUniversity,
   faCircle,
   faWrench,
-  faHouseDamage,
+  faHome,
+  faChartBar,
 } from '@fortawesome/free-solid-svg-icons'
 
 const Job = ({ type, onHover, isHovering }) => {
   const jobIcons = [
     faGraduationCap,
     null,
+    faChartBar,
     null,
     faFacebookSquare,
     faSpotify,
@@ -21,12 +23,13 @@ const Job = ({ type, onHover, isHovering }) => {
     null,
     faWrench,
     faUniversity,
-    faHouseDamage,
+    faHome,
     faCircle,
   ]
   const jobColors = [
     'mt-purple',
     null,
+    'mt-green',
     null,
     'mt-blue',
     'mt-green',
@@ -39,12 +42,14 @@ const Job = ({ type, onHover, isHovering }) => {
   ]
   const jobFiles = [
     null,
-    'itau',
+    'santander',
+    null,
     'totvs',
     null,
     null,
     '99',
     'caelum',
+    null,
     null,
     null,
     null,

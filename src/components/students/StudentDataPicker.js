@@ -7,33 +7,18 @@ import group2004 from '../../data/students/group2004'
 class StudentDataPicker extends Component {
   constructor(props) {
     super(props)
-    this.state = {
-      selectedEpoch: 0,
-    }
-  }
-
-  selectEpoch = index => {
-    this.setState({ selectedEpoch: index })
+    this.state = {}
   }
 
   mock30 = () => {
-    const someCities = [
-      'sao_paulo',
-      'seattle',
-      'san_francisco',
-      'london',
-      'new_york',
-      'tokyo',
-      'recife',
-      'rio_de_janeiro',
-    ]
+    const someCities = ['sao_paulo', 'san_francisco', 'new_york', 'tokyo']
 
     return Array(30)
       .fill(0)
       .map(() => ({
         education: Math.floor(Math.random() * 5),
-        job: Math.floor(Math.random() * 11),
-        location: someCities[Math.floor(Math.random() * 8)],
+        job: Math.floor(Math.random() * 12),
+        location: someCities[Math.floor(Math.random() * 4)],
       }))
   }
 
@@ -55,10 +40,18 @@ class StudentDataPicker extends Component {
   }
 
   render() {
-    const { children } = this.props
-    const { selectedEpoch } = this.state
+    const { children, currentSelection, onEpochSelected } = this.props
 
-    const data = this.mock30()
+    const group3 = this.mock30()
+
+    const data =
+      currentSelection === 0
+        ? [...group1974, ...group1989, ...group3]
+        : currentSelection === 1
+          ? group1974
+          : currentSelection === 2
+            ? group1989
+            : group3
 
     const processedValues = {
       education: data
@@ -71,7 +64,7 @@ class StudentDataPicker extends Component {
         .reduce((acc, cur) => {
           acc[cur.job]++
           return acc
-        }, Array(11).fill(0))
+        }, Array(12).fill(0))
         .map(entry => entry / data.length),
       location: this.normalizeCities(data),
     }
@@ -81,41 +74,41 @@ class StudentDataPicker extends Component {
         <div className="flex ba bw1 b--mt-blue br3 overflow-hidden mh3">
           <div
             className={`w-25 pv1 tc b ${
-              selectedEpoch === 0
+              currentSelection === 0
                 ? 'bg-mt-blue white'
                 : 'mt-blue pointer hover-bg-light-gray'
             }`}
-            onClick={() => this.selectEpoch(0)}
+            onClick={() => onEpochSelected(0)}
           >
             Todos
           </div>
           <div
             className={`w-25 pv1 tc b ${
-              selectedEpoch === 1
+              currentSelection === 1
                 ? 'bg-mt-blue white'
                 : 'mt-blue pointer hover-bg-light-gray'
             }`}
-            onClick={() => this.selectEpoch(1)}
+            onClick={() => onEpochSelected(1)}
           >
             1974-1988
           </div>
           <div
             className={`w-25 pv1 tc b ${
-              selectedEpoch === 2
+              currentSelection === 2
                 ? 'bg-mt-blue white'
                 : 'mt-blue pointer hover-bg-light-gray'
             }`}
-            onClick={() => this.selectEpoch(2)}
+            onClick={() => onEpochSelected(2)}
           >
             1989-2003
           </div>
           <div
             className={`w-25 pv1 tc b ${
-              selectedEpoch === 3
+              currentSelection === 3
                 ? 'bg-mt-blue white'
                 : 'mt-blue pointer hover-bg-light-gray'
             }`}
-            onClick={() => this.selectEpoch(3)}
+            onClick={() => onEpochSelected(3)}
           >
             2004-2017
           </div>
@@ -127,6 +120,8 @@ class StudentDataPicker extends Component {
 }
 StudentDataPicker.propTypes = {
   children: PropTypes.func.isRequired,
+  currentSelection: PropTypes.number.isRequired,
+  onEpochSelected: PropTypes.func.isRequired,
 }
 
 export default StudentDataPicker

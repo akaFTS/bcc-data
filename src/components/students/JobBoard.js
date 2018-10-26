@@ -39,6 +39,7 @@ class JobBoard extends Component {
     const hoverLabels = [
       <span>Professores e Pesquisadores</span>,
       <span>Bancos e Grandes Empresas</span>,
+      <span>Consultorias</span>,
       <span>
         Empresas de Tecnologia Antigas
         <br />
@@ -60,7 +61,7 @@ class JobBoard extends Component {
       <span>Startups Brasileiras</span>,
       <span>Fundaram a própria empresa</span>,
       <span>Órgãos Públicos</span>,
-      <span>Desempregados</span>,
+      <span>Aposentados</span>,
       <span>Outros</span>,
     ]
 

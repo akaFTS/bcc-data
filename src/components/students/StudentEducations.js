@@ -1,12 +1,16 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import ContentBox from '../shared/ContentBox'
 import StudentDataPicker from './StudentDataPicker'
 import { Pie } from 'react-chartjs-2'
 
-const StudentEducations = () => {
+const StudentEducations = ({ currentSelection, onEpochSelected }) => {
   return (
     <ContentBox title="Nível de Escolaridade" color="blue">
-      <StudentDataPicker>
+      <StudentDataPicker
+        currentSelection={currentSelection}
+        onEpochSelected={onEpochSelected}
+      >
         {({ education }) => (
           <div className="mt4">
             <Pie
@@ -14,18 +18,18 @@ const StudentEducations = () => {
                 labels: [
                   'Apenas BCC',
                   'Outra Graduação',
+                  'MBA ou especialização',
                   'Mestrado',
                   'Doutorado',
-                  'Doutorado no Exterior',
                 ],
                 datasets: [
                   {
                     data: education,
                     backgroundColor: [
-                      '#CE93D8',
-                      '#AB47BC',
-                      '#8E24AA',
-                      '#6A1B9A',
+                      '#E1BEE7',
+                      '#BA68C8',
+                      '#9C27B0',
+                      '#7B1FA2',
                       '#4A148C',
                     ],
                   },
@@ -53,6 +57,11 @@ const StudentEducations = () => {
       </StudentDataPicker>
     </ContentBox>
   )
+}
+
+StudentEducations.propTypes = {
+  currentSelection: PropTypes.number.isRequired,
+  onEpochSelected: PropTypes.func.isRequired,
 }
 
 export default StudentEducations

@@ -1,0 +1,553 @@
+Alexandre Rodrigues
+Alvaro Luiz S. Nunes
+Carlos Eduardo Calabrez
+Eder Felix
+Eliana Keiko Hirano
+Helio Gurovitz
+Jorge Nakahara Junior
+Karina Marcus
+Manuel A. S. de Menezes Jr.
+Marcelo Claro
+Marcos Fujimoto
+Mariane M. Coutinho
+Mario Luiz Isippon Perez
+Marko Loparic
+Nelson Tadao Nakatu
+Nina Sumiko Tomita
+Paulo Roberto Tazinato Candido
+Ricardo Ratner Rochman
+Ricardo Ueda Karpischek
+Roberto Cassio de Araujo
+Roberto Libutti Salles
+Sandra Shimabukuro
+Vanessa Vincenzi Michelini
+Wagner Okutani de Almeida
+Alexandre Ricardo Nardi
+Angela Neri
+Aurélio Ubirajara de Luccas
+Carlos Cavalcante Leite Neto
+Claudia Miazaki
+Edison Yuji Honda
+Ednilza Evangelhista da Silva Nardi
+Edson T. Miyamoto
+Fabio Kon
+Flavia de S. Tiné
+Henrique Nacamae
+Ilno A. de Mendonça
+Lan Hui Fen
+Luci Lumiko Fen
+Luciana Camargo de Andrade Popazoglo
+Luis Jurandir Simões Araujo
+Marcelo Garboggini da Gama
+Marcelo Marques Lebre
+Marcelo Okutani de Almeida
+Marcelo Ris
+Marco Antonio Salles de Oliveira
+Mary Elisabeth el Far
+Mauro Eduardo de Carvalho
+Mauro Thomé
+Mauro Yasunori Funabashi
+Nilsa Areán García
+Paula Priscila Braga
+Paulo Regis Zanjacomo
+Reinaldo Melem Gregory
+Ricardo Zanni da Silva
+Sergio Luis Wasserstein
+Sergio Yuji Hayashi
+Yoshimitsu Claudio Chiba
+Alexandre Akiyoshi Kano
+Alexandre Junqueira Franco
+Carlos Cesar Tanaka
+Claudia de Carvalho Oliveira
+Decio Funaro
+Denise Hideko Goya
+Diana Tsiang
+Eduardo Yoshio Nunomura
+Eliane Kihara
+Evaldo Horn de Oliveira
+Helio Hiroshi Nakamura
+Heraldo de Barros
+Humberto Rosseti Baptista
+João Paulo da Palma Camargo
+Kelly Kim
+Luciana Yurica Omae
+Luis Carlos Shigueo Morimoto
+Marcia Cristina Fuzita
+Marcos Jorge Leonel
+Maria Clara Ramos
+Marie France Sagot
+Mauricio Massato Ikegami
+Orlando Lee
+Paulo de Tarso Ota
+Renata Wassermann
+Roberto Borger
+Ubiratan Rodrigues
+Yuk Kion Ho
+Alejandro Agustin Antunes de Mayolo Doimi
+Armando Ramos Gouveia
+Claudio Yoshiyuki Eishima
+Edson Noboru Yamada
+Eduardo A. do Amaral Marques
+Eugenio Akihiro Nassu
+Fabio Seiiti Sannomiya
+Fabio Tagnin
+Geni Hiroko Miyashita
+Ho Shio Lin
+Luiz Marcelo Modesto
+Marcelo Eduardo Cabral
+Marcia Mitiko Matuoka
+Marcos Tadashi Watanabe
+Nelson Takitani
+Nilson Brasil Filho
+Reinaldo Lepsch Neto
+Sheila B. Zabeu
+Tai Lam
+Yang Yen Wang
+Alberto Goya Shiroma
+Alexandre Vernille da Silva
+Alexandre Yamaji Valença
+Alice Lie Shimizu
+Cristina Ayumi Nakao
+Denise Iguma
+Edson Kasuhiro Miamoto
+Eduardo Ermel Wronowski
+Eduardo Porta
+Eliana Aki Goto
+Elizabeth Miyabara
+Estela Maris Rodrigues
+Fernanda de Paulo Lemos
+Ismael Alves Pereira Filho
+Jayne Margareth Fernandes
+Barcellos
+João Hajime Shiraishi
+José Luis Portelli
+Marcelo Gulfier
+Marcelo Lower
+Marcos França Guimarães Ferreira
+Marisa Majczan
+Mauricio Ruiz da Silva
+Patricia Mantovani
+Paulo Henrique Fernandes Rodela
+Paulo Pires da Silveira Sobrinho
+Regiane Kaoru Ishiki
+Ricardo Antonio Gaiotto
+Rodrigo de Salvo Braz
+Sergio Luis Diniz Fortuna
+Silvio Shindi Shimizu
+Suzi Kiyomi Suguiyama
+André Gonçalves Zelenkovas
+Andrea Crespo Miranda
+Daniela Vasconcelos Carbogim
+Douglas Moreto
+Fabiana Soares Santana
+Flavio A. B. Rodrigues Ribeiro
+Henrique Hissataka
+Huang Kuo Tching
+Isvi Correa Junior
+José Ricardo Bigueti
+Lina Yoshida
+Luciana Sioe May Oei
+Marcelo Gomes de Queiroz
+Marcelo Kawata
+Milton Noboru Obata
+Miriam Missa Ishihara
+Paulo José da Silva e Silva
+Rafael Shoji
+Raíssa Maria Mendes Lopes
+Ricardo Nicotra
+Rogerio Tsufa
+Solange Gueiros dos Santos
+Thomas Michel Simons
+Alexander Cursino Guimarães
+Alexandre Ota
+Alexandre Pacheco Rosa
+Anchises M. Guimarães de Paula
+Andrei Basilio Gonçalves
+Chen Wen Hsing
+Christian M. Rauh Ortega
+Cristina Maria Ferreira da Silva
+Darcio Alves
+Edson Mitsuro Yasaka
+Elcio Yukio Nanba
+Fernando Frota Redigolo
+Fernando Gonçalves Ferreira
+Fernando Rosendo
+Frank Meylan
+Gisele Demendjian
+Gustavo Henrique Gori Maia
+Helves Humberto Domingues
+Ivan Amstalden Imanishi
+José Roberto Shiota
+Katia Rossetti Mata
+Loreley Zavattiero
+Luciano Domingues Chiode
+Luis Claudio Nunes Malheiro
+Marcelo Kenji Toriyama
+Marcelo Paulo Chenko
+Marcelo Zanoni Santos
+Marcos Hadama
+Marcos Kleber Soares Kunyosi
+Mei Chun Shen
+Melissa Bueno Yonezawa
+Monica Nunes da Silva
+Paulo Celso Lavinas Barbosa
+Roberta Belini Maran
+Roelton Dias Simões
+Rovane Ramos Alves Machado
+Sergio Ricardo Sivelli
+Sergio Sardinha de Azevedo
+Susana Takae Yamamoto
+Adriana Ramos
+Aritanan Borges Garcia Gruber
+Bernardo Ioshinori Narutaki
+Carlos Daniel Chacur Alves
+Cláudia Cristina Martins dos Santos
+Clésio Takahashi
+Clóvis Kiyohide Hanashiro
+Cristiane Baptista Ferro
+Cristina Ramos de Carvalho
+Dailton Santana de Almeida
+Daniel Corch
+Eduardo Teixeira Dias
+Erika Mitie Kuwabara
+Ernesto Nakamura
+Esteban Walter Gonzalez Clua
+Fábio da Silva Ferreira
+Glauco Galves Bordin
+Glen Philip de Sousa Conceição
+Gustavo Gattass Ayub
+Hélio Maurício Barroso
+Jairo Pereira de Moraes
+Jishu Ashimine
+Luciano Silva
+Lucila Mie Afuso
+Luís Fernando Silva Rodrigues Teixeira
+Marcelo André Karklin Fontana
+Marcelo Bortolotto
+Marco Alexandre de Lima Santos
+Mario Leston Rey
+Mario Yasunori Yamauti
+Ralf Senger
+Renata Linger Pinheiro
+Roberto Meca Parmezzano
+Rosemary Arakaki
+Sandro Antonio Vicente
+Sergio Luís Moncayo Hirata
+Sergio Sussumu Mori
+Sílvia Ribeiro Brazuna
+Solange Formiga de Albuquerque
+Alexandre de Campos Valadares
+Bruno Benjamin Ohana
+Carlos Eduardo Ribeiro do Valle
+Cintia Cristina Herkrath
+Eduardo Vinicius Lucas
+Jackson Lima
+João Paulo Barbosa de Miranda
+Julio Massayuki Otuyama
+Luciano Micheletti Hespanhol
+Lucio Junqueira Simões
+Luis Carlos Campello
+Marcio Grossi de Almeida
+Mauricio Higa
+Pedro Constantino Campos Donati Jorge
+Ricardo Takeshi Tomiyama
+Roberto Silva Nakai
+Sílvia Renata Yuka Yamada
+Alexandre Hamada
+Alexandre Moron Bernardoni
+Allan Ricardo Martins Squarcino
+Almir Nemoto Hirata
+Ariane Machado Lima de Oliveira
+Cassio Polpo de Campos
+Christiane Leite Arietti
+Clovis Seragiotto Junior
+Daniel Akio Nishimura
+Edna Yumi Okumura
+Eduardo Bernstein
+Eduardo Garcia de Freitas
+Eduardo Issao Ito
+Elisa Yurika Kobayashiemail
+Fabio José Fioretti
+Fabio Tetsuo Kimura
+Gilberto Burgert
+Herbert Yutaka Watanabe
+Hugo Koji Kobayashi
+Ildefonso Junior Zanete
+Italo Romani de Oliveira
+José Roberto dos Santos
+Karina Zupo de Oliveira
+Leonardo Rochael de Almeida
+Marcos Machado Ottani Assis
+Maria Fernanda de Souza Pereira Lopes
+Marina Akemi Nako
+Mauricio de Castro Navarrete
+Patricia Ribeiro Gonçalves de Mendonça
+Paulo Augusto Rosa
+Raquel di Tommazi Montes
+Ricardo Gonçalves
+Roberto Akio Osato
+Rodrigo de Moraes Albuquerque
+Rodrigo Faber Romão
+Rogerio Seiji Ueda
+Ronney Rodger Sales de Castro
+Ruth Shiao Wen Chen
+Sabrina Lima Guidi
+Sandro Hung
+Sergio Gabriel Tavares
+Solange Yamaguti
+Tiago Cerdoura Garjaka
+Adelia Luiza Urquiza Lundberg
+Adriana Rodrigues e Reigadas
+Adriano Nagelschmidt Rodrigues
+Alencar Yukio Shibayama
+Alexandre Noma
+Andrew Christian Camargo Francis
+Bruno Fernandes Degani
+Carlos Alberto Almeida Guimarães
+Cintia Kazue Aono
+Cristina Ferreira Freitas Assunção
+Daniel Imamura
+Daniel Müller
+Débora dos Santos Botta
+Denis Renato da Costa
+Eduardo de Rezende Francisco
+Eduardo Tengan
+Elisangela Afonso Peres
+Enrico Shiohara
+Fabio Luis Ide
+Gina Maria Benavides A.Guibunda Cariche(1999)
+Gustavo Tadao Okida
+Hamilton Hideki Nishimura
+Henrique Pedreira de Freitas Ceribelli
+Humberto Francisco Soares
+Jefferson Satoshi Kato
+Julio Cesar da Silva Queiroz
+Julio Cesar do Nascimento
+Lilian Tiemi Takada
+Marcelo Poeta Blasco
+Marcelo Porto di Lorenzzi Nunes
+Marcia Mie Fujikawa
+Marcio Freire do Nascimento
+Marcio Yutaka Namiki
+Marcos Augusto Nagamura
+Marcos Fernando Lomboglia
+Patricia Tanaka
+Pedro Luis Eira Velha
+Renato Chiarelli Soeiro
+Ricardo Cavalcante Mirabal
+Rodrigo Antonio Quintano Neira
+Rodrigo Fernandes de Paula
+Rodrigo Santana Jordão
+Roger Gailland
+Rogerio Noboru Endo
+Rogerio Theodoro de Brito
+Sergio Vaz Fernandes
+Shigueo Isotani
+Silvio Renato Höhne
+Telmo Dias Souza Carlos
+Wagner Dias
+Wellington Avansini Marsicano
+Alexandre C.G. Leite
+Alexandrino Lucas dos Santos
+Alexey Antonio Villas Boas
+Americo Antonio Frigo
+Caetano Jimenez Carezzato
+Claudio Seidi Takamiya
+Clayton Selani
+Daniel Brock Francisco
+Daniel Oliveira Dantas
+Daniella Rios Sales
+Edgard Pevidor de Miranda
+Edward Mitsuo I. Iamamoto
+Elidia Y. K. Itikawa
+Ernaldo Bannwart Cezar
+Fabio Grezele
+Felix Freire B. de Almeida
+Fernando Felipe Campos Donati Jorge
+Flavio Regis de Arruda
+Izabel Cristina Shintate
+Jeferson Roberto Marques
+João Alexandre Haddad
+Joao Luiz Cury Silvestre
+Jorge Mamoru Kobayashi
+Julian Geraldes Monteiro
+Leonardo Marques Alves de Pinho
+Leonardo Tarrou Ng
+Luis Carlos Yano Endo
+Luis Francisco Rodrigues
+Marcelo Guidetti
+Marcelo Kazuo Makino
+Marcelo Luis Vinagreiro
+Marcio Calixto Cabral
+Marcio Rodrigo de Freitas Carneiro
+Marcio Toshiyuki Okazava
+Marcos D. A. Martins
+Marcos Tatsuo Yamamoto
+Marcus Vinicius Cerrato
+Melina Paiva Leite
+Mirian Akemi Ide
+Nelio Alves Pereira Filho
+Paulo Chuang Fu Sheng
+Rachel de Paula
+Rafael Ferrao D'Acosta
+Ricardo Bueno Cordeiro
+Ricardo Koji Ushizaki
+Roberto Augusto Giacommo da Motta
+Roberto Pires de Carvalho
+Roberto Speicys Cardoso
+Rodrigo Alberto Roveri
+Rodrigo Nonamor Pereira Mariano Souza
+Rodrigo Souza de Castro
+Rodrigo Vargas Crozato
+Rogerio Cesar Iamamoto
+Thiago Teixeira Santos
+Wu Chen Lung
+Adriano Saturno Muniz
+Alex Pires de Camargo
+Andrea Thomé Suman
+Andrei Goldchleger
+Antonio João Ferreira Francisco
+Breno Pompeu Roberto
+Camila Corrêa Moraes
+Carlos Dubeux Kawamura
+Carlos Eduardo Tavares
+Davi de Paula Cavalcanti
+David Correa Martins Junior
+David Paulo Pereira
+Denis Celestino de Souza
+Denis Tse
+Elaine Cristina Vilela Querido
+Elias Yoshiaki Yoshida
+Evelyn Cristina Pinto
+Fabiana Guarsoni Rocha
+Fabio Kimura
+Fabio Pará D'Incecco
+Fabricio Vertamatti
+Flávio Luiz Coutinho
+Gabriel de Munno Francisco
+Giuliano Luz Pigatti Calliari
+Irineu Ruiz
+Jacques Salo Zweiman
+Julio Bello Zaiantchik
+Leandro Farina dos Santos
+Leo Kazuhiro Ueda
+Livio Baldini Soares
+Luanna Marques da Silva
+Lucas Augusto Meyer dos Santos
+Luciano Kenji Kubo
+Luis Gustavo Martins
+Marcos Wada
+Marina Andretta
+Michele Medeiros
+Mickail M. Lopes Ribeiro Gonçalves
+Muhamad Salem Sugui
+Rafael Caetano dos Santos
+Renata Alessandra de Assis Estral
+Ricardo Koga Pegoraro
+Rodrigo Eugenio da Silva
+Thiago Lourençoni
+Tiago Tagliari Martinez
+Ulisses Kendi Hayashida
+Wagner Cesar Bruna
+Alessandro Wilner
+Alexandre Freire da Silva
+Alexandre Palmeira Mendonça
+Alfredo Roberto Junior
+Ana Beatriz V. Graciano
+Ana Carolina Soares Lasneaux
+André Gustavo Andrade
+André Rodrigo Sanches
+Cesar Ranzini Olmos
+Emilio de Camargo Francesquini
+Fabiana Piesigilli
+Fabio Massaaki Katayama
+Fabio Silva Dias
+Fernando Correa Lima
+Fernando Kasten Peinado
+Glaucio da Silveira Le
+Gustavo Castilhos Garcia
+Hugo Kotsubo
+Jay Clei Garcia dos Santos
+José Eduardo Gaboardi de Carvalho
+José Kazuo Ikai
+Leandro Diullas Sperandio
+Luciana Setsuko Gakiya
+Luciana Yumi Fujiki
+Manoel Fernando Alonso Gadi
+Marcos Farah Nagato
+Marcus Harada Penna
+Mauricio H. Navate
+Mauricio Silva Moura
+Paulo Eduardo Azevedo Silveira
+Paulo Marcel Caldeira Yokosawa
+Pratip Roy Chowdhury
+Rafael Pereira Luna
+Regis de Abreu Barbosa
+Renata Teixeira Carneiro
+Renato Kosaka Araujo
+Ricardo Hideo Sahara
+Rodrigo Mendes Leme
+Rodrigo Moreira Barbosa
+Rodrigo Simões de Almeida
+Rodrigo Vieira Couto
+Seiji Isotani
+Thiago Carvalho de Sousa
+Thiago Schumacher Barcelos
+Tiago Minchillo da Silveira
+Alex Minoru Kusano
+Alexandre Murakami
+André Casado Castaño
+André Fujita
+Andrei Hilario Catarino
+André Camacho D'Andrea
+Andrew Gan King Yuan
+Carlos Henrique de Fernandes
+Cleber da Costa Oliveira
+Cleber Miranda Barboza
+Dairton Luiz Bassi Filho
+Daniel André Vaquero
+Daniel de Angelis Cordeiro
+Daniel de Jesus Dominguez
+Daniel Martins Sakai
+Daniel Morgato Martin
+Daniela Akizuki
+Daniela Won Hee Chang
+Danilo Eiji Seki
+Danilo Matheus Rubio Conde
+Danilo Toshiki Sato
+David da Silva Pires
+Emerson Luiz Navarro Tozette
+Fabio Henrique Nishihara
+Fernanda Simões de Almeida
+Fernando Alberto de Sousa
+Fernando Mario de Oliveira Filho
+Flavia Maria Bovino Greggio
+Flavia Rainone
+Giuliano Mega
+Igor Ribeiro Sucupira
+Jean Fabian Tavares Barreto
+João Vitor Baldini Soares
+Jorge Francisco del Teglia
+Julio Cesar Avero
+Keith Takizawa
+Leandro Esteves Barion
+Leo Watanabe
+Luiza Figueiredo Pagliari
+Maira de Assis Ramos
+Marcos Eduardo Bolelli Broinizi
+Marcos Roberto Yukio Koga
+Marcos Romeiro Hryniewicz
+Marcus Machado Sampaio Moyses
+Mauricio Rapchan Andretta
+Murilo Noznica Penessor
+Paulo Eduardo Souza Machado
+Assunção de Vasconcellos
+Pedro Losco Takecian
+Peter Kreslins Junior
+Rafael de Andrade Jardim
+Rodrigo Dombrowski
+Stefan Neusatz Guilhen
+Victor Yuji Maehira
+Vinicius de Paulo Bellino
+Wilton Keniti Kawakami
+Yang Yili
