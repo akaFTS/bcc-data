@@ -60,6 +60,7 @@ class JobBoard extends Component {
       <span>Startups Brasileiras</span>,
       <span>Fundaram a própria empresa</span>,
       <span>Órgãos Públicos</span>,
+      <span>Desempregados</span>,
       <span>Outros</span>,
     ]
 

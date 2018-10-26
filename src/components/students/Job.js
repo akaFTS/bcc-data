@@ -7,6 +7,7 @@ import {
   faUniversity,
   faCircle,
   faWrench,
+  faHouseDamage,
 } from '@fortawesome/free-solid-svg-icons'
 
 const Job = ({ type, onHover, isHovering }) => {
@@ -20,6 +21,7 @@ const Job = ({ type, onHover, isHovering }) => {
     null,
     faWrench,
     faUniversity,
+    faHouseDamage,
     faCircle,
   ]
   const jobColors = [
@@ -32,6 +34,7 @@ const Job = ({ type, onHover, isHovering }) => {
     null,
     'mt-orange',
     'dark-gray',
+    'mt-dark-red',
     'silver',
   ]
   const jobFiles = [

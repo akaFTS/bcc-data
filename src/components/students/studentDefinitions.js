@@ -16,5 +16,6 @@ export const StudentJobTypes = {
   BRAZILIAN_STARTUPS: 6,
   OWN: 7,
   GOVERNMENT: 8,
-  OTHER: 9,
+  UNEMPLOYED: 9,
+  OTHER: 10,
 }

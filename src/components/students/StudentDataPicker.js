@@ -32,7 +32,7 @@ class StudentDataPicker extends Component {
       .fill(0)
       .map(() => ({
         education: Math.floor(Math.random() * 5),
-        job: Math.floor(Math.random() * 10),
+        job: Math.floor(Math.random() * 11),
         location: someCities[Math.floor(Math.random() * 8)],
       }))
   }
@@ -71,7 +71,7 @@ class StudentDataPicker extends Component {
         .reduce((acc, cur) => {
           acc[cur.job]++
           return acc
-        }, Array(10).fill(0))
+        }, Array(11).fill(0))
         .map(entry => entry / data.length),
       location: this.normalizeCities(data),
     }
