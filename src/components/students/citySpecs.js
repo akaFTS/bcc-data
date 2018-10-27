@@ -11,5 +11,8 @@ export default [
   { code: 'toronto', coordinates: [-79.384293, 43.653908] },
   { code: 'santa_catarina', coordinates: [-48.55854, -27.5935] },
   { code: 'interior', coordinates: [-47.89083, -22.0175] },
-  { code: 'sydney', coordinates: [151.2099, -33.865143] },
+  { code: 'australia', coordinates: [151.2099, -33.865143] },
+  { code: 'munich', coordinates: [11.576124, 48.137154] },
+  { code: 'seattle', coordinates: [-122.335167, 47.608013] },
+  { code: 'belo_horizonte', coordinates: [-43.940933, -19.912998] },
 ]

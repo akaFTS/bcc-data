@@ -17,7 +17,7 @@ class StudentDataPicker extends Component {
       .fill(0)
       .map(() => ({
         education: Math.floor(Math.random() * 5),
-        job: Math.floor(Math.random() * 12),
+        job: Math.floor(Math.random() * 13),
         location: someCities[Math.floor(Math.random() * 4)],
       }))
   }
@@ -42,16 +42,14 @@ class StudentDataPicker extends Component {
   render() {
     const { children, currentSelection, onEpochSelected } = this.props
 
-    const group3 = this.mock30()
-
     const data =
       currentSelection === 0
-        ? [...group1974, ...group1989, ...group3]
+        ? [...group1974, ...group1989, ...group2004]
         : currentSelection === 1
           ? group1974
           : currentSelection === 2
             ? group1989
-            : group3
+            : group2004
 
     const processedValues = {
       education: data

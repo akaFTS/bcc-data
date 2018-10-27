@@ -9,6 +9,7 @@ import {
   faWrench,
   faHome,
   faChartBar,
+  faBook,
 } from '@fortawesome/free-solid-svg-icons'
 
 const Job = ({ type, onHover, isHovering }) => {
@@ -20,10 +21,10 @@ const Job = ({ type, onHover, isHovering }) => {
     faFacebookSquare,
     faSpotify,
     null,
-    null,
     faWrench,
     faUniversity,
     faHome,
+    faBook,
     faCircle,
   ]
   const jobColors = [
@@ -34,10 +35,10 @@ const Job = ({ type, onHover, isHovering }) => {
     'mt-blue',
     'mt-green',
     null,
-    null,
     'mt-orange',
     'dark-gray',
     'mt-dark-red',
+    'mt-purple',
     'silver',
   ]
   const jobFiles = [
@@ -48,7 +49,6 @@ const Job = ({ type, onHover, isHovering }) => {
     null,
     null,
     '99',
-    'caelum',
     null,
     null,
     null,

@@ -37,32 +37,18 @@ class JobBoard extends Component {
       .map((_, index) => jobVector.slice(index * 10, (index + 1) * 10))
 
     const hoverLabels = [
-      <span>Professores e Pesquisadores</span>,
-      <span>Bancos e Grandes Empresas</span>,
-      <span>Consultorias</span>,
-      <span>
-        Empresas de Tecnologia Antigas
-        <br />
-        <span className="f5 fw6 dark-gray">(IBM, Totvs)</span>
-      </span>,
-      <span>
-        Big Four
-        <br />
-        <span className="f5 fw6 dark-gray">
-          (Google, Facebook, Amazon, Microsoft)
-        </span>
-      </span>,
-      <span>Startups no Exterior</span>,
-      <span>
-        Unicórnios Brasileiros
-        <br />
-        <span className="f5 fw6 dark-gray">(Nubank, 99, PagSeguro)</span>
-      </span>,
-      <span>Startups Brasileiras</span>,
-      <span>Fundaram a própria empresa</span>,
-      <span>Órgãos Públicos</span>,
-      <span>Aposentados</span>,
-      <span>Outros</span>,
+      'Professores e Pesquisadores',
+      'Bancos e Grandes Empresas',
+      'Consultorias',
+      'Empresas de Tecnologia Tradicionais',
+      'Gigantes da Tecnologia',
+      'Startups no Exterior',
+      'Startups Brasileiras',
+      'Fundaram a própria empresa',
+      'Órgãos Públicos',
+      'Aposentados',
+      'Ainda estudando',
+      'Outros',
     ]
 
     return (

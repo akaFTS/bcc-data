@@ -62,7 +62,7 @@ export default [
     name: 'fernando rosendo',
     education: StudentEducationTypes.MASTER,
     job: StudentJobTypes.BANKS,
-    location: 'sydney',
+    location: 'australia',
   }, // 10
   {
     name: 'danilo conde',
