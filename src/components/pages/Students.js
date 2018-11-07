@@ -30,7 +30,10 @@ class Students extends Component {
             />
           </div>
           <div className="w-100 w-50-l ph2">
-            <StudentGenders />
+            <StudentGenders
+              currentSelection={currentSelection}
+              onEpochSelected={this.selectEpoch}
+            />
             <StudentLocations
               currentSelection={currentSelection}
               onEpochSelected={this.selectEpoch}

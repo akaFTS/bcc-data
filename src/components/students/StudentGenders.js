@@ -1,65 +1,25 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import ContentBox from '../shared/ContentBox'
-import { Line } from 'react-chartjs-2'
-import maleGraduates from '../../data/students/maleGraduates.json'
-import femaleGraduates from '../../data/students/femaleGraduates.json'
+import StudentDataPicker from './StudentDataPicker'
+import GenderChart from './GenderChart'
 
-const StudentGenders = () => {
-  const accumulatedMales = []
-  maleGraduates.reduce(
-    (prev, curr, i) => (accumulatedMales[i] = prev + curr),
-    0
-  )
-
-  const accumulatedFemales = []
-  femaleGraduates.reduce(
-    (prev, curr, i) => (accumulatedFemales[i] = prev + curr),
-    0
-  )
-
-  const years = Array(44)
-    .fill(1974)
-    .map((x, y) => x + y)
-
+const StudentGenders = ({ currentSelection, onEpochSelected }) => {
   return (
-    <ContentBox title="Graduandos por Gênero" color="blue">
-      <Line
-        data={{
-          labels: years,
-          datasets: [
-            {
-              backgroundColor: 'rgba(255, 99, 132, 0.4)',
-              borderColor: 'rgba(255, 99, 132, 1)',
-              pointBackgroundColor: 'rgba(255, 99, 132, 1)',
-              pointBorderColor: '#fff',
-              pointHoverBackgroundColor: '#fff',
-              pointHoverBorderColor: 'rgba(255, 99, 132, 0.8)',
-              label: 'Mulheres',
-              data: accumulatedFemales,
-            },
-            {
-              backgroundColor: 'rgba(54, 162, 235, 0.4)',
-              borderColor: 'rgba(54, 162, 235, 1)',
-              pointBackgroundColor: 'rgba(54, 162, 235, 1)',
-              pointBorderColor: '#fff',
-              pointHoverBackgroundColor: '#fff',
-              pointHoverBorderColor: 'rgba(54, 162, 235, 0.8)',
-              label: 'Homens',
-              data: accumulatedMales,
-            },
-          ],
-        }}
-        options={{
-          scales: {
-            xAxes: [{ ticks: { maxTicksLimit: 8 } }],
-          },
-          labels: ['0', '1', '2'],
-        }}
-        width={3}
-        height={2}
-      />
+    <ContentBox title="Graduandos por Gênero (Acumulado)" color="blue">
+      <StudentDataPicker
+        currentSelection={currentSelection}
+        onEpochSelected={onEpochSelected}
+      >
+        {({ genders }) => <GenderChart genders={genders} />}
+      </StudentDataPicker>
     </ContentBox>
   )
+}
+
+StudentGenders.propTypes = {
+  currentSelection: PropTypes.number.isRequired,
+  onEpochSelected: PropTypes.func.isRequired,
 }
 
 export default StudentGenders

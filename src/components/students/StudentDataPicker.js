@@ -3,23 +3,13 @@ import PropTypes from 'prop-types'
 import group1974 from '../../data/students/group1974'
 import group1989 from '../../data/students/group1989'
 import group2004 from '../../data/students/group2004'
+import maleGraduates from '../../data/students/maleGraduates.json'
+import femaleGraduates from '../../data/students/femaleGraduates.json'
 
 class StudentDataPicker extends Component {
   constructor(props) {
     super(props)
     this.state = {}
-  }
-
-  mock30 = () => {
-    const someCities = ['sao_paulo', 'san_francisco', 'new_york', 'tokyo']
-
-    return Array(30)
-      .fill(0)
-      .map(() => ({
-        education: Math.floor(Math.random() * 5),
-        job: Math.floor(Math.random() * 13),
-        location: someCities[Math.floor(Math.random() * 4)],
-      }))
   }
 
   normalizeCities = data => {
@@ -52,6 +42,7 @@ class StudentDataPicker extends Component {
             : group2004
 
     const processedValues = {
+      currentSelection,
       education: data
         .reduce((acc, cur) => {
           acc[cur.education]++
@@ -65,6 +56,31 @@ class StudentDataPicker extends Component {
         }, Array(12).fill(0))
         .map(entry => entry / data.length),
       location: this.normalizeCities(data),
+    }
+
+    const range =
+      currentSelection === 0
+        ? [0, 44]
+        : currentSelection === 1
+          ? [0, 15]
+          : currentSelection === 2
+            ? [15, 30]
+            : [30, 44]
+
+    const accumulatedMales = []
+    maleGraduates
+      .slice(range[0], range[1])
+      .reduce((prev, curr, i) => (accumulatedMales[i] = prev + curr), 0)
+
+    const accumulatedFemales = []
+    femaleGraduates
+      .slice(range[0], range[1])
+      .reduce((prev, curr, i) => (accumulatedFemales[i] = prev + curr), 0)
+
+    const genders = {
+      accumulatedFemales,
+      accumulatedMales,
+      baseYear: 1974 + range[0],
     }
 
     return (
@@ -111,7 +127,7 @@ class StudentDataPicker extends Component {
             2004-2017
           </div>
         </div>
-        {children(processedValues)}
+        {children({ ...processedValues, genders })}
       </React.Fragment>
     )
   }

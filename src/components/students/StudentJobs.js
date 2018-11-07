@@ -13,6 +13,11 @@ const StudentJobs = ({ currentSelection, onEpochSelected }) => {
       >
         {({ job }) => <JobBoard jobs={job} />}
       </StudentDataPicker>
+      <p className="silver f7 fw3 tc ph3 lh-title">
+        Todos os logotipos são propriedade de suas respectivas empresas e são
+        usados para fins meramente ilustrativos neste trabalho. Todos os
+        direitos reservados.
+      </p>
     </ContentBox>
   )
 }
