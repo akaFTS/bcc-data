@@ -12,6 +12,12 @@ class Students extends Component {
     }
   }
 
+  componentDidMount() {
+    if (FB) {
+      FB.AppEvents.logEvent('studentsViewed')
+    }
+  }
+
   selectEpoch = epoch => this.setState({ currentSelection: epoch })
 
   render() {
