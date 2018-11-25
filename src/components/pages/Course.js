@@ -10,12 +10,6 @@ class Course extends Component {
     this.state = {}
   }
 
-  componentDidMount() {
-    if (FB) {
-      FB.AppEvents.logEvent('courseViewed')
-    }
-  }
-
   render() {
     return (
       <TimelineProvider>

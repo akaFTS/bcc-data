@@ -10,12 +10,6 @@ class Information extends Component {
     this.state = {}
   }
 
-  componentDidMount() {
-    if (FB) {
-      FB.AppEvents.logEvent('informationViewed')
-    }
-  }
-
   render() {
     return (
       <main>

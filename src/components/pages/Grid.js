@@ -9,12 +9,6 @@ class Grid extends Component {
     this.state = {}
   }
 
-  componentDidMount() {
-    if (FB) {
-      FB.AppEvents.logEvent('gridViewed')
-    }
-  }
-
   render() {
     return (
       <main className="flex">

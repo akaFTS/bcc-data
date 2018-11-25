@@ -8,12 +8,6 @@ class Classes extends Component {
     this.state = {}
   }
 
-  componentDidMount() {
-    if (FB) {
-      FB.AppEvents.logEvent('classesViewed')
-    }
-  }
-
   render() {
     return (
       <main className="flex">
