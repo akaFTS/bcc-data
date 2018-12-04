@@ -35,7 +35,7 @@ class ListFilters extends Component {
       <div className="mt3 mb3 flex justify-between align-stretch">
         <div className="flex flex-column justify-between">
           <div className="b mb1 f5 near-black">Áreas</div>
-          <div className="flex">
+          <div className="flex flex-wrap">
             <FilterPill
               name="Todas"
               color="light-silver"

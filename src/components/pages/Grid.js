@@ -11,7 +11,7 @@ class Grid extends Component {
 
   render() {
     return (
-      <main className="flex">
+      <main className="flex flex-wrap">
         <div className="w-100 w-80-l center">
           <ContentBox title="Grade Curricular" color="red">
             <GridPicker>

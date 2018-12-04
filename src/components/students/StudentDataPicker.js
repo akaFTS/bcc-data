@@ -36,10 +36,10 @@ class StudentDataPicker extends Component {
       currentSelection === 0
         ? [...group1974, ...group1989, ...group2004]
         : currentSelection === 1
-          ? group1974
-          : currentSelection === 2
-            ? group1989
-            : group2004
+        ? group1974
+        : currentSelection === 2
+        ? group1989
+        : group2004
 
     const processedValues = {
       currentSelection,
@@ -62,10 +62,10 @@ class StudentDataPicker extends Component {
       currentSelection === 0
         ? [0, 44]
         : currentSelection === 1
-          ? [0, 15]
-          : currentSelection === 2
-            ? [15, 30]
-            : [30, 44]
+        ? [0, 15]
+        : currentSelection === 2
+        ? [15, 30]
+        : [30, 44]
 
     const accumulatedMales = []
     maleGraduates
@@ -85,16 +85,16 @@ class StudentDataPicker extends Component {
 
     return (
       <React.Fragment>
-        <div className="flex ba bw1 b--mt-blue br3 overflow-hidden mh3">
+        <div className="flex ba bw1 b--mt-blue br3 overflow-hidden mh3-l">
           <div
-            className={`w-25 pv1 tc b ${
+            className={`w-25 pv1 tc b flex items-center justify-center ${
               currentSelection === 0
                 ? 'bg-mt-blue white'
                 : 'mt-blue pointer hover-bg-light-gray'
             }`}
             onClick={() => onEpochSelected(0)}
           >
-            Todos
+            <div>Todos</div>
           </div>
           <div
             className={`w-25 pv1 tc b ${

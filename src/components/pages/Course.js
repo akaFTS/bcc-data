@@ -14,7 +14,7 @@ class Course extends Component {
     return (
       <TimelineProvider>
         <ProfessorsProvider>
-          <main className="flex">
+          <main className="flex flex-wrap-reverse">
             <div className="w-100 w-50-l ph2">
               <Timeline />
             </div>

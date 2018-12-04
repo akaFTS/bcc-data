@@ -15,14 +15,14 @@ const ProfessorBubble = ({
     level === 0
       ? 'light-silver'
       : level === 1
-        ? 'light-blue'
-        : level === 2
-          ? 'mt-light-green'
-          : level === 3
-            ? 'gold'
-            : level === 5
-              ? 'orange'
-              : 'dark-red'
+      ? 'light-blue'
+      : level === 2
+      ? 'mt-light-green'
+      : level === 3
+      ? 'gold'
+      : level === 5
+      ? 'orange'
+      : 'dark-red'
 
   const slot = disabled
     ? slots[slots.length - 1]
@@ -54,7 +54,7 @@ const ProfessorBubble = ({
         }}
       />
       <div
-        className="absolute white bg-gray z-3 child ph2 f7 mt1 br-pill"
+        className="absolute white bg-gray z-3 child ph2 pv1 f7 mt1 br-pill tc nowrap"
         style={{ top: '3.1rem' }}
       >
         {name}

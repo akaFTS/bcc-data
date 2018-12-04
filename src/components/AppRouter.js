@@ -18,7 +18,7 @@ const AppRouter = () => {
   return (
     <HashRouter>
       <main className="w-100 w-80-l center ph2 ph0-l">
-        <div className="flex mb4">
+        <div className="flex flex-wrap justify-center justify-start-l mb4">
           <LinkButton
             text="Informações"
             icon={faFileAlt}

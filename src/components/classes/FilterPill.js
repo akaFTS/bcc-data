@@ -4,13 +4,13 @@ import PropTypes from 'prop-types'
 const FilterPill = ({ isActive, name, color, onClick }) => {
   return isActive ? (
     <div
-      className={`ba bw1 b--${color} bg-${color} white br-pill ph2 pv1 f6 b mr1`}
+      className={`ba bw1 b--${color} bg-${color} mb2 mb0-l white br-pill ph2 pv1 f6 b mr1`}
     >
       {name}
     </div>
   ) : (
     <div
-      className={`ba bw1 b--${color} ${color} br-pill ph2 pv1 f6 b mr1 pointer hover-bg-light-gray`}
+      className={`ba bw1 b--${color} ${color} mb2 mb0-l br-pill ph2 pv1 f6 b mr1 pointer hover-bg-light-gray`}
       onClick={onClick}
     >
       {name}

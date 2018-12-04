@@ -16,9 +16,9 @@ const Header = () => {
         por <span className="fw6">Gustavo H F Silva</span> - orientador:
         <span className="fw6"> prof. Carlos Eduardo Ferreira</span>
       </p>
-      <div className="flex flex-row justify-center mv3">
+      <div className="flex flex-row justify-center mv2">
         <div
-          className="bg-gray hover-bg-mid-gray pointer white pv2 ph3 br-pill flex flex-row items-center"
+          className="bg-gray hover-bg-mid-gray pointer white pv2 ph2 br-pill flex flex-row items-center"
           onClick={openGithub}
         >
           <FontAwesomeIcon icon={faGithub} className="mr2 f4" />

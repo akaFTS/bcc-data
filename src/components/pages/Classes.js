@@ -10,7 +10,7 @@ class Classes extends Component {
 
   render() {
     return (
-      <main className="flex">
+      <main className="flex flex-wrap-reverse">
         <div className="w-100 w-two-thirds-l ph2">
           <ClassList />
         </div>

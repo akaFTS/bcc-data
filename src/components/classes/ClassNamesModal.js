@@ -11,7 +11,7 @@ const ClassNamesModal = ({ isOpen, onCloseModal, classe, color }) => {
       classNames={{ modal: 'br4 w-100 w-70-l ph0' }}
     >
       <div className="opensans ph3">
-        <div className={`w4 tc white ph2 pv1 br-pill f4 mb5 fw6 ${color}`}>
+        <div className={`w4 tc white ph2 pv1 br-pill f4 mb4 fw6 ${color}`}>
           {classe.code}
         </div>
         {classe.names.map((entry, index) => (
