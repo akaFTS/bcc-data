@@ -1,7 +1,7 @@
 [
   {
     "code": "pf",
-    "name": "Feofiloff"
+    "name": "P. Feofiloff"
   },
   {
     "code": "setzer",
@@ -9,7 +9,19 @@
   },
   {
     "code": "simon",
-    "name": "I. Simon"
+    "name": "Imre Simon"
+  },
+  {
+    "code": "istvan",
+    "name": "Istvan Simon"
+  },
+  {
+    "code": "silvio",
+    "name": "Silvio Ursic"
+  },
+  {
+    "code": "geraldo",
+    "name": "Geraldo Lino"
   },
   {
     "code": "siang",
@@ -30,6 +42,46 @@
   {
     "code": "chumes",
     "name": "C. Humes"
+  },
+  {
+    "code": "graca",
+    "name": "Graça Bressan"
+  },
+  {
+    "code": "zwicker",
+    "name": "R. Zwicker"
+  },
+  {
+    "code": "stolfi",
+    "name": "J. Stolfi"
+  },
+  {
+    "code": "tomasz",
+    "name": "Tomasz"
+  },
+  {
+    "code": "ines",
+    "name": "Inês H. de Mello"
+  },
+  {
+    "code": "edna",
+    "name": "Edna"
+  },
+  {
+    "code": "bete",
+    "name": "Bete Vivian"
+  },
+  {
+    "code": "anselmo",
+    "name": "Anselmo"
+  },
+  {
+    "code": "wagner",
+    "name": "Wagner"
+  },
+  {
+    "code": "miguel",
+    "name": "Miguel Haddad"
   },
   {
     "code": "mandel",
@@ -61,7 +113,7 @@
   },
   {
     "code": "stern",
-    "name": "Stern"
+    "name": "J. Stern"
   },
   {
     "code": "reverbel",
@@ -137,7 +189,7 @@
   },
   {
     "code": "hae-yong",
-    "name": "H. Yong"
+    "name": "Hae Yong"
   },
   {
     "code": "alair",
@@ -165,15 +217,15 @@
   },
   {
     "code": "gold",
-    "name": "Gold"
+    "name": "Alfredo"
   },
   {
     "code": "kon",
-    "name": "Kon"
+    "name": "Fabio Kon"
   },
   {
     "code": "endler",
-    "name": "Endler"
+    "name": "M. Endler"
   },
   {
     "code": "paulo-geraldo",
@@ -185,11 +237,11 @@
   },
   {
     "code": "acvm",
-    "name": "Ana"
+    "name": "Ana Cristina"
   },
   {
     "code": "finger",
-    "name": "Finger"
+    "name": "M. Finger"
   },
   {
     "code": "hernan",
@@ -217,7 +269,7 @@
   },
   {
     "code": "queiroz",
-    "name": "Queiroz"
+    "name": "M. Queiroz"
   },
   {
     "code": "nina",
