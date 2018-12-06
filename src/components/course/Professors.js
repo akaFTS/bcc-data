@@ -33,12 +33,12 @@ class Professors extends Component {
     return capacity <= 6
       ? 1
       : capacity <= 11
-        ? 2
-        : capacity <= 17
-          ? 3
-          : capacity <= 22
-            ? 4
-            : 5
+      ? 2
+      : capacity <= 17
+      ? 3
+      : capacity <= 22
+      ? 4
+      : 5
   }
 
   getCanvasSizes = professors => {
@@ -73,6 +73,10 @@ class Professors extends Component {
             }
           : { ...acc, [currentProfessors[cur]]: [cur] },
       {}
+    )
+
+    Object.keys(groupedProfessors).map(level =>
+      groupedProfessors[level].sort((a, b) => (a > b ? 1 : -1))
     )
 
     return (
