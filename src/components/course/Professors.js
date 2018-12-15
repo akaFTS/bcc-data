@@ -139,7 +139,7 @@ class Professors extends Component {
             size={this.getCanvasSize(currentProfessors, 1)}
           />
           <ProfessorCanvas
-            title="Aposentado"
+            title="Sênior"
             color="light-silver"
             icon={<FontAwesomeIcon icon={faMoon} transform="shrink-3" />}
             size={this.getCanvasSize(currentProfessors, 0)}

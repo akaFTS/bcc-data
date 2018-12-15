@@ -13,6 +13,7 @@ import Classes from './pages/Classes'
 import LinkButton from './LinkButton'
 import Grid from './pages/Grid'
 import Students from './pages/Students'
+import TCC from './pages/TCC'
 
 const AppRouter = () => {
   return (
@@ -56,6 +57,7 @@ const AppRouter = () => {
           <Route exact path="/classes" component={Classes} />
           <Route exact path="/grid" component={Grid} />
           <Route exact path="/students" component={Students} />
+          <Route exact path="/tcc" component={TCC} />
         </Switch>
       </main>
     </HashRouter>

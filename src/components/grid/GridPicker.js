@@ -63,25 +63,23 @@ class GridPicker extends Component {
           />
         </div>
         <div>{children(activeGrid.grid)}</div>
-
-        <div className="flex justify-center items-center mt4">
+        <div className="flex justify-center items-center mt3">
           <FontAwesomeIcon
             icon={faChevronLeft}
             className="silver hover-mid-gray pointer pa2 f2 mr4"
             onClick={this.moveLeft}
           />
           <div className="flex items-center">
-            {grids.map(
-              (_, index) =>
-                index === selectedIndex ? (
-                  <div key={index} className="pa1 pl2 pt2 bg-red br-100 mh1" />
-                ) : (
-                  <div
-                    onClick={() => this.selectIndex(index)}
-                    key={index}
-                    className="pa1 br-100 bg-light-silver mh1 hover-bg-gray pointer"
-                  />
-                )
+            {grids.map((_, index) =>
+              index === selectedIndex ? (
+                <div key={index} className="pa1 pl2 pt2 bg-red br-100 mh1" />
+              ) : (
+                <div
+                  onClick={() => this.selectIndex(index)}
+                  key={index}
+                  className="pa1 br-100 bg-light-silver mh1 hover-bg-gray pointer"
+                />
+              )
             )}
           </div>
           <FontAwesomeIcon

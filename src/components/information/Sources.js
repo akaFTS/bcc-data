@@ -25,15 +25,15 @@ const Sources = () => {
         <p>
           <span className="fw6">Professores, matérias e grade:</span> Esses
           módulos foram construídos através da pesquisa em catálogos de
-          graduação. Trata-se de pequenos livros que são distribuídos todo ano
+          graduação. Tratam-se de pequenos livros que são distribuídos todo ano
           aos novos alunos, contendo informações atualizadas dos departamentos,
           matérias, ementas e outras informações. Com a ajuda da secretaria do
           DCC, conseguimos uma cópia do catálogo de graduação de cada ano desde
           a fundação do curso em 1972, à exceção do ano de 2002. Estudando-se
           cada um desses catálogos e registrando as informações ano a ano, foi
           possível preparar os infográficos com a evolução do corpo docente e
-          das matérias oferecisas ao longo do tempo, além da evolução da grade
-          obrigatória do BCC. Os infográficos tem uma confiabilidade bem alta,
+          das matérias oferecidas ao longo do tempo, além da evolução da grade
+          obrigatória do BCC. Os infográficos têm uma confiabilidade bem alta,
           porém não absoluta, pois há grande número de erros nos catálogos, os
           quais tiveram que ser contornados deduzindo-se o que seria o correto
           (e.g. professores e matérias que desaparecem por um ano da listagem e

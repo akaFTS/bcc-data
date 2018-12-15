@@ -3,6 +3,7 @@ import '../custom-tachyons.css'
 import 'tachyons'
 import Header from './Header'
 import AppRouter from './AppRouter'
+import Footer from './Footer'
 
 class App extends Component {
   render() {
@@ -10,6 +11,7 @@ class App extends Component {
       <article className="bg-light-gray opensans min-vh-100">
         <Header />
         <AppRouter />
+        <Footer />
       </article>
     )
   }

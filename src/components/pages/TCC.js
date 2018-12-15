@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
-import Summary from '../information/Summary'
-import Data from '../information/Data'
+import Propposal from '../information/Propposal'
+import Schedule from '../information/Schedule'
+import Evolution from '../information/Evolution'
+import Sources from '../information/Sources'
 
-class Information extends Component {
+class TCC extends Component {
   constructor(props) {
     super(props)
     this.state = {}
@@ -13,10 +15,12 @@ class Information extends Component {
       <main>
         <div className="flex flex-wrap">
           <div className="w-100 w-50-l ph2">
-            <Summary />
+            <Propposal />
+            <Evolution />
           </div>
           <div className="w-100 w-50-l ph2">
-            <Data />
+            <Schedule />
+            <Sources />
           </div>
         </div>
       </main>
@@ -24,4 +28,4 @@ class Information extends Component {
   }
 }
 
-export default Information
+export default TCC

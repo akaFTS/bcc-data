@@ -1,12 +1,15 @@
 {
-  "name": "mac0499",
+  "name": "bcc-data",
   "version": "1.0.0",
-  "description": "TCC",
+  "description": "Evolução do BCC em gráficos",
+  "homepage": "http://akafts.github.io/bcc-data",
   "private": true,
   "scripts": {
     "build": "nwb build-react-app",
     "clean": "nwb clean-app",
-    "start": "nwb serve-react-app"
+    "start": "nwb serve-react-app",
+    "predeploy": "nwb build-react-app --webpack.publicPath='/bcc-data/'",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.4",
@@ -16,6 +19,7 @@
     "@fortawesome/react-fontawesome": "^0.1.3",
     "chart.js": "^2.7.2",
     "d3-scale": "^2.1.2",
+    "gh-pages": "^2.0.1",
     "moment": "^2.22.2",
     "react": "^16.5.2",
     "react-chartjs-2": "^2.7.4",
