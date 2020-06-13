@@ -6,9 +6,10 @@
   "private": true,
   "scripts": {
     "start": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html",
     "lint": "eslint src --ext js",
-    "build:deploy": "parcel build ./src/index.html --public-url '/bcc-data/'"
+    "build": "parcel build ./src/index.html",
+    "build:deploy": "parcel build ./src/index.html --public-url '/bcc-data/' && npm run postbuild",
+    "postbuild": "cp -r public/* dist/"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.4",
