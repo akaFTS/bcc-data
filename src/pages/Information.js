@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Summary from '../information/Summary';
-import Data from '../information/Data';
+import Summary from '../components/information/Summary';
+import Data from '../components/information/Data';
 
 class Information extends Component {
   constructor(props) {

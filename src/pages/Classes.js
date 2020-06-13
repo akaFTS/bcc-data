@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import ClassList from '../classes/ClassList';
-import AreaBubbles from '../classes/AreaBubbles';
+import ClassList from '../components/classes/ClassList';
+import AreaBubbles from '../components/classes/AreaBubbles';
 
 class Classes extends Component {
   constructor(props) {

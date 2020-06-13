@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import ContentBox from '../shared/ContentBox';
-import GridPicker from '../grid/GridPicker';
-import GridBox from '../grid/GridBox';
-import GridSubtitles from '../grid/GridSubtitles';
+import ContentBox from '../components/shared/ContentBox';
+import GridPicker from '../components/grid/GridPicker';
+import GridBox from '../components/grid/GridBox';
+import GridSubtitles from '../components/grid/GridSubtitles';
 
 class Grid extends Component {
   constructor(props) {
