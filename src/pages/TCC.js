@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Propposal from '../information/Propposal';
-import Schedule from '../information/Schedule';
-import Evolution from '../information/Evolution';
-import Sources from '../information/Sources';
+import Propposal from '../components/information/Propposal';
+import Schedule from '../components/information/Schedule';
+import Evolution from '../components/information/Evolution';
+import Sources from '../components/information/Sources';
 
 class TCC extends Component {
   constructor(props) {

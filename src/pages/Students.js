@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import StudentGenders from '../students/StudentGenders';
-import StudentLocations from '../students/StudentLocations';
-import StudentJobs from '../students/StudentJobs';
-import StudentEducations from '../students/StudentEducations';
+import StudentGenders from '../components/students/StudentGenders';
+import StudentLocations from '../components/students/StudentLocations';
+import StudentJobs from '../components/students/StudentJobs';
+import StudentEducations from '../components/students/StudentEducations';
 
 class Students extends Component {
   constructor(props) {

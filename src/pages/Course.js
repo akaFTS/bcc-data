@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Timeline from '../course/Timeline';
-import Professors from '../course/Professors';
-import TimelineProvider from '../course/TimelineProvider';
-import ProfessorsProvider from '../course/ProfessorsProvider';
+import Timeline from '../components/course/Timeline';
+import Professors from '../components/course/Professors';
+import TimelineProvider from '../components/course/TimelineProvider';
+import ProfessorsProvider from '../components/course/ProfessorsProvider';
 
 class Course extends Component {
   constructor(props) {
