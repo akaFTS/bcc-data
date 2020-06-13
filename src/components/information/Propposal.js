@@ -1,7 +1,7 @@
 import React from 'react';
 import ContentBox from '../shared/ContentBox';
 
-const Propposal = () => {
+export default function Propposal() {
   return (
     <ContentBox title="Proposta Inicial" color="orange">
       <div className="fw3 lh-copy gray f6">
@@ -61,6 +61,4 @@ const Propposal = () => {
       </div>
     </ContentBox>
   );
-};
-
-export default Propposal;
+}

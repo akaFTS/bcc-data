@@ -1,7 +1,7 @@
 import React from 'react';
 import ContentBox from '../shared/ContentBox';
 
-const Schedule = () => {
+export default function Schedule() {
   return (
     <ContentBox title="Cronograma Previsto" color="orange">
       <ul className="gray fw3">
@@ -47,5 +47,4 @@ const Schedule = () => {
       </ul>
     </ContentBox>
   );
-};
-export default Schedule;
+}

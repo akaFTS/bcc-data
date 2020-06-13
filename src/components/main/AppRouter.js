@@ -11,7 +11,7 @@ import LinkButton from './LinkButton';
 import SuspendedComponent from './SuspendedComponent';
 import Course from '../../pages/Course';
 
-const AppRouter = () => {
+export default function AppRouter() {
   const Information = lazy(() => import('../../pages/Information'));
   const Classes = lazy(() => import('../../pages/Classes'));
   const Grid = lazy(() => import('../../pages/Grid'));
@@ -64,6 +64,4 @@ const AppRouter = () => {
       </main>
     </HashRouter>
   );
-};
-
-export default AppRouter;
+}

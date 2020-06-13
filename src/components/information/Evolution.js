@@ -1,7 +1,7 @@
 import React from 'react';
 import ContentBox from '../shared/ContentBox';
 
-const Evolution = () => {
+export default function Evolution() {
   return (
     <ContentBox title="Evolução" color="orange">
       <ul className="gray fw3">
@@ -69,6 +69,4 @@ const Evolution = () => {
       </ul>
     </ContentBox>
   );
-};
-
-export default Evolution;
+}

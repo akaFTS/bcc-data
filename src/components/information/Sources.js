@@ -1,7 +1,7 @@
 import React from 'react';
 import ContentBox from '../shared/ContentBox';
 
-const Sources = () => {
+export default function Sources() {
   return (
     <ContentBox title="Referências" color="orange">
       <div className="fw3 lh-copy gray f6">
@@ -71,6 +71,4 @@ const Sources = () => {
       </div>
     </ContentBox>
   );
-};
-
-export default Sources;
+}
