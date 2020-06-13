@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import {
   faFileAlt,
   faGraduationCap,
@@ -17,7 +17,7 @@ import TCC from './pages/TCC';
 
 const AppRouter = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <main className="w-100 w-80-l center ph2 ph0-l">
         <div className="flex flex-wrap justify-center justify-start-l mb4">
           <LinkButton
@@ -60,7 +60,7 @@ const AppRouter = () => {
           <Route path="/tcc" element={<TCC />} />
         </Routes>
       </main>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
