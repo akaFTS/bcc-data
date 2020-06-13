@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import {
   faFileAlt,
@@ -7,15 +7,17 @@ import {
   faCalendarAlt,
   faUser,
 } from '@fortawesome/free-solid-svg-icons';
-import Course from './pages/Course';
-import Information from './pages/Information';
-import Classes from './pages/Classes';
 import LinkButton from './LinkButton';
-import Grid from './pages/Grid';
-import Students from './pages/Students';
-import TCC from './pages/TCC';
+import SuspendedComponent from './SuspendedComponent';
+import Course from '../../pages/Course';
 
 const AppRouter = () => {
+  const Information = lazy(() => import('../../pages/Information'));
+  const Classes = lazy(() => import('../../pages/Classes'));
+  const Grid = lazy(() => import('../../pages/Grid'));
+  const Students = lazy(() => import('../../pages/Students'));
+  const TCC = lazy(() => import('../../pages/TCC'));
+
   return (
     <HashRouter>
       <main className="w-100 w-80-l center ph2 ph0-l">
@@ -53,11 +55,11 @@ const AppRouter = () => {
         </div>
         <Routes>
           <Route path="/" element={<Course />} />
-          <Route path="/info" element={<Information />} />
-          <Route path="/classes" element={<Classes />} />
-          <Route path="/grid" element={<Grid />} />
-          <Route path="/students" element={<Students />} />
-          <Route path="/tcc" element={<TCC />} />
+          <Route path="/info" element={SuspendedComponent(<Information />)} />
+          <Route path="/classes" element={SuspendedComponent(<Classes />)} />
+          <Route path="/grid" element={SuspendedComponent(<Grid />)} />
+          <Route path="/students" element={SuspendedComponent(<Students />)} />
+          <Route path="/tcc" element={SuspendedComponent(<TCC />)} />
         </Routes>
       </main>
     </HashRouter>
