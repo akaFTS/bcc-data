@@ -1,6 +1,6 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import TimelineRecord from './TimelineRecord'
+import React from 'react';
+import PropTypes from 'prop-types';
+import TimelineRecord from './TimelineRecord';
 
 const TimelineYear = ({ entry }) => {
   return (
@@ -12,15 +12,15 @@ const TimelineYear = ({ entry }) => {
         </div>
         <div className="bl br b--light-gray h1 flex-none" />
       </div>
-      {entry.records.map(record => (
+      {entry.records.map((record) => (
         <TimelineRecord key={record.text} record={record} />
       ))}
     </div>
-  )
-}
+  );
+};
 
 TimelineYear.propTypes = {
   entry: PropTypes.object.isRequired,
-}
+};
 
-export default TimelineYear
+export default TimelineYear;

@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
-import ClassList from '../classes/ClassList'
-import AreaBubbles from '../classes/AreaBubbles'
+import React, { Component } from 'react';
+import ClassList from '../classes/ClassList';
+import AreaBubbles from '../classes/AreaBubbles';
 
 class Classes extends Component {
   constructor(props) {
-    super(props)
-    this.state = {}
+    super(props);
+    this.state = {};
   }
 
   render() {
@@ -18,8 +18,8 @@ class Classes extends Component {
           <AreaBubbles />
         </div>
       </main>
-    )
+    );
   }
 }
 
-export default Classes
+export default Classes;

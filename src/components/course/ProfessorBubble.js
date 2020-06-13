@@ -1,6 +1,6 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { withProfessors } from './ProfessorsProvider'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { withProfessors } from './ProfessorsProvider';
 
 const ProfessorBubble = ({
   level,
@@ -10,7 +10,7 @@ const ProfessorBubble = ({
   canvasSizes,
   slots,
 }) => {
-  const disabled = level === undefined
+  const disabled = level === undefined;
   const levelColor =
     level === 0
       ? 'light-silver'
@@ -22,19 +22,19 @@ const ProfessorBubble = ({
       ? 'gold'
       : level === 5
       ? 'orange'
-      : 'dark-red'
+      : 'dark-red';
 
   const slot = disabled
     ? slots[slots.length - 1]
-    : slots[professorSchema[level].indexOf(code)]
+    : slots[professorSchema[level].indexOf(code)];
 
-  let pad = 0
+  let pad = 0;
   for (let i = 6; i > level; i--) {
-    if (i === 4) continue
-    pad += (canvasSizes[i] + 1) * 50 + 33
+    if (i === 4) continue;
+    pad += (canvasSizes[i] + 1) * 50 + 33;
   }
 
-  const top = pad + slot[1]
+  const top = pad + slot[1];
 
   return (
     <div
@@ -49,8 +49,8 @@ const ProfessorBubble = ({
       <img
         className={`br-100 h2-3 w2-3 ba bw1 b--${levelColor}`}
         src={`./professors/${code}.jpg`}
-        onError={e => {
-          e.target.src = './professors/default.png'
+        onError={(e) => {
+          e.target.src = './professors/default.png';
         }}
       />
       <div
@@ -60,8 +60,8 @@ const ProfessorBubble = ({
         {name}
       </div>
     </div>
-  )
-}
+  );
+};
 
 ProfessorBubble.propTypes = {
   level: PropTypes.number,
@@ -70,6 +70,6 @@ ProfessorBubble.propTypes = {
   professorSchema: PropTypes.object.isRequired,
   canvasSizes: PropTypes.array.isRequired,
   slots: PropTypes.array.isRequired,
-}
+};
 
-export default withProfessors(ProfessorBubble)
+export default withProfessors(ProfessorBubble);

@@ -1,21 +1,21 @@
-import React, { Component } from 'react'
-import StudentGenders from '../students/StudentGenders'
-import StudentLocations from '../students/StudentLocations'
-import StudentJobs from '../students/StudentJobs'
-import StudentEducations from '../students/StudentEducations'
+import React, { Component } from 'react';
+import StudentGenders from '../students/StudentGenders';
+import StudentLocations from '../students/StudentLocations';
+import StudentJobs from '../students/StudentJobs';
+import StudentEducations from '../students/StudentEducations';
 
 class Students extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       currentSelection: 0,
-    }
+    };
   }
 
-  selectEpoch = epoch => this.setState({ currentSelection: epoch })
+  selectEpoch = (epoch) => this.setState({ currentSelection: epoch });
 
   render() {
-    const { currentSelection } = this.state
+    const { currentSelection } = this.state;
     return (
       <main>
         <div className="flex flex-wrap">
@@ -41,8 +41,8 @@ class Students extends Component {
           </div>
         </div>
       </main>
-    )
+    );
   }
 }
 
-export default Students
+export default Students;

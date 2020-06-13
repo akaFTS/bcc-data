@@ -1,11 +1,11 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Line } from 'react-chartjs-2'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Line } from 'react-chartjs-2';
 
 const GenderChart = ({ genders }) => {
   const years = Array(genders.accumulatedMales.length)
     .fill(genders.baseYear)
-    .map((x, y) => x + y)
+    .map((x, y) => x + y);
 
   return (
     <Line
@@ -43,11 +43,11 @@ const GenderChart = ({ genders }) => {
       width={3}
       height={2}
     />
-  )
-}
+  );
+};
 
 GenderChart.propTypes = {
   genders: PropTypes.object.isRequired,
-}
+};
 
-export default GenderChart
+export default GenderChart;

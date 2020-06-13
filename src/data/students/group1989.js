@@ -1,7 +1,4 @@
-import {
-  StudentEducationTypes,
-  StudentJobTypes,
-} from '../../components/students/studentDefinitions'
+import { StudentEducationTypes, StudentJobTypes } from './studentDefinitions';
 
 export default [
   {
@@ -184,4 +181,4 @@ export default [
     job: StudentJobTypes.BANKS,
     location: 'sao_paulo',
   }, // 30
-]
+];

@@ -15,4 +15,4 @@ export default [
   { code: 'munich', coordinates: [11.576124, 48.137154] },
   { code: 'seattle', coordinates: [-122.335167, 47.608013] },
   { code: 'belo_horizonte', coordinates: [-43.940933, -19.912998] },
-]
+];

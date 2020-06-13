@@ -1,6 +1,6 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Modal from 'react-responsive-modal'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Modal from 'react-responsive-modal';
 
 const ClassNamesModal = ({ isOpen, onCloseModal, classe, color }) => {
   return (
@@ -23,15 +23,11 @@ const ClassNamesModal = ({ isOpen, onCloseModal, classe, color }) => {
           >
             <div className="fw3 pr2 lh-title gray">{entry.name}</div>
             <div className="flex">
-              <div className={`white br--left br2 pl2 pv1 f5 b bg-gray`}>
+              <div className="white br--left br2 pl2 pv1 f5 b bg-gray">
                 {entry.start}
               </div>
-              <div
-                className={`white br--right br2 pl2 pr2 pv1 f5 b relative bg-red`}
-              >
-                <div
-                  className={`bl triangle absolute left-0 top-0 h-100 b--gray`}
-                />
+              <div className="white br--right br2 pl2 pr2 pv1 f5 b relative bg-red">
+                <div className="bl triangle absolute left-0 top-0 h-100 b--gray" />
                 {classe.names[index + 1]
                   ? classe.names[index + 1].start - 1
                   : classe.endYear}
@@ -41,14 +37,14 @@ const ClassNamesModal = ({ isOpen, onCloseModal, classe, color }) => {
         ))}
       </div>
     </Modal>
-  )
-}
+  );
+};
 
 ClassNamesModal.propTypes = {
   isOpen: PropTypes.bool.isRequired,
   onCloseModal: PropTypes.func.isRequired,
   classe: PropTypes.object.isRequired,
   color: PropTypes.string.isRequired,
-}
+};
 
-export default ClassNamesModal
+export default ClassNamesModal;

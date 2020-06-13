@@ -1,49 +1,49 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faChevronRight,
   faChevronLeft,
-} from '@fortawesome/free-solid-svg-icons'
+} from '@fortawesome/free-solid-svg-icons';
+import * as rawGrids from '../../data/grids/importGrids';
 
 class GridPicker extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       selectedIndex: 7,
       grids: [],
-    }
+    };
   }
 
   async componentDidMount() {
-    const grids = []
-    for (let i = 1; i < 9; i++) {
-      grids.push((await import(`../../data/grids/${i}.json`)).default)
-    }
-
-    this.setState({ grids })
+    const grids = [];
+    Object.keys(rawGrids)
+      .sort()
+      .forEach((key) => grids.push(rawGrids[key]));
+    this.setState({ grids });
   }
 
   moveLeft = () => {
-    this.setState(prevState => ({
+    this.setState((prevState) => ({
       selectedIndex: (prevState.selectedIndex + 7) % 8,
-    }))
-  }
+    }));
+  };
 
   moveRight = () => {
-    this.setState(prevState => ({
+    this.setState((prevState) => ({
       selectedIndex: (prevState.selectedIndex + 9) % 8,
-    }))
-  }
+    }));
+  };
 
-  selectIndex = index => this.setState({ selectedIndex: index })
+  selectIndex = (index) => this.setState({ selectedIndex: index });
 
   render() {
-    const { children } = this.props
-    const { selectedIndex, grids } = this.state
-    const activeGrid = grids[selectedIndex]
+    const { children } = this.props;
+    const { selectedIndex, grids } = this.state;
+    const activeGrid = grids[selectedIndex];
 
-    if (!activeGrid) return null
+    if (!activeGrid) return null;
 
     return (
       <div>
@@ -89,12 +89,12 @@ class GridPicker extends Component {
           />
         </div>
       </div>
-    )
+    );
   }
 }
 
 GridPicker.propTypes = {
   children: PropTypes.func.isRequired,
-}
+};
 
-export default GridPicker
+export default GridPicker;

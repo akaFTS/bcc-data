@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
-import '../custom-tachyons.css'
-import 'tachyons'
-import Header from './Header'
-import AppRouter from './AppRouter'
-import Footer from './Footer'
+import React, { Component } from 'react';
+import '../custom-tachyons.css';
+import 'tachyons';
+import Header from './Header';
+import AppRouter from './AppRouter';
+import Footer from './Footer';
 
 class App extends Component {
   render() {
@@ -13,8 +13,8 @@ class App extends Component {
         <AppRouter />
         <Footer />
       </article>
-    )
+    );
   }
 }
 
-export default App
+export default App;

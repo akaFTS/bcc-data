@@ -1,5 +1,5 @@
-import React from 'react'
-import ContentBox from '../shared/ContentBox'
+import React from 'react';
+import ContentBox from '../shared/ContentBox';
 
 const Schedule = () => {
   return (
@@ -46,6 +46,6 @@ const Schedule = () => {
         </li>
       </ul>
     </ContentBox>
-  )
-}
-export default Schedule
+  );
+};
+export default Schedule;

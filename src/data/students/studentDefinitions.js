@@ -4,7 +4,7 @@ export const StudentEducationTypes = {
   MBA: 2,
   MASTER: 3,
   DOCTOR: 4,
-}
+};
 
 export const StudentJobTypes = {
   PROFESSOR: 0,
@@ -19,4 +19,4 @@ export const StudentJobTypes = {
   RETIRED: 9,
   STUDYING: 10,
   OTHER: 11,
-}
+};

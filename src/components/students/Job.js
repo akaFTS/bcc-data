@@ -1,7 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebookSquare, faSpotify } from '@fortawesome/free-brands-svg-icons'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faFacebookSquare,
+  faSpotify,
+} from '@fortawesome/free-brands-svg-icons';
 import {
   faGraduationCap,
   faUniversity,
@@ -10,7 +13,7 @@ import {
   faHome,
   faChartBar,
   faBook,
-} from '@fortawesome/free-solid-svg-icons'
+} from '@fortawesome/free-solid-svg-icons';
 
 const Job = ({ type, onHover, isHovering }) => {
   const jobIcons = [
@@ -26,7 +29,7 @@ const Job = ({ type, onHover, isHovering }) => {
     faHome,
     faBook,
     faCircle,
-  ]
+  ];
   const jobColors = [
     'mt-purple',
     null,
@@ -40,7 +43,7 @@ const Job = ({ type, onHover, isHovering }) => {
     'mt-dark-red',
     'mt-purple',
     'silver',
-  ]
+  ];
   const jobFiles = [
     null,
     'santander',
@@ -53,7 +56,7 @@ const Job = ({ type, onHover, isHovering }) => {
     null,
     null,
     null,
-  ]
+  ];
 
   return (
     <div
@@ -75,13 +78,13 @@ const Job = ({ type, onHover, isHovering }) => {
         />
       )}
     </div>
-  )
-}
+  );
+};
 
 Job.propTypes = {
   type: PropTypes.number.isRequired,
   onHover: PropTypes.func.isRequired,
   isHovering: PropTypes.bool.isRequired,
-}
+};
 
-export default Job
+export default Job;

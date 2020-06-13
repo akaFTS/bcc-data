@@ -1,34 +1,34 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import ContentBox from '../shared/ContentBox'
-import ProfessorBubble from './ProfessorBubble'
-import ProfessorCanvas from './ProfessorCanvas'
-import YearPicker from '../shared/YearPicker'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import ContentBox from '../shared/ContentBox';
+import ProfessorBubble from './ProfessorBubble';
+import ProfessorCanvas from './ProfessorCanvas';
+import YearPicker from '../shared/YearPicker';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faStar,
   faStarHalf,
   faCircle,
   faMoon,
-} from '@fortawesome/free-solid-svg-icons'
-import { withProfessors } from './ProfessorsProvider'
+} from '@fortawesome/free-solid-svg-icons';
+import { withProfessors } from './ProfessorsProvider';
 
 class Professors extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       currentYear: null,
-    }
+    };
   }
 
-  updateYear = year => {
-    this.setState({ currentYear: year })
-  }
+  updateYear = (year) => {
+    this.setState({ currentYear: year });
+  };
 
   getCanvasSize = (professors, level) => {
     const capacity = Object.keys(professors).filter(
-      code => professors[code] === level
-    ).length
+      (code) => professors[code] === level
+    ).length;
 
     return capacity <= 6
       ? 1
@@ -38,31 +38,31 @@ class Professors extends Component {
       ? 3
       : capacity <= 22
       ? 4
-      : 5
-  }
+      : 5;
+  };
 
-  getCanvasSizes = professors => {
-    const canvasSizes = []
+  getCanvasSizes = (professors) => {
+    const canvasSizes = [];
     for (let i = 0; i <= 6; i++) {
       if (i === 4) {
-        canvasSizes.push(0)
-        continue
+        canvasSizes.push(0);
+        continue;
       }
-      canvasSizes.push(this.getCanvasSize(professors, i))
+      canvasSizes.push(this.getCanvasSize(professors, i));
     }
-    return canvasSizes
-  }
+    return canvasSizes;
+  };
 
   render() {
-    const { professors, professorYears } = this.props
-    const { currentYear } = this.state
+    const { professors, professorYears } = this.props;
+    const { currentYear } = this.state;
 
     const currentProfessorYear = professorYears.find(
-      profYear => profYear.year === currentYear
-    )
+      (profYear) => profYear.year === currentYear
+    );
 
     const currentProfessors =
-      (currentProfessorYear && currentProfessorYear.professors) || {}
+      (currentProfessorYear && currentProfessorYear.professors) || {};
 
     const groupedProfessors = Object.keys(currentProfessors).reduce(
       (acc, cur) =>
@@ -73,11 +73,11 @@ class Professors extends Component {
             }
           : { ...acc, [currentProfessors[cur]]: [cur] },
       {}
-    )
+    );
 
-    Object.keys(groupedProfessors).map(level =>
+    Object.keys(groupedProfessors).map((level) =>
       groupedProfessors[level].sort((a, b) => (a > b ? 1 : -1))
-    )
+    );
 
     return (
       <ContentBox title="Professores" color="purple">
@@ -144,7 +144,7 @@ class Professors extends Component {
             icon={<FontAwesomeIcon icon={faMoon} transform="shrink-3" />}
             size={this.getCanvasSize(currentProfessors, 0)}
           />
-          {professors.map(professor => (
+          {professors.map((professor) => (
             <ProfessorBubble
               name={professor.name}
               code={professor.code}
@@ -156,12 +156,12 @@ class Professors extends Component {
           ))}
         </div>
       </ContentBox>
-    )
+    );
   }
 }
 Professors.propTypes = {
   professors: PropTypes.array.isRequired,
   professorYears: PropTypes.array.isRequired,
-}
+};
 
-export default withProfessors(Professors)
+export default withProfessors(Professors);

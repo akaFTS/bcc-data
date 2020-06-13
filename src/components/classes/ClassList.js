@@ -1,36 +1,36 @@
-import React, { Component } from 'react'
-import ContentBox from '../shared/ContentBox'
-import ListFilters from './ListFilters'
-import allClasses from '../../data/classes.json'
-import ClassEntry from './ClassEntry'
+import React, { Component } from 'react';
+import ContentBox from '../shared/ContentBox';
+import ListFilters from './ListFilters';
+import allClasses from '../../data/classes.json';
+import ClassEntry from './ClassEntry';
 
 class ClassList extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       activeArea: -1,
       activeYear: -1,
-    }
+    };
   }
 
-  handleAreaSet = area => {
-    this.setState({ activeArea: area })
-  }
+  handleAreaSet = (area) => {
+    this.setState({ activeArea: area });
+  };
 
-  handleYearSet = year => {
-    this.setState({ activeYear: year })
-  }
+  handleYearSet = (year) => {
+    this.setState({ activeYear: year });
+  };
 
   render() {
-    const { activeArea, activeYear } = this.state
+    const { activeArea, activeYear } = this.state;
 
     const filteredClasses = allClasses
-      .filter(classe => activeArea === -1 || activeArea === classe.area)
+      .filter((classe) => activeArea === -1 || activeArea === classe.area)
       .filter(
-        classe =>
+        (classe) =>
           activeYear === -1 ||
           (classe.beginYear <= activeYear && classe.endYear >= activeYear)
-      )
+      );
 
     return (
       <ContentBox title="Matérias" color="green">
@@ -51,8 +51,8 @@ class ClassList extends Component {
           ))}
         </main>
       </ContentBox>
-    )
+    );
   }
 }
 
-export default ClassList
+export default ClassList;

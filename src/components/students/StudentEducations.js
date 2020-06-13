@@ -1,8 +1,8 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import ContentBox from '../shared/ContentBox'
-import StudentDataPicker from './StudentDataPicker'
-import { Pie } from 'react-chartjs-2'
+import React from 'react';
+import PropTypes from 'prop-types';
+import ContentBox from '../shared/ContentBox';
+import StudentDataPicker from './StudentDataPicker';
+import { Pie } from 'react-chartjs-2';
 
 const StudentEducations = ({ currentSelection, onEpochSelected }) => {
   return (
@@ -38,15 +38,17 @@ const StudentEducations = ({ currentSelection, onEpochSelected }) => {
               options={{
                 tooltips: {
                   callbacks: {
-                    label: function(tooltipItem, data) {
-                      var dataset = data.datasets[tooltipItem.datasetIndex]
-                      var currentValue = dataset.data[tooltipItem.index]
-                      var percentage = Math.floor(currentValue * 100)
+                    label: function (tooltipItem, data) {
+                      var dataset = data.datasets[tooltipItem.datasetIndex];
+                      var currentValue = dataset.data[tooltipItem.index];
+                      var percentage = Math.floor(currentValue * 100);
 
-                      console.log(tooltipItem)
-                      console.log(data)
+                      console.log(tooltipItem);
+                      console.log(data);
 
-                      return `${data.labels[tooltipItem.index]}: ${percentage}%`
+                      return `${
+                        data.labels[tooltipItem.index]
+                      }: ${percentage}%`;
                     },
                   },
                 },
@@ -56,12 +58,12 @@ const StudentEducations = ({ currentSelection, onEpochSelected }) => {
         )}
       </StudentDataPicker>
     </ContentBox>
-  )
-}
+  );
+};
 
 StudentEducations.propTypes = {
   currentSelection: PropTypes.number.isRequired,
   onEpochSelected: PropTypes.func.isRequired,
-}
+};
 
-export default StudentEducations
+export default StudentEducations;

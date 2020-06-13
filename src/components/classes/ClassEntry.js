@@ -1,24 +1,24 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faComment } from '@fortawesome/free-solid-svg-icons'
-import ClassNamesModal from './ClassNamesModal'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faComment } from '@fortawesome/free-solid-svg-icons';
+import ClassNamesModal from './ClassNamesModal';
 
 class ClassEntry extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       isModalOpen: false,
-    }
+    };
   }
 
-  onOpenModal = () => this.setState({ isModalOpen: true })
+  onOpenModal = () => this.setState({ isModalOpen: true });
 
-  onCloseModal = () => this.setState({ isModalOpen: false })
+  onCloseModal = () => this.setState({ isModalOpen: false });
 
   render() {
-    const { classe, whiteStripe, currentYear } = this.props
-    const { isModalOpen } = this.state
+    const { classe, whiteStripe, currentYear } = this.props;
+    const { isModalOpen } = this.state;
 
     const areaColor =
       classe.area === 0
@@ -29,7 +29,7 @@ class ClassEntry extends Component {
         ? 'bg-pink'
         : classe.area === 3
         ? 'bg-orange'
-        : 'bg-light-silver'
+        : 'bg-light-silver';
 
     const beginYearColor =
       classe.beginYear < 1982
@@ -38,7 +38,7 @@ class ClassEntry extends Component {
         ? 'light-silver'
         : classe.beginYear < 2010
         ? 'gray'
-        : 'dark-gray'
+        : 'dark-gray';
 
     const endYearColor =
       classe.endYear < 1982
@@ -47,14 +47,14 @@ class ClassEntry extends Component {
         ? 'light-red'
         : classe.endYear < 2010
         ? 'red'
-        : 'dark-red'
+        : 'dark-red';
 
     const classeName =
       classe.names.reduce(
         (acc, cur) =>
           currentYear > 0 && cur.start <= currentYear ? cur.name : acc,
         undefined
-      ) || classe.names[classe.names.length - 1].name
+      ) || classe.names[classe.names.length - 1].name;
 
     return (
       <div
@@ -67,7 +67,7 @@ class ClassEntry extends Component {
         >
           {classe.code}
         </div>
-        <div class="w-100 flex flex-row justify-between items-center">
+        <div className="w-100 flex flex-row justify-between items-center">
           <div className="flex-auto fw3 pr2 lh-title">{classeName}</div>
           {classe.names.length > 1 && (
             <React.Fragment>
@@ -110,13 +110,13 @@ class ClassEntry extends Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 ClassEntry.propTypes = {
   classe: PropTypes.object.isRequired,
   whiteStripe: PropTypes.bool,
   currentYear: PropTypes.number.isRequired,
-}
+};
 
-export default ClassEntry
+export default ClassEntry;

@@ -1,5 +1,5 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const FilterPill = ({ isActive, name, color, onClick }) => {
   return isActive ? (
@@ -15,14 +15,14 @@ const FilterPill = ({ isActive, name, color, onClick }) => {
     >
       {name}
     </div>
-  )
-}
+  );
+};
 
 FilterPill.propTypes = {
   isActive: PropTypes.bool.isRequired,
   name: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
-}
+};
 
-export default FilterPill
+export default FilterPill;

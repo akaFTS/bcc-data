@@ -1,14 +1,13 @@
-import React, { Component } from 'react'
-import ContentBox from '../shared/ContentBox'
+import React, { Component } from 'react';
+import ContentBox from '../shared/ContentBox';
 
 class Data extends Component {
   constructor(props) {
-    super(props)
-    this.state = {}
+    super(props);
+    this.state = {};
   }
 
   render() {
-    const {} = this.props
     return (
       <ContentBox title="Dados" color="orange">
         <div className="fw3 lh-copy gray f6">
@@ -52,9 +51,9 @@ class Data extends Component {
                 <span className="b">Grade:</span> Informações da grade
                 curricular do BCC, discretizada para os anos em que houveram as
                 maiores mudanças. Em alguns momentos essas mudanças se deram ao
-                longo de dois ou três anos, mas foram "compiladas" para um ano
-                só para facilitar a visualização. Os catálogos de graduação
-                foram usados de novo.
+                longo de dois ou três anos, mas foram &quot;compiladas&quot;
+                para um ano só para facilitar a visualização. Os catálogos de
+                graduação foram usados de novo.
               </span>
             </li>
             <li className="mb3 lh-title">
@@ -84,8 +83,8 @@ class Data extends Component {
           </ul>
         </div>
       </ContentBox>
-    )
+    );
   }
 }
 
-export default Data
+export default Data;

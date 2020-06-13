@@ -1,47 +1,49 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import professors from '../../data/course/professors.json'
-import slots from '../../data/course/slots.json'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import professors from '../../data/course/professors.json';
+import slots from '../../data/course/slots.json';
+import * as years from '../../data/professors/importYears.js';
 
-export const ProfessorsContext = React.createContext()
+export const ProfessorsContext = React.createContext();
 
 class ProfessorsProvider extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       professors,
       slots,
       professorYears: [],
-    }
+    };
   }
 
   async componentDidMount() {
-    const professorYears = []
-    for (let i = 1972; i <= 2018; i++) {
-      professorYears.push({
-        year: i,
-        professors: (await import(`../../data/professors/${i}.json`)).default,
-      })
-    }
+    const professorYears = [];
 
-    this.setState({ professorYears })
+    Object.keys(years).forEach((key) => {
+      professorYears.push({
+        year: parseInt(key.replace('p', '')),
+        professors: years[key],
+      });
+    });
+
+    this.setState({ professorYears });
   }
 
   render() {
-    const { children } = this.props
+    const { children } = this.props;
     return (
       <ProfessorsContext.Provider value={this.state}>
         {children}
       </ProfessorsContext.Provider>
-    )
+    );
   }
 }
 
 ProfessorsProvider.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default ProfessorsProvider
+export default ProfessorsProvider;
 
 export function withProfessors(Component) {
   return function ProfessorsInjectedComponent(props) {
@@ -56,6 +58,6 @@ export function withProfessors(Component) {
           />
         )}
       </ProfessorsContext.Consumer>
-    )
-  }
+    );
+  };
 }

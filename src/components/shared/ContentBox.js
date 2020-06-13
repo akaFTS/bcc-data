@@ -1,5 +1,5 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const ContentBox = ({ title, color, children }) => {
   return (
@@ -12,13 +12,13 @@ const ContentBox = ({ title, color, children }) => {
         className={`pv2 bg-mt-light-${color} br--bottom br4 w-90 center mb4`}
       />
     </React.Fragment>
-  )
-}
+  );
+};
 
 ContentBox.propTypes = {
   title: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
-}
+};
 
-export default ContentBox
+export default ContentBox;

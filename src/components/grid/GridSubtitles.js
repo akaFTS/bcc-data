@@ -1,8 +1,8 @@
-import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCircle } from '@fortawesome/free-solid-svg-icons'
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircle } from '@fortawesome/free-solid-svg-icons';
 
-const GridSubtitles = ({}) => {
+const GridSubtitles = () => {
   return (
     <div className="flex flex-column w-100 items-end">
       <div className="w-100 w-50-l pa2">
@@ -37,7 +37,7 @@ const GridSubtitles = ({}) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default GridSubtitles
+export default GridSubtitles;

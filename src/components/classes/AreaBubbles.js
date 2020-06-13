@@ -1,33 +1,38 @@
-import React, { Component } from 'react'
-import ContentBox from '../shared/ContentBox'
-import AreaBubble from './AreaBubble'
-import YearPicker from '../shared/YearPicker'
-import allClasses from '../../data/classes.json'
+import React, { Component } from 'react';
+import ContentBox from '../shared/ContentBox';
+import AreaBubble from './AreaBubble';
+import YearPicker from '../shared/YearPicker';
+import allClasses from '../../data/classes.json';
 
 class AreaBubbles extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       currentYear: null,
-    }
+    };
   }
 
-  updateYear = year => {
-    this.setState({ currentYear: year })
-  }
+  updateYear = (year) => {
+    this.setState({ currentYear: year });
+  };
 
   render() {
-    const { currentYear } = this.state
+    const { currentYear } = this.state;
 
     const yearClasses = allClasses.filter(
-      classe => classe.beginYear <= currentYear && classe.endYear >= currentYear
-    )
+      (classe) =>
+        classe.beginYear <= currentYear && classe.endYear >= currentYear
+    );
 
-    const teoriaCount = yearClasses.filter(classe => classe.area === 0).length
-    const sistemasCount = yearClasses.filter(classe => classe.area === 1).length
-    const iaCount = yearClasses.filter(classe => classe.area === 2).length
-    const escienceCount = yearClasses.filter(classe => classe.area === 3).length
-    const othersCount = yearClasses.filter(classe => classe.area === 4).length
+    const teoriaCount = yearClasses.filter((classe) => classe.area === 0)
+      .length;
+    const sistemasCount = yearClasses.filter((classe) => classe.area === 1)
+      .length;
+    const iaCount = yearClasses.filter((classe) => classe.area === 2).length;
+    const escienceCount = yearClasses.filter((classe) => classe.area === 3)
+      .length;
+    const othersCount = yearClasses.filter((classe) => classe.area === 4)
+      .length;
 
     return (
       <ContentBox title="Áreas" color="green">
@@ -70,8 +75,8 @@ class AreaBubbles extends Component {
           />
         </div>
       </ContentBox>
-    )
+    );
   }
 }
 
-export default AreaBubbles
+export default AreaBubbles;

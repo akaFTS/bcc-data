@@ -1,5 +1,5 @@
-import React from 'react'
-import ContentBox from '../shared/ContentBox'
+import React from 'react';
+import ContentBox from '../shared/ContentBox';
 
 const Evolution = () => {
   return (
@@ -68,7 +68,7 @@ const Evolution = () => {
         </li>
       </ul>
     </ContentBox>
-  )
-}
+  );
+};
 
-export default Evolution
+export default Evolution;

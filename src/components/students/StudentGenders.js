@@ -1,8 +1,8 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import ContentBox from '../shared/ContentBox'
-import StudentDataPicker from './StudentDataPicker'
-import GenderChart from './GenderChart'
+import React from 'react';
+import PropTypes from 'prop-types';
+import ContentBox from '../shared/ContentBox';
+import StudentDataPicker from './StudentDataPicker';
+import GenderChart from './GenderChart';
 
 const StudentGenders = ({ currentSelection, onEpochSelected }) => {
   return (
@@ -14,12 +14,12 @@ const StudentGenders = ({ currentSelection, onEpochSelected }) => {
         {({ genders }) => <GenderChart genders={genders} />}
       </StudentDataPicker>
     </ContentBox>
-  )
-}
+  );
+};
 
 StudentGenders.propTypes = {
   currentSelection: PropTypes.number.isRequired,
   onEpochSelected: PropTypes.func.isRequired,
-}
+};
 
-export default StudentGenders
+export default StudentGenders;

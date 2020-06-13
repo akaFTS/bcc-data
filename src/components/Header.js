@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Header = () => {
   return (
@@ -8,7 +8,7 @@ const Header = () => {
         A evolução do BCC em gráficos
       </h3>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

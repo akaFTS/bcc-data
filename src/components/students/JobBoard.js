@@ -1,40 +1,40 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import Job from './Job'
-import { StudentJobTypes } from './studentDefinitions'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import Job from './Job';
+import { StudentJobTypes } from '../../data/students/studentDefinitions';
 
 class JobBoard extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       hoveringType: null,
-    }
+    };
   }
 
-  setHovering = type => {
-    this.setState({ hoveringType: type })
-  }
+  setHovering = (type) => {
+    this.setState({ hoveringType: type });
+  };
 
   resetHovering = () => {
-    this.setState({ hoveringType: null })
-  }
+    this.setState({ hoveringType: null });
+  };
 
   render() {
-    const { jobs } = this.props
-    const { hoveringType } = this.state
+    const { jobs } = this.props;
+    const { hoveringType } = this.state;
 
-    const roundedJobs = jobs.map(job => Math.round(job * 100))
+    const roundedJobs = jobs.map((job) => Math.round(job * 100));
     roundedJobs[StudentJobTypes.OTHER] +=
-      100 - roundedJobs.reduce((acc, cur) => acc + cur, 0)
+      100 - roundedJobs.reduce((acc, cur) => acc + cur, 0);
 
     const jobVector = roundedJobs.reduce(
       (acc, cur, index) => [...acc, ...Array(cur).fill(index)],
       []
-    )
+    );
 
     const jobMatrix = Array(10)
       .fill(0)
-      .map((_, index) => jobVector.slice(index * 10, (index + 1) * 10))
+      .map((_, index) => jobVector.slice(index * 10, (index + 1) * 10));
 
     const hoverLabels = [
       'Professores e Pesquisadores',
@@ -49,7 +49,7 @@ class JobBoard extends Component {
       'Aposentados',
       'Ainda estudando',
       'Outros',
-    ]
+    ];
 
     return (
       <React.Fragment>
@@ -77,11 +77,11 @@ class JobBoard extends Component {
           </div>
         )}
       </React.Fragment>
-    )
+    );
   }
 }
 JobBoard.propTypes = {
   jobs: PropTypes.array.isRequired,
-}
+};
 
-export default JobBoard
+export default JobBoard;

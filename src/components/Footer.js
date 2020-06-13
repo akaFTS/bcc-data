@@ -1,5 +1,5 @@
-import React from 'react'
-import GithubButton from './GithubButton'
+import React from 'react';
+import GithubButton from './GithubButton';
 
 const Footer = () => {
   return (
@@ -18,7 +18,7 @@ const Footer = () => {
         <GithubButton />
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

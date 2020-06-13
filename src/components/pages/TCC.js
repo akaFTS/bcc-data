@@ -1,13 +1,13 @@
-import React, { Component } from 'react'
-import Propposal from '../information/Propposal'
-import Schedule from '../information/Schedule'
-import Evolution from '../information/Evolution'
-import Sources from '../information/Sources'
+import React, { Component } from 'react';
+import Propposal from '../information/Propposal';
+import Schedule from '../information/Schedule';
+import Evolution from '../information/Evolution';
+import Sources from '../information/Sources';
 
 class TCC extends Component {
   constructor(props) {
-    super(props)
-    this.state = {}
+    super(props);
+    this.state = {};
   }
 
   render() {
@@ -24,8 +24,8 @@ class TCC extends Component {
           </div>
         </div>
       </main>
-    )
+    );
   }
 }
 
-export default TCC
+export default TCC;

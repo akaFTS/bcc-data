@@ -1,35 +1,35 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import FilterPill from './FilterPill'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import FilterPill from './FilterPill';
 
 class ListFilters extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       yearInput: '',
-    }
+    };
   }
 
-  handleInputChange = e => {
-    this.setState({ yearInput: e.target.value })
-  }
+  handleInputChange = (e) => {
+    this.setState({ yearInput: e.target.value });
+  };
 
   applyYearFilter = () => {
-    const { yearInput } = this.state
-    const { onYearSet } = this.props
-    const year = parseInt(yearInput)
+    const { yearInput } = this.state;
+    const { onYearSet } = this.props;
+    const year = parseInt(yearInput);
 
     if (isNaN(year) || year < 1972 || year > 2018) {
-      this.setState({ yearInput: '' })
-      onYearSet(-1)
+      this.setState({ yearInput: '' });
+      onYearSet(-1);
     } else {
-      onYearSet(year)
+      onYearSet(year);
     }
-  }
+  };
 
   render() {
-    const { activeArea, onAreaSet, activeYear } = this.props
-    const { yearInput } = this.state
+    const { activeArea, onAreaSet, activeYear } = this.props;
+    const { yearInput } = this.state;
 
     return (
       <div className="mt3 mb3 flex justify-between align-stretch">
@@ -86,7 +86,7 @@ class ListFilters extends Component {
           />
         </div>
       </div>
-    )
+    );
   }
 }
 
@@ -95,6 +95,6 @@ ListFilters.propTypes = {
   onAreaSet: PropTypes.func.isRequired,
   activeYear: PropTypes.number.isRequired,
   onYearSet: PropTypes.func.isRequired,
-}
+};
 
-export default ListFilters
+export default ListFilters;

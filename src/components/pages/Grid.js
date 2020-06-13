@@ -1,13 +1,13 @@
-import React, { Component } from 'react'
-import ContentBox from '../shared/ContentBox'
-import GridPicker from '../grid/GridPicker'
-import GridBox from '../grid/GridBox'
-import GridSubtitles from '../grid/GridSubtitles'
+import React, { Component } from 'react';
+import ContentBox from '../shared/ContentBox';
+import GridPicker from '../grid/GridPicker';
+import GridBox from '../grid/GridBox';
+import GridSubtitles from '../grid/GridSubtitles';
 
 class Grid extends Component {
   constructor(props) {
-    super(props)
-    this.state = {}
+    super(props);
+    this.state = {};
   }
 
   render() {
@@ -16,16 +16,12 @@ class Grid extends Component {
         <div className="w-100 w-80-l center">
           <ContentBox title="Grade Curricular" color="red">
             <GridPicker>
-              {grid => (
+              {(grid) => (
                 <React.Fragment>
                   <div className="flex flex-wrap items-stretch">
                     {grid.map((classes, index) => (
-                      <div className="w-100 w-50-l pa2">
-                        <GridBox
-                          classes={classes}
-                          semester={index + 1}
-                          key={index}
-                        />
+                      <div className="w-100 w-50-l pa2" key={index}>
+                        <GridBox classes={classes} semester={index + 1} />
                       </div>
                     ))}
                   </div>
@@ -36,8 +32,8 @@ class Grid extends Component {
           </ContentBox>
         </div>
       </main>
-    )
+    );
   }
 }
 
-export default Grid
+export default Grid;

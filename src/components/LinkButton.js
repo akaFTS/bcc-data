@@ -1,7 +1,7 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const LinkButton = ({ path, color, icon, text }) => {
   return (
@@ -13,14 +13,14 @@ const LinkButton = ({ path, color, icon, text }) => {
         <span>{text}</span>
       </button>
     </Link>
-  )
-}
+  );
+};
 
 LinkButton.propTypes = {
   path: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
   icon: PropTypes.object.isRequired,
   text: PropTypes.string.isRequired,
-}
+};
 
-export default LinkButton
+export default LinkButton;

@@ -1,5 +1,5 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const ProfessorCanvas = ({ title, color, icon, size }) => {
   return (
@@ -15,14 +15,14 @@ const ProfessorCanvas = ({ title, color, icon, size }) => {
         <span className="ml2">{title}</span>
       </header>
     </article>
-  )
-}
+  );
+};
 
 ProfessorCanvas.propTypes = {
   title: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
   icon: PropTypes.node.isRequired,
   size: PropTypes.number.isRequired,
-}
+};
 
-export default ProfessorCanvas
+export default ProfessorCanvas;

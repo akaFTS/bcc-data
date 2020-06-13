@@ -1,5 +1,5 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const AreaBubble = ({ top, left, name, color, size }) => {
   return (
@@ -16,8 +16,8 @@ const AreaBubble = ({ top, left, name, color, size }) => {
       <span className="f7 mt2 center nowrap">{name}</span>
       <span className="f3 b center">{size}</span>
     </div>
-  )
-}
+  );
+};
 
 AreaBubble.propTypes = {
   top: PropTypes.string.isRequired,
@@ -25,6 +25,6 @@ AreaBubble.propTypes = {
   name: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
   size: PropTypes.number.isRequired,
-}
+};
 
-export default AreaBubble
+export default AreaBubble;

@@ -1,16 +1,14 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import ContentBox from '../shared/ContentBox'
-import { Link } from 'react-router-dom'
+import React, { Component } from 'react';
+import ContentBox from '../shared/ContentBox';
+import { Link } from 'react-router-dom';
 
 class Summary extends Component {
   constructor(props) {
-    super(props)
-    this.state = {}
+    super(props);
+    this.state = {};
   }
 
   render() {
-    const {} = this.props
     return (
       <ContentBox title="Introdução" color="orange">
         <div className="fw3 lh-copy gray f6">
@@ -44,8 +42,8 @@ class Summary extends Component {
             formatos de cada arquivo de dados variam; alguns dados são
             representados por um único arquivo e outros por um arquivo para cada
             ano. Uma explicação de quais dados são usados no sistema, para qual
-            fim e de onde eles foram retirados está na caixa "Dados" nesta
-            página.
+            fim e de onde eles foram retirados está na caixa &quot;Dados&quot;
+            nesta página.
           </p>
           <p className="mb2">
             O código está majoritariamente na pasta
@@ -77,9 +75,8 @@ class Summary extends Component {
           </p>
         </div>
       </ContentBox>
-    )
+    );
   }
 }
-Summary.propTypes = {}
 
-export default Summary
+export default Summary;

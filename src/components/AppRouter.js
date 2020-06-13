@@ -1,23 +1,23 @@
-import React from 'react'
-import { HashRouter, Switch, Route } from 'react-router-dom'
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import {
   faFileAlt,
   faGraduationCap,
   faBook,
   faCalendarAlt,
   faUser,
-} from '@fortawesome/free-solid-svg-icons'
-import Course from './pages/Course'
-import Information from './pages/Information'
-import Classes from './pages/Classes'
-import LinkButton from './LinkButton'
-import Grid from './pages/Grid'
-import Students from './pages/Students'
-import TCC from './pages/TCC'
+} from '@fortawesome/free-solid-svg-icons';
+import Course from './pages/Course';
+import Information from './pages/Information';
+import Classes from './pages/Classes';
+import LinkButton from './LinkButton';
+import Grid from './pages/Grid';
+import Students from './pages/Students';
+import TCC from './pages/TCC';
 
 const AppRouter = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <main className="w-100 w-80-l center ph2 ph0-l">
         <div className="flex flex-wrap justify-center justify-start-l mb4">
           <LinkButton
@@ -51,17 +51,17 @@ const AppRouter = () => {
             color="blue"
           />
         </div>
-        <Switch>
-          <Route exact path="/" component={Course} />
-          <Route exact path="/info" component={Information} />
-          <Route exact path="/classes" component={Classes} />
-          <Route exact path="/grid" component={Grid} />
-          <Route exact path="/students" component={Students} />
-          <Route exact path="/tcc" component={TCC} />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Course />} />
+          <Route path="/info" element={<Information />} />
+          <Route path="/classes" element={<Classes />} />
+          <Route path="/grid" element={<Grid />} />
+          <Route path="/students" element={<Students />} />
+          <Route path="/tcc" element={<TCC />} />
+        </Routes>
       </main>
-    </HashRouter>
-  )
-}
+    </BrowserRouter>
+  );
+};
 
-export default AppRouter
+export default AppRouter;

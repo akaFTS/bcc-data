@@ -1,18 +1,18 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const GridClasse = ({ classe }) => {
   const classColor = /^MAC/.test(classe.code)
     ? 'mt-red'
     : /^MAT/.test(classe.code)
-      ? 'mt-blue'
-      : /^MAE/.test(classe.code)
-        ? 'mt-green'
-        : /^MAP/.test(classe.code)
-          ? 'mt-orange'
-          : /^(FEP|FAP)/.test(classe.code)
-            ? 'mt-purple'
-            : 'gray'
+    ? 'mt-blue'
+    : /^MAE/.test(classe.code)
+    ? 'mt-green'
+    : /^MAP/.test(classe.code)
+    ? 'mt-orange'
+    : /^(FEP|FAP)/.test(classe.code)
+    ? 'mt-purple'
+    : 'gray';
 
   return classe.code ? (
     <div
@@ -22,16 +22,14 @@ const GridClasse = ({ classe }) => {
       <span className="fw3 f6 lh-title">{classe.name}</span>
     </div>
   ) : (
-    <div
-      className={`pv2 ph3 br-pill gray h2-3 ma2 flex items-center justify-center ba bw1 b--dashed f6`}
-    >
+    <div className="pv2 ph3 br-pill gray h2-3 ma2 flex items-center justify-center ba bw1 b--dashed f6">
       <span>{classe.slot}</span>
     </div>
-  )
-}
+  );
+};
 
 GridClasse.propTypes = {
   classe: PropTypes.object.isRequired,
-}
+};
 
-export default GridClasse
+export default GridClasse;

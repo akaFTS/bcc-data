@@ -1,13 +1,13 @@
-import React, { Component } from 'react'
-import Timeline from '../course/Timeline'
-import Professors from '../course/Professors'
-import TimelineProvider from '../course/TimelineProvider'
-import ProfessorsProvider from '../course/ProfessorsProvider'
+import React, { Component } from 'react';
+import Timeline from '../course/Timeline';
+import Professors from '../course/Professors';
+import TimelineProvider from '../course/TimelineProvider';
+import ProfessorsProvider from '../course/ProfessorsProvider';
 
 class Course extends Component {
   constructor(props) {
-    super(props)
-    this.state = {}
+    super(props);
+    this.state = {};
   }
 
   render() {
@@ -24,8 +24,8 @@ class Course extends Component {
           </main>
         </ProfessorsProvider>
       </TimelineProvider>
-    )
+    );
   }
 }
 
-export default Course
+export default Course;

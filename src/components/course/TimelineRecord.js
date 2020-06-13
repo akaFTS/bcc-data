@@ -1,12 +1,14 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import moment from 'moment'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const TimelineRecord = ({ record }) => {
-  moment.locale('pt-br')
-  const formattedDate = record.date
-    ? moment(record.date, 'DD/MM').format('D [de] MMMM')
-    : null
+  let formattedDate = null;
+  if (record.date) {
+    const [, day, month] = /^(\d{2})\/(\d{2})$/.exec(record.date);
+    const date = new Date(2018, month, day); // year is irrelevant
+    const monthName = date.toLocaleString('default', { month: 'long' });
+    formattedDate = `${date.getDate()} de ${monthName}`;
+  }
 
   return (
     <div className="flex items-stretch">
@@ -26,11 +28,11 @@ const TimelineRecord = ({ record }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 TimelineRecord.propTypes = {
   record: PropTypes.object.isRequired,
-}
+};
 
-export default TimelineRecord
+export default TimelineRecord;
