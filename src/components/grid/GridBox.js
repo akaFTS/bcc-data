@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import GridClasse from './GridClasse';
 
-const orderClasses = (a, b) => {
+function orderClasses(a, b) {
   if (a.code && b.code) {
     const preffixA = a.code.substring(0, 3);
     const preffixB = b.code.substring(0, 3);
@@ -12,9 +12,9 @@ const orderClasses = (a, b) => {
   } else if (a.code) return -1;
   else if (b.code) return 1;
   else return a.slot.localeCompare(b.slot);
-};
+}
 
-const GridBox = ({ semester, classes }) => {
+export default function GridBox({ semester, classes }) {
   return (
     <div className="ba bw1 b--light-gray br4 overflow-hidden h-100">
       <div className="bb bw1 bg-light-gray b--light-gray pa1 tc fw6 near-black">
@@ -27,11 +27,9 @@ const GridBox = ({ semester, classes }) => {
       </div>
     </div>
   );
-};
+}
 
 GridBox.propTypes = {
   semester: PropTypes.number.isRequired,
   classes: PropTypes.array.isRequired,
 };
-
-export default GridBox;

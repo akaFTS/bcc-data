@@ -4,7 +4,7 @@ import ContentBox from '../shared/ContentBox';
 import StudentDataPicker from './StudentDataPicker';
 import JobBoard from './JobBoard';
 
-const StudentJobs = ({ currentSelection, onEpochSelected }) => {
+export default function StudentJobs({ currentSelection, onEpochSelected }) {
   return (
     <ContentBox title="Ocupação Atual" color="blue">
       <StudentDataPicker
@@ -20,11 +20,9 @@ const StudentJobs = ({ currentSelection, onEpochSelected }) => {
       </p>
     </ContentBox>
   );
-};
+}
 
 StudentJobs.propTypes = {
   currentSelection: PropTypes.number.isRequired,
   onEpochSelected: PropTypes.func.isRequired,
 };
-
-export default StudentJobs;

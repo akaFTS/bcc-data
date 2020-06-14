@@ -1,7 +1,7 @@
 import React from 'react';
 import GithubButton from './GithubButton';
 
-const Footer = () => {
+export default function Footer() {
   return (
     <footer className="bg-light-gray flex flex-column justify-center items-center ph2 pv2 f5 gray">
       <span className="mb2">
@@ -19,6 +19,4 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}

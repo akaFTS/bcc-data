@@ -4,7 +4,10 @@ import ContentBox from '../shared/ContentBox';
 import WorldMap from './WorldMap';
 import StudentDataPicker from './StudentDataPicker';
 
-const StudentLocations = ({ currentSelection, onEpochSelected }) => {
+export default function StudentLocations({
+  currentSelection,
+  onEpochSelected,
+}) {
   return (
     <ContentBox title="Localização Atual" color="blue">
       <StudentDataPicker
@@ -15,11 +18,9 @@ const StudentLocations = ({ currentSelection, onEpochSelected }) => {
       </StudentDataPicker>
     </ContentBox>
   );
-};
+}
 
 StudentLocations.propTypes = {
   currentSelection: PropTypes.number.isRequired,
   onEpochSelected: PropTypes.func.isRequired,
 };
-
-export default StudentLocations;

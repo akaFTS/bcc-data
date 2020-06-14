@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header = () => {
+export default function Header() {
   return (
     <header className="pv3">
       <h2 className="ma0 tc mt-dark-red f2">bcc-data</h2>
@@ -9,6 +9,4 @@ const Header = () => {
       </h3>
     </header>
   );
-};
-
-export default Header;
+}

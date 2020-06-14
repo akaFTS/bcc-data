@@ -4,7 +4,10 @@ import ContentBox from '../shared/ContentBox';
 import StudentDataPicker from './StudentDataPicker';
 import { Pie } from 'react-chartjs-2';
 
-const StudentEducations = ({ currentSelection, onEpochSelected }) => {
+export default function StudentEducations({
+  currentSelection,
+  onEpochSelected,
+}) {
   return (
     <ContentBox title="Nível de Escolaridade" color="blue">
       <StudentDataPicker
@@ -59,11 +62,9 @@ const StudentEducations = ({ currentSelection, onEpochSelected }) => {
       </StudentDataPicker>
     </ContentBox>
   );
-};
+}
 
 StudentEducations.propTypes = {
   currentSelection: PropTypes.number.isRequired,
   onEpochSelected: PropTypes.func.isRequired,
 };
-
-export default StudentEducations;

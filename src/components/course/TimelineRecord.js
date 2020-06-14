@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const TimelineRecord = ({ record }) => {
+export default function TimelineRecord({ record }) {
   let formattedDate = null;
   if (record.date) {
     const [, day, month] = /^(\d{2})\/(\d{2})$/.exec(record.date);
@@ -29,10 +29,8 @@ const TimelineRecord = ({ record }) => {
       </div>
     </div>
   );
-};
+}
 
 TimelineRecord.propTypes = {
   record: PropTypes.object.isRequired,
 };
-
-export default TimelineRecord;

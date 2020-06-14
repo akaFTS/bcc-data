@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import TimelineRecord from './TimelineRecord';
 
-const TimelineYear = ({ entry }) => {
+export default function TimelineYear({ entry }) {
   return (
     <div className="flex flex-column items-start">
       <div className="flex flex-column justify-center items-center mh2">
@@ -17,10 +17,8 @@ const TimelineYear = ({ entry }) => {
       ))}
     </div>
   );
-};
+}
 
 TimelineYear.propTypes = {
   entry: PropTypes.object.isRequired,
 };
-
-export default TimelineYear;
