@@ -2,7 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Modal from 'react-responsive-modal';
 
-const ClassNamesModal = ({ isOpen, onCloseModal, classe, color }) => {
+export default function ClassNamesModal({
+  isOpen,
+  onCloseModal,
+  classe,
+  color,
+}) {
   return (
     <Modal
       center
@@ -38,7 +43,7 @@ const ClassNamesModal = ({ isOpen, onCloseModal, classe, color }) => {
       </div>
     </Modal>
   );
-};
+}
 
 ClassNamesModal.propTypes = {
   isOpen: PropTypes.bool.isRequired,
@@ -46,5 +51,3 @@ ClassNamesModal.propTypes = {
   classe: PropTypes.object.isRequired,
   color: PropTypes.string.isRequired,
 };
-
-export default ClassNamesModal;

@@ -4,7 +4,7 @@ import ContentBox from '../shared/ContentBox';
 import StudentDataPicker from './StudentDataPicker';
 import GenderChart from './GenderChart';
 
-const StudentGenders = ({ currentSelection, onEpochSelected }) => {
+export default function StudentGenders({ currentSelection, onEpochSelected }) {
   return (
     <ContentBox title="Graduandos por Gênero (Acumulado)" color="blue">
       <StudentDataPicker
@@ -15,11 +15,9 @@ const StudentGenders = ({ currentSelection, onEpochSelected }) => {
       </StudentDataPicker>
     </ContentBox>
   );
-};
+}
 
 StudentGenders.propTypes = {
   currentSelection: PropTypes.number.isRequired,
   onEpochSelected: PropTypes.func.isRequired,
 };
-
-export default StudentGenders;

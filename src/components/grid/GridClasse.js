@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const GridClasse = ({ classe }) => {
+export default function GridClasse({ classe }) {
   const classColor = /^MAC/.test(classe.code)
     ? 'mt-red'
     : /^MAT/.test(classe.code)
@@ -26,10 +26,8 @@ const GridClasse = ({ classe }) => {
       <span>{classe.slot}</span>
     </div>
   );
-};
+}
 
 GridClasse.propTypes = {
   classe: PropTypes.object.isRequired,
 };
-
-export default GridClasse;

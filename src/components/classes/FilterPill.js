@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const FilterPill = ({ isActive, name, color, onClick }) => {
+export default function FilterPill({ isActive, name, color, onClick }) {
   return isActive ? (
     <div
       className={`ba bw1 b--${color} bg-${color} mb2 mb0-l white br-pill ph2 pv1 f6 b mr1`}
@@ -16,7 +16,7 @@ const FilterPill = ({ isActive, name, color, onClick }) => {
       {name}
     </div>
   );
-};
+}
 
 FilterPill.propTypes = {
   isActive: PropTypes.bool.isRequired,
@@ -24,5 +24,3 @@ FilterPill.propTypes = {
   color: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
 };
-
-export default FilterPill;

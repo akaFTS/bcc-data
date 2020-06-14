@@ -2,14 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withProfessors } from './ProfessorsProvider';
 
-const ProfessorBubble = ({
+function ProfessorBubble({
   level,
   name,
   code,
   professorSchema,
   canvasSizes,
   slots,
-}) => {
+}) {
   const disabled = level === undefined;
   const levelColor =
     level === 0
@@ -61,7 +61,7 @@ const ProfessorBubble = ({
       </div>
     </div>
   );
-};
+}
 
 ProfessorBubble.propTypes = {
   level: PropTypes.number,

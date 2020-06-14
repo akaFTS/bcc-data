@@ -4,7 +4,7 @@ import ContentBox from '../shared/ContentBox';
 import { withTimeline } from './TimelineProvider';
 import TimelineYear from './TimelineYear';
 
-const Timeline = ({ timelineYears }) => {
+function Timeline({ timelineYears }) {
   return (
     <ContentBox title="Timeline" color="purple">
       {timelineYears.map((yearEntry) => (
@@ -12,7 +12,7 @@ const Timeline = ({ timelineYears }) => {
       ))}
     </ContentBox>
   );
-};
+}
 
 Timeline.propTypes = {
   timelineYears: PropTypes.array.isRequired,

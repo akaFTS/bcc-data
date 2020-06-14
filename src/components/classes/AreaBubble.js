@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const AreaBubble = ({ top, left, name, color, size }) => {
+export default function AreaBubble({ top, left, name, color, size }) {
   return (
     <div
       className={`bg-${color} br-100 absolute white o-80 flex flex-column align-center justify-center ball`}
@@ -17,7 +17,7 @@ const AreaBubble = ({ top, left, name, color, size }) => {
       <span className="f3 b center">{size}</span>
     </div>
   );
-};
+}
 
 AreaBubble.propTypes = {
   top: PropTypes.string.isRequired,
@@ -26,5 +26,3 @@ AreaBubble.propTypes = {
   color: PropTypes.string.isRequired,
   size: PropTypes.number.isRequired,
 };
-
-export default AreaBubble;

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const ProfessorCanvas = ({ title, color, icon, size }) => {
+export default function ProfessorCanvas({ title, color, icon, size }) {
   return (
     <article
       className="br3 bg-light-gray mb4 overflow-hidden"
@@ -16,7 +16,7 @@ const ProfessorCanvas = ({ title, color, icon, size }) => {
       </header>
     </article>
   );
-};
+}
 
 ProfessorCanvas.propTypes = {
   title: PropTypes.string.isRequired,
@@ -24,5 +24,3 @@ ProfessorCanvas.propTypes = {
   icon: PropTypes.node.isRequired,
   size: PropTypes.number.isRequired,
 };
-
-export default ProfessorCanvas;

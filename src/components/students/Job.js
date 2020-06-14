@@ -15,7 +15,7 @@ import {
   faBook,
 } from '@fortawesome/free-solid-svg-icons';
 
-const Job = ({ type, onHover, isHovering }) => {
+export default function Job({ type, onHover, isHovering }) {
   const jobIcons = [
     faGraduationCap,
     null,
@@ -79,12 +79,10 @@ const Job = ({ type, onHover, isHovering }) => {
       )}
     </div>
   );
-};
+}
 
 Job.propTypes = {
   type: PropTypes.number.isRequired,
   onHover: PropTypes.func.isRequired,
   isHovering: PropTypes.bool.isRequired,
 };
-
-export default Job;
