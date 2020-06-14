@@ -86,7 +86,7 @@ function Professors({ professors, professorYears }) {
               />
             </span>
           }
-          size={this.getCanvasSize(currentProfessors, 6)}
+          size={getCanvasSize(currentProfessors, 6)}
         />
         <ProfessorCanvas
           title="Associado"
@@ -103,13 +103,13 @@ function Professors({ professors, professorYears }) {
               />
             </span>
           }
-          size={this.getCanvasSize(currentProfessors, 5)}
+          size={getCanvasSize(currentProfessors, 5)}
         />
         <ProfessorCanvas
           title="Doutor"
           color="gold"
           icon={<FontAwesomeIcon icon={faStar} transform="shrink-3" />}
-          size={this.getCanvasSize(currentProfessors, 3)}
+          size={getCanvasSize(currentProfessors, 3)}
         />
         <ProfessorCanvas
           title="Assistente"
@@ -117,19 +117,19 @@ function Professors({ professors, professorYears }) {
           icon={
             <FontAwesomeIcon icon={faStarHalf} transform="right-3 shrink-3" />
           }
-          size={this.getCanvasSize(currentProfessors, 2)}
+          size={getCanvasSize(currentProfessors, 2)}
         />
         <ProfessorCanvas
           title="Auxiliar"
           color="light-blue"
           icon={<FontAwesomeIcon icon={faCircle} transform="shrink-7" />}
-          size={this.getCanvasSize(currentProfessors, 1)}
+          size={getCanvasSize(currentProfessors, 1)}
         />
         <ProfessorCanvas
           title="Sênior"
           color="light-silver"
           icon={<FontAwesomeIcon icon={faMoon} transform="shrink-3" />}
-          size={this.getCanvasSize(currentProfessors, 0)}
+          size={getCanvasSize(currentProfessors, 0)}
         />
         {professors.map((professor) => (
           <ProfessorBubble

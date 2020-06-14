@@ -2,12 +2,15 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import FilterPill from './FilterPill';
 
-export default function ListFilters({ activeArea, onAreaSet, activeYear }) {
+export default function ListFilters({
+  activeArea,
+  onAreaSet,
+  activeYear,
+  onYearSet,
+}) {
   const [yearInput, setYearInput] = useState('');
 
   const applyYearFilter = () => {
-    const { yearInput } = this.state;
-    const { onYearSet } = this.props;
     const year = parseInt(yearInput);
 
     if (isNaN(year) || year < 1972 || year > 2018) {
