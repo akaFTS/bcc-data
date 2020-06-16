@@ -29,6 +29,12 @@ function getCanvasSize(professors, level) {
     : 5;
 }
 
+function getProfessorsList(professors, level) {
+  return Object.keys(professors)
+    .filter((code) => professors[code] === level)
+    .join(' ');
+}
+
 function allCanvasSizes(professors) {
   const canvasSizes = [];
   for (let i = 0; i <= 6; i++) {
@@ -87,6 +93,7 @@ function Professors({ professors, professorYears }) {
             </span>
           }
           size={getCanvasSize(currentProfessors, 6)}
+          professorsList={getProfessorsList(currentProfessors, 6)}
         />
         <ProfessorCanvas
           title="Associado"
@@ -104,12 +111,14 @@ function Professors({ professors, professorYears }) {
             </span>
           }
           size={getCanvasSize(currentProfessors, 5)}
+          professorsList={getProfessorsList(currentProfessors, 5)}
         />
         <ProfessorCanvas
           title="Doutor"
           color="gold"
           icon={<FontAwesomeIcon icon={faStar} transform="shrink-3" />}
           size={getCanvasSize(currentProfessors, 3)}
+          professorsList={getProfessorsList(currentProfessors, 3)}
         />
         <ProfessorCanvas
           title="Assistente"
@@ -118,12 +127,14 @@ function Professors({ professors, professorYears }) {
             <FontAwesomeIcon icon={faStarHalf} transform="right-3 shrink-3" />
           }
           size={getCanvasSize(currentProfessors, 2)}
+          professorsList={getProfessorsList(currentProfessors, 2)}
         />
         <ProfessorCanvas
           title="Auxiliar"
           color="light-blue"
           icon={<FontAwesomeIcon icon={faCircle} transform="shrink-7" />}
           size={getCanvasSize(currentProfessors, 1)}
+          professorsList={getProfessorsList(currentProfessors, 1)}
         />
         <ProfessorCanvas
           title="Sênior"

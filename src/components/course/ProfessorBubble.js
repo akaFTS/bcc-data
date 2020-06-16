@@ -45,6 +45,7 @@ function ProfessorBubble({
         opacity: disabled ? 0 : 1,
         transition: 'all 0.5s ease-out, opacity 0.2s ease-in',
       }}
+      aria-hidden={disabled}
     >
       <img
         className={`br-100 h2-3 w2-3 ba bw1 b--${levelColor}`}
@@ -52,6 +53,8 @@ function ProfessorBubble({
         onError={(e) => {
           e.target.src = './professors/default.png';
         }}
+        alt={`Professor(a) ${name}`}
+        id={code}
       />
       <div
         className="absolute white bg-gray z-3 child ph2 pv1 f7 mt1 br-pill tc nowrap"

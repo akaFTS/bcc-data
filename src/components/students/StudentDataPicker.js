@@ -81,47 +81,50 @@ export default function StudentDataPicker({
 
   return (
     <React.Fragment>
-      <div className="flex ba bw1 b--mt-blue br3 overflow-hidden mh3-l">
-        <div
-          className={`w-25 pv1 tc b flex items-center justify-center ${
+      <div
+        className="flex ba bw1 b--mt-blue br3 overflow-hidden mh3-l"
+        aria-label="Seleção de intervalo de tempo para análise"
+      >
+        <button
+          className={`w-25 pv1 tc b b--none ${
             currentSelection === 0
               ? 'bg-mt-blue white'
-              : 'mt-blue pointer hover-bg-light-gray'
+              : 'mt-blue pointer hover-bg-light-gray bg-white'
           }`}
           onClick={() => onEpochSelected(0)}
         >
-          <div>Todos</div>
-        </div>
-        <div
-          className={`w-25 pv1 tc b ${
+          Todos
+        </button>
+        <button
+          className={`w-25 pv1 tc b b--none ${
             currentSelection === 1
               ? 'bg-mt-blue white'
-              : 'mt-blue pointer hover-bg-light-gray'
+              : 'mt-blue pointer hover-bg-light-gray bg-white'
           }`}
           onClick={() => onEpochSelected(1)}
         >
           1974-1988
-        </div>
-        <div
-          className={`w-25 pv1 tc b ${
+        </button>
+        <button
+          className={`w-25 pv1 tc b b--none ${
             currentSelection === 2
               ? 'bg-mt-blue white'
-              : 'mt-blue pointer hover-bg-light-gray'
+              : 'mt-blue pointer hover-bg-light-gray bg-white'
           }`}
           onClick={() => onEpochSelected(2)}
         >
           1989-2003
-        </div>
-        <div
-          className={`w-25 pv1 tc b ${
+        </button>
+        <button
+          className={`w-25 pv1 tc b b--none ${
             currentSelection === 3
               ? 'bg-mt-blue white'
-              : 'mt-blue pointer hover-bg-light-gray'
+              : 'mt-blue pointer hover-bg-light-gray bg-white'
           }`}
           onClick={() => onEpochSelected(3)}
         >
           2004-2017
-        </div>
+        </button>
       </div>
       {children({ ...processedValues, genders })}
     </React.Fragment>

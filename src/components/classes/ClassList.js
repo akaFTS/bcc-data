@@ -24,7 +24,7 @@ export default function ClassList() {
         onAreaSet={setActiveArea}
         onYearSet={setActiveYear}
       />
-      <main>
+      <main role="list">
         {filteredClasses.map((classe, index) => (
           <ClassEntry
             key={classe.code}

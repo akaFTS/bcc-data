@@ -19,27 +19,37 @@ export default function ClassNamesModal({
         <div className={`w4 tc white ph2 pv1 br-pill f4 mb4 fw6 ${color}`}>
           {classe.code}
         </div>
-        {classe.names.map((entry, index) => (
-          <div
-            className={`flex pa3 items-center justify-between ${
-              index % 2 === 0 ? 'bg-light-gray' : ''
-            }`}
-            key={entry.start}
-          >
-            <div className="fw3 pr2 lh-title gray">{entry.name}</div>
-            <div className="flex">
-              <div className="white br--left br2 pl2 pv1 f5 b bg-gray">
-                {entry.start}
-              </div>
-              <div className="white br--right br2 pl2 pr2 pv1 f5 b relative bg-red">
-                <div className="bl triangle absolute left-0 top-0 h-100 b--gray" />
+        <div role="list">
+          {classe.names.map((entry, index) => (
+            <div
+              className={`flex pa3 items-center justify-between ${
+                index % 2 === 0 ? 'bg-light-gray' : ''
+              }`}
+              key={entry.start}
+              role="listitem"
+            >
+              <div className="fw3 pr2 lh-title gray">{entry.name}</div>
+              <span className="visually-hidden">
+                De {classe.beginYear} até{' '}
                 {classe.names[index + 1]
                   ? classe.names[index + 1].start - 1
                   : classe.endYear}
+                .
+              </span>
+              <div className="flex" aria-hidden="true">
+                <div className="white br--left br2 pl2 pv1 f5 b bg-gray">
+                  {entry.start}
+                </div>
+                <div className="white br--right br2 pl2 pr2 pv1 f5 b relative bg-red">
+                  <div className="bl triangle absolute left-0 top-0 h-100 b--gray" />
+                  {classe.names[index + 1]
+                    ? classe.names[index + 1].start - 1
+                    : classe.endYear}
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </Modal>
   );

@@ -27,43 +27,46 @@ export default function GridPicker({ children }) {
   return (
     <div>
       <div className="flex items-center justify-center mb3">
-        <FontAwesomeIcon
-          icon={faChevronLeft}
-          className="silver hover-mid-gray pointer pa2 f2 mr4"
-          onClick={moveLeft}
-        />
+        <button className="bg-white b--none mr4" onClick={moveLeft}>
+          <FontAwesomeIcon
+            icon={faChevronLeft}
+            className="silver hover-mid-gray pointer pa2 f2"
+          />
+        </button>
         <span className="f4 fw6 tc dark-gray">Grade de {activeGrid.year}</span>
-        <FontAwesomeIcon
-          icon={faChevronRight}
-          className="silver hover-mid-gray pointer pa2 f2 ml4"
-          onClick={moveRight}
-        />
+        <button className="bg-white b--none ml4" onClick={moveRight}>
+          <FontAwesomeIcon
+            icon={faChevronRight}
+            className="silver hover-mid-gray pointer pa2 f2"
+          />
+        </button>
       </div>
       <div>{children(activeGrid.grid)}</div>
       <div className="flex justify-center items-center mt3">
-        <FontAwesomeIcon
-          icon={faChevronLeft}
-          className="silver hover-mid-gray pointer pa2 f2 mr4"
-          onClick={moveLeft}
-        />
+        <button className="bg-white b--none mr4" onClick={moveLeft}>
+          <FontAwesomeIcon
+            icon={faChevronLeft}
+            className="silver hover-mid-gray pointer pa2 f2"
+          />
+        </button>
         <div className="flex items-center">
           {grids.map((_, index) =>
             index === selectedIndex ? (
               <div key={index} className="pa1 pl2 pt2 bg-red br-100 mh1" />
             ) : (
               <div
-                onClick={() => selectIndex(index)}
                 key={index}
                 className="pa1 br-100 bg-light-silver mh1 hover-bg-gray pointer"
               />
             )
           )}
         </div>
-        <FontAwesomeIcon
-          icon={faChevronRight}
-          className="silver hover-mid-gray pointer pa2 f2 ml4"
-          onClick={moveRight}
-        />
+        <button className="bg-white b--none ml4" onClick={moveRight}>
+          <FontAwesomeIcon
+            icon={faChevronRight}
+            className="silver hover-mid-gray pointer pa2 f2"
+          />
+        </button>
       </div>
     </div>
   );

@@ -1,7 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function ProfessorCanvas({ title, color, icon, size }) {
+export default function ProfessorCanvas({
+  title,
+  color,
+  icon,
+  size,
+  professorsList,
+}) {
   return (
     <article
       className="br3 bg-light-gray mb4 overflow-hidden"
@@ -9,10 +15,11 @@ export default function ProfessorCanvas({ title, color, icon, size }) {
         transition: 'height 0.3s ease-out',
         height: `${size * 50 + 50}px`,
       }}
+      aria-owns={professorsList}
     >
       <header className={`bg-${color} white ph2 pv1 fw6 f6`}>
         {icon}
-        <span className="ml2">{title}</span>
+        <h3 className="ml2 di">{title}</h3>
       </header>
     </article>
   );
@@ -23,4 +30,5 @@ ProfessorCanvas.propTypes = {
   color: PropTypes.string.isRequired,
   icon: PropTypes.node.isRequired,
   size: PropTypes.number.isRequired,
+  professorsList: PropTypes.string.isRequired,
 };

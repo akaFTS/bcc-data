@@ -25,11 +25,13 @@ export default function YearPicker({ onYearChanged }) {
   return (
     <div className="flex justify-center items-center">
       {currentYear > 1972 ? (
-        <FontAwesomeIcon
-          className="f4 pointer"
-          icon={faChevronLeft}
+        <button
+          className="bg-white b--none"
           onClick={() => setYear(currentYear - 1)}
-        />
+          aria-label="Voltar um ano"
+        >
+          <FontAwesomeIcon className="f4 pointer" icon={faChevronLeft} />
+        </button>
       ) : (
         <FontAwesomeIcon className="f4 white" icon={faChevronLeft} />
       )}
@@ -38,13 +40,16 @@ export default function YearPicker({ onYearChanged }) {
         value={inputYear}
         onChange={(e) => setInputYear(e.target.value)}
         onBlur={() => setYear(inputYear)}
+        aria-label="Ano"
       />
       {currentYear < 2018 ? (
-        <FontAwesomeIcon
-          className="f4 pointer"
-          icon={faChevronRight}
+        <button
+          className="bg-white b--none"
           onClick={() => setYear(currentYear + 1)}
-        />
+          aria-label="Avançar um ano"
+        >
+          <FontAwesomeIcon className="f4 pointer" icon={faChevronRight} />
+        </button>
       ) : (
         <FontAwesomeIcon className="f4 white" icon={faChevronRight} />
       )}

@@ -20,7 +20,11 @@ export default function AreaBubbles() {
   const othersCount = yearClasses.filter((classe) => classe.area === 4).length;
 
   return (
-    <ContentBox title="Áreas" color="green">
+    <ContentBox
+      title="Áreas"
+      color="green"
+      aria-label="Número de matérias por ano, por área"
+    >
       <YearPicker onYearChanged={setYear} />
       <div className="relative h5 mb5">
         <AreaBubble

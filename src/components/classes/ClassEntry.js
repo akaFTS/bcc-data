@@ -18,6 +18,17 @@ export default function ClassEntry({ classe, whiteStripe, currentYear }) {
       ? 'bg-orange'
       : 'bg-light-silver';
 
+  const areaName =
+    classe.area === 0
+      ? 'Teoria'
+      : classe.area === 1
+      ? 'Sistemas'
+      : classe.area === 2
+      ? 'IA'
+      : classe.area === 3
+      ? 'E-science'
+      : 'Outras';
+
   const beginYearColor =
     classe.beginYear < 1982
       ? 'moon-gray'
@@ -48,6 +59,8 @@ export default function ClassEntry({ classe, whiteStripe, currentYear }) {
       className={`flex flex-column flex-row-l items-start items-center-l ph3 pv3 gray ${
         whiteStripe ? '' : 'bg-light-gray'
       }`}
+      role="listitem"
+      aria-label={`Matéria da área: ${areaName}`}
     >
       <div
         className={`white ph2 pv1 br-pill b f5 mb3 mr3-l mb0-l ${areaColor}`}
@@ -58,11 +71,12 @@ export default function ClassEntry({ classe, whiteStripe, currentYear }) {
         <div className="flex-auto fw3 pr2 lh-title">{classeName}</div>
         {classe.names.length > 1 && (
           <React.Fragment>
-            <div
-              className="mh3 light-silver pointer hover-gray"
+            <button
+              className="mh3 light-silver pointer hover-gray bg-white b--none"
               onClick={() => setModalOpen(true)}
+              aria-label={`Matéria já teve ${classe.names.length} nomes. Abrir lista`}
             >
-              <span className="fa-layers fa-fw">
+              <span className="fa-layers fa-fw" aria-hidden="true">
                 <FontAwesomeIcon icon={faComment} transform="grow-15" />
                 <span
                   className="fa-layers-text fa-inverse pb1"
@@ -71,7 +85,7 @@ export default function ClassEntry({ classe, whiteStripe, currentYear }) {
                   {classe.names.length}
                 </span>
               </span>
-            </div>
+            </button>
             <ClassNamesModal
               isOpen={isModalOpen}
               onCloseModal={() => setModalOpen(false)}
@@ -81,7 +95,10 @@ export default function ClassEntry({ classe, whiteStripe, currentYear }) {
           </React.Fragment>
         )}
       </div>
-      <div className="flex mt3 mt0-l">
+      <div className="visually-hidden">
+        De {classe.beginYear} até {classe.endYear}.
+      </div>
+      <div className="flex mt3 mt0-l" aria-hidden="true">
         <div className={`white br--left br2 pl2 pv1 f5 b bg-${beginYearColor}`}>
           {classe.beginYear}
         </div>

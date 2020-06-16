@@ -4,7 +4,7 @@ import { faCircle } from '@fortawesome/free-solid-svg-icons';
 
 export default function GridSubtitles() {
   return (
-    <div className="flex flex-column w-100 items-end">
+    <div className="flex flex-column w-100 items-end" aria-hidden="true">
       <div className="w-100 w-50-l pa2">
         <div className="ba bw1 b--light-gray br4 overflow-hidden">
           <div className="tc fw6 pa1 f6 near-black">Legenda</div>

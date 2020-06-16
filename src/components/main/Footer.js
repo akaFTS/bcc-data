@@ -9,6 +9,7 @@ export default function Footer() {
         <a
           href="https://www.linkedin.com/in/gustavohfts/"
           className="fw6 mid-gray pointer hover-dark-gray"
+          title="Linkedin de Gustavo Silva"
         >
           Gustavo Silva
         </a>
