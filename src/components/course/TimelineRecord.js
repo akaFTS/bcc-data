@@ -11,7 +11,7 @@ export default function TimelineRecord({ record }) {
   }
 
   return (
-    <div className="flex items-stretch">
+    <div className="flex items-stretch" role="listitem">
       <div className="flex flex-column items-center mh4">
         <div className="bl br b--light-gray flex-auto" />
         <div className="h1 w1 bg-mt-purple br-100 mv2" />

@@ -21,7 +21,10 @@ export default function AppRouter() {
   return (
     <HashRouter>
       <main className="w-100 w-80-l center ph2 ph0-l">
-        <div className="flex flex-wrap justify-center justify-start-l mb4">
+        <nav
+          aria-label="Navegação Principal"
+          className="flex flex-wrap justify-center justify-start-l mb4"
+        >
           <LinkButton
             text="Informações"
             icon={faFileAlt}
@@ -52,7 +55,7 @@ export default function AppRouter() {
             path="/students"
             color="blue"
           />
-        </div>
+        </nav>
         <Routes>
           <Route path="/" element={<Course />} />
           <Route path="/info" element={SuspendedComponent(<Information />)} />

@@ -12,8 +12,11 @@ export default function AreaBubble({ top, left, name, color, size }) {
         height: `${size * 3 + 50}px`,
         transition: 'all 0.3s',
       }}
+      aria-label={`Número de matérias de ${name}`}
     >
-      <span className="f7 mt2 center nowrap">{name}</span>
+      <span aria-hidden="true" className="f7 mt2 center nowrap">
+        {name}
+      </span>
       <span className="f3 b center">{size}</span>
     </div>
   );

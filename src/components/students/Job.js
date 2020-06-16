@@ -75,6 +75,7 @@ export default function Job({ type, onHover, isHovering }) {
         <img
           src={`./brands/${jobFiles[type]}.png`}
           style={{ height: '1.4rem' }}
+          alt=""
         />
       )}
     </div>

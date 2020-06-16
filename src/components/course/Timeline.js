@@ -7,9 +7,11 @@ import TimelineYear from './TimelineYear';
 function Timeline({ timelineYears }) {
   return (
     <ContentBox title="Timeline" color="purple">
-      {timelineYears.map((yearEntry) => (
-        <TimelineYear entry={yearEntry} key={yearEntry.year} />
-      ))}
+      <div role="list">
+        {timelineYears.map((yearEntry) => (
+          <TimelineYear entry={yearEntry} key={yearEntry.year} />
+        ))}
+      </div>
     </ContentBox>
   );
 }

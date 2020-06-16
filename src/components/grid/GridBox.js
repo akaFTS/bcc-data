@@ -16,16 +16,16 @@ function orderClasses(a, b) {
 
 export default function GridBox({ semester, classes }) {
   return (
-    <div className="ba bw1 b--light-gray br4 overflow-hidden h-100">
-      <div className="bb bw1 bg-light-gray b--light-gray pa1 tc fw6 near-black">
+    <article className="ba bw1 b--light-gray br4 overflow-hidden h-100">
+      <h3 className="bb bw1 bg-light-gray b--light-gray pa1 tc fw6 near-black f5 mt0">
         {semester}º Semestre
-      </div>
-      <div>
+      </h3>
+      <div role="list">
         {classes.sort(orderClasses).map((classe) => (
           <GridClasse key={classe.code || classe.slot} classe={classe} />
         ))}
       </div>
-    </div>
+    </article>
   );
 }
 

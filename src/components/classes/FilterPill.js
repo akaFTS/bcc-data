@@ -3,18 +3,19 @@ import PropTypes from 'prop-types';
 
 export default function FilterPill({ isActive, name, color, onClick }) {
   return isActive ? (
-    <div
+    <button
       className={`ba bw1 b--${color} bg-${color} mb2 mb0-l white br-pill ph2 pv1 f6 b mr1`}
+      disabled
     >
       {name}
-    </div>
+    </button>
   ) : (
-    <div
-      className={`ba bw1 b--${color} ${color} mb2 mb0-l br-pill ph2 pv1 f6 b mr1 pointer hover-bg-light-gray`}
+    <button
+      className={`ba bw1 b--${color} ${color} mb2 mb0-l br-pill ph2 pv1 f6 b mr1 pointer bg-white hover-bg-light-gray`}
       onClick={onClick}
     >
       {name}
-    </div>
+    </button>
   );
 }
 

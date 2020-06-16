@@ -23,8 +23,13 @@ export default function ListFilters({
 
   return (
     <div className="mt3 mb3 flex justify-between align-stretch">
-      <div className="flex flex-column justify-between">
-        <div className="b mb1 f5 near-black">Áreas</div>
+      <div
+        className="flex flex-column justify-between"
+        aria-label="Filtros por área para a lista de matérias"
+      >
+        <div aria-hidden="true" className="b mb1 f5 near-black">
+          Áreas
+        </div>
         <div className="flex flex-wrap">
           <FilterPill
             name="Todas"
@@ -65,7 +70,9 @@ export default function ListFilters({
         </div>
       </div>
       <div>
-        <div className="b mb1 f5 near-black">Ano</div>
+        <label htmlFor="yearInput" className="b mb1 f5 near-black db">
+          Ano
+        </label>
         <input
           className={`ba bw1 br2 w3 b tc f4 mid-gray ${
             activeYear > -1 ? 'b--silver' : 'b--light-gray'
@@ -73,6 +80,7 @@ export default function ListFilters({
           value={yearInput}
           onChange={(e) => setYearInput(e.target.value)}
           onBlur={applyYearFilter}
+          id="yearInput"
         />
       </div>
     </div>
