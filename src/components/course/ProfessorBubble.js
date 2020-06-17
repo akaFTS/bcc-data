@@ -1,14 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withProfessors } from './ProfessorsProvider';
+import slots from '../../data/course/slots.json';
 
-function ProfessorBubble({
+export default function ProfessorBubble({
   level,
   name,
   code,
   professorSchema,
   canvasSizes,
-  slots,
 }) {
   const disabled = level === undefined;
   const levelColor =
@@ -72,7 +71,4 @@ ProfessorBubble.propTypes = {
   code: PropTypes.string.isRequired,
   professorSchema: PropTypes.object.isRequired,
   canvasSizes: PropTypes.array.isRequired,
-  slots: PropTypes.array.isRequired,
 };
-
-export default withProfessors(ProfessorBubble);

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 import ContentBox from '../shared/ContentBox';
 import ProfessorBubble from './ProfessorBubble';
 import ProfessorCanvas from './ProfessorCanvas';
@@ -11,7 +10,8 @@ import {
   faCircle,
   faMoon,
 } from '@fortawesome/free-solid-svg-icons';
-import { withProfessors } from './ProfessorsProvider';
+import professors from '../../data/course/professors.json';
+import * as years from '../../data/professors/importYears.js';
 
 function getCanvasSize(professors, level) {
   const capacity = Object.keys(professors).filter(
@@ -47,8 +47,16 @@ function allCanvasSizes(professors) {
   return canvasSizes;
 }
 
-function Professors({ professors, professorYears }) {
+export default function Professors() {
   const [currentYear, setCurrentYear] = useState(null);
+
+  const professorYears = [];
+  Object.keys(years).forEach((key) => {
+    professorYears.push({
+      year: parseInt(key.replace('p', '')),
+      professors: years[key],
+    });
+  });
 
   const currentProfessorYear = professorYears.find(
     (profYear) => profYear.year === currentYear
@@ -156,10 +164,3 @@ function Professors({ professors, professorYears }) {
     </ContentBox>
   );
 }
-
-Professors.propTypes = {
-  professors: PropTypes.array.isRequired,
-  professorYears: PropTypes.array.isRequired,
-};
-
-export default withProfessors(Professors);
