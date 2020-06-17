@@ -1,10 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ContentBox from '../shared/ContentBox';
-import { withTimeline } from './TimelineProvider';
 import TimelineYear from './TimelineYear';
+import timeline from '../../data/course/timeline.json';
 
-function Timeline({ timelineYears }) {
+export default function Timeline() {
+  const timelineYears = timeline.reduce((acc, cur) => {
+    if (acc.some((yearEntry) => yearEntry.year === cur.year)) {
+      acc.find((yearEntry) => yearEntry.year === cur.year).records.push(cur);
+      return acc;
+    }
+    return [...acc, { year: cur.year, records: [cur] }];
+  }, []);
+
   return (
     <ContentBox title="Timeline" color="purple">
       <div role="list">
@@ -19,5 +27,3 @@ function Timeline({ timelineYears }) {
 Timeline.propTypes = {
   timelineYears: PropTypes.array.isRequired,
 };
-
-export default withTimeline(Timeline);

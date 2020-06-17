@@ -72,7 +72,7 @@ export default function ClassEntry({ classe, whiteStripe, currentYear }) {
         {classe.names.length > 1 && (
           <React.Fragment>
             <button
-              className="mh3 light-silver pointer hover-gray bg-white b--none"
+              className="mh3 light-silver pointer hover-gray bg-transparent b--none"
               onClick={() => setModalOpen(true)}
               aria-label={`Matéria já teve ${classe.names.length} nomes. Abrir lista`}
             >
