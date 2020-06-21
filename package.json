@@ -6,12 +6,16 @@
   "private": true,
   "scripts": {
     "start": "parcel ./src/index.html",
-    "lint": "eslint src --ext .js,.tsx ; exit 0",
-    "precommit": "npm run lint",
+    "lint": "eslint src --ext .js,.tsx",
     "prebuild": "rm -rf dist/",
     "build": "parcel build ./src/index.html --no-source-maps",
     "postbuild": "cp -r public/* dist/",
     "build:deploy": "npm run build -- --public-url '/bcc-data/'"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.4",
@@ -45,6 +49,7 @@
     "babel-eslint": "^10.1.0",
     "babel-plugin-transform-imports": "^2.0.0",
     "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.2.0",
     "eslint-config-airbnb-typescript": "^8.0.2",
     "eslint-plugin-import": "^2.21.2",
     "eslint-plugin-jsx-a11y": "^6.3.1",
