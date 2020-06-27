@@ -14,6 +14,10 @@ import {
   faChartBar,
   faBook,
 } from '@fortawesome/free-solid-svg-icons';
+// TODO: use globs when Parcel 2 start supporting it
+import santander from 'url:~/public/brands/santander.png';
+import totvs from 'url:~/public/brands/totvs.png';
+import m99 from 'url:~/public/brands/99.png';
 
 export default function Job({ type, onHover, isHovering }) {
   const jobIcons = [
@@ -44,14 +48,14 @@ export default function Job({ type, onHover, isHovering }) {
     'mt-purple',
     'silver',
   ];
-  const jobFiles = [
+  const jobFilenames = [
     null,
-    'santander',
+    santander,
     null,
-    'totvs',
+    totvs,
     null,
     null,
-    '99',
+    m99,
     null,
     null,
     null,
@@ -61,7 +65,7 @@ export default function Job({ type, onHover, isHovering }) {
   return (
     <div
       onMouseEnter={() => onHover(type)}
-      className={`h2 w2 flex justify-center items-center ${
+      className={`h2 flex justify-center items-center ${
         isHovering ? 'bg-light-gray' : null
       }`}
     >
@@ -72,11 +76,7 @@ export default function Job({ type, onHover, isHovering }) {
           className={`f3 ${jobColors[type]}`}
         />
       ) : (
-        <img
-          src={`./brands/${jobFiles[type]}.png`}
-          style={{ height: '1.4rem' }}
-          alt=""
-        />
+        <img src={jobFilenames[type]} style={{ height: '1.4rem' }} alt="" />
       )}
     </div>
   );

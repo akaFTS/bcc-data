@@ -9,9 +9,10 @@ function orderClasses(a, b) {
     return preffixA.localeCompare(preffixB) === 0
       ? -preffixA.localeCompare(preffixB)
       : a.code.localeCompare(b.code);
-  } else if (a.code) return -1;
-  else if (b.code) return 1;
-  else return a.slot.localeCompare(b.slot);
+  }
+  if (a.code) return -1;
+  if (b.code) return 1;
+  return a.slot.localeCompare(b.slot);
 }
 
 export default function GridBox({ semester, classes }) {

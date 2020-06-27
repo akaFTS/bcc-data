@@ -11,6 +11,7 @@ export default function GithubButton() {
     <button
       className="bg-gray hover-bg-mid-gray white pv2 ph2 b--none br-pill flex flex-row items-center"
       onClick={openGithub}
+      type="button"
     >
       <FontAwesomeIcon icon={faGithub} className="mr2 f4" />
       <span className="fw3 f6">

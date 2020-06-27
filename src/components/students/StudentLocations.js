@@ -24,19 +24,18 @@ function normalizeCities(data) {
   );
 }
 
+function getDataFromSelection(selection) {
+  if (selection === 0) return [...group1974, ...group1989, ...group2004];
+  if (selection === 1) return group1974;
+  if (selection === 2) return group1989;
+  return group2004;
+}
+
 export default function StudentLocations({
   currentSelection,
   onEpochSelected,
 }) {
-  const studentData =
-    currentSelection === 0
-      ? [...group1974, ...group1989, ...group2004]
-      : currentSelection === 1
-      ? group1974
-      : currentSelection === 2
-      ? group1989
-      : group2004;
-
+  const studentData = getDataFromSelection(currentSelection);
   const location = normalizeCities(studentData);
 
   return (
@@ -44,7 +43,7 @@ export default function StudentLocations({
       <StudentDataPicker
         currentSelection={currentSelection}
         onEpochSelected={onEpochSelected}
-      ></StudentDataPicker>
+      />
       <WorldMap cities={location} />
     </ContentBox>
   );

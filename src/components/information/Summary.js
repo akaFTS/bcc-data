@@ -1,6 +1,6 @@
 import React from 'react';
-import ContentBox from '../shared/ContentBox';
 import { Link } from 'react-router-dom';
+import ContentBox from '../shared/ContentBox';
 
 export default function Summary() {
   return (

@@ -11,9 +11,9 @@ export default function ListFilters({
   const [yearInput, setYearInput] = useState('');
 
   const applyYearFilter = () => {
-    const year = parseInt(yearInput);
+    const year = parseInt(yearInput, 10);
 
-    if (isNaN(year) || year < 1972 || year > 2018) {
+    if (Number.isNaN(year) || year < 1972 || year > 2018) {
       setYearInput('');
       onYearSet(-1);
     } else {
@@ -70,18 +70,18 @@ export default function ListFilters({
         </div>
       </div>
       <div>
-        <label htmlFor="yearInput" className="b mb1 f5 near-black db">
-          Ano
+        <label htmlFor="yearInput">
+          <div className="b mb1 f5 near-black">Ano</div>
+          <input
+            className={`ba bw1 br2 w3 b tc f4 mid-gray ${
+              activeYear > -1 ? 'b--silver' : 'b--light-gray'
+            }`}
+            value={yearInput}
+            onChange={(e) => setYearInput(e.target.value)}
+            onBlur={applyYearFilter}
+            id="yearInput"
+          />
         </label>
-        <input
-          className={`ba bw1 br2 w3 b tc f4 mid-gray ${
-            activeYear > -1 ? 'b--silver' : 'b--light-gray'
-          }`}
-          value={yearInput}
-          onChange={(e) => setYearInput(e.target.value)}
-          onBlur={applyYearFilter}
-          id="yearInput"
-        />
       </div>
     </div>
   );

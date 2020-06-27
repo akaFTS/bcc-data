@@ -3,10 +3,12 @@ import PropTypes from 'prop-types';
 import Job from './Job';
 import { StudentJobTypes } from '../../data/students/studentDefinitions';
 
-export default function JobBoard({ jobs }) {
+export default function JobBoard({ jobCategories }) {
   const [hoveringType, setHoveringType] = useState(null);
 
-  const roundedJobs = jobs.map((job) => Math.round(job * 100));
+  const roundedJobs = jobCategories.map((job) => Math.round(job * 100));
+
+  // Fix last category to always sum 100
   roundedJobs[StudentJobTypes.OTHER] +=
     100 - roundedJobs.reduce((acc, cur) => acc + cur, 0);
 
@@ -14,10 +16,6 @@ export default function JobBoard({ jobs }) {
     (acc, cur, index) => [...acc, ...Array(cur).fill(index)],
     []
   );
-
-  const jobMatrix = Array(10)
-    .fill(0)
-    .map((_, index) => jobVector.slice(index * 10, (index + 1) * 10));
 
   const hoverLabels = [
     'Professores e Pesquisadores',
@@ -35,22 +33,19 @@ export default function JobBoard({ jobs }) {
   ];
 
   return (
-    <React.Fragment>
+    <>
       <div
-        className="mv4 flex flex-column items-center"
+        className="mv4 ph4 grid-10"
         onMouseLeave={() => setHoveringType(null)}
       >
-        {jobMatrix.map((row, index) => (
-          <div className="flex" key={index}>
-            {row.map((type, index) => (
-              <Job
-                type={type}
-                onHover={setHoveringType}
-                isHovering={hoveringType === type}
-                key={index}
-              />
-            ))}
-          </div>
+        {jobVector.map((jobType, index) => (
+          <Job
+            type={jobType}
+            onHover={setHoveringType}
+            isHovering={hoveringType === jobType}
+            // eslint-disable-next-line
+            key={`${jobType}-${index}`}
+          />
         ))}
       </div>
       {hoveringType !== null && (
@@ -59,10 +54,10 @@ export default function JobBoard({ jobs }) {
           <span className="f4 gray tc">{hoverLabels[hoveringType]}</span>
         </div>
       )}
-    </React.Fragment>
+    </>
   );
 }
 
 JobBoard.propTypes = {
-  jobs: PropTypes.array.isRequired,
+  jobCategories: PropTypes.array.isRequired,
 };

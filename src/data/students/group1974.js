@@ -160,13 +160,13 @@ export default [
   {
     name: 'jaimildo',
     education: StudentEducationTypes.TWO_GRADUATES,
-    job: StudentJobTypes.OTHER, //psicoterapeuta
+    job: StudentJobTypes.OTHER, // psicoterapeuta
     location: 'sao_paulo',
   },
   {
     name: 'dirce keiko',
     education: StudentEducationTypes.GRADUATE,
-    job: StudentJobTypes.OTHER, //analista
+    job: StudentJobTypes.OTHER, // analista
     location: 'new_york',
   },
   {

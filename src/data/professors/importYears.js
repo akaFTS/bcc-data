@@ -1,3 +1,4 @@
+// TODO: use globs when Parcel 2 starts supporting it
 export { default as p1972 } from './1972.json';
 export { default as p1973 } from './1973.json';
 export { default as p1974 } from './1974.json';
