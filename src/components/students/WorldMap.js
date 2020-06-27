@@ -7,6 +7,7 @@ import {
   Marker,
 } from 'react-simple-maps';
 import { scaleLinear } from 'd3-scale';
+import worldMap from 'url:~/public/world.json';
 import citySpecs from '../../data/students/citySpecs';
 
 export default function WorldMap({ cities }) {
@@ -35,11 +36,11 @@ export default function WorldMap({ cities }) {
           height: 'auto',
         }}
       >
-        <Geographies geography="./world.json">
+        <Geographies geography={worldMap}>
           {({ geographies }) =>
-            geographies.map((geography, i) => (
+            geographies.map((geography) => (
               <Geography
-                key={i}
+                key={geography.rsmKey}
                 geography={geography}
                 style={{
                   default: {
@@ -65,8 +66,8 @@ export default function WorldMap({ cities }) {
             ))
           }
         </Geographies>
-        {cityBubbles.map((city, i) => (
-          <Marker key={i} coordinates={city.coordinates}>
+        {cityBubbles.map((city) => (
+          <Marker key={city.coordinates} coordinates={city.coordinates}>
             <circle
               cx={0}
               cy={0}

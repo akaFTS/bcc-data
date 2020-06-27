@@ -1,28 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function GridClasse({ classe }) {
-  const classColor = /^MAC/.test(classe.code)
-    ? 'mt-red'
-    : /^MAT/.test(classe.code)
-    ? 'mt-blue'
-    : /^MAE/.test(classe.code)
-    ? 'mt-green'
-    : /^MAP/.test(classe.code)
-    ? 'mt-orange'
-    : /^(FEP|FAP)/.test(classe.code)
-    ? 'mt-purple'
-    : 'gray';
+function getClassColorAndName(code) {
+  if (/^MAC/.test(code)) return ['mt-red', 'Computação'];
+  if (/^MAT/.test(code)) return ['mt-blue', 'Matemática Pura'];
+  if (/^MAE/.test(code)) return ['mt-green', 'Estatística'];
+  if (/^MAP/.test(code)) return ['mt-orange', 'Matemática Aplicada'];
+  if (/^(FEP|FAP)/.test(code)) return ['mt-purple', 'Física'];
+  return ['gray', 'Outras'];
+}
 
-  const classType = /^MAC/.test(classe.code)
-    ? 'Computação'
-    : /^MAT/.test(classe.code)
-    ? 'Matemática Pura'
-    : /^MAE/.test(classe.code)
-    ? 'Estatística'
-    : /^MAP/.test(classe.code)
-    ? 'Matemática Aplicada'
-    : 'Física';
+export default function GridClasse({ classe }) {
+  const [classColor, classType] = getClassColorAndName(classe.code);
 
   return classe.code ? (
     <div

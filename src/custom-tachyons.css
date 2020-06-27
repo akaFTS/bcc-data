@@ -26,6 +26,13 @@
   white-space: nowrap; /* added line */
 }
 
+.grid-10 {
+  display: grid;
+  grid-template-columns: repeat(10, auto);
+  grid-template-rows: repeat(10, auto);
+  /* justify-content: center; */
+}
+
 .triangle {
   border-top: 13px solid transparent !important;
   border-bottom: 13px solid transparent !important;

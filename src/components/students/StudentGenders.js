@@ -6,25 +6,37 @@ import GenderChart from './GenderChart';
 import maleGraduates from '../../data/students/maleGraduates.json';
 import femaleGraduates from '../../data/students/femaleGraduates.json';
 
+function getRangeFromSelection(selection) {
+  if (selection === 0) return [0, 44];
+  if (selection === 1) return [0, 15];
+  if (selection === 2) return [15, 30];
+  return [30, 44];
+}
+
 export default function StudentGenders({ currentSelection, onEpochSelected }) {
-  const range =
-    currentSelection === 0
-      ? [0, 44]
-      : currentSelection === 1
-      ? [0, 15]
-      : currentSelection === 2
-      ? [15, 30]
-      : [30, 44];
+  const range = getRangeFromSelection(currentSelection);
 
-  const accumulatedMales = [];
-  maleGraduates
+  const accumulatedMales = maleGraduates
     .slice(range[0], range[1])
-    .reduce((prev, curr, i) => (accumulatedMales[i] = prev + curr), 0);
+    .reduce((accArray, yearGraduates) => {
+      accArray.push(
+        accArray.length > 0
+          ? yearGraduates + accArray[accArray.length - 1]
+          : yearGraduates
+      );
+      return accArray;
+    }, []);
 
-  const accumulatedFemales = [];
-  femaleGraduates
+  const accumulatedFemales = femaleGraduates
     .slice(range[0], range[1])
-    .reduce((prev, curr, i) => (accumulatedFemales[i] = prev + curr), 0);
+    .reduce((accArray, yearGraduates) => {
+      accArray.push(
+        accArray.length > 0
+          ? yearGraduates + accArray[accArray.length - 1]
+          : yearGraduates
+      );
+      return accArray;
+    }, []);
 
   const genders = {
     accumulatedFemales,
@@ -37,7 +49,7 @@ export default function StudentGenders({ currentSelection, onEpochSelected }) {
       <StudentDataPicker
         currentSelection={currentSelection}
         onEpochSelected={onEpochSelected}
-      ></StudentDataPicker>
+      />
       <GenderChart genders={genders} />
     </ContentBox>
   );

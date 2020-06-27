@@ -2,5 +2,6 @@
 /dist
 /node_modules
 npm-debug.log*
-.cache
+.cache/
+.parcel-cache/
 .DS_Store

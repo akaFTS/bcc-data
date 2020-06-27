@@ -4,13 +4,24 @@
   "description": "Evolução do BCC em gráficos",
   "homepage": "http://akafts.github.io/bcc-data",
   "private": true,
+  "source": "src/index.html",
+  "bcc-data": "dist/index.html",
   "scripts": {
     "start": "parcel ./src/index.html",
-    "lint": "eslint src --ext js ; exit 0",
+    "lint": "eslint src --ext .js,.tsx",
     "prebuild": "rm -rf dist/",
-    "build": "parcel build ./src/index.html --no-source-maps",
-    "postbuild": "cp -r public/* dist/",
-    "build:deploy": "npm run build -- --public-url '/bcc-data/'"
+    "build": "parcel build ."
+  },
+  "targets": {
+    "bcc-data": {
+      "distDir": "dist/",
+      "publicUrl": "./bcc-data/"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.4",
@@ -19,7 +30,9 @@
     "@fortawesome/react-fontawesome": "^0.1.3",
     "chart.js": "^2.7.2",
     "d3-scale": "^2.1.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-import-resolver-custom-alias": "^1.2.0",
+    "history": "^5.0.0",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-chartjs-2": "^2.7.4",
     "react-dom": "^16.5.2",
@@ -36,12 +49,25 @@
     "@babel/polyfill": "^7.10.1",
     "@babel/preset-env": "^7.10.2",
     "@babel/preset-react": "^7.10.1",
+    "@babel/preset-typescript": "^7.10.1",
+    "@types/react": "^16.9.38",
+    "@types/react-dom": "^16.9.8",
+    "@typescript-eslint/eslint-plugin": "^3.3.0",
+    "@typescript-eslint/parser": "^3.3.0",
     "babel-eslint": "^10.1.0",
     "babel-plugin-transform-imports": "^2.0.0",
     "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-airbnb-typescript": "^8.0.2",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.0",
-    "parcel-bundler": "^1.12.4",
-    "parcel-plugin-bundle-visualiser": "^1.2.0"
+    "eslint-plugin-react-hooks": "^2.5.1",
+    "husky": "^4.2.5",
+    "parcel": "^2.0.0-beta.1",
+    "typescript": "^3.9.5"
   },
   "author": "Gustavo Silva",
   "license": "MIT",

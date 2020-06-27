@@ -4,49 +4,34 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComment } from '@fortawesome/free-solid-svg-icons';
 import ClassNamesModal from './ClassNamesModal';
 
+function getAreaColorAndName(area) {
+  if (area === 0) return ['bg-blue', 'Teoria'];
+  if (area === 1) return ['bg-green', 'Sistemas'];
+  if (area === 2) return ['bg-pink', 'IA'];
+  if (area === 3) return ['bg-orange', 'E-science'];
+  return ['bg-light-silver', 'Outras'];
+}
+
+function getBeginYearColor(beginYear) {
+  if (beginYear < 1982) return 'moon-gray';
+  if (beginYear < 1998) return 'light-silver';
+  if (beginYear < 2010) return 'gray';
+  return 'dark-gray';
+}
+
+function getEndYearColor(beginYear) {
+  if (beginYear < 1982) return 'washed-red';
+  if (beginYear < 1998) return 'light-red';
+  if (beginYear < 2010) return 'red';
+  return 'dark-red';
+}
+
 export default function ClassEntry({ classe, whiteStripe, currentYear }) {
   const [isModalOpen, setModalOpen] = useState(false);
 
-  const areaColor =
-    classe.area === 0
-      ? 'bg-blue'
-      : classe.area === 1
-      ? 'bg-green'
-      : classe.area === 2
-      ? 'bg-pink'
-      : classe.area === 3
-      ? 'bg-orange'
-      : 'bg-light-silver';
-
-  const areaName =
-    classe.area === 0
-      ? 'Teoria'
-      : classe.area === 1
-      ? 'Sistemas'
-      : classe.area === 2
-      ? 'IA'
-      : classe.area === 3
-      ? 'E-science'
-      : 'Outras';
-
-  const beginYearColor =
-    classe.beginYear < 1982
-      ? 'moon-gray'
-      : classe.beginYear < 1998
-      ? 'light-silver'
-      : classe.beginYear < 2010
-      ? 'gray'
-      : 'dark-gray';
-
-  const endYearColor =
-    classe.endYear < 1982
-      ? 'washed-red'
-      : classe.endYear < 1998
-      ? 'light-red'
-      : classe.endYear < 2010
-      ? 'red'
-      : 'dark-red';
-
+  const [areaColor, areaName] = getAreaColorAndName(classe.area);
+  const beginYearColor = getBeginYearColor(classe.beginYear);
+  const endYearColor = getEndYearColor(classe.endYear);
   const classeName =
     classe.names.reduce(
       (acc, cur) =>
@@ -70,11 +55,12 @@ export default function ClassEntry({ classe, whiteStripe, currentYear }) {
       <div className="w-100 flex flex-row justify-between items-center">
         <div className="flex-auto fw3 pr2 lh-title">{classeName}</div>
         {classe.names.length > 1 && (
-          <React.Fragment>
+          <>
             <button
               className="mh3 light-silver pointer hover-gray bg-transparent b--none"
               onClick={() => setModalOpen(true)}
               aria-label={`Matéria já teve ${classe.names.length} nomes. Abrir lista`}
+              type="button"
             >
               <span className="fa-layers fa-fw" aria-hidden="true">
                 <FontAwesomeIcon icon={faComment} transform="grow-15" />
@@ -92,7 +78,7 @@ export default function ClassEntry({ classe, whiteStripe, currentYear }) {
               classe={classe}
               color={areaColor}
             />
-          </React.Fragment>
+          </>
         )}
       </div>
       <div className="visually-hidden">
@@ -117,6 +103,6 @@ export default function ClassEntry({ classe, whiteStripe, currentYear }) {
 
 ClassEntry.propTypes = {
   classe: PropTypes.object.isRequired,
-  whiteStripe: PropTypes.bool,
+  whiteStripe: PropTypes.bool.isRequired,
   currentYear: PropTypes.number.isRequired,
 };

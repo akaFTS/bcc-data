@@ -1,41 +1,38 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Pie } from 'react-chartjs-2';
 import ContentBox from '../shared/ContentBox';
 import StudentDataPicker from './StudentDataPicker';
-import { Pie } from 'react-chartjs-2';
 import group1974 from '../../data/students/group1974';
 import group1989 from '../../data/students/group1989';
 import group2004 from '../../data/students/group2004';
+
+function getDataFromSelection(selection) {
+  if (selection === 0) return [...group1974, ...group1989, ...group2004];
+  if (selection === 1) return group1974;
+  if (selection === 2) return group1989;
+  return group2004;
+}
 
 export default function StudentEducations({
   currentSelection,
   onEpochSelected,
 }) {
-  const studentData =
-    currentSelection === 0
-      ? [...group1974, ...group1989, ...group2004]
-      : currentSelection === 1
-      ? group1974
-      : currentSelection === 2
-      ? group1989
-      : group2004;
-
-  const educationCategories = studentData
-    .reduce(
-      (eduCategories, student) => {
-        eduCategories[student.education]++;
-        return eduCategories;
-      },
-      [0, 0, 0, 0, 0]
-    )
-    .map((category) => category / studentData.length);
+  const studentData = getDataFromSelection(currentSelection);
+  const educationCategories = [0, 0, 0, 0, 0];
+  studentData.forEach((student) => {
+    educationCategories[student.education] += 1;
+  });
+  const normalizedEducationCategories = educationCategories.map(
+    (category) => category / studentData.length
+  );
 
   return (
     <ContentBox title="Nível de Escolaridade" color="blue">
       <StudentDataPicker
         currentSelection={currentSelection}
         onEpochSelected={onEpochSelected}
-      ></StudentDataPicker>
+      />
       <div className="mt4">
         <Pie
           data={{
@@ -48,7 +45,7 @@ export default function StudentEducations({
             ],
             datasets: [
               {
-                data: educationCategories,
+                data: normalizedEducationCategories,
                 backgroundColor: [
                   '#E1BEE7',
                   '#BA68C8',
@@ -62,13 +59,10 @@ export default function StudentEducations({
           options={{
             tooltips: {
               callbacks: {
-                label: function (tooltipItem, data) {
-                  var dataset = data.datasets[tooltipItem.datasetIndex];
-                  var currentValue = dataset.data[tooltipItem.index];
-                  var percentage = Math.floor(currentValue * 100);
-
-                  console.log(tooltipItem);
-                  console.log(data);
+                label(tooltipItem, data) {
+                  const dataset = data.datasets[tooltipItem.datasetIndex];
+                  const currentValue = dataset.data[tooltipItem.index];
+                  const percentage = Math.floor(currentValue * 100);
 
                   return `${data.labels[tooltipItem.index]}: ${percentage}%`;
                 },

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import ContentBox from '../shared/ContentBox';
 import TimelineYear from './TimelineYear';
 import timeline from '../../data/course/timeline.json';
@@ -23,7 +22,3 @@ export default function Timeline() {
     </ContentBox>
   );
 }
-
-Timeline.propTypes = {
-  timelineYears: PropTypes.array.isRequired,
-};

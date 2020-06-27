@@ -12,14 +12,20 @@ export default function YearPicker({ onYearChanged }) {
 
   useEffect(() => {
     onYearChanged(currentYear);
-  }, []);
+  }, [currentYear, onYearChanged]);
 
   const setYear = (year) => {
-    const cleanYear = year > 2018 ? 2018 : year < 1972 ? 1972 : parseInt(year);
+    const cleanYear = parseInt(year, 10);
 
-    setCurrentYear(cleanYear);
-    setInputYear(cleanYear);
-    onYearChanged(cleanYear);
+    if (cleanYear > 2018) {
+      setCurrentYear(2018);
+      setInputYear(2018);
+    } else if (cleanYear < 1972) {
+      setCurrentYear(2018);
+      setInputYear(2018);
+    } else {
+      setCurrentYear(cleanYear);
+    }
   };
 
   return (
@@ -29,6 +35,7 @@ export default function YearPicker({ onYearChanged }) {
           className="bg-white b--none"
           onClick={() => setYear(currentYear - 1)}
           aria-label="Voltar um ano"
+          type="button"
         >
           <FontAwesomeIcon className="f4 pointer" icon={faChevronLeft} />
         </button>
@@ -47,6 +54,7 @@ export default function YearPicker({ onYearChanged }) {
           className="bg-white b--none"
           onClick={() => setYear(currentYear + 1)}
           aria-label="Avançar um ano"
+          type="button"
         >
           <FontAwesomeIcon className="f4 pointer" icon={faChevronRight} />
         </button>

@@ -6,8 +6,8 @@ export default function AreaBubble({ top, left, name, color, size }) {
     <div
       className={`bg-${color} br-100 absolute white o-80 flex flex-column align-center justify-center ball`}
       style={{
-        top: top,
-        left: left,
+        top,
+        left,
         width: `${size * 3 + 50}px`,
         height: `${size * 3 + 50}px`,
         transition: 'all 0.3s',

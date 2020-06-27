@@ -1,8 +1,4 @@
 import React, { useState } from 'react';
-import ContentBox from '../shared/ContentBox';
-import ProfessorBubble from './ProfessorBubble';
-import ProfessorCanvas from './ProfessorCanvas';
-import YearPicker from '../shared/YearPicker';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faStar,
@@ -10,23 +6,23 @@ import {
   faCircle,
   faMoon,
 } from '@fortawesome/free-solid-svg-icons';
-import professors from '../../data/course/professors.json';
-import * as years from '../../data/professors/importYears.js';
+import ContentBox from '../shared/ContentBox';
+import ProfessorBubble from './ProfessorBubble';
+import ProfessorCanvas from './ProfessorCanvas';
+import YearPicker from '../shared/YearPicker';
+import allProfessors from '../../data/course/professors.json';
+import * as years from '../../data/professors/importYears';
 
 function getCanvasSize(professors, level) {
   const capacity = Object.keys(professors).filter(
     (code) => professors[code] === level
   ).length;
 
-  return capacity <= 6
-    ? 1
-    : capacity <= 11
-    ? 2
-    : capacity <= 17
-    ? 3
-    : capacity <= 22
-    ? 4
-    : 5;
+  if (capacity <= 6) return 1;
+  if (capacity <= 11) return 2;
+  if (capacity <= 17) return 3;
+  if (capacity <= 22) return 4;
+  return 5;
 }
 
 function getProfessorsList(professors, level) {
@@ -37,12 +33,8 @@ function getProfessorsList(professors, level) {
 
 function allCanvasSizes(professors) {
   const canvasSizes = [];
-  for (let i = 0; i <= 6; i++) {
-    if (i === 4) {
-      canvasSizes.push(0);
-      continue;
-    }
-    canvasSizes.push(getCanvasSize(professors, i));
+  for (let i = 0; i <= 6; i += 1) {
+    canvasSizes.push(i === 4 ? 0 : getCanvasSize(professors, i));
   }
   return canvasSizes;
 }
@@ -53,7 +45,7 @@ export default function Professors() {
   const professorYears = [];
   Object.keys(years).forEach((key) => {
     professorYears.push({
-      year: parseInt(key.replace('p', '')),
+      year: parseInt(key.replace('p', ''), 10),
       professors: years[key],
     });
   });
@@ -62,8 +54,9 @@ export default function Professors() {
     (profYear) => profYear.year === currentYear
   );
 
-  const currentProfessors =
-    (currentProfessorYear && currentProfessorYear.professors) || {};
+  const currentProfessors = currentProfessorYear
+    ? currentProfessorYear.professors
+    : {};
 
   const groupedProfessors = Object.keys(currentProfessors).reduce(
     (acc, cur) =>
@@ -149,13 +142,14 @@ export default function Professors() {
           color="light-silver"
           icon={<FontAwesomeIcon icon={faMoon} transform="shrink-3" />}
           size={getCanvasSize(currentProfessors, 0)}
+          professorsList={getProfessorsList(currentProfessors, 0)}
         />
-        {professors.map((professor) => (
+        {allProfessors.map((professor) => (
           <ProfessorBubble
             name={professor.name}
             code={professor.code}
             key={professor.code}
-            level={currentProfessors[professor.code]}
+            level={currentProfessors[professor.code] || -1}
             professorSchema={groupedProfessors}
             canvasSizes={allCanvasSizes(currentProfessors)}
           />

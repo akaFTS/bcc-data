@@ -70,7 +70,7 @@ export default [
   {
     name: 'fabiana guarsoni',
     education: StudentEducationTypes.GRADUATE,
-    job: StudentJobTypes.OTHER, //empresa aleatoria nos USA
+    job: StudentJobTypes.OTHER, // empresa aleatoria nos USA
     location: 'new_york',
   },
   {
@@ -120,7 +120,7 @@ export default [
     education: StudentEducationTypes.GRADUATE,
     job: StudentJobTypes.GOVERNMENT,
     location: 'interior',
-  }, //20
+  }, // 20
   {
     name: 'eugenio nassu',
     education: StudentEducationTypes.DOCTOR,

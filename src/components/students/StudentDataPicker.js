@@ -17,6 +17,7 @@ export default function StudentDataPicker({
             : 'mt-blue pointer hover-bg-light-gray bg-white'
         }`}
         onClick={() => onEpochSelected(0)}
+        type="button"
       >
         Todos
       </button>
@@ -27,6 +28,7 @@ export default function StudentDataPicker({
             : 'mt-blue pointer hover-bg-light-gray bg-white'
         }`}
         onClick={() => onEpochSelected(1)}
+        type="button"
       >
         1974-1988
       </button>
@@ -37,6 +39,7 @@ export default function StudentDataPicker({
             : 'mt-blue pointer hover-bg-light-gray bg-white'
         }`}
         onClick={() => onEpochSelected(2)}
+        type="button"
       >
         1989-2003
       </button>
@@ -47,6 +50,7 @@ export default function StudentDataPicker({
             : 'mt-blue pointer hover-bg-light-gray bg-white'
         }`}
         onClick={() => onEpochSelected(3)}
+        type="button"
       >
         2004-2017
       </button>
