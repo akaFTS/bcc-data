@@ -15,7 +15,7 @@
   "targets": {
     "bcc-data": {
       "distDir": "dist/",
-      "publicUrl": "./bcc-data/"
+      "publicUrl": "./"
     }
   },
   "husky": {
