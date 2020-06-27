@@ -4,13 +4,19 @@
   "description": "Evolução do BCC em gráficos",
   "homepage": "http://akafts.github.io/bcc-data",
   "private": true,
+  "source": "src/index.html",
+  "bcc-data": "dist/index.html",
   "scripts": {
     "start": "parcel ./src/index.html",
     "lint": "eslint src --ext .js,.tsx",
     "prebuild": "rm -rf dist/",
-    "build": "parcel build ./src/index.html --no-source-maps",
-    "postbuild": "cp -r public/* dist/",
-    "build:deploy": "npm run build -- --public-url '/bcc-data/'"
+    "build": "parcel build ."
+  },
+  "targets": {
+    "bcc-data": {
+      "distDir": "dist/",
+      "publicUrl": "./bcc-data/"
+    }
   },
   "husky": {
     "hooks": {
