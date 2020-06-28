@@ -25,6 +25,7 @@ export default function YearPicker({ onYearChanged }) {
       setInputYear(2018);
     } else {
       setCurrentYear(cleanYear);
+      setInputYear(cleanYear);
     }
   };
 

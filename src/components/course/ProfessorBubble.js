@@ -47,10 +47,7 @@ export default function ProfessorBubble({
     >
       <img
         className={`br-100 h2-3 w2-3 ba bw1 b--${levelColor}`}
-        src={professorPhotos[code]}
-        onError={(e) => {
-          e.target.src = defaultPic;
-        }}
+        src={professorPhotos[code] || defaultPic}
         alt={`Professor(a) ${name}`}
         id={code}
       />
