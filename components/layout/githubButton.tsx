@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "https://esm.sh/@fortawesome/react-fontawesome";
 import { faGithub } from "https://esm.sh/@fortawesome/free-brands-svg-icons";
 
 function openGithub() {
+  // @ts-ignore window.open not recognized
   window.open("https://github.com/akaFTS/bcc-data", "_blank");
 }
 
