@@ -1,6 +1,6 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircle } from '@fortawesome/free-solid-svg-icons';
+import React from "react";
+import { FontAwesomeIcon } from "https://esm.sh/@fortawesome/react-fontawesome";
+import { faCircle } from "https://esm.sh/@fortawesome/free-solid-svg-icons";
 
 export default function GridSubtitles() {
   return (
