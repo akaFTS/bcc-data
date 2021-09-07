@@ -9,7 +9,9 @@
     // Enables Deno linting for the project
     "deno.lint": true,
     // Sets Deno as the default formatter for the project
-    "editor.defaultFormatter": "denoland.vscode-deno"
+    "editor.defaultFormatter": "denoland.vscode-deno",
+    // Configures deno imports map
+    "deno.importMap": "./import_map.json"
   },
   // This will install the vscode-deno extension
   "extensions": ["denoland.vscode-deno"],

@@ -1,6 +1,6 @@
 import React from 'react';
-import Summary from '../components/information/Summary';
-import Data from '../components/information/Data';
+import Summary from '~/components/information/summary.tsx';
+import Data from '~/components/information/data.tsx';
 
 export default function Information() {
   return (

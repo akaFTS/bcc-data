@@ -22,8 +22,8 @@ export default function App({ Page, pageProps }: AppProps) {
       <Header />
       <main className="w-100 w-80-l center ph2 ph0-l">
         <Navbar />
+        <Page {...pageProps} />
       </main>
-      <Page {...pageProps} />
       <Footer />
     </div>
   );

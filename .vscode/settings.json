@@ -2,5 +2,8 @@
   "deno.enable": true,
   "deno.unstable": true,
   "deno.lint": true,
-  "deno.importMap": "./import_map.json"
+  "deno.importMap": "./import_map.json",
+  "deno.suggest.imports.hosts": {
+    "https://esm.sh": false
+  }
 }
