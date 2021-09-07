@@ -1,14 +1,18 @@
 import React, { ComponentType } from "react";
-import Header from "~/components/layout/header.jsx";
-import Footer from "~/components/layout/footer.jsx";
+import Header from "~/components/layout/header.tsx";
+import Footer from "~/components/layout/footer.tsx";
+import Navbar from "~/components/layout/navbar.tsx";
 import "https://raw.githubusercontent.com/tachyons-css/tachyons/master/css/tachyons.min.css";
 import "~/style/custom_tachyons.css";
 
-export default function App(
-  { Page, pageProps }: { Page: ComponentType<any>; pageProps: any },
-) {
+type AppProps = {
+  Page: ComponentType<any>;
+  pageProps: any;
+};
+
+export default function App({ Page, pageProps }: AppProps) {
   return (
-    <main className="bg-light-gray opensans min-vh-100">
+    <div className="bg-light-gray opensans min-vh-100">
       <head>
         <meta
           name="viewport"
@@ -16,8 +20,11 @@ export default function App(
         />
       </head>
       <Header />
+      <main className="w-100 w-80-l center ph2 ph0-l">
+        <Navbar />
+      </main>
       <Page {...pageProps} />
       <Footer />
-    </main>
+    </div>
   );
 }
