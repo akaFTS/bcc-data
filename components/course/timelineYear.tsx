@@ -1,8 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import TimelineRecord from './TimelineRecord';
+import React from "react";
+import TimelineRecord from "./timelineRecord.tsx";
+import { YearEntry } from "~/types/course.tsx";
 
-export default function TimelineYear({ entry }) {
+type Props = {
+  entry: YearEntry;
+};
+
+export default function TimelineYear({ entry }: Props) {
   return (
     <div className="flex flex-column items-start">
       <div className="flex flex-column justify-center items-center mh2">
@@ -15,13 +19,9 @@ export default function TimelineYear({ entry }) {
         </div>
         <div className="bl br b--light-gray h1 flex-none" />
       </div>
-      {entry.records.map((record) => (
-        <TimelineRecord key={record.text} record={record} />
-      ))}
+      {entry.records.map((
+        record,
+      ) => <TimelineRecord key={record.text} record={record} />)}
     </div>
   );
 }
-
-TimelineYear.propTypes = {
-  entry: PropTypes.object.isRequired,
-};
