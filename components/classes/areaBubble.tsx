@@ -1,7 +1,14 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
 
-export default function AreaBubble({ top, left, name, color, size }) {
+type Props = {
+  top: string;
+  left: string;
+  name: string;
+  color: string;
+  size: number;
+};
+
+export default function AreaBubble({ top, left, name, color, size }: Props) {
   return (
     <div
       className={`bg-${color} br-100 absolute white o-80 flex flex-column align-center justify-center ball`}
@@ -10,7 +17,7 @@ export default function AreaBubble({ top, left, name, color, size }) {
         left,
         width: `${size * 3 + 50}px`,
         height: `${size * 3 + 50}px`,
-        transition: 'all 0.3s',
+        transition: "all 0.3s",
       }}
       aria-label={`Número de matérias de ${name}`}
     >
@@ -21,11 +28,3 @@ export default function AreaBubble({ top, left, name, color, size }) {
     </div>
   );
 }
-
-AreaBubble.propTypes = {
-  top: PropTypes.string.isRequired,
-  left: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  color: PropTypes.string.isRequired,
-  size: PropTypes.number.isRequired,
-};

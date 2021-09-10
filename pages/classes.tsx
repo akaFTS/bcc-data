@@ -1,6 +1,6 @@
 import React from "react";
 import ClassList from "~/components/classes/classList.tsx";
-// import AreaBubbles from "~/components/classes/areaBubbles.tsx";
+import AreaBubbles from "~/components/classes/areaBubbles.tsx";
 
 export default function Classes() {
   return (
@@ -9,7 +9,7 @@ export default function Classes() {
         <ClassList />
       </div>
       <div className="w-100 w-third-l ph2">
-        {/* <AreaBubbles /> */}
+        <AreaBubbles />
       </div>
     </main>
   );
