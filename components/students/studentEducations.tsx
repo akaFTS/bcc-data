@@ -3,13 +3,7 @@ import ContentBox from "../layout/contentBox.tsx";
 import StudentDataPicker from "./studentDataPicker.tsx";
 import { Education, EducationValues, Epoch } from "~/types/students.ts";
 import useStudents from "~/hooks/useStudents.ts";
-import {
-  Cell,
-  Legend,
-  Pie,
-  PieChart,
-  ResponsiveContainer,
-} from "https://esm.sh/recharts@2.1.2?bundle";
+import { Cell, Legend, Pie, PieChart, ResponsiveContainer } from "recharts";
 
 function assertUnreachable(x: never): never {
   throw new Error("Didn't expect to get here");

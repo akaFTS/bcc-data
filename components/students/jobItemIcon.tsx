@@ -1,9 +1,9 @@
 import React from "react";
-import { FontAwesomeIcon } from "https://esm.sh/@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookSquare,
   faSpotify,
-} from "https://esm.sh/@fortawesome/free-brands-svg-icons";
+} from "@fortawesome/free-brands-svg-icons";
 import {
   faBook,
   faChartBar,
@@ -12,8 +12,8 @@ import {
   faHome,
   faUniversity,
   faWrench,
-} from "https://esm.sh/@fortawesome/free-solid-svg-icons";
-import { IconDefinition } from "https://esm.sh/@fortawesome/fontawesome-svg-core";
+} from "@fortawesome/free-solid-svg-icons";
+import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import { Job } from "~/types/students.ts";
 
 type Props = {

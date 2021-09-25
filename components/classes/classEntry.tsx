@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { FontAwesomeIcon } from "https://esm.sh/@fortawesome/react-fontawesome";
-import { faComment } from "https://esm.sh/@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faComment } from "@fortawesome/free-solid-svg-icons";
 import { Area, Classe } from "~/types/classes.ts";
 import ClassNamesModal from "./classNamesModal.tsx";
 import ClassTimespan from "./classTimespan.tsx";

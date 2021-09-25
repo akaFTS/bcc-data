@@ -6,7 +6,7 @@ import {
   ResponsiveContainer,
   XAxis,
   YAxis,
-} from "https://esm.sh/recharts@2.1.2?bundle";
+} from "recharts";
 import { YearGraduates } from "~/types/students.ts";
 
 type Props = {

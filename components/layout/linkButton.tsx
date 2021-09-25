@@ -1,11 +1,11 @@
 import React from "react";
-import { FontAwesomeIcon } from "https://esm.sh/@fortawesome/react-fontawesome";
-import { IconDefinition } from "https://esm.sh/@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 type Props = {
   path: string;
   color: string;
-  icon: IconDefinition;
+  icon: IconProp;
   text: string;
 };
 

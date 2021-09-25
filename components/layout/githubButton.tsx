@@ -1,6 +1,6 @@
 import React from "react";
-import { FontAwesomeIcon } from "https://esm.sh/@fortawesome/react-fontawesome";
-import { faGithub } from "https://esm.sh/@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function openGithub() {
   // @ts-ignore window.open not recognized

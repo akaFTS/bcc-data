@@ -4,7 +4,7 @@ import {
   Geographies,
   Geography,
   Marker,
-} from "https://esm.sh/react-simple-maps@2.3.0";
+} from "react-simple-maps";
 // @ts-ignore deno-lint does not recognize the JSON plugin
 import worldMap from "~/data/students/world.json";
 import { citySpecs } from "~/data/students/citySpecs.ts";

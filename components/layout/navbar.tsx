@@ -5,7 +5,7 @@ import {
   faFileAlt,
   faGraduationCap,
   faUser,
-} from "https://esm.sh/@fortawesome/free-solid-svg-icons";
+} from "@fortawesome/free-solid-svg-icons";
 import LinkButton from "./linkButton.tsx";
 
 export default function Navbar() {

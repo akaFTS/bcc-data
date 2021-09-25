@@ -1,9 +1,9 @@
 import React from "react";
-import { FontAwesomeIcon } from "https://esm.sh/@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronLeft,
   faChevronRight,
-} from "https://esm.sh/@fortawesome/free-solid-svg-icons";
+} from "@fortawesome/free-solid-svg-icons";
 
 type Props = {
   onMoveLeft: () => void;
