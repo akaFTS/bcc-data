@@ -8,12 +8,22 @@ on:
       - master
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  build-and-deploy:
+    runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v1
-      - uses: sterlingwes/gh-pages-deploy-action@v1.1
+      - uses: actions/checkout@v2
+
+      - name: Build
+        run: |
+          curl -fsSL https://deno.land/x/install/install.sh | sh
+          export DENO_INSTALL="/home/runner/.deno"
+          export PATH="$DENO_INSTALL/bin:$PATH"
+          deno --version
+          deno install -A -f -n land https://deno.land/x/land@v0.7.0/cli.ts
+          land aleph build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          access-token: ${{ secrets.ACCESS_TOKEN }}
-          source-directory: dist
-          build-command: yarn build
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
