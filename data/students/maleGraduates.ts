@@ -1,4 +1,4 @@
-[
+export const maleGraduatesByYear = [
   7,
   3,
   7,
@@ -42,5 +42,5 @@
   21,
   29,
   35,
-  37
-]
+  37,
+];

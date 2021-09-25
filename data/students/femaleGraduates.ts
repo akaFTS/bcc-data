@@ -1,4 +1,4 @@
-[
+export const femaleGraduatesByYear = [
   14,
   18,
   13,
@@ -42,5 +42,5 @@
   1,
   6,
   6,
-  6
-]
+  6,
+];
