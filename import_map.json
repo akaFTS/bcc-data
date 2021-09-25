@@ -15,7 +15,7 @@
     "react-responsive-modal": "https://esm.sh/react-responsive-modal@~3.4.0",
     "react-simple-maps": "https://esm.sh/react-simple-maps@~2.3.0",
     "react": "https://esm.sh/react@~17.0.2",
-    "recharts": "https://esm.sh/recharts@~2.1.2?bundle"
+    "recharts": "https://esm.sh/recharts@2.1.2?bundle"
   },
   "scopes": {}
 }
