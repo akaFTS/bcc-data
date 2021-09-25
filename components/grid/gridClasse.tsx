@@ -1,5 +1,5 @@
 import React from "react";
-import { Classe, isFullClasse } from "~/types/grid.tsx";
+import { Classe, isFullClasse } from "~/types/grid.ts";
 
 function getClassColorAndName(code: string): [string, string] {
   if (/^MAC/.test(code)) return ["mt-red", "Computação"];

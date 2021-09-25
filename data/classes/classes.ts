@@ -1,4 +1,4 @@
-import { Classe } from "~/types/classes.tsx";
+import { Classe } from "~/types/classes.ts";
 
 export const classes: Classe[] = [
   {

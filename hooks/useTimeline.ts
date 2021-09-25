@@ -1,5 +1,5 @@
-import { timeline } from "~/data/course/timeline.tsx";
-import { YearEntry } from "~/types/course.tsx";
+import { timeline } from "~/data/course/timeline.ts";
+import { YearEntry } from "~/types/course.ts";
 
 export default function useTimeline(): YearEntry[] {
   const yearEntries: YearEntry[] = [];

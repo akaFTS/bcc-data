@@ -1,12 +1,12 @@
-import { Grid } from "~/types/grid.tsx";
+import { Grid } from "~/types/grid.ts";
 
 export const grid: Grid = {
-  "year": 1992,
+  "year": 1988,
   "grid": [
     [
       {
-        "code": "MAT0131",
-        "name": "Cálculo Diferencial e Integral",
+        "code": "MAT0111",
+        "name": "Cálculo I",
       },
       {
         "code": "MAT0112",
@@ -17,7 +17,11 @@ export const grid: Grid = {
         "name": "Introdução à Ciência da Computação",
       },
       {
-        "code": "FEP0115",
+        "code": "FEP0111",
+        "name": "Física I",
+      },
+      {
+        "code": "FEP0141",
         "name": "Laboratório de Física I",
       },
       {
@@ -27,8 +31,8 @@ export const grid: Grid = {
     ],
     [
       {
-        "code": "MAT0131",
-        "name": "Cálculo Diferencial e Integral",
+        "code": "MAT0121",
+        "name": "Cálculo II",
       },
       {
         "code": "MAT0122",
@@ -39,8 +43,12 @@ export const grid: Grid = {
         "name": "Introdução à Probabilidade e Estatística II",
       },
       {
-        "code": "FEP0126",
-        "name": "Física I",
+        "code": "FEP0112",
+        "name": "Física II",
+      },
+      {
+        "code": "FEP0142",
+        "name": "Laboratório de Física II",
       },
       {
         "code": "MAC0122",
@@ -65,15 +73,16 @@ export const grid: Grid = {
         "name": "Álgebra I",
       },
       {
-        "code": "FEP0137",
-        "name": "Física II",
+        "code": "EFT0640",
+        "name": "Educação Física",
       },
       {
-        "code": "FEP0139",
-        "name": "Laboratório de Física II",
+        "code": "FEP0211",
+        "name": "Física III",
       },
       {
-        "slot": "Prática Esportiva",
+        "code": "FEP0241",
+        "name": "Laboratório de Física III",
       },
     ],
     [
@@ -91,15 +100,15 @@ export const grid: Grid = {
       },
       {
         "code": "MAC0221",
-        "name": "Construção de Montadores",
+        "name": "Linguagem de Montagem",
       },
       {
-        "code": "FEP0240",
-        "name": "Física III",
+        "code": "FEP0246",
+        "name": "Física IV",
       },
       {
-        "code": "FEP0248",
-        "name": "Laboratório de Física III",
+        "code": "FEP0242",
+        "name": "Laboratório de Física IV",
       },
       {
         "code": "FLC0474",
@@ -162,20 +171,20 @@ export const grid: Grid = {
         "name": "Introdução à Compilação",
       },
       {
+        "code": "MAC0422",
+        "name": "Sistemas Operacionais",
+      },
+      {
         "slot": "Optativa II",
       },
       {
         "slot": "Optativa III",
       },
-      {
-        "code": "MAT0359",
-        "name": "Lógica",
-      },
     ],
     [
       {
-        "code": "MAC0422",
-        "name": "Sistemas Operacionais",
+        "code": "MAT0329",
+        "name": "Lógica Matemática",
       },
       {
         "code": "MAC0426",

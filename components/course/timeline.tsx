@@ -1,7 +1,7 @@
 import React from "react";
 import ContentBox from "~/components/layout/contentBox.tsx";
 import TimelineYear from "./timelineYear.tsx";
-import useTimeline from "~/hooks/useTimeline.tsx";
+import useTimeline from "~/hooks/useTimeline.ts";
 
 export default function Timeline() {
   const timelineYears = useTimeline();

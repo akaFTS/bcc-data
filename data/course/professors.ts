@@ -1,4 +1,4 @@
-import { Professor } from "~/types/course.tsx";
+import { Professor } from "~/types/course.ts";
 
 export const professors: Professor[] = [
   {

@@ -1,5 +1,5 @@
-import { classes } from "~/data/classes/classes.tsx";
-import { Area } from "~/types/classes.tsx";
+import { classes } from "~/data/classes/classes.ts";
+import { Area } from "~/types/classes.ts";
 
 export default function useClasses(
   activeArea: Area | null,

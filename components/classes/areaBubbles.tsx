@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import ContentBox from "../layout/contentBox.tsx";
 import AreaBubble from "./areaBubble.tsx";
 import YearPicker from "../layout/yearPicker.tsx";
-import { Area } from "~/types/classes.tsx";
-import useClasses from "~/hooks/useClasses.tsx";
+import { Area } from "~/types/classes.ts";
+import useClasses from "~/hooks/useClasses.ts";
 
 export default function AreaBubbles() {
   const [currentYear, setYear] = useState<number | null>(null);

@@ -1,5 +1,5 @@
 import React from "react";
-import { Record } from "~/types/course.tsx";
+import { Record } from "~/types/course.ts";
 
 type Props = {
   record: Record;

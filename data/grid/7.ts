@@ -1,4 +1,4 @@
-import { Grid } from "~/types/grid.tsx";
+import { Grid } from "~/types/grid.ts";
 
 export const grid: Grid = {
   "year": 1998,

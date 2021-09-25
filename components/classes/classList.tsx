@@ -3,8 +3,8 @@ import ContentBox from "../layout/contentBox.tsx";
 import AreaFilter from "./areaFilter.tsx";
 import YearFilter from "./yearFilter.tsx";
 import ClassEntry from "./classEntry.tsx";
-import { Area } from "~/types/classes.tsx";
-import useClasses from "~/hooks/useClasses.tsx";
+import { Area } from "~/types/classes.ts";
+import useClasses from "~/hooks/useClasses.ts";
 
 export default function ClassList() {
   const [activeArea, setActiveArea] = useState<Area | null>(null);

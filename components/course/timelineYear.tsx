@@ -1,6 +1,6 @@
 import React from "react";
 import TimelineRecord from "./timelineRecord.tsx";
-import { YearEntry } from "~/types/course.tsx";
+import { YearEntry } from "~/types/course.ts";
 
 type Props = {
   entry: YearEntry;

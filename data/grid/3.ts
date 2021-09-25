@@ -1,7 +1,7 @@
-import { Grid } from "~/types/grid.tsx";
+import { Grid } from "~/types/grid.ts";
 
 export const grid: Grid = {
-  "year": 1983,
+  "year": 1980,
   "grid": [
     [
       {
@@ -20,10 +20,6 @@ export const grid: Grid = {
         "code": "FEP0101",
         "name": "Física I",
       },
-      {
-        "code": "MAE0121",
-        "name": "Introdução à Probabilidade e Estatística I",
-      },
     ],
     [
       {
@@ -35,16 +31,12 @@ export const grid: Grid = {
         "name": "Álgebra Linear I",
       },
       {
-        "code": "MAE0212",
-        "name": "Introdução à Probabilidade e Estatística II",
+        "code": "MAE0120",
+        "name": "Introdução à Probabilidade e Estatística",
       },
       {
         "code": "FEP0102",
         "name": "Física II",
-      },
-      {
-        "code": "MAC0122",
-        "name": "Princípios de Desenvolvimento de Algoritmos",
       },
     ],
     [
@@ -57,16 +49,8 @@ export const grid: Grid = {
         "name": "Laboratório de Programação",
       },
       {
-        "code": "MAT0222",
-        "name": "Álgebra Linear II",
-      },
-      {
-        "code": "MAT0123",
-        "name": "Álgebra I",
-      },
-      {
-        "code": "EFT0640",
-        "name": "Educação Física",
+        "code": "MAT0214",
+        "name": "Tópicos de Álgebra",
       },
     ],
     [
@@ -79,8 +63,8 @@ export const grid: Grid = {
         "name": "Álgebra II",
       },
       {
-        "code": "MAE0224",
-        "name": "Probabilidade",
+        "code": "MAT0222",
+        "name": "Álgebra Linear II",
       },
       {
         "code": "MAC0221",
@@ -97,8 +81,8 @@ export const grid: Grid = {
         "name": "Programação Matemática I",
       },
       {
-        "code": "MAC0310",
-        "name": "Princípios de Enumeração",
+        "code": "MAP0313",
+        "name": "Cálculo de Diferenças Finitas",
       },
       {
         "code": "MAC0323",
@@ -119,11 +103,10 @@ export const grid: Grid = {
         "name": "Introdução à Teoria dos Grafos",
       },
       {
-        "code": "FLC0474",
-        "name": "Língua Portuguesa",
+        "slot": "Optativa I",
       },
       {
-        "slot": "Optativa I",
+        "slot": "Português",
       },
     ],
     [
@@ -136,14 +119,13 @@ export const grid: Grid = {
         "name": "Organização de Computadores",
       },
       {
-        "code": "MAT0319",
-        "name": "Estudo de Problemas Brasileiros I",
-      },
-      {
         "slot": "Optativa II",
       },
       {
         "slot": "Optativa III",
+      },
+      {
+        "slot": "Estudo de Problemas Brasileiros I",
       },
     ],
     [
@@ -156,17 +138,13 @@ export const grid: Grid = {
         "name": "Lógica Matemática",
       },
       {
-        "code": "MAT0422",
-        "name": "Estudo de Problemas Brasileiros II",
-      },
-      {
         "slot": "Optativa IV",
       },
       {
         "slot": "Optativa V",
       },
       {
-        "slot": "Disciplina de outra Área",
+        "slot": "Estudo de Problemas Brasileiros II",
       },
     ],
   ],

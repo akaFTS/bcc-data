@@ -1,7 +1,7 @@
-import { Grid } from "~/types/grid.tsx";
+import { Grid } from "~/types/grid.ts";
 
 export const grid: Grid = {
-  "year": 1980,
+  "year": 1972,
   "grid": [
     [
       {
@@ -18,7 +18,7 @@ export const grid: Grid = {
       },
       {
         "code": "FEP0101",
-        "name": "Física I",
+        "name": "Física Geral e Experimental I",
       },
     ],
     [
@@ -31,12 +31,16 @@ export const grid: Grid = {
         "name": "Álgebra Linear I",
       },
       {
-        "code": "MAE0120",
-        "name": "Introdução à Probabilidade e Estatística",
+        "code": "MAE0121",
+        "name": "Introdução à Probabilidade e Estatística I",
       },
       {
         "code": "FEP0102",
-        "name": "Física II",
+        "name": "Física Geral e Experimental II",
+      },
+      {
+        "code": "MAP0121",
+        "name": "Cálculo Numérico I",
       },
     ],
     [
@@ -49,6 +53,18 @@ export const grid: Grid = {
         "name": "Laboratório de Programação",
       },
       {
+        "code": "FEP0201",
+        "name": "Física Geral e Experimental III",
+      },
+      {
+        "code": "MAE0212",
+        "name": "Introdução à Probabilidade e Estatística II",
+      },
+      {
+        "code": "MAP0212",
+        "name": "Cálculo Numérico II",
+      },
+      {
         "code": "MAT0214",
         "name": "Tópicos de Álgebra",
       },
@@ -59,16 +75,22 @@ export const grid: Grid = {
         "name": "Cálculo IV",
       },
       {
-        "code": "MAT0213",
-        "name": "Álgebra II",
-      },
-      {
-        "code": "MAT0222",
-        "name": "Álgebra Linear II",
+        "code": "MAP0225",
+        "name": "Elementos de Álgebra Moderna e Aplicações",
       },
       {
         "code": "MAC0221",
         "name": "Linguagem de Montagem",
+      },
+      {
+        "code": "FEP0202",
+        "name": "Física Geral e Experimental IV",
+      },
+      {
+        "slot": "Português",
+      },
+      {
+        "slot": "Educação Moral e Cívica",
       },
     ],
     [
@@ -77,16 +99,16 @@ export const grid: Grid = {
         "name": "Análise Numérica I",
       },
       {
-        "code": "MAC0315",
-        "name": "Programação Matemática I",
+        "code": "MAC0312",
+        "name": "Programação Comercial",
       },
       {
         "code": "MAP0313",
         "name": "Cálculo de Diferenças Finitas",
       },
       {
-        "code": "MAC0323",
-        "name": "Estruturas de Dados",
+        "code": "MAC0315",
+        "name": "Programação Matemática I",
       },
     ],
     [
@@ -95,21 +117,27 @@ export const grid: Grid = {
         "name": "Análise Numérica II",
       },
       {
-        "code": "MAC0329",
-        "name": "Álgebra Booleana e Aplicações",
+        "code": "MAC0322",
+        "name": "Introdução à Análise de Sistemas",
       },
       {
-        "code": "MAC0328",
-        "name": "Introdução à Teoria dos Grafos",
+        "code": "MAC0323",
+        "name": "Estruturas de Dados",
       },
       {
-        "slot": "Optativa I",
+        "code": "MAC0325",
+        "name": "Programação Matemática II",
       },
       {
-        "slot": "Português",
+        "code": "MAP0326",
+        "name": "Lógica e Algoritmos",
       },
     ],
     [
+      {
+        "code": "MAP0311",
+        "name": "Matemática Aplicada I",
+      },
       {
         "code": "MAC0410",
         "name": "Introdução à Compilação",
@@ -118,33 +146,19 @@ export const grid: Grid = {
         "code": "MAC0412",
         "name": "Organização de Computadores",
       },
-      {
-        "slot": "Optativa II",
-      },
-      {
-        "slot": "Optativa III",
-      },
-      {
-        "slot": "Estudo de Problemas Brasileiros I",
-      },
     ],
     [
       {
+        "code": "MAP0321",
+        "name": "Matemática Aplicada II",
+      },
+      {
+        "code": "MAP0421",
+        "name": "Simulação",
+      },
+      {
         "code": "MAC0422",
         "name": "Sistemas Operacionais",
-      },
-      {
-        "code": "MAT0329",
-        "name": "Lógica Matemática",
-      },
-      {
-        "slot": "Optativa IV",
-      },
-      {
-        "slot": "Optativa V",
-      },
-      {
-        "slot": "Estudo de Problemas Brasileiros II",
       },
     ],
   ],

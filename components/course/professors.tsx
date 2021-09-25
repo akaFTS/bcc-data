@@ -10,9 +10,9 @@ import ContentBox from "../layout/contentBox.tsx";
 import ProfessorBubble from "./professorBubble.tsx";
 import ProfessorCanvas from "./professorCanvas.tsx";
 import YearPicker from "../layout/yearPicker.tsx";
-import { professors } from "~/data/course/professors.tsx";
-import { Professor } from "~/types/course.tsx";
-import * as years from "~/data/course/professors/importYears.tsx";
+import { professors } from "~/data/course/professors.ts";
+import { Professor } from "~/types/course.ts";
+import * as years from "~/data/course/professors/importYears.ts";
 
 function getCanvasSize(professors: any[], level: number) {
   const capacity = Object.keys(professors).filter(

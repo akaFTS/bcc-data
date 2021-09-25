@@ -1,6 +1,6 @@
 import React from "react";
 import FilterPill from "./filterPill.tsx";
-import { Area } from "~/types/classes.tsx";
+import { Area } from "~/types/classes.ts";
 
 type Props = {
   activeArea: Area | null;

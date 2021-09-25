@@ -1,5 +1,5 @@
 import React from "react";
-import { Classe } from "~/types/classes.tsx";
+import { Classe } from "~/types/classes.ts";
 import ClassTimespan from "./classTimespan.tsx";
 import Modal from "react-responsive-modal";
 

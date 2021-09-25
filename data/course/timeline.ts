@@ -1,4 +1,4 @@
-import { Record } from "~/types/course.tsx";
+import { Record } from "~/types/course.ts";
 
 export const timeline: Record[] = [
   {

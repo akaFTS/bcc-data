@@ -1,5 +1,5 @@
 import React from "react";
-import { slots } from "~/data/course/slots.tsx";
+import { slots } from "~/data/course/slots.ts";
 
 function getLevelColor(level: number) {
   if (level === 0) return "light-silver";

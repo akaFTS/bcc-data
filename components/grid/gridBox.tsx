@@ -1,5 +1,5 @@
 import React from "react";
-import { Classe, isFullClasse } from "~/types/grid.tsx";
+import { Classe, isFullClasse } from "~/types/grid.ts";
 import GridClasse from "./gridClasse.tsx";
 
 function orderClasses(a: Classe, b: Classe) {
@@ -31,14 +31,12 @@ export default function GridBox({ semester, classes }: Props) {
       <div role="list">
         {classes.sort(orderClasses).map((
           classe,
-        ) =>
-          (
-            <GridClasse
-              key={isFullClasse(classe) ? classe.code : classe.slot}
-              classe={classe}
-            />
-          )
-        )}
+        ) => (
+          <GridClasse
+            key={isFullClasse(classe) ? classe.code : classe.slot}
+            classe={classe}
+          />
+        ))}
       </div>
     </article>
   );

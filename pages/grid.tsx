@@ -4,8 +4,8 @@ import GridBox from "~/components/grid/gridBox.tsx";
 import GridPickerTop from "~/components/grid/gridPickerTop.tsx";
 import GridPickerBottom from "~/components/grid/gridPickerBottom.tsx";
 import GridSubtitles from "~/components/grid/gridSubtitles.tsx";
-import useGridPicker from "~/hooks/useGridPicker.tsx";
-import { isFullClasse } from "~/types/grid.tsx";
+import useGridPicker from "~/hooks/useGridPicker.ts";
+import { isFullClasse } from "~/types/grid.ts";
 
 export default function Grid() {
   const [grids, activeGridIndex, moveLeft, moveRight] = useGridPicker();
