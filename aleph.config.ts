@@ -1,8 +1,8 @@
-import json from 'https://deno.land/x/aleph/plugins/json.ts'
-import type { Config } from 'https://deno.land/x/aleph/types.d.ts'
+import json from "aleph/plugins/json.ts";
+import type { Config } from "aleph/types.ts";
 
-export default <Config>{
+export default <Config> {
   plugins: [
-    json()
-  ]
-}
+    json(),
+  ],
+};

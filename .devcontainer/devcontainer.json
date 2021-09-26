@@ -11,11 +11,13 @@
     // Sets Deno as the default formatter for the project
     "editor.defaultFormatter": "denoland.vscode-deno",
     // Configures deno imports map
-    "deno.importMap": "./import_map.json"
+    "deno.importMap": "./import_map.json",
+    // Configure deno settings
+    "deno.config": "./deno.json"
   },
   // This will install the vscode-deno extension
   "extensions": ["denoland.vscode-deno"],
   "remoteUser": "vscode",
-  "postCreateCommand": "deno run -A https://deno.land/x/aleph/install.ts && deno install -qAn vr https://deno.land/x/velociraptor@1.2.0/cli.ts && vr && deno cache app.tsx --import-map=import_map.json",
+  "postCreateCommand": "deno run -A https://deno.land/x/aleph/install.ts && deno install -qAn vr https://deno.land/x/velociraptor@1.2.0/cli.ts && vr && deno cache app.tsx --import-map=import_map.json --no-check",
   "forwardPorts": [8080]
 }

@@ -1,4 +1,4 @@
-import React, { ComponentType } from "react";
+import React from "react";
 import Header from "~/components/layout/header.tsx";
 import Footer from "~/components/layout/footer.tsx";
 import Navbar from "~/components/layout/navbar.tsx";
@@ -6,8 +6,8 @@ import "https://raw.githubusercontent.com/tachyons-css/tachyons/master/css/tachy
 import "~/style/custom_tachyons.css";
 
 type AppProps = {
-  Page: ComponentType<any>;
-  pageProps: any;
+  Page: React.FC;
+  pageProps: Record<string, unknown>;
 };
 
 export default function App({ Page, pageProps }: AppProps) {

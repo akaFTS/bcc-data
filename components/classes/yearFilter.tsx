@@ -31,7 +31,6 @@ export default function YearFilter({
             activeYear !== null ? "b--silver" : "b--light-gray"
           }`}
           value={yearInput}
-          //@ts-ignore issues with HTML and TS
           onChange={(e) => setYearInput(e.target.value)}
           onBlur={applyYearFilter}
           id="yearInput"
