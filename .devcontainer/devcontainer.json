@@ -16,6 +16,6 @@
   // This will install the vscode-deno extension
   "extensions": ["denoland.vscode-deno"],
   "remoteUser": "vscode",
-  "postCreateCommand": "deno run -A https://deno.land/x/aleph/install.ts",
+  "postCreateCommand": "deno run -A https://deno.land/x/aleph/install.ts && deno install -qAn vr https://deno.land/x/velociraptor@1.2.0/cli.ts && vr && deno cache app.tsx --import-map=import_map.json",
   "forwardPorts": [8080]
 }
