@@ -2,15 +2,11 @@ import React from 'react';
 import Header from 'components/layout/header';
 import Footer from 'components/layout/footer';
 import Navbar from 'components/layout/navbar';
-import 'https://raw.githubusercontent.com/tachyons-css/tachyons/master/css/tachyons.min.css';
+import 'style/tachyons.css';
 import 'style/custom_tachyons.css';
+import { AppProps } from 'next/app';
 
-type AppProps = {
-  Page: React.FC;
-  pageProps: Record<string, unknown>;
-};
-
-export default function App({ Page, pageProps }: AppProps) {
+export default function App({ Component, pageProps }: AppProps) {
   return (
     <div className="bg-light-gray opensans min-vh-100">
       <head>
@@ -22,7 +18,7 @@ export default function App({ Page, pageProps }: AppProps) {
       <Header />
       <main className="w-100 w-80-l center ph2 ph0-l">
         <Navbar />
-        <Page {...pageProps} />
+        <Component {...pageProps} />
       </main>
       <Footer />
     </div>
