@@ -10,7 +10,7 @@ function assertUnreachable(x: never): never {
 }
 
 function getNameFromEducation(education: Education): string {
-  if (education == 'GRADUATE') {
+  if (education === 'GRADUATE') {
     return 'Apenas BCC';
   }
   if (education == 'MBA') {
@@ -39,15 +39,15 @@ export default function StudentEducations({
 }: Props) {
   const educationMap = new Map<Education, number>();
   // This is necessary to maintain a constant order of keys.
-  EducationValues.map(education => educationMap.set(education, 0));
+  EducationValues.map((education) => educationMap.set(education, 0));
 
   const studentData = useStudents(currentSelection);
-  studentData.map(student => {
+  studentData.map((student) => {
     const count = educationMap.get(student.education) ?? 0;
     educationMap.set(student.education, count + 1);
   });
 
-  const educationData = EducationValues.map(education => ({
+  const educationData = EducationValues.map((education) => ({
     name: getNameFromEducation(education),
     value: educationMap.get(education),
   }));

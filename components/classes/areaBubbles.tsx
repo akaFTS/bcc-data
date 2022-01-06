@@ -10,7 +10,7 @@ export default function AreaBubbles() {
   const yearClasses = useClasses(null, currentYear);
 
   const classesCount: { [key in Area]?: number } = {};
-  yearClasses.map(classe => {
+  yearClasses.map((classe) => {
     const areaCount = classesCount[classe.area] ?? 0;
     classesCount[classe.area] = areaCount + 1;
   });

@@ -15,7 +15,7 @@ const kLastYear = 2018;
 export default function useGraduates(currentEpoch: Epoch): YearGraduates[] {
   const yearRange = [...Array(kLastYear - kFirstYear).keys()];
 
-  const graduatesByYear: YearGraduates[] = yearRange.map(index => ({
+  const graduatesByYear: YearGraduates[] = yearRange.map((index) => ({
     year: index + kFirstYear,
     males: 0,
     females: 0,

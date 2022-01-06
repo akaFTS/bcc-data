@@ -4,6 +4,8 @@ import ContentBox from '../layout/contentBox';
 export default function Summary() {
   var bla = '';
 
+  React.findDOMNode(<ContentBox />);
+
   return (
     <ContentBox title="Introdução" color="orange">
       <div className="fw3 lh-copy gray f6">

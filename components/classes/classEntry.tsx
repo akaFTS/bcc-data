@@ -29,7 +29,7 @@ export default function ClassEntry({
 
   let classeName = classe.names[classe.names.length - 1].name;
   if (currentYear !== null) {
-    const possibleName = classe.names.find(name => name.start <= currentYear);
+    const possibleName = classe.names.find((name) => name.start <= currentYear);
     if (typeof possibleName !== 'undefined') {
       classeName = possibleName.name;
     }

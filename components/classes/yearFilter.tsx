@@ -28,7 +28,7 @@ export default function YearFilter({ activeYear, onYearSet }: Props) {
             activeYear !== null ? 'b--silver' : 'b--light-gray'
           }`}
           value={yearInput}
-          onChange={e => setYearInput(e.target.value)}
+          onChange={(e) => setYearInput(e.target.value)}
           onBlur={applyYearFilter}
           id="yearInput"
         />

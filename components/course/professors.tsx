@@ -16,7 +16,7 @@ import * as years from 'data/course/professors/importYears';
 
 function getCanvasSize(professors: any[], level: number) {
   const capacity = Object.keys(professors).filter(
-    (code: any) => professors[code] === level
+    (code: any) => professors[code] === level,
   ).length;
 
   if (capacity <= 6) return 1;
@@ -44,7 +44,7 @@ export default function Professors() {
   const [currentYear, setCurrentYear] = useState<number | null>(null);
 
   const professorYears: any[] = [];
-  Object.keys(years).forEach(key => {
+  Object.keys(years).forEach((key) => {
     professorYears.push({
       year: parseInt(key.replace('p', ''), 10),
       // @ts-ignore temporary
@@ -53,7 +53,7 @@ export default function Professors() {
   });
 
   const currentProfessorYear = professorYears.find(
-    profYear => profYear.year === currentYear
+    (profYear) => profYear.year === currentYear,
   );
 
   const currentProfessors = currentProfessorYear
@@ -68,11 +68,11 @@ export default function Professors() {
             [currentProfessors[cur]]: [...acc[currentProfessors[cur]], cur],
           }
         : { ...acc, [currentProfessors[cur]]: [cur] },
-    {}
+    {},
   );
 
-  Object.keys(groupedProfessors).map(level =>
-    groupedProfessors[level].sort((a: any, b: any) => (a > b ? 1 : -1))
+  Object.keys(groupedProfessors).map((level) =>
+    groupedProfessors[level].sort((a: any, b: any) => (a > b ? 1 : -1)),
   );
 
   return (

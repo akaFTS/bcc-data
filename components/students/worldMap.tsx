@@ -15,7 +15,7 @@ const kMaxRadius = 30;
 function getCityRadius(
   minCount: number,
   maxCount: number,
-  count: number
+  count: number,
 ): number {
   const normalizedCount = (count - minCount) / (maxCount - minCount);
   return normalizedCount * (kMaxRadius - kMinRadius) + kMinRadius;
@@ -29,14 +29,14 @@ export default function WorldMap({ citiesCount }: Props) {
   const citiesWithCount: (City & { count: number })[] = [];
 
   citiesCount.forEach((count, cityCode) => {
-    const cityData = citySpecs.find(city => city.code == cityCode);
+    const cityData = citySpecs.find((city) => city.code == cityCode);
     if (typeof cityData === 'undefined') return;
 
     citiesWithCount.push({ ...cityData, count: count });
   });
 
-  const minCount = Math.min(...citiesWithCount.map(entry => entry.count));
-  const maxCount = Math.max(...citiesWithCount.map(entry => entry.count));
+  const minCount = Math.min(...citiesWithCount.map((entry) => entry.count));
+  const maxCount = Math.max(...citiesWithCount.map((entry) => entry.count));
 
   return (
     <div className="mt4">
@@ -55,7 +55,7 @@ export default function WorldMap({ citiesCount }: Props) {
       >
         <Geographies geography={worldMap}>
           {({ geographies }) =>
-            geographies.map(geography => (
+            geographies.map((geography) => (
               <Geography
                 key={geography.rsmKey}
                 geography={geography}
@@ -83,7 +83,7 @@ export default function WorldMap({ citiesCount }: Props) {
             ))
           }
         </Geographies>
-        {citiesWithCount.map(city => (
+        {citiesWithCount.map((city) => (
           <Marker key={city.coordinates[0]} coordinates={city.coordinates}>
             <circle
               cx={0}

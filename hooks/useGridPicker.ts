@@ -6,7 +6,7 @@ export default function useGridPicker(): [
   Grid[],
   number,
   () => void,
-  () => void
+  () => void,
 ] {
   const [activeGridIndex, selectGrid] = useState(7);
   const moveLeft = () => selectGrid((activeGridIndex + 7) % 8);

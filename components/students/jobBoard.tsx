@@ -54,18 +54,18 @@ export default function JobBoard({ jobCategories }: Props) {
   const [hoveringType, setHoveringType] = useState<Job | null>(null);
   const totalJobs = Array.from(jobCategories.values()).reduce(
     (total, jobCount) => total + jobCount,
-    0
+    0,
   );
 
   const roundedJobsMap = new Map<Job, number>();
   jobCategories.forEach((count, job) =>
-    roundedJobsMap.set(job, Math.round((count * 100) / totalJobs))
+    roundedJobsMap.set(job, Math.round((count * 100) / totalJobs)),
   );
 
   // Fix last category to always sum 100
   const missingCount = Array.from(roundedJobsMap.values()).reduce(
     (missing, jobCount) => missing - jobCount,
-    100
+    100,
   );
   const otherCount = roundedJobsMap.get('OTHER') ?? 0;
   roundedJobsMap.set('OTHER', otherCount + missingCount);

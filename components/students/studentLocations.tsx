@@ -7,7 +7,7 @@ import { Epoch, Student } from 'types/students';
 
 function countCities(data: Student[]): Map<string, number> {
   const citiesCount = new Map<string, number>();
-  data.forEach(student => {
+  data.forEach((student) => {
     const city = citiesCount.get(student.location) ?? 0;
     citiesCount.set(student.location, city + 1);
   });

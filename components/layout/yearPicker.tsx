@@ -52,7 +52,7 @@ export default function YearPicker({ onYearChanged }: Props) {
       <input
         className="f3 b mh4 dark-gray ba br2 b--light-gray ph2 pv1 w3 tc"
         value={inputYear}
-        onChange={e => setInputYear(e.target.value)}
+        onChange={(e) => setInputYear(e.target.value)}
         onBlur={() => setYearByString(inputYear)}
         aria-label="Ano"
       />

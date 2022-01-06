@@ -9,7 +9,7 @@ export default function Timeline() {
   return (
     <ContentBox title="Timeline" color="purple">
       <div role="list">
-        {timelineYears.map(yearEntry => (
+        {timelineYears.map((yearEntry) => (
           <TimelineYear entry={yearEntry} key={yearEntry.year} />
         ))}
       </div>

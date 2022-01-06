@@ -16,10 +16,10 @@ export default function StudentJobs({
 }: Props) {
   const jobMap = new Map<Job, number>();
   // This is necessary to maintain a constant order of keys.
-  JobValues.map(job => jobMap.set(job, 0));
+  JobValues.map((job) => jobMap.set(job, 0));
 
   const studentData = useStudents(currentSelection);
-  studentData.map(student => {
+  studentData.map((student) => {
     const count = jobMap.get(student.job) ?? 0;
     jobMap.set(student.job, count + 1);
   });

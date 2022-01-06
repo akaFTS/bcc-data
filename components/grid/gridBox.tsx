@@ -27,7 +27,7 @@ export default function GridBox({ semester, classes }: Props) {
         {semester}º Semestre
       </h3>
       <div role="list">
-        {classes.sort(orderClasses).map(classe => (
+        {classes.sort(orderClasses).map((classe) => (
           <GridClasse
             key={isFullClasse(classe) ? classe.code : classe.slot}
             classe={classe}
