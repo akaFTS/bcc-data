@@ -1,5 +1,5 @@
-import React from "react";
-import ContentBox from "../layout/contentBox.tsx";
+import React from 'react';
+import ContentBox from '../layout/contentBox';
 
 export default function Propposal() {
   return (
@@ -31,8 +31,8 @@ export default function Propposal() {
           website terá papel importante. Nele, serão construídos diversos
           gráficos para exibir ao leitor interessado todo o aprendizado
           adquirido ao longo do trabalho. Teremos, por exemplo, uma
-          <span className="i">timeline</span>{" "}
-          do BCC com momentos importantes desde sua criação até o presente.
+          <span className="i">timeline</span> do BCC com momentos importantes
+          desde sua criação até o presente.
         </p>
         <p>
           Para além do BCC, este trabalho também se propõe a analisar cursos de
@@ -46,13 +46,12 @@ export default function Propposal() {
           gráficos para fácil visualização.
         </p>
         <p className="mt4">
-          <span className="fw6">Nota:</span>{" "}
-          em 12/09, em reunião com o prof. Carlinhos, foi definida uma mudança
-          com relação à proposta inicial. A comparação com outros cursos pelo
-          mundo foi adiada para uma pesquisa futura, fora do escopo deste
-          trabalho, e incluiu-se uma pesquisa no corpo de ex-alunos do curso,
-          para traçar um perfil de onde se encontram hoje. Assim, o título do
-          trabalho foi alterado para{" "}
+          <span className="fw6">Nota:</span> em 12/09, em reunião com o prof.
+          Carlinhos, foi definida uma mudança com relação à proposta inicial. A
+          comparação com outros cursos pelo mundo foi adiada para uma pesquisa
+          futura, fora do escopo deste trabalho, e incluiu-se uma pesquisa no
+          corpo de ex-alunos do curso, para traçar um perfil de onde se
+          encontram hoje. Assim, o título do trabalho foi alterado para{' '}
           <span className="fw6">
             &quot;BCC IME-USP: evolução e perfil do ex-aluno&quot;
           </span>

@@ -1,5 +1,5 @@
-import React from "react";
-import ContentBox from "../layout/contentBox.tsx";
+import React from 'react';
+import ContentBox from '../layout/contentBox';
 
 export default function Summary() {
   return (
@@ -15,40 +15,38 @@ export default function Summary() {
           evolução.
         </p>
         <p className="mb2">
-          Ele foi desenvolvido como um{" "}
+          Ele foi desenvolvido como um{' '}
           <a href="/tcc" className="fw6 mid-gray pointer hover-dark-gray">
             Trabalho de Conclusão de Curso
-          </a>{" "}
+          </a>{' '}
           por Gustavo Silva, da turma de 2015, com supervisão do professor
           Carlinhos.
         </p>
         <h3 className="mb0">Tecnologia</h3>
         <p className="mb2">
-          O site foi desenvolvido usando a ferramenta{" "}
+          O site foi desenvolvido usando a ferramenta{' '}
           <span className="b">React</span>. Para o estilo, foi utilizado CSS
-          funcional através de{" "}
-          <span className="i">tachyons</span>. Ambas são tecnologias open-source
-          que permitem ao código ser bastante modularizado e simples de
-          entender. Não há um back-end fornecendo as informações; elas estão
-          salvas em arquivos JSON na pasta
-          <span className="i">src/data/</span>{" "}
-          do projeto, enquanto as imagens estão na pasta{" "}
-          <span className="i">public/</span>. Os formatos de cada arquivo de
-          dados variam; alguns dados são representados por um único arquivo e
-          outros por um arquivo para cada ano. Uma explicação de quais dados são
-          usados no sistema, para qual fim e de onde eles foram retirados está
-          na caixa &quot;Dados&quot; nesta página.
+          funcional através de <span className="i">tachyons</span>. Ambas são
+          tecnologias open-source que permitem ao código ser bastante
+          modularizado e simples de entender. Não há um back-end fornecendo as
+          informações; elas estão salvas em arquivos JSON na pasta
+          <span className="i">src/data/</span> do projeto, enquanto as imagens
+          estão na pasta <span className="i">public/</span>. Os formatos de cada
+          arquivo de dados variam; alguns dados são representados por um único
+          arquivo e outros por um arquivo para cada ano. Uma explicação de quais
+          dados são usados no sistema, para qual fim e de onde eles foram
+          retirados está na caixa &quot;Dados&quot; nesta página.
         </p>
         <p className="mb2">
           O código está majoritariamente na pasta
           <span className="i">src/components/</span>, separado por módulo. A
-          pasta <span className="i">src/components/pages</span>{" "}
-          mantém os componentes de nível mais alto, que representam cada página
-          do sistema. Vários dos módulos possuem um componente especial
-          <span className="i">XptoProvider</span>{" "}
-          que é responsável por carregar os dados dos arquivos, formatá-los e
-          repassá-los aos componentes responsáveis por exibi-los - assim as
-          responsabilidades ficam bem separadas.
+          pasta <span className="i">src/components/pages</span> mantém os
+          componentes de nível mais alto, que representam cada página do
+          sistema. Vários dos módulos possuem um componente especial
+          <span className="i">XptoProvider</span> que é responsável por carregar
+          os dados dos arquivos, formatá-los e repassá-los aos componentes
+          responsáveis por exibi-los - assim as responsabilidades ficam bem
+          separadas.
         </p>
         <h3 className="mb0">Contribuindo</h3>
         <p className="mb2">
@@ -60,7 +58,7 @@ export default function Summary() {
           a pesquisa dos ex-alunos no Linkedin pode ser aprimorada ou refeita.
         </p>
         <p className="mb2">
-          No repositório há um arquivo <span className="b">README</span>{" "}
+          No repositório há um arquivo <span className="b">README</span>{' '}
           contendo informações de como rodar o sistema localmente para
           desenvolvimento. Para enviar alguma contribuição, basta submeter um
           Pull Request que, em caso de aprovação, será incorporado ao

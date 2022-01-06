@@ -1,9 +1,9 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faChevronLeft,
   faChevronRight,
-} from "@fortawesome/free-solid-svg-icons";
+} from '@fortawesome/free-solid-svg-icons';
 
 type Props = {
   onMoveLeft: () => void;
@@ -12,9 +12,12 @@ type Props = {
   gridSize: number;
 };
 
-export default function GridPickerBottom(
-  { onMoveLeft, onMoveRight, activeGridIndex, gridSize }: Props,
-) {
+export default function GridPickerBottom({
+  onMoveLeft,
+  onMoveRight,
+  activeGridIndex,
+  gridSize,
+}: Props) {
   return (
     <div className="flex justify-center items-center mt3">
       <button
@@ -28,15 +31,15 @@ export default function GridPickerBottom(
         />
       </button>
       <div className="flex items-center">
-        {[...Array(gridSize).keys()].map((index) =>
-          index === activeGridIndex
-            ? <div key={index} className="pa1 pl2 pt2 bg-red br-100 mh1" />
-            : (
-              <div
-                key={index}
-                className="pa1 br-100 bg-light-silver mh1 hover-bg-gray pointer"
-              />
-            )
+        {[...Array(gridSize).keys()].map(index =>
+          index === activeGridIndex ? (
+            <div key={index} className="pa1 pl2 pt2 bg-red br-100 mh1" />
+          ) : (
+            <div
+              key={index}
+              className="pa1 br-100 bg-light-silver mh1 hover-bg-gray pointer"
+            />
+          )
         )}
       </div>
       <button

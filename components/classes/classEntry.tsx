@@ -1,16 +1,16 @@
-import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faComment } from "@fortawesome/free-solid-svg-icons";
-import { Area, Classe } from "~/types/classes.ts";
-import ClassNamesModal from "./classNamesModal.tsx";
-import ClassTimespan from "./classTimespan.tsx";
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faComment } from '@fortawesome/free-solid-svg-icons';
+import { Area, Classe } from 'types/classes';
+import ClassNamesModal from './classNamesModal';
+import ClassTimespan from './classTimespan';
 
 function getAreaColorAndName(area: Area): [string, string] {
-  if (area === "THEORY") return ["bg-blue", "Teoria"];
-  if (area === "SOFTWARE") return ["bg-green", "Sistemas"];
-  if (area === "AI") return ["bg-pink", "IA"];
-  if (area === "ESCIENCE") return ["bg-orange", "E-science"];
-  return ["bg-light-silver", "Outras"];
+  if (area === 'THEORY') return ['bg-blue', 'Teoria'];
+  if (area === 'SOFTWARE') return ['bg-green', 'Sistemas'];
+  if (area === 'AI') return ['bg-pink', 'IA'];
+  if (area === 'ESCIENCE') return ['bg-orange', 'E-science'];
+  return ['bg-light-silver', 'Outras'];
 }
 
 type Props = {
@@ -19,16 +19,18 @@ type Props = {
   currentYear: number | null;
 };
 
-export default function ClassEntry(
-  { classe, whiteStripe, currentYear }: Props,
-) {
+export default function ClassEntry({
+  classe,
+  whiteStripe,
+  currentYear,
+}: Props) {
   const [isModalOpen, setModalOpen] = useState(false);
   const [areaColor, areaName] = getAreaColorAndName(classe.area);
 
   let classeName = classe.names[classe.names.length - 1].name;
   if (currentYear !== null) {
-    const possibleName = classe.names.find((name) => name.start <= currentYear);
-    if (typeof possibleName !== "undefined") {
+    const possibleName = classe.names.find(name => name.start <= currentYear);
+    if (typeof possibleName !== 'undefined') {
       classeName = possibleName.name;
     }
   }
@@ -36,7 +38,7 @@ export default function ClassEntry(
   return (
     <div
       className={`flex flex-column flex-row-l items-start items-center-l ph3 pv3 gray ${
-        whiteStripe ? "" : "bg-light-gray"
+        whiteStripe ? '' : 'bg-light-gray'
       }`}
       role="listitem"
       aria-label={`Matéria da área: ${areaName}`}

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 type Props = {
   isActive: boolean;
@@ -7,9 +7,7 @@ type Props = {
   onClick: () => void;
 };
 
-export default function FilterPill(
-  { isActive, name, color, onClick }: Props,
-) {
+export default function FilterPill({ isActive, name, color, onClick }: Props) {
   if (isActive) {
     return (
       <button

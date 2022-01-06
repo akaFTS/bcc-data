@@ -1,5 +1,5 @@
-import React from "react";
-import ContentBox from "../layout/contentBox.tsx";
+import React from 'react';
+import ContentBox from '../layout/contentBox';
 
 export default function Sources() {
   return (
@@ -10,21 +10,21 @@ export default function Sources() {
           oficiais do IME, obtidos com a ajuda da Secretaria do DCC.
         </p>
         <p>
-          <span className="fw6">Timeline:</span>{" "}
-          Para a elaboração da Timeline, foram utilizados principalmente
-          processos da USP relacionados ao reconhecimento de curso do BCC, em
-          especial o processo 2010.1.950.45.0, que continha a maior parte das
-          informações. Outros processos continham atas das congregações dos anos
-          1970 a 1975, e bastante informação foi obtida nessas atas. Para obter
-          as datas de inauguração dos blocos do IME, foi necessário procurar as
-          placas comemorativas em cada bloco. Outros dados mais recentes, como a
+          <span className="fw6">Timeline:</span> Para a elaboração da Timeline,
+          foram utilizados principalmente processos da USP relacionados ao
+          reconhecimento de curso do BCC, em especial o processo
+          2010.1.950.45.0, que continha a maior parte das informações. Outros
+          processos continham atas das congregações dos anos 1970 a 1975, e
+          bastante informação foi obtida nessas atas. Para obter as datas de
+          inauguração dos blocos do IME, foi necessário procurar as placas
+          comemorativas em cada bloco. Outros dados mais recentes, como a
           fundação dos grupos de extensão, foram obtidos pesquisando-se em seus
           respectivos sites, ou valendo-se da memória, já que são coisas que
           ocorreram no período em que eu já estava no curso.
         </p>
         <p>
-          <span className="fw6">Professores, matérias e grade:</span>{" "}
-          Esses módulos foram construídos através da pesquisa em catálogos de
+          <span className="fw6">Professores, matérias e grade:</span> Esses
+          módulos foram construídos através da pesquisa em catálogos de
           graduação. Tratam-se de pequenos livros que são distribuídos todo ano
           aos novos alunos, contendo informações atualizadas dos departamentos,
           matérias, ementas e outras informações. Com a ajuda da secretaria do

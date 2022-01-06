@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 type Props = {
   title: string;
@@ -19,7 +19,7 @@ export default function ProfessorCanvas({
     <article
       className="br3 bg-light-gray mb4 overflow-hidden"
       style={{
-        transition: "height 0.3s ease-out",
+        transition: 'height 0.3s ease-out',
         height: `${size * 50 + 50}px`,
       }}
       aria-owns={professorsList}

@@ -1,13 +1,13 @@
-import React from "react";
-import { Classe, isFullClasse } from "~/types/grid.ts";
+import React from 'react';
+import { Classe, isFullClasse } from 'types/grid';
 
 function getClassColorAndName(code: string): [string, string] {
-  if (/^MAC/.test(code)) return ["mt-red", "Computação"];
-  if (/^MAT/.test(code)) return ["mt-blue", "Matemática Pura"];
-  if (/^MAE/.test(code)) return ["mt-green", "Estatística"];
-  if (/^MAP/.test(code)) return ["mt-orange", "Matemática Aplicada"];
-  if (/^(FEP|FAP)/.test(code)) return ["mt-purple", "Física"];
-  return ["gray", "Outras"];
+  if (/^MAC/.test(code)) return ['mt-red', 'Computação'];
+  if (/^MAT/.test(code)) return ['mt-blue', 'Matemática Pura'];
+  if (/^MAE/.test(code)) return ['mt-green', 'Estatística'];
+  if (/^MAP/.test(code)) return ['mt-orange', 'Matemática Aplicada'];
+  if (/^(FEP|FAP)/.test(code)) return ['mt-purple', 'Física'];
+  return ['gray', 'Outras'];
 }
 
 type Props = {

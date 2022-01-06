@@ -1,9 +1,9 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 function openGithub() {
-  window.open("https://github.com/akaFTS/bcc-data", "_blank");
+  window.open('https://github.com/akaFTS/bcc-data', '_blank');
 }
 
 export default function GithubButton() {

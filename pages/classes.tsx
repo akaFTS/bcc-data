@@ -1,6 +1,6 @@
-import React from "react";
-import ClassList from "~/components/classes/classList.tsx";
-import AreaBubbles from "~/components/classes/areaBubbles.tsx";
+import React from 'react';
+import ClassList from 'components/classes/classList';
+import AreaBubbles from 'components/classes/areaBubbles';
 
 export default function Classes() {
   return (

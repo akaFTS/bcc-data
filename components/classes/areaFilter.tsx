@@ -1,16 +1,13 @@
-import React from "react";
-import FilterPill from "./filterPill.tsx";
-import { Area } from "~/types/classes.ts";
+import React from 'react';
+import FilterPill from './filterPill';
+import { Area } from 'types/classes';
 
 type Props = {
   activeArea: Area | null;
   onAreaSet: (area: Area | null) => void;
 };
 
-export default function ListFilters({
-  activeArea,
-  onAreaSet,
-}: Props) {
+export default function ListFilters({ activeArea, onAreaSet }: Props) {
   return (
     <div
       className="flex flex-column justify-between"
@@ -29,32 +26,32 @@ export default function ListFilters({
         <FilterPill
           name="Teoria"
           color="blue"
-          isActive={activeArea === "THEORY"}
-          onClick={() => onAreaSet("THEORY")}
+          isActive={activeArea === 'THEORY'}
+          onClick={() => onAreaSet('THEORY')}
         />
         <FilterPill
           name="Sistemas"
           color="green"
-          isActive={activeArea === "SOFTWARE"}
-          onClick={() => onAreaSet("SOFTWARE")}
+          isActive={activeArea === 'SOFTWARE'}
+          onClick={() => onAreaSet('SOFTWARE')}
         />
         <FilterPill
           name="IA"
           color="pink"
-          isActive={activeArea === "AI"}
-          onClick={() => onAreaSet("AI")}
+          isActive={activeArea === 'AI'}
+          onClick={() => onAreaSet('AI')}
         />
         <FilterPill
           name="E-science"
           color="orange"
-          isActive={activeArea === "ESCIENCE"}
-          onClick={() => onAreaSet("ESCIENCE")}
+          isActive={activeArea === 'ESCIENCE'}
+          onClick={() => onAreaSet('ESCIENCE')}
         />
         <FilterPill
           name="Outras"
           color="light-silver"
-          isActive={activeArea === "OTHERS"}
-          onClick={() => onAreaSet("OTHERS")}
+          isActive={activeArea === 'OTHERS'}
+          onClick={() => onAreaSet('OTHERS')}
         />
       </div>
     </div>

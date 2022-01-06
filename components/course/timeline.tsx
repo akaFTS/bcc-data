@@ -1,7 +1,7 @@
-import React from "react";
-import ContentBox from "~/components/layout/contentBox.tsx";
-import TimelineYear from "./timelineYear.tsx";
-import useTimeline from "~/hooks/useTimeline.ts";
+import React from 'react';
+import ContentBox from 'components/layout/contentBox';
+import TimelineYear from './timelineYear';
+import useTimeline from 'hooks/useTimeline';
 
 export default function Timeline() {
   const timelineYears = useTimeline();
@@ -9,9 +9,9 @@ export default function Timeline() {
   return (
     <ContentBox title="Timeline" color="purple">
       <div role="list">
-        {timelineYears.map((
-          yearEntry,
-        ) => <TimelineYear entry={yearEntry} key={yearEntry.year} />)}
+        {timelineYears.map(yearEntry => (
+          <TimelineYear entry={yearEntry} key={yearEntry.year} />
+        ))}
       </div>
     </ContentBox>
   );

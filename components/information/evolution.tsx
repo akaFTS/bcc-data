@@ -1,5 +1,5 @@
-import React from "react";
-import ContentBox from "../layout/contentBox.tsx";
+import React from 'react';
+import ContentBox from '../layout/contentBox';
 
 export default function Evolution() {
   return (

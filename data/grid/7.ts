@@ -1,184 +1,184 @@
-import { Grid } from "~/types/grid.ts";
+import { Grid } from 'types/grid';
 
 export const grid: Grid = {
-  "year": 1998,
-  "grid": [
+  year: 1998,
+  grid: [
     [
       {
-        "code": "MAT0111",
-        "name": "Cálculo I",
+        code: 'MAT0111',
+        name: 'Cálculo I',
       },
       {
-        "code": "MAT0138",
-        "name": "Álgebra I",
+        code: 'MAT0138',
+        name: 'Álgebra I',
       },
       {
-        "code": "MAC0110",
-        "name": "Introdução à Computação",
+        code: 'MAC0110',
+        name: 'Introdução à Computação',
       },
       {
-        "code": "MAE0121",
-        "name": "Introdução à Probabilidade e Estatística I",
+        code: 'MAE0121',
+        name: 'Introdução à Probabilidade e Estatística I',
       },
     ],
     [
       {
-        "code": "MAT0121",
-        "name": "Cálculo II",
+        code: 'MAT0121',
+        name: 'Cálculo II',
       },
       {
-        "code": "MAT0139",
-        "name": "Álgebra Linear",
+        code: 'MAT0139',
+        name: 'Álgebra Linear',
       },
       {
-        "code": "MAE0212",
-        "name": "Introdução à Probabilidade e Estatística II",
+        code: 'MAE0212',
+        name: 'Introdução à Probabilidade e Estatística II',
       },
       {
-        "code": "FAP0126",
-        "name": "Física I",
+        code: 'FAP0126',
+        name: 'Física I',
       },
       {
-        "code": "MAC0122",
-        "name": "Princípios de Desenvolvimento de Algoritmos",
-      },
-    ],
-    [
-      {
-        "code": "MAT0211",
-        "name": "Cálculo III",
-      },
-      {
-        "code": "MAE0228",
-        "name": "Noções de Probabilidade e Processos Estocásticos",
-      },
-      {
-        "code": "MAC0211",
-        "name": "Laboratório de Programação I",
-      },
-      {
-        "code": "MAC0323",
-        "name": "Estruturas de Dados",
-      },
-      {
-        "code": "MAC0315",
-        "name": "Programação Linear",
+        code: 'MAC0122',
+        name: 'Princípios de Desenvolvimento de Algoritmos',
       },
     ],
     [
       {
-        "code": "MAT0221",
-        "name": "Cálculo IV",
+        code: 'MAT0211',
+        name: 'Cálculo III',
       },
       {
-        "code": "MAT0213",
-        "name": "Álgebra II",
+        code: 'MAE0228',
+        name: 'Noções de Probabilidade e Processos Estocásticos',
       },
       {
-        "code": "FAP0137",
-        "name": "Física II",
+        code: 'MAC0211',
+        name: 'Laboratório de Programação I',
       },
       {
-        "code": "MAC0239",
-        "name": "Métodos Formais em Programação",
+        code: 'MAC0323',
+        name: 'Estruturas de Dados',
       },
       {
-        "code": "MAC0242",
-        "name": "Laboratório de Programação II",
-      },
-      {
-        "code": "MAC0300",
-        "name": "Métodos Numéricos da Álgebra Linear",
+        code: 'MAC0315',
+        name: 'Programação Linear',
       },
     ],
     [
       {
-        "code": "MAC0316",
-        "name": "Conceitos Fundamentais de Linguagens de Programação",
+        code: 'MAT0221',
+        name: 'Cálculo IV',
       },
       {
-        "code": "MAC0328",
-        "name": "Algoritmos em Grafos",
+        code: 'MAT0213',
+        name: 'Álgebra II',
       },
       {
-        "code": "MAC0329",
-        "name": "Álgebra Booleana e Aplicações",
+        code: 'FAP0137',
+        name: 'Física II',
       },
       {
-        "code": "MAC0338",
-        "name": "Análise de Algoritmos",
+        code: 'MAC0239',
+        name: 'Métodos Formais em Programação',
       },
       {
-        "code": "MAC0426",
-        "name": "Sistemas de Bancos de Dados",
+        code: 'MAC0242',
+        name: 'Laboratório de Programação II',
       },
       {
-        "code": "FLC0474",
-        "name": "Língua Portuguesa",
-      },
-      {
-        "slot": "Optativa Eletiva I",
+        code: 'MAC0300',
+        name: 'Métodos Numéricos da Álgebra Linear',
       },
     ],
     [
       {
-        "code": "MAC0332",
-        "name": "Engenharia de Software",
+        code: 'MAC0316',
+        name: 'Conceitos Fundamentais de Linguagens de Programação',
       },
       {
-        "code": "MAC0422",
-        "name": "Sistemas Operacionais",
+        code: 'MAC0328',
+        name: 'Algoritmos em Grafos',
       },
       {
-        "code": "MAC0414",
-        "name": "Autômatos e Linguagens Formais",
+        code: 'MAC0329',
+        name: 'Álgebra Booleana e Aplicações',
       },
       {
-        "code": "MAC0412",
-        "name": "Organização de Computadores",
+        code: 'MAC0338',
+        name: 'Análise de Algoritmos',
       },
       {
-        "slot": "Optativa Eletiva II",
+        code: 'MAC0426',
+        name: 'Sistemas de Bancos de Dados',
       },
       {
-        "slot": "Optativa Eletiva III",
-      },
-    ],
-    [
-      {
-        "code": "MAC0438",
-        "name": "Programação Concorrente",
+        code: 'FLC0474',
+        name: 'Língua Portuguesa',
       },
       {
-        "code": "MAC0499",
-        "name": "Trabalho de Formatura Supervisionado",
-      },
-      {
-        "slot": "Optativa Eletiva IV",
-      },
-      {
-        "slot": "Optativa Eletiva V",
-      },
-      {
-        "slot": "Optativa Livre I",
+        slot: 'Optativa Eletiva I',
       },
     ],
     [
       {
-        "code": "MAC0499",
-        "name": "Trabalho de Formatura Supervisionado",
+        code: 'MAC0332',
+        name: 'Engenharia de Software',
       },
       {
-        "slot": "Optativa Eletiva VI",
+        code: 'MAC0422',
+        name: 'Sistemas Operacionais',
       },
       {
-        "slot": "Optativa Eletiva VII",
+        code: 'MAC0414',
+        name: 'Autômatos e Linguagens Formais',
       },
       {
-        "slot": "Optativa Eletiva VIII",
+        code: 'MAC0412',
+        name: 'Organização de Computadores',
       },
       {
-        "slot": "Optativa Livre II",
+        slot: 'Optativa Eletiva II',
+      },
+      {
+        slot: 'Optativa Eletiva III',
+      },
+    ],
+    [
+      {
+        code: 'MAC0438',
+        name: 'Programação Concorrente',
+      },
+      {
+        code: 'MAC0499',
+        name: 'Trabalho de Formatura Supervisionado',
+      },
+      {
+        slot: 'Optativa Eletiva IV',
+      },
+      {
+        slot: 'Optativa Eletiva V',
+      },
+      {
+        slot: 'Optativa Livre I',
+      },
+    ],
+    [
+      {
+        code: 'MAC0499',
+        name: 'Trabalho de Formatura Supervisionado',
+      },
+      {
+        slot: 'Optativa Eletiva VI',
+      },
+      {
+        slot: 'Optativa Eletiva VII',
+      },
+      {
+        slot: 'Optativa Eletiva VIII',
+      },
+      {
+        slot: 'Optativa Livre II',
       },
     ],
   ],

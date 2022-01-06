@@ -13,4 +13,4 @@ export type YearEntry = {
 export type Professor = {
   code: string;
   name: string;
-}
+};

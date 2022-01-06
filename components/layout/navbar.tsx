@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 import {
   faBook,
   faCalendarAlt,
   faFileAlt,
   faGraduationCap,
   faUser,
-} from "@fortawesome/free-solid-svg-icons";
-import LinkButton from "./linkButton.tsx";
+} from '@fortawesome/free-solid-svg-icons';
+import LinkButton from './linkButton';
 
 export default function Navbar() {
   return (
@@ -20,30 +20,10 @@ export default function Navbar() {
         path="/info"
         color="orange"
       />
-      <LinkButton
-        text="Curso"
-        icon={faGraduationCap}
-        path="/"
-        color="purple"
-      />
-      <LinkButton
-        text="Matérias"
-        icon={faBook}
-        path="/classes"
-        color="green"
-      />
-      <LinkButton
-        text="Grade"
-        icon={faCalendarAlt}
-        path="/grid"
-        color="red"
-      />
-      <LinkButton
-        text="Alunos"
-        icon={faUser}
-        path="/students"
-        color="blue"
-      />
+      <LinkButton text="Curso" icon={faGraduationCap} path="/" color="purple" />
+      <LinkButton text="Matérias" icon={faBook} path="/classes" color="green" />
+      <LinkButton text="Grade" icon={faCalendarAlt} path="/grid" color="red" />
+      <LinkButton text="Alunos" icon={faUser} path="/students" color="blue" />
     </nav>
   );
 }

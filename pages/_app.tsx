@@ -1,9 +1,9 @@
-import React from "react";
-import Header from "~/components/layout/header.tsx";
-import Footer from "~/components/layout/footer.tsx";
-import Navbar from "~/components/layout/navbar.tsx";
-import "https://raw.githubusercontent.com/tachyons-css/tachyons/master/css/tachyons.min.css";
-import "~/style/custom_tachyons.css";
+import React from 'react';
+import Header from 'components/layout/header';
+import Footer from 'components/layout/footer';
+import Navbar from 'components/layout/navbar';
+import 'https://raw.githubusercontent.com/tachyons-css/tachyons/master/css/tachyons.min.css';
+import 'style/custom_tachyons.css';
 
 type AppProps = {
   Page: React.FC;

@@ -1,11 +1,11 @@
-import React from "react";
-import ContentBox from "~/components/layout/contentBox.tsx";
-import GridBox from "~/components/grid/gridBox.tsx";
-import GridPickerTop from "~/components/grid/gridPickerTop.tsx";
-import GridPickerBottom from "~/components/grid/gridPickerBottom.tsx";
-import GridSubtitles from "~/components/grid/gridSubtitles.tsx";
-import useGridPicker from "~/hooks/useGridPicker.ts";
-import { isFullClasse } from "~/types/grid.ts";
+import React from 'react';
+import ContentBox from 'components/layout/contentBox';
+import GridBox from 'components/grid/gridBox';
+import GridPickerTop from 'components/grid/gridPickerTop';
+import GridPickerBottom from 'components/grid/gridPickerBottom';
+import GridSubtitles from 'components/grid/gridSubtitles';
+import useGridPicker from 'hooks/useGridPicker';
+import { isFullClasse } from 'types/grid';
 
 export default function Grid() {
   const [grids, activeGridIndex, moveLeft, moveRight] = useGridPicker();
@@ -21,15 +21,12 @@ export default function Grid() {
             activeGridYear={activeGrid.year}
           />
           <div className="flex flex-wrap items-stretch">
-            {activeGrid.grid.map((
-              classes,
-              index,
-            ) => (
+            {activeGrid.grid.map((classes, index) => (
               <div
                 className="w-100 w-50-l pa2"
-                key={isFullClasse(classes[0])
-                  ? classes[0].code
-                  : classes[0].slot}
+                key={
+                  isFullClasse(classes[0]) ? classes[0].code : classes[0].slot
+                }
               >
                 <GridBox classes={classes} semester={index + 1} />
               </div>

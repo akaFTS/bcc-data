@@ -1,5 +1,5 @@
-import React from "react";
-import { Record } from "~/types/course.ts";
+import React from 'react';
+import { Record } from 'types/course';
 
 type Props = {
   record: Record;
@@ -7,13 +7,13 @@ type Props = {
 
 export default function TimelineRecord({ record }: Props) {
   let formattedDate: string | null = null;
-  if (typeof record.date !== "undefined") {
+  if (typeof record.date !== 'undefined') {
     const matches = record.date.matchAll(/^(\d{2})\/(\d{2})$/g).next().value;
     const day = parseInt(matches[0]);
     const month = parseInt(matches[1]);
 
     const date = new Date(2018, month, day); // year is irrelevant
-    const monthName = date.toLocaleString("pt-BR", { month: "long" });
+    const monthName = date.toLocaleString('pt-BR', { month: 'long' });
     formattedDate = `${date.getDate()} de ${monthName}`;
   }
 
@@ -25,10 +25,11 @@ export default function TimelineRecord({ record }: Props) {
         <div className="bl br b--light-gray flex-auto" />
       </div>
       <div className="mv3">
-        {formattedDate &&
-          <div className="fw6 mid-gray mb1">{formattedDate}</div>}
+        {formattedDate && (
+          <div className="fw6 mid-gray mb1">{formattedDate}</div>
+        )}
         <div
-          className={`${record.featured ? "fw6 f4" : "fw3 lh-copy gray f6"}`}
+          className={`${record.featured ? 'fw6 f4' : 'fw3 lh-copy gray f6'}`}
         >
           {record.text}
         </div>

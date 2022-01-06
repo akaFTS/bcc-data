@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import StudentGenders from "~/components/students/studentGenders.tsx";
-import StudentLocations from "~/components/students/studentLocations.tsx";
-import StudentJobs from "~/components/students/studentJobs.tsx";
-import StudentEducations from "~/components/students/studentEducations.tsx";
-import { Epoch } from "~/types/students.ts";
+import React, { useState } from 'react';
+import StudentGenders from 'components/students/studentGenders';
+import StudentLocations from 'components/students/studentLocations';
+import StudentJobs from 'components/students/studentJobs';
+import StudentEducations from 'components/students/studentEducations';
+import { Epoch } from 'types/students';
 
 export default function Students() {
-  const [epoch, setEpoch] = useState<Epoch>("ALL");
+  const [epoch, setEpoch] = useState<Epoch>('ALL');
 
   return (
     <main>

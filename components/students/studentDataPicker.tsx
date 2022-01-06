@@ -1,5 +1,5 @@
-import React from "react";
-import { Epoch } from "~/types/students.ts";
+import React from 'react';
+import { Epoch } from 'types/students';
 
 type Props = {
   currentSelection: Epoch;
@@ -17,44 +17,44 @@ export default function StudentDataPicker({
     >
       <button
         className={`w-25 pv1 tc b b--none ${
-          currentSelection === "ALL"
-            ? "bg-mt-blue white"
-            : "mt-blue pointer hover-bg-light-gray bg-white"
+          currentSelection === 'ALL'
+            ? 'bg-mt-blue white'
+            : 'mt-blue pointer hover-bg-light-gray bg-white'
         }`}
-        onClick={() => onEpochSelected("ALL")}
+        onClick={() => onEpochSelected('ALL')}
         type="button"
       >
         Todos
       </button>
       <button
         className={`w-25 pv1 tc b b--none ${
-          currentSelection === "1974"
-            ? "bg-mt-blue white"
-            : "mt-blue pointer hover-bg-light-gray bg-white"
+          currentSelection === '1974'
+            ? 'bg-mt-blue white'
+            : 'mt-blue pointer hover-bg-light-gray bg-white'
         }`}
-        onClick={() => onEpochSelected("1974")}
+        onClick={() => onEpochSelected('1974')}
         type="button"
       >
         1974-1988
       </button>
       <button
         className={`w-25 pv1 tc b b--none ${
-          currentSelection === "1989"
-            ? "bg-mt-blue white"
-            : "mt-blue pointer hover-bg-light-gray bg-white"
+          currentSelection === '1989'
+            ? 'bg-mt-blue white'
+            : 'mt-blue pointer hover-bg-light-gray bg-white'
         }`}
-        onClick={() => onEpochSelected("1989")}
+        onClick={() => onEpochSelected('1989')}
         type="button"
       >
         1989-2003
       </button>
       <button
         className={`w-25 pv1 tc b b--none ${
-          currentSelection === "2004"
-            ? "bg-mt-blue white"
-            : "mt-blue pointer hover-bg-light-gray bg-white"
+          currentSelection === '2004'
+            ? 'bg-mt-blue white'
+            : 'mt-blue pointer hover-bg-light-gray bg-white'
         }`}
-        onClick={() => onEpochSelected("2004")}
+        onClick={() => onEpochSelected('2004')}
         type="button"
       >
         2004-2017
