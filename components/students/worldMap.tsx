@@ -29,10 +29,10 @@ export default function WorldMap({ citiesCount }: Props) {
   const citiesWithCount: (City & { count: number })[] = [];
 
   citiesCount.forEach((count, cityCode) => {
-    const cityData = citySpecs.find((city) => city.code == cityCode);
+    const cityData = citySpecs.find((city) => city.code === cityCode);
     if (typeof cityData === 'undefined') return;
 
-    citiesWithCount.push({ ...cityData, count: count });
+    citiesWithCount.push({ ...cityData, count });
   });
 
   const minCount = Math.min(...citiesWithCount.map((entry) => entry.count));

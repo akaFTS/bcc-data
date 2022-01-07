@@ -1,6 +1,6 @@
 import React from 'react';
-import TimelineRecord from './timelineRecord';
 import { YearEntry } from 'types/course';
+import TimelineRecord from './timelineRecord';
 
 type Props = {
   entry: YearEntry;

@@ -26,7 +26,7 @@ export default function YearPicker({ onYearChanged }: Props) {
       setInputYear('2018');
     } else {
       setCurrentYear(year);
-      setInputYear(year + '');
+      setInputYear(`${year}`);
     }
   };
 

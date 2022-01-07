@@ -9,8 +9,8 @@ export default function TimelineRecord({ record }: Props) {
   let formattedDate: string | null = null;
   if (typeof record.date !== 'undefined') {
     const matches = record.date.matchAll(/^(\d{2})\/(\d{2})$/g).next().value;
-    const day = parseInt(matches[0]);
-    const month = parseInt(matches[1]);
+    const day = parseInt(matches[0], 10);
+    const month = parseInt(matches[1], 10);
 
     const date = new Date(2018, month, day); // year is irrelevant
     const monthName = date.toLocaleString('pt-BR', { month: 'long' });

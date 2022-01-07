@@ -19,6 +19,7 @@ export default function JobGroup({ type, count, onHover, isHovering }: Props) {
             type={type}
             onHover={onHover}
             isHovering={isHovering}
+            // eslint-disable-next-line react/no-array-index-key
             key={index}
           />
         ))}

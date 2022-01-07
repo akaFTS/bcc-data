@@ -1,9 +1,9 @@
 import React from 'react';
+import { Epoch, Student } from 'types/students';
+import useStudents from 'hooks/useStudents';
 import ContentBox from '../layout/contentBox';
 import StudentDataPicker from './studentDataPicker';
 import WorldMap from './worldMap';
-import useStudents from 'hooks/useStudents';
-import { Epoch, Student } from 'types/students';
 
 function countCities(data: Student[]): Map<string, number> {
   const citiesCount = new Map<string, number>();

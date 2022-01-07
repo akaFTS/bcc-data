@@ -3,7 +3,7 @@ import { YearEntry } from 'types/course';
 
 export default function useTimeline(): YearEntry[] {
   const yearEntries: YearEntry[] = [];
-  timeline.map((record) => {
+  timeline.forEach((record) => {
     const candidateEntry = yearEntries.find(
       (yearEntry) => yearEntry.year === record.year,
     );

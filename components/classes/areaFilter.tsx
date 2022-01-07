@@ -1,6 +1,6 @@
 import React from 'react';
-import FilterPill from './filterPill';
 import { Area } from 'types/classes';
+import FilterPill from './filterPill';
 
 type Props = {
   activeArea: Area | null;

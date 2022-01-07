@@ -6,17 +6,17 @@ import {
   faStar,
   faStarHalf,
 } from '@fortawesome/free-solid-svg-icons';
+import { Professor } from 'types/course';
+import { professors } from 'data/course/professors';
+import * as years from 'data/course/professors/importYears';
 import ContentBox from '../layout/contentBox';
 import ProfessorBubble from './professorBubble';
 import ProfessorCanvas from './professorCanvas';
 import YearPicker from '../layout/yearPicker';
-import { professors } from 'data/course/professors';
-import { Professor } from 'types/course';
-import * as years from 'data/course/professors/importYears';
 
-function getCanvasSize(professors: any[], level: number) {
-  const capacity = Object.keys(professors).filter(
-    (code: any) => professors[code] === level,
+function getCanvasSize(professorList: any[], level: number) {
+  const capacity = Object.keys(professorList).filter(
+    (code: any) => professorList[code] === level,
   ).length;
 
   if (capacity <= 6) return 1;
@@ -26,16 +26,16 @@ function getCanvasSize(professors: any[], level: number) {
   return 5;
 }
 
-function getProfessorsList(professors: any[], level: number) {
-  return Object.keys(professors)
-    .filter((code: any) => professors[code] === level)
+function getProfessorsList(professorList: any[], level: number) {
+  return Object.keys(professorList)
+    .filter((code: any) => professorList[code] === level)
     .join(' ');
 }
 
-function allCanvasSizes(professors: Professor[]) {
+function allCanvasSizes(professorList: Professor[]) {
   const canvasSizes = [];
   for (let i = 0; i <= 6; i += 1) {
-    canvasSizes.push(i === 4 ? 0 : getCanvasSize(professors, i));
+    canvasSizes.push(i === 4 ? 0 : getCanvasSize(professorList, i));
   }
   return canvasSizes;
 }
@@ -61,13 +61,15 @@ export default function Professors() {
     : {};
 
   const groupedProfessors = Object.keys(currentProfessors).reduce(
-    (acc: any, cur: any) =>
-      acc[currentProfessors[cur]]
-        ? {
-            ...acc,
-            [currentProfessors[cur]]: [...acc[currentProfessors[cur]], cur],
-          }
-        : { ...acc, [currentProfessors[cur]]: [cur] },
+    (acc: any, cur: any) => {
+      if (acc[currentProfessors[cur]]) {
+        return {
+          ...acc,
+          [currentProfessors[cur]]: [...acc[currentProfessors[cur]], cur],
+        };
+      }
+      return { ...acc, [currentProfessors[cur]]: [cur] };
+    },
     {},
   );
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Classe } from 'types/classes';
-import ClassTimespan from './classTimespan';
 import Modal from 'react-responsive-modal';
+import ClassTimespan from './classTimespan';
 
 type Props = {
   isOpen: boolean;

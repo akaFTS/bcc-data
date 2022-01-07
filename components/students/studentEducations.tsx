@@ -1,10 +1,11 @@
 import React from 'react';
-import ContentBox from '../layout/contentBox';
-import StudentDataPicker from './studentDataPicker';
 import { Education, EducationValues, Epoch } from 'types/students';
 import useStudents from 'hooks/useStudents';
 import { Cell, Legend, Pie, PieChart, ResponsiveContainer } from 'recharts';
+import StudentDataPicker from './studentDataPicker';
+import ContentBox from '../layout/contentBox';
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function assertUnreachable(x: never): never {
   throw new Error("Didn't expect to get here");
 }
@@ -13,19 +14,19 @@ function getNameFromEducation(education: Education): string {
   if (education === 'GRADUATE') {
     return 'Apenas BCC';
   }
-  if (education == 'MBA') {
+  if (education === 'MBA') {
     return 'MBA ou Especialização';
   }
-  if (education == 'MASTER') {
+  if (education === 'MASTER') {
     return 'Mestrado';
   }
-  if (education == 'DOCTOR') {
+  if (education === 'DOCTOR') {
     return 'Doutorado';
   }
-  if (education == 'TWO_GRADUATES') {
+  if (education === 'TWO_GRADUATES') {
     return 'Outra graduação';
   }
-  assertUnreachable(education);
+  return assertUnreachable(education);
 }
 
 type Props = {
@@ -42,7 +43,7 @@ export default function StudentEducations({
   EducationValues.map((education) => educationMap.set(education, 0));
 
   const studentData = useStudents(currentSelection);
-  studentData.map((student) => {
+  studentData.forEach((student) => {
     const count = educationMap.get(student.education) ?? 0;
     educationMap.set(student.education, count + 1);
   });
@@ -61,24 +62,22 @@ export default function StudentEducations({
         onEpochSelected={onEpochSelected}
       />
       <div className="mt3">
-        {
-          <ResponsiveContainer height={300} width="100%">
-            <PieChart>
-              <Legend
-                height={30}
-                verticalAlign="top"
-                formatter={(value: string) => (
-                  <span className="gray">{value}</span>
-                )}
-              />
-              <Pie data={educationData} dataKey="value" nameKey="name">
-                {educationData.map((_, index) => (
-                  <Cell key={index} fill={colors[index]} />
-                ))}
-              </Pie>
-            </PieChart>
-          </ResponsiveContainer>
-        }
+        <ResponsiveContainer height={300} width="100%">
+          <PieChart>
+            <Legend
+              height={30}
+              verticalAlign="top"
+              formatter={(value: string) => (
+                <span className="gray">{value}</span>
+              )}
+            />
+            <Pie data={educationData} dataKey="value" nameKey="name">
+              {educationData.map((ed, index) => (
+                <Cell key={ed.name} fill={colors[index]} />
+              ))}
+            </Pie>
+          </PieChart>
+        </ResponsiveContainer>
       </div>
     </ContentBox>
   );

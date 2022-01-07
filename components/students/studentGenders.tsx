@@ -1,9 +1,9 @@
 import React from 'react';
+import { Epoch } from 'types/students';
+import useGraduates from 'hooks/useGraduates';
 import ContentBox from '../layout/contentBox';
 import StudentDataPicker from './studentDataPicker';
 import GenderChart from './genderChart';
-import useGraduates from 'hooks/useGraduates';
-import { Epoch } from 'types/students';
 
 type Props = {
   currentSelection: Epoch;

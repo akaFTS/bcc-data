@@ -1,8 +1,8 @@
 import React from 'react';
+import useStudents from 'hooks/useStudents';
+import { Epoch, Job, JobValues } from 'types/students';
 import ContentBox from '../layout/contentBox';
 import StudentDataPicker from './studentDataPicker';
-import { Epoch, Job, JobValues } from 'types/students';
-import useStudents from 'hooks/useStudents';
 import JobBoard from './jobBoard';
 
 type Props = {
@@ -19,7 +19,7 @@ export default function StudentJobs({
   JobValues.map((job) => jobMap.set(job, 0));
 
   const studentData = useStudents(currentSelection);
-  studentData.map((student) => {
+  studentData.forEach((student) => {
     const count = jobMap.get(student.job) ?? 0;
     jobMap.set(student.job, count + 1);
   });

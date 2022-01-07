@@ -31,16 +31,20 @@ export default function GridPickerBottom({
         />
       </button>
       <div className="flex items-center">
-        {[...Array(gridSize).keys()].map((index) =>
-          index === activeGridIndex ? (
-            <div key={index} className="pa1 pl2 pt2 bg-red br-100 mh1" />
-          ) : (
+        {[...Array(gridSize).keys()].map((index) => {
+          if (index === activeGridIndex) {
+            return (
+              <div key={index} className="pa1 pl2 pt2 bg-red br-100 mh1" />
+            );
+          }
+
+          return (
             <div
               key={index}
               className="pa1 br-100 bg-light-silver mh1 hover-bg-gray pointer"
             />
-          ),
-        )}
+          );
+        })}
       </div>
       <button
         className="bg-white b--none ml4"

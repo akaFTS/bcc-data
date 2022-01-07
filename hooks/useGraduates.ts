@@ -22,11 +22,13 @@ export default function useGraduates(currentEpoch: Epoch): YearGraduates[] {
   }));
 
   maleGraduatesByYear.reduce((accumulated, year, index) => {
-    return (graduatesByYear[index].males = accumulated + year);
+    graduatesByYear[index].males = accumulated + year;
+    return graduatesByYear[index].males;
   }, 0);
 
   femaleGraduatesByYear.reduce((accumulated, year, index) => {
-    return (graduatesByYear[index].females = accumulated + year);
+    graduatesByYear[index].females = accumulated + year;
+    return graduatesByYear[index].females;
   }, 0);
 
   return graduatesByYear.slice(...getYearRangeFromEpoch(currentEpoch));

@@ -21,28 +21,28 @@ type Props = {
 };
 
 function getIconAndColor(job: Job): [IconDefinition, string] {
-  if (job == 'PROFESSOR') {
+  if (job === 'PROFESSOR') {
     return [faGraduationCap, 'mt-purple'];
   }
-  if (job == 'CONSULTANT') {
+  if (job === 'CONSULTANT') {
     return [faChartBar, 'mt-green'];
   }
-  if (job == 'BIG_TECH') {
+  if (job === 'BIG_TECH') {
     return [faFacebookSquare, 'mt-blue'];
   }
-  if (job == 'STARTUP') {
+  if (job === 'STARTUP') {
     return [faSpotify, 'mt-green'];
   }
-  if (job == 'OWN') {
+  if (job === 'OWN') {
     return [faWrench, 'mt-orange'];
   }
-  if (job == 'GOVERNMENT') {
+  if (job === 'GOVERNMENT') {
     return [faUniversity, 'dark-gray'];
   }
-  if (job == 'RETIRED') {
+  if (job === 'RETIRED') {
     return [faHome, 'mt-dark-red'];
   }
-  if (job == 'STUDYING') {
+  if (job === 'STUDYING') {
     return [faBook, 'mt-purple'];
   }
   return [faCircle, 'silver'];

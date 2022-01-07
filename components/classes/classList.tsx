@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
+import useClasses from 'hooks/useClasses';
+import { Area } from 'types/classes';
 import ContentBox from '../layout/contentBox';
 import AreaFilter from './areaFilter';
 import YearFilter from './yearFilter';
 import ClassEntry from './classEntry';
-import { Area } from 'types/classes';
-import useClasses from 'hooks/useClasses';
 
 export default function ClassList() {
   const [activeArea, setActiveArea] = useState<Area | null>(null);

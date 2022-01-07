@@ -2,48 +2,49 @@ import React, { useState } from 'react';
 import { Job } from 'types/students';
 import JobGroup from './jobGroup';
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function assertUnreachable(x: never): never {
   throw new Error("Didn't expect to get here");
 }
 
 function getHoverLabel(job: Job) {
-  if (job == 'PROFESSOR') {
+  if (job === 'PROFESSOR') {
     return 'Professores e Pesquisadores';
   }
-  if (job == 'BANK') {
+  if (job === 'BANK') {
     return 'Bancos e Grandes Empresas';
   }
-  if (job == 'CONSULTANT') {
+  if (job === 'CONSULTANT') {
     return 'Consultorias';
   }
-  if (job == 'OLD_TECH') {
+  if (job === 'OLD_TECH') {
     return 'Empresas de Tecnologia Tradicionais';
   }
-  if (job == 'BIG_TECH') {
+  if (job === 'BIG_TECH') {
     return 'Gigantes da Tecnologia';
   }
-  if (job == 'STARTUP') {
+  if (job === 'STARTUP') {
     return 'Startups no Exterior';
   }
-  if (job == 'BRAZILIAN_STARTUP') {
+  if (job === 'BRAZILIAN_STARTUP') {
     return 'Startups Brasileiras';
   }
-  if (job == 'OWN') {
+  if (job === 'OWN') {
     return 'Fundaram a própria empresa';
   }
-  if (job == 'GOVERNMENT') {
+  if (job === 'GOVERNMENT') {
     return 'Órgãos Públicos';
   }
-  if (job == 'RETIRED') {
+  if (job === 'RETIRED') {
     return 'Aposentados';
   }
-  if (job == 'STUDYING') {
+  if (job === 'STUDYING') {
     return 'Ainda estudando';
   }
-  if (job == 'OTHER') {
+  if (job === 'OTHER') {
     return 'Outros';
   }
-  assertUnreachable(job);
+  return assertUnreachable(job);
 }
 
 type Props = {
