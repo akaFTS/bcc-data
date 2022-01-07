@@ -1,11 +1,8 @@
 import React from 'react';
+import Link from 'next/link';
 import ContentBox from '../layout/contentBox';
 
 export default function Summary() {
-  var bla = '';
-
-  React.findDOMNode(<ContentBox />);
-
   return (
     <ContentBox title="Introdução" color="orange">
       <div className="fw3 lh-copy gray f6">
@@ -20,9 +17,11 @@ export default function Summary() {
         </p>
         <p className="mb2">
           Ele foi desenvolvido como um{' '}
-          <a href="/tcc" className="fw6 mid-gray pointer hover-dark-gray">
-            Trabalho de Conclusão de Curso
-          </a>{' '}
+          <Link href="/tcc" passHref>
+            <span className="fw6 mid-gray pointer hover-dark-gray underline">
+              Trabalho de Conclusão de Curso
+            </span>
+          </Link>{' '}
           por Gustavo Silva, da turma de 2015, com supervisão do professor
           Carlinhos.
         </p>

@@ -17,7 +17,9 @@ export default function JobItem({ type, onHover, isHovering }: Props) {
         isHovering ? 'bg-light-gray' : null
       }`}
     >
-      {type == 'BANK' || type == 'OLD_TECH' || type == 'BRAZILIAN_STARTUP' ? (
+      {type === 'BANK' ||
+      type === 'OLD_TECH' ||
+      type === 'BRAZILIAN_STARTUP' ? (
         <JobItemImage type={type} />
       ) : (
         <JobItemIcon type={type} />

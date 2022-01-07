@@ -151,6 +151,7 @@ export default function Professors() {
             name={professor.name}
             code={professor.code}
             key={professor.code}
+            image={professor.image}
             level={currentProfessors[professor.code] || -1}
             professorSchema={groupedProfessors}
             canvasSizes={allCanvasSizes(currentProfessors)}
