@@ -1,14 +1,13 @@
-import React from "react";
+import React from 'react';
 import {
   ComposableMap,
   Geographies,
   Geography,
   Marker,
-} from "react-simple-maps";
-// @ts-ignore deno-lint does not recognize the JSON plugin
-import worldMap from "~/data/students/world.json";
-import { citySpecs } from "~/data/students/citySpecs.ts";
-import { City } from "~/types/students.ts";
+} from 'react-simple-maps';
+import worldMap from 'data/students/world.json';
+import { citySpecs } from 'data/students/citySpecs';
+import { City } from 'types/students';
 
 const kMinRadius = 10;
 const kMaxRadius = 30;
@@ -30,10 +29,10 @@ export default function WorldMap({ citiesCount }: Props) {
   const citiesWithCount: (City & { count: number })[] = [];
 
   citiesCount.forEach((count, cityCode) => {
-    const cityData = citySpecs.find((city) => city.code == cityCode);
-    if (typeof cityData === "undefined") return;
+    const cityData = citySpecs.find((city) => city.code === cityCode);
+    if (typeof cityData === 'undefined') return;
 
-    citiesWithCount.push({ ...cityData, count: count });
+    citiesWithCount.push({ ...cityData, count });
   });
 
   const minCount = Math.min(...citiesWithCount.map((entry) => entry.count));
@@ -50,8 +49,8 @@ export default function WorldMap({ citiesCount }: Props) {
         width={980}
         height={551}
         style={{
-          width: "100%",
-          height: "auto",
+          width: '100%',
+          height: 'auto',
         }}
       >
         <Geographies geography={worldMap}>
@@ -62,30 +61,29 @@ export default function WorldMap({ citiesCount }: Props) {
                 geography={geography}
                 style={{
                   default: {
-                    fill: "#EEE",
-                    stroke: "#888",
+                    fill: '#EEE',
+                    stroke: '#888',
                     strokeWidth: 0.75,
-                    outline: "none",
+                    outline: 'none',
                   },
                   hover: {
-                    fill: "#EEE",
-                    stroke: "#888",
+                    fill: '#EEE',
+                    stroke: '#888',
                     strokeWidth: 0.75,
-                    outline: "none",
+                    outline: 'none',
                   },
                   pressed: {
-                    fill: "#EEE",
-                    stroke: "#888",
+                    fill: '#EEE',
+                    stroke: '#888',
                     strokeWidth: 0.75,
-                    outline: "none",
+                    outline: 'none',
                   },
                 }}
               />
-            ))}
+            ))
+          }
         </Geographies>
-        {citiesWithCount.map((
-          city,
-        ) => (
+        {citiesWithCount.map((city) => (
           <Marker key={city.coordinates[0]} coordinates={city.coordinates}>
             <circle
               cx={0}

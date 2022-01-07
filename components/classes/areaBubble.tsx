@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 type Props = {
   top: string;
@@ -17,7 +17,7 @@ export default function AreaBubble({ top, left, name, color, size }: Props) {
         left,
         width: `${size * 3 + 50}px`,
         height: `${size * 3 + 50}px`,
-        transition: "all 0.3s",
+        transition: 'all 0.3s',
       }}
       aria-label={`Número de matérias de ${name}`}
     >

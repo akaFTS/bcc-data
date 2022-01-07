@@ -1,18 +1,19 @@
-import React from "react";
-import ContentBox from "../layout/contentBox.tsx";
-import StudentDataPicker from "./studentDataPicker.tsx";
-import GenderChart from "./genderChart.tsx";
-import useGraduates from "~/hooks/useGraduates.ts";
-import { Epoch } from "~/types/students.ts";
+import React from 'react';
+import { Epoch } from 'types/students';
+import useGraduates from 'hooks/useGraduates';
+import ContentBox from '../layout/contentBox';
+import StudentDataPicker from './studentDataPicker';
+import GenderChart from './genderChart';
 
 type Props = {
   currentSelection: Epoch;
   onEpochSelected: (epoch: Epoch) => void;
 };
 
-export default function StudentGenders(
-  { currentSelection, onEpochSelected }: Props,
-) {
+export default function StudentGenders({
+  currentSelection,
+  onEpochSelected,
+}: Props) {
   const graduatesByYear = useGraduates(currentSelection);
 
   return (
@@ -22,9 +23,7 @@ export default function StudentGenders(
         onEpochSelected={onEpochSelected}
       />
       <div className="mv3 mh3">
-        <GenderChart
-          graduatesByYear={graduatesByYear}
-        />
+        <GenderChart graduatesByYear={graduatesByYear} />
       </div>
     </ContentBox>
   );

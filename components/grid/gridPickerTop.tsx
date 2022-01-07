@@ -1,9 +1,9 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faChevronLeft,
   faChevronRight,
-} from "@fortawesome/free-solid-svg-icons";
+} from '@fortawesome/free-solid-svg-icons';
 
 type Props = {
   onMoveLeft: () => void;
@@ -11,9 +11,11 @@ type Props = {
   activeGridYear: number;
 };
 
-export default function GridPickerTop(
-  { onMoveLeft, onMoveRight, activeGridYear }: Props,
-) {
+export default function GridPickerTop({
+  onMoveLeft,
+  onMoveRight,
+  activeGridYear,
+}: Props) {
   return (
     <div className="flex items-center justify-center mb3">
       <button

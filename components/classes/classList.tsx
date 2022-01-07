@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import ContentBox from "../layout/contentBox.tsx";
-import AreaFilter from "./areaFilter.tsx";
-import YearFilter from "./yearFilter.tsx";
-import ClassEntry from "./classEntry.tsx";
-import { Area } from "~/types/classes.ts";
-import useClasses from "~/hooks/useClasses.ts";
+import React, { useState } from 'react';
+import useClasses from 'hooks/useClasses';
+import { Area } from 'types/classes';
+import ContentBox from '../layout/contentBox';
+import AreaFilter from './areaFilter';
+import YearFilter from './yearFilter';
+import ClassEntry from './classEntry';
 
 export default function ClassList() {
   const [activeArea, setActiveArea] = useState<Area | null>(null);
@@ -14,14 +14,8 @@ export default function ClassList() {
   return (
     <ContentBox title="Matérias" color="green">
       <div className="mt3 mb3 flex justify-between align-stretch">
-        <AreaFilter
-          activeArea={activeArea}
-          onAreaSet={setActiveArea}
-        />
-        <YearFilter
-          activeYear={activeYear}
-          onYearSet={setActiveYear}
-        />
+        <AreaFilter activeArea={activeArea} onAreaSet={setActiveArea} />
+        <YearFilter activeYear={activeYear} onYearSet={setActiveYear} />
       </div>
       <main role="list">
         {filteredClasses.map((classe, index) => (

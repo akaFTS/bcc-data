@@ -1,6 +1,6 @@
-import { useState } from "react";
-import { Grid } from "~/types/grid.ts";
-import grids from "~/data/grid/grids.ts";
+import { useState } from 'react';
+import { Grid } from 'types/grid';
+import grids from 'data/grid/grids';
 
 export default function useGridPicker(): [
   Grid[],

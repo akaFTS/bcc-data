@@ -1,17 +1,17 @@
-import React from "react";
+import React from 'react';
 
 function getBeginYearColor(beginYear: number): string {
-  if (beginYear < 1982) return "moon-gray";
-  if (beginYear < 1998) return "light-silver";
-  if (beginYear < 2010) return "gray";
-  return "dark-gray";
+  if (beginYear < 1982) return 'moon-gray';
+  if (beginYear < 1998) return 'light-silver';
+  if (beginYear < 2010) return 'gray';
+  return 'dark-gray';
 }
 
 function getEndYearColor(endYear: number): string {
-  if (endYear < 1982) return "washed-red";
-  if (endYear < 1998) return "light-red";
-  if (endYear < 2010) return "red";
-  return "dark-red";
+  if (endYear < 1982) return 'washed-red';
+  if (endYear < 1998) return 'light-red';
+  if (endYear < 2010) return 'red';
+  return 'dark-red';
 }
 
 type Props = {

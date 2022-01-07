@@ -1,24 +1,25 @@
-import React from "react";
-import ContentBox from "../layout/contentBox.tsx";
-import StudentDataPicker from "./studentDataPicker.tsx";
-import { Epoch, Job, JobValues } from "~/types/students.ts";
-import useStudents from "~/hooks/useStudents.ts";
-import JobBoard from "./jobBoard.tsx";
+import React from 'react';
+import useStudents from 'hooks/useStudents';
+import { Epoch, Job, JobValues } from 'types/students';
+import ContentBox from '../layout/contentBox';
+import StudentDataPicker from './studentDataPicker';
+import JobBoard from './jobBoard';
 
 type Props = {
   currentSelection: Epoch;
   onEpochSelected: (epoch: Epoch) => void;
 };
 
-export default function StudentJobs(
-  { currentSelection, onEpochSelected }: Props,
-) {
+export default function StudentJobs({
+  currentSelection,
+  onEpochSelected,
+}: Props) {
   const jobMap = new Map<Job, number>();
   // This is necessary to maintain a constant order of keys.
   JobValues.map((job) => jobMap.set(job, 0));
 
   const studentData = useStudents(currentSelection);
-  studentData.map((student) => {
+  studentData.forEach((student) => {
     const count = jobMap.get(student.job) ?? 0;
     jobMap.set(student.job, count + 1);
   });

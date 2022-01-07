@@ -1,19 +1,21 @@
-import React from "react";
-import { slots } from "~/data/course/slots.ts";
+import React from 'react';
+import Image from 'next/image';
+import { slots } from 'data/course/slots';
 
 function getLevelColor(level: number) {
-  if (level === 0) return "light-silver";
-  if (level === 1) return "light-blue";
-  if (level === 2) return "mt-light-green";
-  if (level === 3) return "gold";
-  if (level === 5) return "orange";
-  return "dark-red";
+  if (level === 0) return 'light-silver';
+  if (level === 1) return 'light-blue';
+  if (level === 2) return 'mt-light-green';
+  if (level === 3) return 'gold';
+  if (level === 5) return 'orange';
+  return 'dark-red';
 }
 
 type Props = {
   level: any;
   name: any;
   code: any;
+  image: StaticImageData;
   professorSchema: any;
   canvasSizes: any;
 };
@@ -22,6 +24,7 @@ export default function ProfessorBubble({
   level,
   name,
   code,
+  image,
   professorSchema,
   canvasSizes,
 }: Props) {
@@ -46,19 +49,25 @@ export default function ProfessorBubble({
         top: `${top}px`,
         left: `${slot[0]}%`,
         opacity: disabled ? 0 : 1,
-        transition: "all 0.5s ease-out, opacity 0.2s ease-in",
+        transition: 'all 0.5s ease-out, opacity 0.2s ease-in',
       }}
       aria-hidden={disabled}
     >
-      <img
-        className={`br-100 h2-3 w2-3 ba bw1 b--${levelColor}`}
-        src={`/professors/${code}.jpg`}
-        alt={`Professor(a) ${name}`}
-        id={code}
-      />
+      <div className={`br-100 ba bw1 b--${levelColor} h2-3 w2-3`}>
+        <Image
+          className="br-100"
+          src={image}
+          alt={`Professor(a) ${name}`}
+          id={code}
+          height={100}
+          width={100}
+          placeholder="blur"
+          layout="responsive"
+        />
+      </div>
       <div
         className="absolute white bg-gray z-3 child ph2 pv1 f7 mt1 br-pill tc nowrap"
-        style={{ top: "3.1rem" }}
+        style={{ top: '3.1rem' }}
       >
         {name}
       </div>

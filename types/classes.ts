@@ -1,4 +1,4 @@
-export type Area = "THEORY" | "SOFTWARE" | "AI" | "ESCIENCE" | "OTHERS";
+export type Area = 'THEORY' | 'SOFTWARE' | 'AI' | 'ESCIENCE' | 'OTHERS';
 
 export type Classe = {
   code: string;

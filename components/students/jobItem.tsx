@@ -1,7 +1,7 @@
-import React from "react";
-import { Job } from "~/types/students.ts";
-import JobItemImage from "./jobItemImage.tsx";
-import JobItemIcon from "./jobItemIcon.tsx";
+import React from 'react';
+import { Job } from 'types/students';
+import JobItemImage from './jobItemImage';
+import JobItemIcon from './jobItemIcon';
 
 type Props = {
   type: Job;
@@ -14,12 +14,16 @@ export default function JobItem({ type, onHover, isHovering }: Props) {
     <div
       onMouseEnter={() => onHover(type)}
       className={`h2 flex justify-center items-center ${
-        isHovering ? "bg-light-gray" : null
+        isHovering ? 'bg-light-gray' : null
       }`}
     >
-      {type == "BANK" || type == "OLD_TECH" || type == "BRAZILIAN_STARTUP"
-        ? <JobItemImage type={type} />
-        : <JobItemIcon type={type} />}
+      {type === 'BANK' ||
+      type === 'OLD_TECH' ||
+      type === 'BRAZILIAN_STARTUP' ? (
+        <JobItemImage type={type} />
+      ) : (
+        <JobItemIcon type={type} />
+      )}
     </div>
   );
 }

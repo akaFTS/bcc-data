@@ -1,22 +1,41 @@
-import React from "react";
-import { Job } from "~/types/students.ts";
+import React from 'react';
+import Image from 'next/image';
+import { Job } from 'types/students';
+import santanderImg from 'public/brands/santander.png';
+import totvsImg from 'public/brands/totvs.png';
+import ninenineImg from 'public/brands/99.png';
 
 type Props = {
   type: Job;
 };
 
+function getImageFileFromJob(job: Job): StaticImageData {
+  if (job === 'BANK') return santanderImg;
+  if (job === 'OLD_TECH') return totvsImg;
+
+  return ninenineImg;
+}
+
+function getTextFromJob(job: Job): string {
+  if (job === 'BANK') return 'Bancos e Grandes Empresas';
+  if (job === 'OLD_TECH') return 'Empresas de Tecnologia Tradicionais';
+
+  return 'Startups Brasileiras';
+}
+
 export default function JobItemImage({ type }: Props) {
-  const jobFilename = type == "BANK"
-    ? "santander"
-    : type == "OLD_TECH"
-    ? "totvs"
-    : "99";
+  const jobImage = getImageFileFromJob(type);
 
   return (
-    <img
-      src={`/brands/${jobFilename}.png`}
-      style={{ height: "1.4rem" }}
-      alt={`Logotipo - ${jobFilename}`}
-    />
+    <div style={{ height: '1.4rem', width: '1.4rem' }}>
+      <Image
+        src={jobImage}
+        height={100}
+        width={100}
+        layout="responsive"
+        placeholder="blur"
+        alt={`Logotipo - ${getTextFromJob(type)}`}
+      />
+    </div>
   );
 }

@@ -1,13 +1,11 @@
-import React from "react";
-import GithubButton from "./githubButton.tsx";
+import React from 'react';
+import GithubButton from './githubButton';
 
 export default function Footer() {
   return (
-    <footer
-      className="bg-light-gray flex flex-column justify-center items-center ph2 pv2 f5 gray"
-    >
+    <footer className="bg-light-gray flex flex-column justify-center items-center ph2 pv2 f5 gray">
       <span className="mb2">
-        <span>por{" "}</span>
+        <span>por </span>
         <a
           href="https://www.linkedin.com/in/gustavohfts/"
           className="fw6 mid-gray pointer hover-dark-gray"

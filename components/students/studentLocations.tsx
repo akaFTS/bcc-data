@@ -1,9 +1,9 @@
-import React from "react";
-import ContentBox from "../layout/contentBox.tsx";
-import StudentDataPicker from "./studentDataPicker.tsx";
-import WorldMap from "./worldMap.tsx";
-import useStudents from "~/hooks/useStudents.ts";
-import { Epoch, Student } from "~/types/students.ts";
+import React from 'react';
+import { Epoch, Student } from 'types/students';
+import useStudents from 'hooks/useStudents';
+import ContentBox from '../layout/contentBox';
+import StudentDataPicker from './studentDataPicker';
+import WorldMap from './worldMap';
 
 function countCities(data: Student[]): Map<string, number> {
   const citiesCount = new Map<string, number>();
