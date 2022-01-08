@@ -12,7 +12,7 @@ type Props = {
 
 export default function LinkButton({ path, color, icon, text }: Props) {
   return (
-    <Link passHref href={path}>
+    <Link passHref href={path} prefetch={false}>
       <div
         className={`bg-mt-${color} hover-bg-mt-dark-${color} white f5 b--none pv3 ph3 br-pill shadow fw6 pointer ma1 ma0-l mr3-l no-underline`}
       >
