@@ -1,10 +1,7 @@
-export default {
-  setzer: 3,
-  simon: 2,
-  geraldo: 1,
-  istvan: 1,
-  pf: 1,
-  routo: 1,
-  siang: 1,
-  silvio: 1,
+import { ProfessorYearEntry } from 'types/course';
+
+export const yearDefinition: ProfessorYearEntry = {
+  MS1: ['geraldo', 'istvan', 'pf', 'routo', 'siang', 'silvio'],
+  MS2: ['simon'],
+  MS3: ['setzer'],
 };
