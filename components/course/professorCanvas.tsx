@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flipper, Flipped } from 'react-flip-toolkit';
+import { Flipped } from 'react-flip-toolkit';
 import { professorData } from 'data/course/professors';
 import styles from './professorCanvas.module.css';
 import ProfessorBubble from './professorBubble';
@@ -26,28 +26,26 @@ export default function ProfessorCanvas({
         {icon}
         <h3 className={styles.title}>{title}</h3>
       </header>
-      <Flipper flipKey={professors.join('')}>
-        <main className={styles.main}>
-          <div className={styles.container}>
-            {professors &&
-              professors.map((professor) => (
-                <Flipped
-                  key={professorData[professor].code}
-                  flipId={professorData[professor].code}
-                >
-                  {(flippedProps) => (
-                    <ProfessorBubble
-                      name={professorData[professor].name}
-                      color={color}
-                      image={professorData[professor].image}
-                      flippedProps={flippedProps}
-                    />
-                  )}
-                </Flipped>
-              ))}
-          </div>
-        </main>
-      </Flipper>
+      <main className={styles.main}>
+        <div className={styles.container}>
+          {professors &&
+            professors.map((professor) => (
+              <Flipped
+                key={professorData[professor].code}
+                flipId={professorData[professor].code}
+              >
+                {(flippedProps) => (
+                  <ProfessorBubble
+                    name={professorData[professor].name}
+                    color={color}
+                    image={professorData[professor].image}
+                    flippedProps={flippedProps}
+                  />
+                )}
+              </Flipped>
+            ))}
+        </div>
+      </main>
     </article>
   );
 }

@@ -21,21 +21,13 @@
   padding: var(--p3);
   min-height: 80px;
   display: flex;
-}
-
-.container {
-  /* display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(4rem, 1fr));
-  justify-items: center;
-  justify-content: center;
-  align-items: center;
-  grid-gap: 1rem; */
+  transition: height 500ms linear;
 }
 
 .container > div {
   display: inline-block;
   font-size: initial;
-  margin: var(--p1);
+  margin: var(--p2);
 }
 
 .container::before {
@@ -43,5 +35,5 @@
   width: 1.75rem;
   float: left;
   height: 100%;
-  shape-outside: repeating-linear-gradient(#0000 0 6rem, #000 0 7rem);
+  shape-outside: repeating-linear-gradient(#0000 0 6rem, #000 0 8rem);
 }
