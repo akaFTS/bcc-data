@@ -1,33 +1,52 @@
 import React from 'react';
+import { Flipped } from 'react-flip-toolkit';
+import { professorData } from 'data/course/professors';
+import styles from './professorCanvas.module.css';
+import ProfessorBubble from './professorBubble';
 
 type Props = {
   title: string;
   color: string;
   icon: React.ReactNode;
-  size: number;
-  professorsList: any;
+  professors: string[];
 };
 
 export default function ProfessorCanvas({
   title,
   color,
   icon,
-  size,
-  professorsList,
+  professors,
 }: Props) {
   return (
-    <article
-      className="br3 bg-light-gray mb4 overflow-hidden"
-      style={{
-        transition: 'height 0.3s ease-out',
-        height: `${size * 50 + 50}px`,
-      }}
-      aria-owns={professorsList}
-    >
-      <header className={`bg-${color} white ph2 pv1 fw6 f6`}>
+    <article className={styles.article}>
+      <header
+        className={styles.header}
+        style={{ backgroundColor: `var(--${color})` }}
+      >
         {icon}
-        <h3 className="ml2 di">{title}</h3>
+        <h3 className={styles.title}>{title}</h3>
       </header>
+      <main className={styles.main}>
+        <div className={styles.container}>
+          {professors &&
+            professors.map((professor) => (
+              <Flipped
+                key={professorData[professor].code}
+                flipId={professorData[professor].code}
+              >
+                {(flippedProps) => (
+                  <ProfessorBubble
+                    name={professorData[professor].name}
+                    color={color}
+                    image={professorData[professor].image}
+                    flippedProps={flippedProps}
+                  />
+                )}
+              </Flipped>
+            ))}
+          <div className={styles.placeholder} />
+        </div>
+      </main>
     </article>
   );
 }

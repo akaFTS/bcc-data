@@ -15,3 +15,9 @@ export type Professor = {
   name: string;
   image: StaticImageData;
 };
+
+export type Level = 'MS0' | 'MS1' | 'MS2' | 'MS3' | 'MS5' | 'MS6';
+
+export type ProfessorYearEntry = {
+  [level in Level]?: string[];
+};

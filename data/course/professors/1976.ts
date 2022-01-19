@@ -1,21 +1,17 @@
-export default {
-  simon: 3,
-  silvio: 3,
-  tomasz: 3,
-  setzer: 3,
-  waldo: 3,
-  istvan: 2,
-  pf: 2,
-  routo: 2,
-  siang: 2,
-  geraldo: 2,
-  mandel: 1,
-  graca: 1,
-  stolfi: 1,
-  rene: 1,
-  chumes: 1,
-  ines: 1,
-  marcilio: 1,
-  zwicker: 1,
-  yoshiko: 1,
+import { ProfessorYearEntry } from 'types/course';
+
+export const yearDefinition: ProfessorYearEntry = {
+  MS1: [
+    'chumes',
+    'graca',
+    'ines',
+    'mandel',
+    'marcilio',
+    'rene',
+    'stolfi',
+    'yoshiko',
+    'zwicker',
+  ],
+  MS2: ['geraldo', 'istvan', 'pf', 'routo', 'siang'],
+  MS3: ['setzer', 'silvio', 'simon', 'tomasz', 'waldo'],
 };
