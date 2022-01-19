@@ -1,0 +1,10 @@
+body {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  background-color: var(--grey-200);
+}
+
+html {
+  height: -webkit-fill-available;
+}

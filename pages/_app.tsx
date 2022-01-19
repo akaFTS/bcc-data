@@ -6,6 +6,10 @@ import Head from 'next/head';
 import { AppProps } from 'next/app';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
+import 'style/reset.css';
+import 'style/vars.css';
+import 'style/colors.css';
+import 'style/index.css';
 import 'style/tachyons.css';
 import 'style/custom_tachyons.css';
 
@@ -14,7 +18,7 @@ config.autoAddCss = false;
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className="bg-light-gray opensans min-vh-100">
+    <>
       <Head>
         <meta
           name="viewport"
@@ -27,6 +31,6 @@ export default function App({ Component, pageProps }: AppProps) {
         <Component {...pageProps} />
       </main>
       <Footer />
-    </div>
+    </>
   );
 }

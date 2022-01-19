@@ -1,0 +1,58 @@
+@custom-media --not-small screen and (min-width: 40em);
+@custom-media --large screen and (min-width: 60em);
+
+:root {
+  --f1: 3rem;
+  --f2: 2.25rem;
+  --f3: 1.5rem;
+  --f4: 1.25rem;
+  --f5: 1rem;
+  --f6: 0.875rem;
+  --f7: 0.75rem;
+
+  --bw0: 0;
+  --bw1: 0.125rem;
+  --bw2: 0.25rem;
+  --bw3: 0.5rem;
+  --bw4: 1rem;
+  --bw5: 2rem;
+
+  --p1: 0.25rem;
+  --p2: 0.5rem;
+  --p3: 1rem;
+  --p4: 2rem;
+  --p5: 4rem;
+  --p6: 8rem;
+  --p7: 16rem;
+
+  --h1: 1rem;
+  --h2: 2rem;
+  --h3: 4rem;
+  --h4: 8rem;
+  --h5: 16rem;
+
+  --br1: 0.125rem;
+  --br2: 0.25rem;
+  --br3: 0.5rem;
+  --br4: 1rem;
+  --br-circle: 100%;
+  --br-pill: 9999px;
+
+  --ls-tight: -0.05em;
+  --ls1: 0.1em;
+  --ls2: 0.25em;
+
+  --lh-solid: 1;
+  --lh-title: 1.25;
+  --lh-copy: 1.5;
+
+  --shadow-1: 0px 0px 4px 2px rgba(0, 0, 0, 0.2);
+  --shadow-2: 0px 0px 8px 2px rgba(0, 0, 0, 0.2);
+  --shadow-3: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+  --shadow-4: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
+  --shadow-5: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+
+  --sans-serif: Helvetica Neue, Helvetica, Arial, sans-serif;
+  --serif: athelas, serif;
+  --monospace: SFMono, consolas, monaco, monospace;
+}

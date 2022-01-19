@@ -23,7 +23,7 @@ export default function Professors() {
       <div className="relative mt4">
         <ProfessorCanvas
           title="Titular"
-          color="dark-red"
+          color="red-700"
           icon={
             <span className="fa-layers fa-fw">
               <FontAwesomeIcon
@@ -41,7 +41,7 @@ export default function Professors() {
         />
         <ProfessorCanvas
           title="Associado"
-          color="orange"
+          color="orange-600"
           icon={
             <span className="fa-layers fa-fw">
               <FontAwesomeIcon
@@ -58,13 +58,13 @@ export default function Professors() {
         />
         <ProfessorCanvas
           title="Doutor"
-          color="gold"
+          color="amber-600"
           icon={<FontAwesomeIcon icon={faStar} transform="shrink-3" />}
           professors={currentYearData.MS3 || []}
         />
         <ProfessorCanvas
           title="Assistente"
-          color="mt-light-green"
+          color="green-200"
           icon={
             <FontAwesomeIcon icon={faStarHalf} transform="right-3 shrink-3" />
           }
@@ -72,13 +72,13 @@ export default function Professors() {
         />
         <ProfessorCanvas
           title="Auxiliar"
-          color="light-blue"
+          color="blue-200"
           icon={<FontAwesomeIcon icon={faCircle} transform="shrink-7" />}
           professors={currentYearData.MS1 || []}
         />
         <ProfessorCanvas
           title="Sênior"
-          color="light-silver"
+          color="grey"
           icon={<FontAwesomeIcon icon={faMoon} transform="shrink-3" />}
           professors={currentYearData.MS0 || []}
         />
