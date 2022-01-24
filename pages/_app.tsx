@@ -12,6 +12,7 @@ import 'style/colors.css';
 import 'style/index.css';
 import 'style/tachyons.css';
 import 'style/custom_tachyons.css';
+import styles from './_app.module.css';
 
 // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
 config.autoAddCss = false;
@@ -26,7 +27,7 @@ export default function App({ Component, pageProps }: AppProps) {
         />
       </Head>
       <Header />
-      <main className="w-100 w-80-l center ph2 ph0-l">
+      <main className={styles.main}>
         <Navbar />
         <Component {...pageProps} />
       </main>
