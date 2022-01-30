@@ -1,10 +1,11 @@
 import React from 'react';
 import ContentBox from '../layout/contentBox';
+import styles from './propposal.module.css';
 
 export default function Propposal() {
   return (
-    <ContentBox title="Proposta Inicial" color="orange">
-      <div className="fw3 lh-copy gray f6">
+    <ContentBox title="Proposta Inicial" color="orange-700">
+      <div className={styles.container}>
         <p>
           O Bacharelado em Ciência da Computação do IME-USP foi fundado em 1972.
           Em seus mais de 40 anos de história e centenas de bacharéis formados,
@@ -30,9 +31,8 @@ export default function Propposal() {
           Para apresentar todos esses dados obtidos em meio a pesquisas, este
           website terá papel importante. Nele, serão construídos diversos
           gráficos para exibir ao leitor interessado todo o aprendizado
-          adquirido ao longo do trabalho. Teremos, por exemplo, uma
-          <span className="i">timeline</span> do BCC com momentos importantes
-          desde sua criação até o presente.
+          adquirido ao longo do trabalho. Teremos, por exemplo, uma timeline do
+          BCC com momentos importantes desde sua criação até o presente.
         </p>
         <p>
           Para além do BCC, este trabalho também se propõe a analisar cursos de
@@ -45,14 +45,14 @@ export default function Propposal() {
           todos esses dados serão também disponibilizados no site em forma de
           gráficos para fácil visualização.
         </p>
-        <p className="mt4">
-          <span className="fw6">Nota:</span> em 12/09, em reunião com o prof.
-          Carlinhos, foi definida uma mudança com relação à proposta inicial. A
-          comparação com outros cursos pelo mundo foi adiada para uma pesquisa
-          futura, fora do escopo deste trabalho, e incluiu-se uma pesquisa no
-          corpo de ex-alunos do curso, para traçar um perfil de onde se
-          encontram hoje. Assim, o título do trabalho foi alterado para{' '}
-          <span className="fw6">
+        <p className={styles.note}>
+          <span className={styles.bold}>Nota:</span> em 12/09, em reunião com o
+          prof. Carlinhos, foi definida uma mudança com relação à proposta
+          inicial. A comparação com outros cursos pelo mundo foi adiada para uma
+          pesquisa futura, fora do escopo deste trabalho, e incluiu-se uma
+          pesquisa no corpo de ex-alunos do curso, para traçar um perfil de onde
+          se encontram hoje. Assim, o título do trabalho foi alterado para{' '}
+          <span className={styles.bold}>
             &quot;BCC IME-USP: evolução e perfil do ex-aluno&quot;
           </span>
           . Também foi decidido que não será escrita uma monografia pois o

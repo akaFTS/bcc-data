@@ -1,0 +1,14 @@
+.container {
+  font-weight: 300;
+  color: var(--grey-600);
+  font-size: var(--f6);
+  line-height: var(--lh-copy);
+}
+
+.textEntry {
+  margin-bottom: var(--p3);
+}
+
+.bold {
+  font-weight: 700;
+}

@@ -1,0 +1,32 @@
+.container {
+  font-weight: 300;
+  color: var(--grey-600);
+  font-size: var(--f6);
+  line-height: var(--lh-copy);
+}
+
+.title {
+  font-weight: 700;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.endOfSection {
+  margin-bottom: var(--p2);
+}
+
+.link {
+  text-decoration: underline;
+  color: var(--grey-800);
+}
+
+.link:hover {
+  cursor: pointer;
+  color: var(--grey-900);
+}
