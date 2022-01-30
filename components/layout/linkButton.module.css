@@ -1,0 +1,27 @@
+.button {
+  background-color: var(--btn-color);
+  color: white;
+  font-size: var(--f5);
+  border: 0;
+  padding: var(--p3);
+  border-radius: var(--br-pill);
+  font-weight: 600;
+  text-decoration: none;
+  margin: var(--p1);
+}
+
+.button:hover {
+  cursor: pointer;
+  filter: brightness(80%);
+}
+
+.icon {
+  margin-right: var(--p2);
+}
+
+@media (min-width: 60em) {
+  .button {
+    margin: 0;
+    margin-right: var(--p3);
+  }
+}

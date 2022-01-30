@@ -1,0 +1,12 @@
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: var(--p4);
+}
+
+@media (min-width: 60em) {
+  .nav {
+    justify-content: flex-start;
+  }
+}

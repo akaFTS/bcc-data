@@ -1,0 +1,29 @@
+.button {
+  background-color: var(--grey-600);
+  color: white;
+  padding: var(--p2);
+  border: 0;
+  border-radius: var(--br-pill);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: var(--grey-800);
+  cursor: pointer;
+}
+
+.icon {
+  font-size: var(--f4);
+  margin-right: var(--p2);
+}
+
+.text {
+  font-weight: 300;
+  font-size: var(--f6);
+}
+
+.bold {
+  font-weight: 700;
+}
