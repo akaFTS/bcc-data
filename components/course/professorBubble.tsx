@@ -15,9 +15,13 @@ export default function ProfessorBubble({
   image,
   flippedProps,
 }: Props) {
+  const colorVar = {
+    '--bubble-color': `var(--${color})`,
+  } as React.CSSProperties;
+
   return (
     <div className={styles.bubbleWrap} {...flippedProps}>
-      <div className={styles.bubble} style={{ borderColor: `var(--${color})` }}>
+      <div className={styles.bubble} style={colorVar}>
         <Image
           src={image}
           alt={`Professor(a) ${name}`}

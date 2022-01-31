@@ -7,7 +7,7 @@ export default function Timeline() {
   const timelineYears = useTimeline();
 
   return (
-    <ContentBox title="Timeline" color="purple">
+    <ContentBox title="Timeline" color="purple-700">
       <div role="list">
         {timelineYears.map((yearEntry) => (
           <TimelineYear entry={yearEntry} key={yearEntry.year} />
