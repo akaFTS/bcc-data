@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import cx from 'classnames';
+import styles from './yearFilter.module.css';
 
 type Props = {
   activeYear: number | null;
@@ -22,11 +24,9 @@ export default function YearFilter({ activeYear, onYearSet }: Props) {
   return (
     <div>
       <label htmlFor="yearInput">
-        <div className="b mb1 f5 near-black">Ano</div>
+        <div className={styles.label}>Ano</div>
         <input
-          className={`ba bw1 br2 w3 b tc f4 mid-gray ${
-            activeYear !== null ? 'b--silver' : 'b--light-gray'
-          }`}
+          className={cx(styles.input, { [styles.active]: activeYear !== null })}
           value={yearInput}
           onChange={(e) => setYearInput(e.target.value)}
           onBlur={applyYearFilter}

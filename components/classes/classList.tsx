@@ -5,6 +5,7 @@ import ContentBox from '../layout/contentBox';
 import AreaFilter from './areaFilter';
 import YearFilter from './yearFilter';
 import ClassEntry from './classEntry';
+import styles from './classList.module.css';
 
 export default function ClassList() {
   const [activeArea, setActiveArea] = useState<Area | null>(null);
@@ -12,8 +13,8 @@ export default function ClassList() {
   const filteredClasses = useClasses(activeArea, activeYear);
 
   return (
-    <ContentBox title="Matérias" color="green">
-      <div className="mt3 mb3 flex justify-between align-stretch">
+    <ContentBox title="Matérias" color="green-700">
+      <div className={styles.filter}>
         <AreaFilter activeArea={activeArea} onAreaSet={setActiveArea} />
         <YearFilter activeYear={activeYear} onYearSet={setActiveYear} />
       </div>

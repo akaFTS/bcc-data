@@ -1,17 +1,18 @@
 import React from 'react';
+import styles from './classTimespan.module.css';
 
 function getBeginYearColor(beginYear: number): string {
-  if (beginYear < 1982) return 'moon-gray';
-  if (beginYear < 1998) return 'light-silver';
-  if (beginYear < 2010) return 'gray';
-  return 'dark-gray';
+  if (beginYear < 1982) return 'grey-400';
+  if (beginYear < 1998) return 'grey-500';
+  if (beginYear < 2010) return 'grey-600';
+  return 'grey-700';
 }
 
 function getEndYearColor(endYear: number): string {
-  if (endYear < 1982) return 'washed-red';
-  if (endYear < 1998) return 'light-red';
-  if (endYear < 2010) return 'red';
-  return 'dark-red';
+  if (endYear < 1982) return 'red-400';
+  if (endYear < 1998) return 'red-500';
+  if (endYear < 2010) return 'red-700';
+  return 'red-900';
 }
 
 type Props = {
@@ -20,25 +21,23 @@ type Props = {
 };
 
 export default function ClassTimespan({ beginYear, endYear }: Props) {
-  const beginYearColor = getBeginYearColor(beginYear);
-  const endYearColor = getEndYearColor(endYear);
+  const colorVars = {
+    '--begin-color': `var(--${getBeginYearColor(beginYear)})`,
+    '--end-color': `var(--${getEndYearColor(endYear)})`,
+  } as React.CSSProperties;
 
   return (
-    <div className="flex mt3 mt0-l" aria-hidden="true">
-      <div className="visually-hidden">
+    <>
+      <div className={styles.description}>
         De {beginYear} até {endYear}.
       </div>
-      <div className={`white br--left br2 pl2 pv1 f5 b bg-${beginYearColor}`}>
-        {beginYear}
+      <div className={styles.container} style={colorVars} aria-hidden="true">
+        <div className={styles.begin}>{beginYear}</div>
+        <div className={styles.end}>
+          <div className={styles.triangle} />
+          {endYear}
+        </div>
       </div>
-      <div
-        className={`white br--right br2 pl2 pr2 pv1 f5 b relative bg-${endYearColor}`}
-      >
-        <div
-          className={`bl triangle absolute left-0 top-0 h-100 b--${beginYearColor}`}
-        />
-        {endYear}
-      </div>
-    </div>
+    </>
   );
 }

@@ -6,6 +6,7 @@ import Head from 'next/head';
 import { AppProps } from 'next/app';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
+import 'react-responsive-modal/styles.css';
 import 'style/reset.css';
 import 'style/vars.css';
 import 'style/colors.css';

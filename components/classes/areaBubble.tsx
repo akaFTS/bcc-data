@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './areaBubble.module.css';
 
 type Props = {
   top: string;
@@ -9,10 +10,13 @@ type Props = {
 };
 
 export default function AreaBubble({ top, left, name, color, size }: Props) {
+  const colorVar = { '--ball-color': `var(--${color})` } as React.CSSProperties;
+
   return (
     <div
-      className={`bg-${color} br-100 absolute white o-80 flex flex-column align-center justify-center ball`}
+      className={styles.bubble}
       style={{
+        ...colorVar,
         top,
         left,
         width: `${size * 3 + 50}px`,
@@ -21,10 +25,10 @@ export default function AreaBubble({ top, left, name, color, size }: Props) {
       }}
       aria-label={`Número de matérias de ${name}`}
     >
-      <span aria-hidden="true" className="f7 mt2 center nowrap">
+      <span aria-hidden="true" className={styles.name}>
         {name}
       </span>
-      <span className="f3 b center">{size}</span>
+      <span className={styles.size}>{size}</span>
     </div>
   );
 }

@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  font-weight: 700;
+  margin-bottom: var(--p1);
+  font-size: var(--f5);
+  color: var(--near-black);
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}

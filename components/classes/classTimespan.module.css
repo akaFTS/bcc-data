@@ -1,0 +1,49 @@
+.description {
+  /* ARIA only */
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+.container {
+  display: flex;
+  margin-top: var(--p3);
+}
+
+.begin {
+  color: white;
+  border-radius: var(--br2) 0 0 var(--br2);
+  padding: var(--p1) 0 var(--p1) var(--p2);
+  font-size: var(--f5);
+  font-weight: 700;
+  background-color: var(--begin-color);
+}
+
+.end {
+  color: white;
+  border-radius: 0 var(--br2) var(--br2) 0;
+  padding: var(--p1) var(--p2);
+  font-size: var(--f5);
+  font-weight: 700;
+  position: relative;
+  background-color: var(--end-color);
+}
+
+.triangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-left: 6px solid var(--begin-color);
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+}
+
+@media (min-width: 60em) {
+  .container {
+    margin-top: 0;
+  }
+}
