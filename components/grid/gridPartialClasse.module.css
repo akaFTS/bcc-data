@@ -1,0 +1,12 @@
+.box {
+  padding: var(--p2) var(--p3);
+  border-radius: var(--br-pill);
+  color: var(--grey-600);
+  margin: var(--p2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc((var(--h2) + var(--h3)) / 2);
+  border: var(--bw1) dashed var(--grey-600);
+  font-size: var(--f6);
+}

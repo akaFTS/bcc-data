@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--p3);
+}
+
+.containerInner {
+  display: flex;
+  align-items: center;
+}
+
+.chevron {
+  padding: var(--p2);
+  font-size: var(--f2);
+  color: var(--grey-500);
+}
+
+.chevron:hover {
+  cursor: pointer;
+  color: var(--grey-800);
+}
+
+.button {
+  background-color: white;
+  border: 0;
+  margin: 0 var(--p4);
+}
+
+.dot {
+  padding: var(--p1);
+  border-radius: var(--br-circle);
+  margin: 0 var(--p1);
+  background-color: var(--grey-500);
+}
+
+.activeDot {
+  padding: var(--p1);
+  padding-left: var(--p2);
+  padding-top: var(--p2);
+  background-color: var(--red-700);
+  border-radius: var(--br-circle);
+  margin: 0 var(--p1);
+}

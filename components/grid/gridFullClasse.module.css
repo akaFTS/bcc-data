@@ -1,0 +1,23 @@
+.box {
+  border: var(--bw1) solid var(--box-color);
+  background-color: var(--box-color);
+  padding: var(--p2) var(--p3);
+  border-radius: var(--br-pill);
+  color: white;
+  margin: var(--p2);
+  display: flex;
+  align-items: center;
+  height: calc((var(--h2) + var(--h3)) / 2);
+}
+
+.code {
+  font-weight: 600;
+  font-size: var(--f5);
+  margin-right: var(--p3);
+}
+
+.name {
+  font-weight: 300;
+  font-size: var(--f6);
+  line-height: var(--lh-title);
+}

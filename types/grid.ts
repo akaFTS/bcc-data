@@ -1,9 +1,9 @@
-type FullClasse = {
+export type FullClasse = {
   code: string;
   name: string;
 };
 
-type PartialClasse = {
+export type PartialClasse = {
   slot: string;
 };
 

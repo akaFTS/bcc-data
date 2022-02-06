@@ -4,6 +4,7 @@ import {
   faChevronLeft,
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons';
+import styles from './gridPickerTop.module.css';
 
 type Props = {
   onMoveLeft: () => void;
@@ -17,27 +18,13 @@ export default function GridPickerTop({
   activeGridYear,
 }: Props) {
   return (
-    <div className="flex items-center justify-center mb3">
-      <button
-        className="bg-white b--none mr4"
-        onClick={onMoveLeft}
-        type="button"
-      >
-        <FontAwesomeIcon
-          icon={faChevronLeft}
-          className="silver hover-mid-gray pointer pa2 f2"
-        />
+    <div className={styles.container}>
+      <button className={styles.button} onClick={onMoveLeft} type="button">
+        <FontAwesomeIcon icon={faChevronLeft} className={styles.chevron} />
       </button>
-      <span className="f4 fw6 tc dark-gray">Grade de {activeGridYear}</span>
-      <button
-        className="bg-white b--none ml4"
-        onClick={onMoveRight}
-        type="button"
-      >
-        <FontAwesomeIcon
-          icon={faChevronRight}
-          className="silver hover-mid-gray pointer pa2 f2"
-        />
+      <h4 className={styles.title}>Grade de {activeGridYear}</h4>
+      <button className={styles.button} onClick={onMoveRight} type="button">
+        <FontAwesomeIcon icon={faChevronRight} className={styles.chevron} />
       </button>
     </div>
   );
