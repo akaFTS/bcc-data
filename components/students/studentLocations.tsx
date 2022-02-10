@@ -28,7 +28,7 @@ export default function StudentLocations({
   const citiesCount = countCities(studentData);
 
   return (
-    <ContentBox title="Localização Atual" color="blue">
+    <ContentBox title="Localização Atual" color="indigo-800">
       <StudentDataPicker
         currentSelection={currentSelection}
         onEpochSelected={onEpochSelected}

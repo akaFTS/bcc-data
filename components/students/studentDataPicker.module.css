@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  border: var(--bw1) solid var(--indigo-800);
+  border-radius: var(--br3);
+  overflow: hidden;
+}
+
+.button {
+  width: 25%;
+  text-align: center;
+  font-weight: 700;
+  border: 0;
+  padding: var(--p1) 0;
+}
+
+.selected {
+  background-color: var(--indigo-800);
+  color: white;
+}
+
+.unselected {
+  color: var(--indigo-800);
+  background-color: white;
+}
+
+.unselected:hover {
+  background-color: var(--grey-200);
+  cursor: pointer;
+}
+
+@media (min-width: 60em) {
+  .container {
+    margin: 0 var(--p3);
+  }
+}

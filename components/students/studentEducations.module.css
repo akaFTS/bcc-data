@@ -1,0 +1,7 @@
+.container {
+  margin-top: var(--p3);
+}
+
+.subtitle {
+  color: var(--grey-600);
+}

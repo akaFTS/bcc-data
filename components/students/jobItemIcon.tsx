@@ -15,6 +15,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { Job } from 'types/students';
+import styles from './jobItemIcon.module.css';
 
 type Props = {
   type: Job;
@@ -22,33 +23,42 @@ type Props = {
 
 function getIconAndColor(job: Job): [IconDefinition, string] {
   if (job === 'PROFESSOR') {
-    return [faGraduationCap, 'mt-purple'];
+    return [faGraduationCap, 'purple-700'];
   }
   if (job === 'CONSULTANT') {
-    return [faChartBar, 'mt-green'];
+    return [faChartBar, 'green-700'];
   }
   if (job === 'BIG_TECH') {
-    return [faFacebookSquare, 'mt-blue'];
+    return [faFacebookSquare, 'indigo-800'];
   }
   if (job === 'STARTUP') {
-    return [faSpotify, 'mt-green'];
+    return [faSpotify, 'green-700'];
   }
   if (job === 'OWN') {
-    return [faWrench, 'mt-orange'];
+    return [faWrench, 'orange-700'];
   }
   if (job === 'GOVERNMENT') {
-    return [faUniversity, 'dark-gray'];
+    return [faUniversity, 'grey-800'];
   }
   if (job === 'RETIRED') {
-    return [faHome, 'mt-dark-red'];
+    return [faHome, 'red-900'];
   }
   if (job === 'STUDYING') {
-    return [faBook, 'mt-purple'];
+    return [faBook, 'purple-700'];
   }
-  return [faCircle, 'silver'];
+  return [faCircle, 'grey-500'];
 }
 
 export default function JobItemIcon({ type }: Props) {
   const [icon, color] = getIconAndColor(type);
-  return <FontAwesomeIcon icon={icon} fixedWidth className={`f3 ${color}`} />;
+  const colorVar = { '--icon-color': `var(--${color})` } as React.CSSProperties;
+
+  return (
+    <FontAwesomeIcon
+      style={colorVar}
+      icon={icon}
+      fixedWidth
+      className={styles.icon}
+    />
+  );
 }
