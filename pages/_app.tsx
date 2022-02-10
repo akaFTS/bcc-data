@@ -11,8 +11,6 @@ import 'style/reset.css';
 import 'style/vars.css';
 import 'style/colors.css';
 import 'style/index.css';
-import 'style/tachyons.css';
-import 'style/custom_tachyons.css';
 import styles from './_app.module.css';
 
 // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
