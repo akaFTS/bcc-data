@@ -1,5 +1,6 @@
 import React from 'react';
 import { Record } from 'types/course';
+import styles from './timelineRecord.module.css';
 
 type Props = {
   record: Record;
@@ -18,19 +19,15 @@ export default function TimelineRecord({ record }: Props) {
   }
 
   return (
-    <div className="flex items-stretch" role="listitem">
-      <div className="flex flex-column items-center mh4">
-        <div className="bl br b--light-gray flex-auto" />
-        <div className="h1 w1 bg-mt-purple br-100 mv2" />
-        <div className="bl br b--light-gray flex-auto" />
+    <div className={styles.container} role="listitem">
+      <div className={styles.circleContainer}>
+        <div className={styles.separator} />
+        <div className={styles.circle} />
+        <div className={styles.separator} />
       </div>
-      <div className="mv3">
-        {formattedDate && (
-          <div className="fw6 mid-gray mb1">{formattedDate}</div>
-        )}
-        <div
-          className={`${record.featured ? 'fw6 f4' : 'fw3 lh-copy gray f6'}`}
-        >
+      <div className={styles.textContainer}>
+        {formattedDate && <div className={styles.date}>{formattedDate}</div>}
+        <div className={record.featured ? styles.featured : styles.default}>
           {record.text}
         </div>
       </div>

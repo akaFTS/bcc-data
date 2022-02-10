@@ -13,6 +13,7 @@
     "react/jsx-curly-newline": "off",
     "function-paren-newline": "off",
     "react/jsx-wrap-multilines": "off",
-    "react/no-unstable-nested-components": "off"
+    "react/no-unstable-nested-components": "off",
+    "no-confusing-arrow": "off"
   }
 }

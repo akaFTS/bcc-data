@@ -4,6 +4,7 @@ import { Epoch, Job, JobValues } from 'types/students';
 import ContentBox from '../layout/contentBox';
 import StudentDataPicker from './studentDataPicker';
 import JobBoard from './jobBoard';
+import styles from './studentJobs.module.css';
 
 type Props = {
   currentSelection: Epoch;
@@ -25,13 +26,13 @@ export default function StudentJobs({
   });
 
   return (
-    <ContentBox title="Ocupação Atual" color="blue">
+    <ContentBox title="Ocupação Atual" color="indigo-800">
       <StudentDataPicker
         currentSelection={currentSelection}
         onEpochSelected={onEpochSelected}
       />
       <JobBoard jobCategories={jobMap} />
-      <p className="silver f7 fw3 tc ph3 lh-title">
+      <p className={styles.disclaimer}>
         Todos os logotipos são propriedade de suas respectivas empresas e são
         usados para fins meramente ilustrativos neste trabalho. Todos os
         direitos reservados.

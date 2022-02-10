@@ -12,6 +12,7 @@ import * as professorYears from 'data/course/professors/importYears';
 import ContentBox from '../layout/contentBox';
 import ProfessorCanvas from './professorCanvas';
 import YearPicker from '../layout/yearPicker';
+import styles from './professors.module.css';
 
 function getProfessorListForAnimation(yearData: ProfessorYearEntry) {
   function listFromLevel(level: string) {
@@ -32,9 +33,9 @@ export default function Professors() {
     professorYears[`p${currentYear}`] || {};
 
   return (
-    <ContentBox title="Professores" color="purple">
+    <ContentBox title="Professores" color="purple-700">
       <YearPicker onYearChanged={setCurrentYear} />
-      <div className="relative mt4">
+      <div className={styles.container}>
         <Flipper flipKey={getProfessorListForAnimation(currentYearData)}>
           <ProfessorCanvas
             title="Titular"

@@ -4,6 +4,7 @@ import {
   faChevronLeft,
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons';
+import styles from './yearPicker.module.css';
 
 type Props = {
   onYearChanged: (year: number) => void;
@@ -36,21 +37,21 @@ export default function YearPicker({ onYearChanged }: Props) {
   };
 
   return (
-    <div className="flex justify-center items-center">
+    <div className={styles.container}>
       {currentYear > 1972 ? (
         <button
-          className="bg-white b--none"
+          className={styles.button}
           onClick={() => setYear(currentYear - 1)}
           aria-label="Voltar um ano"
           type="button"
         >
-          <FontAwesomeIcon className="f4 pointer" icon={faChevronLeft} />
+          <FontAwesomeIcon className={styles.icon} icon={faChevronLeft} />
         </button>
       ) : (
-        <FontAwesomeIcon className="f4 white" icon={faChevronLeft} />
+        <div className={styles.empty} />
       )}
       <input
-        className="f3 b mh4 dark-gray ba br2 b--light-gray ph2 pv1 w3 tc"
+        className={styles.input}
         value={inputYear}
         onChange={(e) => setInputYear(e.target.value)}
         onBlur={() => setYearByString(inputYear)}
@@ -58,15 +59,15 @@ export default function YearPicker({ onYearChanged }: Props) {
       />
       {currentYear < 2018 ? (
         <button
-          className="bg-white b--none"
+          className={styles.button}
           onClick={() => setYear(currentYear + 1)}
           aria-label="Avançar um ano"
           type="button"
         >
-          <FontAwesomeIcon className="f4 pointer" icon={faChevronRight} />
+          <FontAwesomeIcon className={styles.icon} icon={faChevronRight} />
         </button>
       ) : (
-        <FontAwesomeIcon className="f4 white" icon={faChevronRight} />
+        <div className={styles.empty} />
       )}
     </div>
   );

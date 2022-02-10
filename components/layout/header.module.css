@@ -1,0 +1,19 @@
+.header {
+  padding: var(--p3) 0;
+}
+
+.title {
+  margin: 0;
+  text-align: center;
+  font-size: var(--f2);
+  color: var(--red-900);
+}
+
+.subtitle {
+  margin: 0;
+  margin-bottom: var(--p3);
+  font-size: var(--f4);
+  text-align: center;
+  font-weight: 400;
+  color: var(--grey);
+}

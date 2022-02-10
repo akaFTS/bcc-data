@@ -1,18 +1,19 @@
 import React from 'react';
 import ContentBox from '../layout/contentBox';
+import styles from './sources.module.css';
 
 export default function Sources() {
   return (
-    <ContentBox title="Referências" color="orange">
-      <div className="fw3 lh-copy gray f6">
-        <p>
+    <ContentBox title="Referências" color="orange-700">
+      <div className={styles.container}>
+        <p className={styles.textEntry}>
           Toda a confecção deste trabalho foi baseada em fontes e documentos
           oficiais do IME, obtidos com a ajuda da Secretaria do DCC.
         </p>
-        <p>
-          <span className="fw6">Timeline:</span> Para a elaboração da Timeline,
-          foram utilizados principalmente processos da USP relacionados ao
-          reconhecimento de curso do BCC, em especial o processo
+        <p className={styles.textEntry}>
+          <span className={styles.bold}>Timeline: </span>Para a elaboração da
+          Timeline, foram utilizados principalmente processos da USP
+          relacionados ao reconhecimento de curso do BCC, em especial o processo
           2010.1.950.45.0, que continha a maior parte das informações. Outros
           processos continham atas das congregações dos anos 1970 a 1975, e
           bastante informação foi obtida nessas atas. Para obter as datas de
@@ -22,9 +23,9 @@ export default function Sources() {
           respectivos sites, ou valendo-se da memória, já que são coisas que
           ocorreram no período em que eu já estava no curso.
         </p>
-        <p>
-          <span className="fw6">Professores, matérias e grade:</span> Esses
-          módulos foram construídos através da pesquisa em catálogos de
+        <p className={styles.textEntry}>
+          <span className={styles.bold}>Professores, matérias e grade: </span>
+          Esses módulos foram construídos através da pesquisa em catálogos de
           graduação. Tratam-se de pequenos livros que são distribuídos todo ano
           aos novos alunos, contendo informações atualizadas dos departamentos,
           matérias, ementas e outras informações. Com a ajuda da secretaria do
@@ -39,7 +40,7 @@ export default function Sources() {
           (e.g. professores e matérias que desaparecem por um ano da listagem e
           depois reaparecem).
         </p>
-        <p>
+        <p className={styles.textEntry}>
           Nos módulos de matérias e grade, as matérias são sempre tratadas como
           MAC, apesar de serem do MAP até 1987. Para realizar a separação antes
           da criação do departamento, foi necessário deduzir quais matérias
@@ -50,12 +51,15 @@ export default function Sources() {
           algumas disciplinas mais variadas deveriam ser cursadas (e.g. Educação
           Moral e Cívica) então elas foram inseridas em semestres arbitrários.
         </p>
-        <p>
-          <span className="fw6">Alunos:</span>O módulo de alunos foi construído
-          com ajuda da página de ex-alunos do BCC (
-          <span className="i">
+        <p className={styles.textEntry}>
+          <span className={styles.bold}>Alunos: </span>O módulo de alunos foi
+          construído com ajuda da página de ex-alunos do BCC (
+          <a
+            href="https://www.ime.usp.br/~cgmac/ex-alunos/res.html"
+            className={styles.link}
+          >
             https://www.ime.usp.br/~cgmac/ex-alunos/res.html
-          </span>
+          </a>
           ). Para montar o gráfico de alunos e alunas formados por ano, as
           informações da página foram integralmente utilizadas. Há uma certa
           imprecisão nos dados pois alguns nomes estrangeiros (especialmente

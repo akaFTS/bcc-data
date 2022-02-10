@@ -1,5 +1,7 @@
 import React from 'react';
+import cx from 'classnames';
 import { Epoch } from 'types/students';
+import styles from './studentDataPicker.module.css';
 
 type Props = {
   currentSelection: Epoch;
@@ -12,48 +14,44 @@ export default function StudentDataPicker({
 }: Props) {
   return (
     <div
-      className="flex ba bw1 b--mt-blue br3 overflow-hidden mh3-l"
+      className={styles.container}
       aria-label="Seleção de intervalo de tempo para análise"
     >
       <button
-        className={`w-25 pv1 tc b b--none ${
-          currentSelection === 'ALL'
-            ? 'bg-mt-blue white'
-            : 'mt-blue pointer hover-bg-light-gray bg-white'
-        }`}
+        className={cx(
+          styles.button,
+          currentSelection === 'ALL' ? styles.selected : styles.unselected,
+        )}
         onClick={() => onEpochSelected('ALL')}
         type="button"
       >
         Todos
       </button>
       <button
-        className={`w-25 pv1 tc b b--none ${
-          currentSelection === '1974'
-            ? 'bg-mt-blue white'
-            : 'mt-blue pointer hover-bg-light-gray bg-white'
-        }`}
+        className={cx(
+          styles.button,
+          currentSelection === '1974' ? styles.selected : styles.unselected,
+        )}
         onClick={() => onEpochSelected('1974')}
         type="button"
       >
         1974-1988
       </button>
       <button
-        className={`w-25 pv1 tc b b--none ${
-          currentSelection === '1989'
-            ? 'bg-mt-blue white'
-            : 'mt-blue pointer hover-bg-light-gray bg-white'
-        }`}
+        className={cx(
+          styles.button,
+          currentSelection === '1989' ? styles.selected : styles.unselected,
+        )}
         onClick={() => onEpochSelected('1989')}
         type="button"
       >
         1989-2003
       </button>
       <button
-        className={`w-25 pv1 tc b b--none ${
-          currentSelection === '2004'
-            ? 'bg-mt-blue white'
-            : 'mt-blue pointer hover-bg-light-gray bg-white'
-        }`}
+        className={cx(
+          styles.button,
+          currentSelection === '2004' ? styles.selected : styles.unselected,
+        )}
         onClick={() => onEpochSelected('2004')}
         type="button"
       >

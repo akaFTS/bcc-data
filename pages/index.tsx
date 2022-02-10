@@ -2,21 +2,20 @@ import React from 'react';
 import Head from 'next/head';
 import Timeline from 'components/course/timeline';
 import Professors from 'components/course/professors';
+import styles from './index.module.css';
 
 export default function Course() {
   return (
-    <>
+    <main className={styles.main}>
       <Head>
         <title>Curso • bcc-data</title>
       </Head>
-      <main className="flex flex-wrap-reverse">
-        <div className="w-100 w-50-l ph2">
-          <Timeline />
-        </div>
-        <div className="w-100 w-50-l ph2">
-          <Professors />
-        </div>
-      </main>
-    </>
+      <div className={styles.leftPanel}>
+        <Timeline />
+      </div>
+      <div className={styles.rightPanel}>
+        <Professors />
+      </div>
+    </main>
   );
 }

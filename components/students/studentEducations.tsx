@@ -4,6 +4,7 @@ import useStudents from 'hooks/useStudents';
 import { Cell, Legend, Pie, PieChart, ResponsiveContainer } from 'recharts';
 import StudentDataPicker from './studentDataPicker';
 import ContentBox from '../layout/contentBox';
+import styles from './studentEducations.module.css';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 function assertUnreachable(x: never): never {
@@ -56,19 +57,19 @@ export default function StudentEducations({
   const colors = ['#FFA600', '#FF6361', '#BC5090', '#58508D', '#003F5C'];
 
   return (
-    <ContentBox title="Nível de Escolaridade" color="blue">
+    <ContentBox title="Nível de Escolaridade" color="indigo-800">
       <StudentDataPicker
         currentSelection={currentSelection}
         onEpochSelected={onEpochSelected}
       />
-      <div className="mt3">
+      <div className={styles.container}>
         <ResponsiveContainer height={300} width="100%">
           <PieChart>
             <Legend
               height={30}
               verticalAlign="top"
               formatter={(value: string) => (
-                <span className="gray">{value}</span>
+                <span className={styles.subtitle}>{value}</span>
               )}
             />
             <Pie data={educationData} dataKey="value" nameKey="name">

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Job } from 'types/students';
 import JobGroup from './jobGroup';
+import styles from './jobBoard.module.css';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 function assertUnreachable(x: never): never {
@@ -73,10 +74,7 @@ export default function JobBoard({ jobCategories }: Props) {
 
   return (
     <>
-      <div
-        className="mv4 ph4 grid-10"
-        onMouseLeave={() => setHoveringType(null)}
-      >
+      <div className={styles.grid} onMouseLeave={() => setHoveringType(null)}>
         {Array.from(roundedJobsMap).map(([jobType, count]) => (
           <JobGroup
             type={jobType}
@@ -88,11 +86,11 @@ export default function JobBoard({ jobCategories }: Props) {
         ))}
       </div>
       {hoveringType !== null && (
-        <div className="flex flex-column items-center mb4">
-          <span className="b mt-blue f2">
+        <div className={styles.subContainer}>
+          <span className={styles.percentage}>
             {roundedJobsMap.get(hoveringType)}%
           </span>
-          <span className="f4 gray tc">{getHoverLabel(hoveringType)}</span>
+          <span className={styles.subtitle}>{getHoverLabel(hoveringType)}</span>
         </div>
       )}
     </>

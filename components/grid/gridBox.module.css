@@ -1,0 +1,17 @@
+.container {
+  border: var(--bw1) solid var(--grey-200);
+  border-radius: var(--br4);
+  overflow: hidden;
+  height: 100%;
+}
+
+.title {
+  border-bottom: var(--bw1) solid var(--grey-200);
+  background-color: var(--grey-200);
+  padding: var(--p1);
+  text-align: center;
+  font-weight: 600;
+  font-size: var(--f5);
+  margin-top: 0;
+  color: var(--near-black);
+}

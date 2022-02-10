@@ -8,6 +8,7 @@ import {
 import worldMap from 'data/students/world.json';
 import { citySpecs } from 'data/students/citySpecs';
 import { City } from 'types/students';
+import styles from './worldMap.module.css';
 
 const kMinRadius = 10;
 const kMaxRadius = 30;
@@ -39,7 +40,7 @@ export default function WorldMap({ citiesCount }: Props) {
   const maxCount = Math.max(...citiesWithCount.map((entry) => entry.count));
 
   return (
-    <div className="mt4">
+    <div className={styles.container}>
       <ComposableMap
         projectionConfig={{
           scale: 205,

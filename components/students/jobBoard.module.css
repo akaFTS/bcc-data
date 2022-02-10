@@ -1,0 +1,26 @@
+.grid {
+  margin: var(--p4) 0;
+  padding: 0 var(--p4);
+  display: grid;
+  grid-template-columns: repeat(10, auto);
+  grid-template-rows: repeat(10, auto);
+}
+
+.subContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: var(--p4);
+}
+
+.percentage {
+  font-weight: 700;
+  font-size: var(--f2);
+  color: var(--indigo-800);
+}
+
+.subtitle {
+  font-size: var(--f4);
+  text-align: center;
+  color: var(--grey-600);
+}

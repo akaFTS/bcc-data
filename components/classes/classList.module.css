@@ -1,0 +1,6 @@
+.filter {
+  margin: var(--p3) 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}

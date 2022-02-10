@@ -1,0 +1,31 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--p2);
+  font-size: var(--f5);
+  color: var(--grey-600);
+  background-color: var(--grey-200);
+}
+
+.span {
+  margin-bottom: var(--p2);
+}
+
+.link {
+  font-weight: 600;
+  color: var(--grey-800);
+}
+
+.link:hover {
+  cursor: pointer;
+  color: var(--grey-900);
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: var(--p2) 0;
+}

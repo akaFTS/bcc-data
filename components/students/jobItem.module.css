@@ -1,0 +1,10 @@
+.item {
+  height: var(--h2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hover {
+  background-color: var(--grey-200);
+}

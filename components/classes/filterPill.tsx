@@ -1,4 +1,6 @@
 import React from 'react';
+import cx from 'classnames';
+import styles from './filterPill.module.css';
 
 type Props = {
   isActive: boolean;
@@ -8,23 +10,15 @@ type Props = {
 };
 
 export default function FilterPill({ isActive, name, color, onClick }: Props) {
-  if (isActive) {
-    return (
-      <button
-        className={`ba bw1 b--${color} bg-${color} mb2 mb0-l white br-pill ph2 pv1 f6 b mr1`}
-        disabled
-        type="button"
-      >
-        {name}
-      </button>
-    );
-  }
+  const colorVar = { '--pill-color': `var(--${color})` } as React.CSSProperties;
 
   return (
     <button
-      className={`ba bw1 b--${color} ${color} mb2 mb0-l br-pill ph2 pv1 f6 b mr1 pointer bg-white hover-bg-light-gray`}
-      onClick={onClick}
+      style={colorVar}
+      className={cx(styles.pill, { [styles.inactive]: !isActive })}
+      disabled={isActive}
       type="button"
+      onClick={() => isActive || onClick()}
     >
       {name}
     </button>

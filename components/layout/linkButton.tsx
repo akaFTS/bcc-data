@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import Link from 'next/link';
+import styles from './linkButton.module.css';
 
 type Props = {
   path: string;
@@ -11,12 +12,12 @@ type Props = {
 };
 
 export default function LinkButton({ path, color, icon, text }: Props) {
+  const colorVar = { '--btn-color': `var(--${color})` } as React.CSSProperties;
+
   return (
     <Link passHref href={path} prefetch={false}>
-      <div
-        className={`bg-mt-${color} hover-bg-mt-dark-${color} white f5 b--none pv3 ph3 br-pill shadow fw6 pointer ma1 ma0-l mr3-l no-underline`}
-      >
-        <FontAwesomeIcon icon={icon} className="mr2" />
+      <div className={styles.button} style={colorVar}>
+        <FontAwesomeIcon icon={icon} className={styles.icon} />
         <span>{text}</span>
       </div>
     </Link>

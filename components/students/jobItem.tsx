@@ -1,7 +1,9 @@
 import React from 'react';
+import cx from 'classnames';
 import { Job } from 'types/students';
 import JobItemImage from './jobItemImage';
 import JobItemIcon from './jobItemIcon';
+import styles from './jobItem.module.css';
 
 type Props = {
   type: Job;
@@ -13,9 +15,7 @@ export default function JobItem({ type, onHover, isHovering }: Props) {
   return (
     <div
       onMouseEnter={() => onHover(type)}
-      className={`h2 flex justify-center items-center ${
-        isHovering ? 'bg-light-gray' : null
-      }`}
+      className={cx(styles.item, { [styles.hover]: isHovering })}
     >
       {type === 'BANK' ||
       type === 'OLD_TECH' ||

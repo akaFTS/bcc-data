@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
+import cx from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComment } from '@fortawesome/free-solid-svg-icons';
 import { Area, Classe } from 'types/classes';
 import ClassNamesModal from './classNamesModal';
 import ClassTimespan from './classTimespan';
+import styles from './classEntry.module.css';
 
 function getAreaColorAndName(area: Area): [string, string] {
-  if (area === 'THEORY') return ['bg-blue', 'Teoria'];
-  if (area === 'SOFTWARE') return ['bg-green', 'Sistemas'];
-  if (area === 'AI') return ['bg-pink', 'IA'];
-  if (area === 'ESCIENCE') return ['bg-orange', 'E-science'];
-  return ['bg-light-silver', 'Outras'];
+  if (area === 'THEORY') return ['indigo-800', 'Teoria'];
+  if (area === 'SOFTWARE') return ['green-700', 'Sistemas'];
+  if (area === 'AI') return ['pink-400', 'IA'];
+  if (area === 'ESCIENCE') return ['orange-700', 'E-science'];
+  return ['grey-500', 'Outras'];
 }
 
 type Props = {
@@ -25,7 +27,8 @@ export default function ClassEntry({
   currentYear,
 }: Props) {
   const [isModalOpen, setModalOpen] = useState(false);
-  const [areaColor, areaName] = getAreaColorAndName(classe.area);
+  const [color, areaName] = getAreaColorAndName(classe.area);
+  const colorVar = { '--pill-color': `var(--${color})` } as React.CSSProperties;
 
   let classeName = classe.names[classe.names.length - 1].name;
   if (currentYear !== null) {
@@ -37,23 +40,18 @@ export default function ClassEntry({
 
   return (
     <div
-      className={`flex flex-column flex-row-l items-start items-center-l ph3 pv3 gray ${
-        whiteStripe ? '' : 'bg-light-gray'
-      }`}
+      style={colorVar}
+      className={cx(styles.entry, { [styles.striped]: whiteStripe })}
       role="listitem"
       aria-label={`Matéria da área: ${areaName}`}
     >
-      <div
-        className={`white ph2 pv1 br-pill b f5 mb3 mr3-l mb0-l ${areaColor}`}
-      >
-        {classe.code}
-      </div>
-      <div className="w-100 flex flex-row justify-between items-center">
-        <div className="flex-auto fw3 pr2 lh-title">{classeName}</div>
+      <div className={styles.codePill}>{classe.code}</div>
+      <div className={styles.container}>
+        <div className={styles.name}>{classeName}</div>
         {classe.names.length > 1 && (
           <>
             <button
-              className="mh3 light-silver pointer hover-gray bg-transparent b--none"
+              className={styles.modalButton}
               onClick={() => setModalOpen(true)}
               aria-label={`Matéria já teve ${classe.names.length} nomes. Abrir lista`}
               type="button"
@@ -61,7 +59,7 @@ export default function ClassEntry({
               <span className="fa-layers fa-fw" aria-hidden="true">
                 <FontAwesomeIcon icon={faComment} transform="grow-15" />
                 <span
-                  className="fa-layers-text fa-inverse pb1"
+                  className={cx('fa-layers-text fa-inverse', styles.iconText)}
                   style={{ fontWeight: 900 }}
                 >
                   {classe.names.length}
@@ -72,7 +70,7 @@ export default function ClassEntry({
               isOpen={isModalOpen}
               onCloseModal={() => setModalOpen(false)}
               classe={classe}
-              areaColor={areaColor}
+              areaColor={color}
             />
           </>
         )}

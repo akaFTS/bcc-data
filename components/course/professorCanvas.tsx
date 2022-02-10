@@ -17,12 +17,13 @@ export default function ProfessorCanvas({
   icon,
   professors,
 }: Props) {
+  const colorVar = {
+    '--header-color': `var(--${color})`,
+  } as React.CSSProperties;
+
   return (
     <article className={styles.article}>
-      <header
-        className={styles.header}
-        style={{ backgroundColor: `var(--${color})` }}
-      >
+      <header className={styles.header} style={colorVar}>
         {icon}
         <h3 className={styles.title}>{title}</h3>
       </header>

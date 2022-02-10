@@ -4,6 +4,7 @@ import { Job } from 'types/students';
 import santanderImg from 'public/brands/santander.png';
 import totvsImg from 'public/brands/totvs.png';
 import ninenineImg from 'public/brands/99.png';
+import styles from './jobItemImage.module.css';
 
 type Props = {
   type: Job;
@@ -27,7 +28,7 @@ export default function JobItemImage({ type }: Props) {
   const jobImage = getImageFileFromJob(type);
 
   return (
-    <div style={{ height: '1.4rem', width: '1.4rem' }}>
+    <div className={styles.container}>
       <Image
         src={jobImage}
         height={100}

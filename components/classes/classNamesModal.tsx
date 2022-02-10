@@ -1,7 +1,9 @@
 import React from 'react';
+import cx from 'classnames';
 import { Classe } from 'types/classes';
 import Modal from 'react-responsive-modal';
 import ClassTimespan from './classTimespan';
+import styles from './classNamesModal.module.css';
 
 type Props = {
   isOpen: boolean;
@@ -16,27 +18,27 @@ export default function ClassNamesModal({
   classe,
   areaColor,
 }: Props) {
+  const colorVar = {
+    '--pill-color': `var(--${areaColor})`,
+  } as React.CSSProperties;
+
   return (
     <Modal
       center
       open={isOpen}
       onClose={onCloseModal}
-      classNames={{ modal: 'br4 w-100 w-70-l ph0' }}
+      classNames={{ modal: styles.modal }}
     >
-      <div className="opensans ph3">
-        <div className={`w4 tc white ph2 pv1 br-pill f4 mb4 fw6 ${areaColor}`}>
-          {classe.code}
-        </div>
+      <div className={styles.container} style={colorVar}>
+        <div className={styles.pill}>{classe.code}</div>
         <div role="list">
           {classe.names.map((entry, index) => (
             <div
-              className={`flex pa3 items-center justify-between ${
-                index % 2 === 0 ? 'bg-light-gray' : ''
-              }`}
+              className={cx(styles.entry, { [styles.stripe]: index % 2 === 0 })}
               key={entry.start}
               role="listitem"
             >
-              <div className="fw3 pr2 lh-title gray">{entry.name}</div>
+              <div className={styles.name}>{entry.name}</div>
               <ClassTimespan
                 beginYear={classe.beginYear}
                 endYear={
