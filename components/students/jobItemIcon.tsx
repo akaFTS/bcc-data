@@ -23,30 +23,30 @@ type Props = {
 
 function getIconAndColor(job: Job): [IconDefinition, string] {
   if (job === 'PROFESSOR') {
-    return [faGraduationCap, 'purple-700'];
+    return [faGraduationCap, 'brand-purple'];
   }
   if (job === 'CONSULTANT') {
-    return [faChartBar, 'green-700'];
+    return [faChartBar, 'brand-green'];
   }
   if (job === 'BIG_TECH') {
-    return [faFacebookSquare, 'indigo-800'];
+    return [faFacebookSquare, 'brand-blue'];
   }
   if (job === 'STARTUP') {
-    return [faSpotify, 'green-700'];
+    return [faSpotify, 'brand-green'];
   }
   if (job === 'OWN') {
-    return [faWrench, 'orange-700'];
+    return [faWrench, 'brand-orange'];
   }
   if (job === 'GOVERNMENT') {
-    return [faUniversity, 'grey-800'];
+    return [faUniversity, 'brand-grey'];
   }
   if (job === 'RETIRED') {
-    return [faHome, 'red-900'];
+    return [faHome, 'brand-red'];
   }
   if (job === 'STUDYING') {
-    return [faBook, 'purple-700'];
+    return [faBook, 'brand-purple'];
   }
-  return [faCircle, 'grey-500'];
+  return [faCircle, 'brand-grey'];
 }
 
 export default function JobItemIcon({ type }: Props) {

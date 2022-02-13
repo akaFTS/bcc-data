@@ -20,37 +20,37 @@ export default function ListFilters({ activeArea, onAreaSet }: Props) {
       <div className={styles.list}>
         <FilterPill
           name="Todas"
-          color="grey-500"
+          color="brand-grey"
           isActive={activeArea === null}
           onClick={() => onAreaSet(null)}
         />
         <FilterPill
           name="Teoria"
-          color="indigo-800"
+          color="brand-blue"
           isActive={activeArea === 'THEORY'}
           onClick={() => onAreaSet('THEORY')}
         />
         <FilterPill
           name="Sistemas"
-          color="green-700"
+          color="brand-green"
           isActive={activeArea === 'SOFTWARE'}
           onClick={() => onAreaSet('SOFTWARE')}
         />
         <FilterPill
           name="IA"
-          color="pink-300"
+          color="brand-purple"
           isActive={activeArea === 'AI'}
           onClick={() => onAreaSet('AI')}
         />
         <FilterPill
           name="E-science"
-          color="orange-700"
+          color="brand-orange"
           isActive={activeArea === 'ESCIENCE'}
           onClick={() => onAreaSet('ESCIENCE')}
         />
         <FilterPill
           name="Outras"
-          color="grey-500"
+          color="brand-grey"
           isActive={activeArea === 'OTHERS'}
           onClick={() => onAreaSet('OTHERS')}
         />

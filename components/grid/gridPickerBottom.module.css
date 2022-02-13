@@ -13,16 +13,16 @@
 .chevron {
   padding: var(--p2);
   font-size: var(--f2);
-  color: var(--grey-500);
+  color: var(--text-1);
 }
 
 .chevron:hover {
   cursor: pointer;
-  color: var(--grey-800);
+  color: var(--text-2);
 }
 
 .button {
-  background-color: white;
+  background-color: var(--bg-2);
   border: 0;
   margin: 0 var(--p4);
 }
@@ -31,14 +31,14 @@
   padding: var(--p1);
   border-radius: var(--br-circle);
   margin: 0 var(--p1);
-  background-color: var(--grey-500);
+  background-color: var(--brand-grey);
 }
 
 .activeDot {
   padding: var(--p1);
   padding-left: var(--p2);
   padding-top: var(--p2);
-  background-color: var(--red-700);
+  background-color: var(--brand-red);
   border-radius: var(--br-circle);
   margin: 0 var(--p1);
 }

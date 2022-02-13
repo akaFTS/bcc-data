@@ -4,7 +4,7 @@ import styles from './data.module.css';
 
 export default function Data() {
   return (
-    <ContentBox title="Dados" color="orange-700">
+    <ContentBox title="Dados" color="brand-orange">
       <div className={styles.container}>
         <p className={styles.textEntry}>
           Os dados coletados se dividem em várias seções:

@@ -4,7 +4,7 @@ import styles from './sources.module.css';
 
 export default function Sources() {
   return (
-    <ContentBox title="Referências" color="orange-700">
+    <ContentBox title="Referências" color="brand-orange">
       <div className={styles.container}>
         <p className={styles.textEntry}>
           Toda a confecção deste trabalho foi baseada em fontes e documentos

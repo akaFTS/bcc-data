@@ -4,7 +4,7 @@ import styles from './propposal.module.css';
 
 export default function Propposal() {
   return (
-    <ContentBox title="Proposta Inicial" color="orange-700">
+    <ContentBox title="Proposta Inicial" color="brand-orange">
       <div className={styles.container}>
         <p>
           O Bacharelado em Ciência da Computação do IME-USP foi fundado em 1972.

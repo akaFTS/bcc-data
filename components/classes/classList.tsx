@@ -13,7 +13,7 @@ export default function ClassList() {
   const filteredClasses = useClasses(activeArea, activeYear);
 
   return (
-    <ContentBox title="Matérias" color="green-700">
+    <ContentBox title="Matérias" color="brand-green">
       <div className={styles.filter}>
         <AreaFilter activeArea={activeArea} onAreaSet={setActiveArea} />
         <YearFilter activeYear={activeYear} onYearSet={setActiveYear} />

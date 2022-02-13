@@ -12,7 +12,7 @@
 
 .box {
   overflow: hidden;
-  border: var(--bw1) solid var(--grey-200);
+  border: var(--bw1) solid var(--bg-1);
   border-radius: var(--br4);
 }
 
@@ -21,7 +21,7 @@
   font-size: var(--f6);
   font-weight: 600;
   padding: var(--p1);
-  color: var(--near-black);
+  color: var(--text-2);
 }
 
 .list {
@@ -38,7 +38,7 @@
 
 .subtitleText {
   font-size: var(--f6);
-  color: var(--grey-600);
+  color: var(--text-1);
 }
 
 .subtitleIcon {
@@ -47,27 +47,27 @@
 }
 
 .red {
-  color: var(--red-600);
+  color: var(--brand-red);
 }
 
 .blue {
-  color: var(--indigo-800);
+  color: var(--brand-blue);
 }
 
 .green {
-  color: var(--green-700);
+  color: var(--brand-green);
 }
 
 .orange {
-  color: var(--orange-700);
+  color: var(--brand-orange);
 }
 
 .purple {
-  color: var(--purple-700);
+  color: var(--brand-purple);
 }
 
 .grey {
-  color: var(--grey-600);
+  color: var(--brand-grey);
 }
 
 @media (min-width: 60em) {

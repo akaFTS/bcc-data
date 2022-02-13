@@ -16,11 +16,11 @@
 .percentage {
   font-weight: 700;
   font-size: var(--f2);
-  color: var(--indigo-800);
+  color: var(--brand-blue);
 }
 
 .subtitle {
   font-size: var(--f4);
   text-align: center;
-  color: var(--grey-600);
+  color: var(--text-1);
 }

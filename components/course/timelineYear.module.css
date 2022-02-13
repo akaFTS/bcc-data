@@ -13,18 +13,18 @@
 }
 
 .separator {
-  border-left: 1px solid var(--grey-200);
-  border-right: 1px solid var(--grey-200);
+  border-left: 1px solid var(--bg-1);
+  border-right: 1px solid var(--bg-1);
   height: var(--h1);
   flex: none;
 }
 
 .pill {
-  color: white;
+  color: var(--bg-2);
   width: var(--h3);
   text-align: center;
   font-weight: 600;
   padding: var(--p1) var(--p2);
   border-radius: var(--br-pill);
-  background-color: var(--purple-700);
+  background-color: var(--brand-purple);
 }

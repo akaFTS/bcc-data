@@ -5,17 +5,20 @@ html {
   --bg-2: white;
   --brand-blue: var(--indigo-800);
   --brand-red: var(--red-600);
-  --brand-green: var(--gren-700);
+  --brand-green: var(--green-700);
   --brand-orange: var(--orange-700);
   --brand-purple: var(--purple-700);
   --brand-grey: var(--grey-600);
+  --brand-yellow: var(--amber-600);
+  --brand-light-blue: var(--blue-200);
+  --brand-lime: var(--green-200);
 }
 
 body {
   font-family: 'Open Sans', Helvetica, sans-serif;
   min-height: 100vh;
   min-height: -webkit-fill-available;
-  background-color: var(--grey-200);
+  background-color: var(--bg-1);
 }
 
 html {

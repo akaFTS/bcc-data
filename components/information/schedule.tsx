@@ -4,7 +4,7 @@ import styles from './schedule.module.css';
 
 export default function Schedule() {
   return (
-    <ContentBox title="Cronograma Previsto" color="orange-700">
+    <ContentBox title="Cronograma Previsto" color="brand-orange">
       <ul className={styles.container}>
         <li className={styles.textEntry}>
           <div className={styles.bold}>Março a Maio</div>

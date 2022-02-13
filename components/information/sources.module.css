@@ -1,6 +1,6 @@
 .container {
   font-weight: 300;
-  color: var(--grey-600);
+  color: var(--text-1);
   font-size: var(--f6);
   line-height: var(--lh-copy);
 }
@@ -14,9 +14,9 @@
 }
 
 .link {
-  color: var(--grey-800);
+  color: var(--text-1);
 }
 
 .link:hover {
-  color: var(--grey-900);
+  color: var(--text-2);
 }

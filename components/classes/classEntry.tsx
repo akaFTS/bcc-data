@@ -8,11 +8,11 @@ import ClassTimespan from './classTimespan';
 import styles from './classEntry.module.css';
 
 function getAreaColorAndName(area: Area): [string, string] {
-  if (area === 'THEORY') return ['indigo-800', 'Teoria'];
-  if (area === 'SOFTWARE') return ['green-700', 'Sistemas'];
-  if (area === 'AI') return ['pink-400', 'IA'];
-  if (area === 'ESCIENCE') return ['orange-700', 'E-science'];
-  return ['grey-500', 'Outras'];
+  if (area === 'THEORY') return ['brand-blue', 'Teoria'];
+  if (area === 'SOFTWARE') return ['brand-green', 'Sistemas'];
+  if (area === 'AI') return ['brand-purple', 'IA'];
+  if (area === 'ESCIENCE') return ['brand-orange', 'E-science'];
+  return ['brand-grey', 'Outras'];
 }
 
 type Props = {
