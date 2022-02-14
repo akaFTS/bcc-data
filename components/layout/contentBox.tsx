@@ -18,7 +18,7 @@ export default function ContentBox({ title, color, children }: Props) {
         <h2 className={styles.title}>{title}</h2>
         {children}
       </div>
-      <div className={styles.border} />
+      <div className={styles.footer} />
     </article>
   );
 }

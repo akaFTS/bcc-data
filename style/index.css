@@ -24,3 +24,21 @@ body {
 html {
   height: -webkit-fill-available;
 }
+
+@media (prefers-color-scheme: dark) {
+  html {
+    --text-1: var(--grey-400);
+    --text-2: var(--grey-100);
+    --bg-1: var(--near-black);
+    --bg-2: var(--grey-900);
+    --brand-blue: var(--indigo-400);
+    --brand-red: var(--red-400);
+    --brand-green: var(--green-400);
+    --brand-orange: var(--orange-400);
+    --brand-purple: var(--purple-400);
+    --brand-grey: var(--grey-400);
+    --brand-yellow: var(--amber-400);
+    --brand-light-blue: var(--blue-400);
+    --brand-lime: var(--green-400);
+  }
+}
