@@ -6,9 +6,8 @@
 
 .bubble {
   border-radius: var(--br-circle);
-  border: var(--bw1) solid black;
+  border: var(--bw1) solid var(--bubble-color);
   overflow: hidden;
-  border-color: var(--bubble-color);
 }
 
 .subtitleWrap {
@@ -22,11 +21,11 @@
 }
 
 .subtitle {
-  color: white;
+  color: var(--bg-2);
   text-align: center;
   white-space: nowrap;
   opacity: 0.9;
-  background-color: var(--grey-600);
+  background-color: var(--brand-grey);
   border-radius: var(--br-pill);
   padding: var(--p1) var(--p2);
   font-size: var(--f7);

@@ -5,7 +5,7 @@ import styles from './summary.module.css';
 
 export default function Summary() {
   return (
-    <ContentBox title="Introdução" color="orange-700">
+    <ContentBox title="Introdução" color="brand-orange">
       <div className={styles.container}>
         <h3 className={styles.title}>Proposta</h3>
         <p>

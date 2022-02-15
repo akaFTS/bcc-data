@@ -4,7 +4,7 @@ import styles from './evolution.module.css';
 
 export default function Evolution() {
   return (
-    <ContentBox title="Evolução" color="orange-700">
+    <ContentBox title="Evolução" color="brand-orange">
       <ul className={styles.container}>
         <li className={styles.textEntry}>
           <span className={styles.title}>26/04/2018:</span>

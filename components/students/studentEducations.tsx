@@ -57,7 +57,7 @@ export default function StudentEducations({
   const colors = ['#FFA600', '#FF6361', '#BC5090', '#58508D', '#003F5C'];
 
   return (
-    <ContentBox title="Nível de Escolaridade" color="indigo-800">
+    <ContentBox title="Nível de Escolaridade" color="brand-blue">
       <StudentDataPicker
         currentSelection={currentSelection}
         onEpochSelected={onEpochSelected}

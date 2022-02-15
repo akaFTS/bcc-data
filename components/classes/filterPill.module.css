@@ -2,7 +2,7 @@
   border: var(--bw1) solid var(--pill-color);
   background-color: var(--pill-color);
   margin-bottom: var(--p2);
-  color: white;
+  color: var(--bg-2);
   border-radius: var(--br-pill);
   padding: var(--p1) var(--p2);
   font-size: var(--f6);
@@ -11,13 +11,13 @@
 }
 
 .pill.inactive {
-  background-color: white;
+  background-color: var(--bg-2);
   color: var(--pill-color);
 }
 
 .pill.inactive:hover {
   cursor: pointer;
-  background-color: var(--grey-200);
+  background-color: var(--bg-1);
 }
 
 @media (min-width: 60em) {

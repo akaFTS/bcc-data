@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  border: var(--bw1) solid var(--indigo-800);
+  border: var(--bw1) solid var(--brand-blue);
   border-radius: var(--br3);
   overflow: hidden;
 }
@@ -14,17 +14,17 @@
 }
 
 .selected {
-  background-color: var(--indigo-800);
-  color: white;
+  background-color: var(--brand-blue);
+  color: var(--bg-2);
 }
 
 .unselected {
-  color: var(--indigo-800);
-  background-color: white;
+  color: var(--brand-blue);
+  background-color: var(--bg-2);
 }
 
 .unselected:hover {
-  background-color: var(--grey-200);
+  background-color: var(--bg-1);
   cursor: pointer;
 }
 

@@ -1,6 +1,6 @@
 .button {
-  background-color: var(--grey-600);
-  color: white;
+  background-color: var(--brand-grey);
+  color: var(--bg-2);
   padding: var(--p2);
   border: 0;
   border-radius: var(--br-pill);
@@ -10,7 +10,7 @@
 }
 
 .button:hover {
-  background-color: var(--grey-800);
+  background-color: var(--text-2);
   cursor: pointer;
 }
 

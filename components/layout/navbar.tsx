@@ -16,31 +16,31 @@ export default function Navbar() {
         text="Informações"
         icon={faFileAlt}
         path="/info"
-        color="orange-700"
+        color="brand-orange"
       />
       <LinkButton
         text="Curso"
         icon={faGraduationCap}
         path="/"
-        color="purple-700"
+        color="brand-purple"
       />
       <LinkButton
         text="Matérias"
         icon={faBook}
         path="/classes"
-        color="green-700"
+        color="brand-green"
       />
       <LinkButton
         text="Grade"
         icon={faCalendarAlt}
         path="/grid"
-        color="red-600"
+        color="brand-red"
       />
       <LinkButton
         text="Alunos"
         icon={faUser}
         path="/students"
-        color="indigo-800"
+        color="brand-blue"
       />
     </nav>
   );

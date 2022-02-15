@@ -18,7 +18,7 @@ export default function StudentGenders({
   const graduatesByYear = useGraduates(currentSelection);
 
   return (
-    <ContentBox title="Graduandos por Gênero (Acumulado)" color="indigo-800">
+    <ContentBox title="Graduandos por Gênero (Acumulado)" color="brand-blue">
       <StudentDataPicker
         currentSelection={currentSelection}
         onEpochSelected={onEpochSelected}

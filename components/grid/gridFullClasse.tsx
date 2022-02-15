@@ -3,12 +3,12 @@ import { FullClasse } from 'types/grid';
 import styles from './gridFullClasse.module.css';
 
 function getClassColorAndName(code: string): [string, string] {
-  if (/^MAC/.test(code)) return ['red-600', 'Computação'];
-  if (/^MAT/.test(code)) return ['indigo-800', 'Matemática Pura'];
-  if (/^MAE/.test(code)) return ['green-700', 'Estatística'];
-  if (/^MAP/.test(code)) return ['orange-700', 'Matemática Aplicada'];
-  if (/^(FEP|FAP)/.test(code)) return ['purple-700', 'Física'];
-  return ['grey-600', 'Outras'];
+  if (/^MAC/.test(code)) return ['brand-red', 'Computação'];
+  if (/^MAT/.test(code)) return ['brand-blue', 'Matemática Pura'];
+  if (/^MAE/.test(code)) return ['brand-green', 'Estatística'];
+  if (/^MAP/.test(code)) return ['brand-orange', 'Matemática Aplicada'];
+  if (/^(FEP|FAP)/.test(code)) return ['brand-purple', 'Física'];
+  return ['brand-grey', 'Outras'];
 }
 
 type Props = {

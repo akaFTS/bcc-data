@@ -26,7 +26,7 @@ export default function StudentJobs({
   });
 
   return (
-    <ContentBox title="Ocupação Atual" color="indigo-800">
+    <ContentBox title="Ocupação Atual" color="brand-blue">
       <StudentDataPicker
         currentSelection={currentSelection}
         onEpochSelected={onEpochSelected}

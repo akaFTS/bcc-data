@@ -1,6 +1,6 @@
 .button {
   background-color: var(--btn-color);
-  color: white;
+  color: var(--bg-2);
   font-size: var(--f5);
   border: 0;
   padding: var(--p3);

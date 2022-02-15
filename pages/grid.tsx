@@ -19,7 +19,7 @@ export default function Grid() {
         <title>Grade • bcc-data</title>
       </Head>
       <div className={styles.mainInner}>
-        <ContentBox title="Grade Curricular" color="red">
+        <ContentBox title="Grade Curricular" color="brand-red">
           <GridPickerTop
             onMoveLeft={moveLeft}
             onMoveRight={moveRight}

@@ -1,6 +1,6 @@
 .container {
   font-weight: 300;
-  color: var(--grey-600);
+  color: var(--text-1);
   font-size: var(--f6);
   line-height: var(--lh-copy);
 }

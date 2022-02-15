@@ -33,13 +33,13 @@ export default function Professors() {
     professorYears[`p${currentYear}`] || {};
 
   return (
-    <ContentBox title="Professores" color="purple-700">
+    <ContentBox title="Professores" color="brand-purple">
       <YearPicker onYearChanged={setCurrentYear} />
       <div className={styles.container}>
         <Flipper flipKey={getProfessorListForAnimation(currentYearData)}>
           <ProfessorCanvas
             title="Titular"
-            color="red-700"
+            color="brand-red"
             icon={
               <span className="fa-layers fa-fw">
                 <FontAwesomeIcon
@@ -57,7 +57,7 @@ export default function Professors() {
           />
           <ProfessorCanvas
             title="Associado"
-            color="orange-600"
+            color="brand-orange"
             icon={
               <span className="fa-layers fa-fw">
                 <FontAwesomeIcon
@@ -74,13 +74,13 @@ export default function Professors() {
           />
           <ProfessorCanvas
             title="Doutor"
-            color="amber-600"
+            color="brand-yellow"
             icon={<FontAwesomeIcon icon={faStar} transform="shrink-3" />}
             professors={currentYearData.MS3 || []}
           />
           <ProfessorCanvas
             title="Assistente"
-            color="green-200"
+            color="brand-lime"
             icon={
               <FontAwesomeIcon icon={faStarHalf} transform="right-3 shrink-3" />
             }
@@ -88,13 +88,13 @@ export default function Professors() {
           />
           <ProfessorCanvas
             title="Auxiliar"
-            color="blue-200"
+            color="brand-light-blue"
             icon={<FontAwesomeIcon icon={faCircle} transform="shrink-7" />}
             professors={currentYearData.MS1 || []}
           />
           <ProfessorCanvas
             title="Sênior"
-            color="grey"
+            color="brand-grey"
             icon={<FontAwesomeIcon icon={faMoon} transform="shrink-3" />}
             professors={currentYearData.MS0 || []}
           />

@@ -9,22 +9,22 @@
   font-size: var(--f4);
   font-weight: 600;
   text-align: center;
-  color: var(--near-black);
+  color: var(--text-2);
 }
 
 .chevron {
   padding: var(--p2);
   font-size: var(--f2);
-  color: var(--grey-500);
+  color: var(--text-1);
 }
 
 .chevron:hover {
   cursor: pointer;
-  color: var(--grey-800);
+  color: var(--text-2);
 }
 
 .button {
-  background-color: white;
+  background-color: var(--bg-2);
   border: 0;
   margin: 0 var(--p4);
 }

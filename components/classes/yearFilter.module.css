@@ -2,19 +2,20 @@
   font-weight: 700;
   margin-bottom: var(--p1);
   font-size: var(--f5);
-  color: var(--near-black);
+  color: var(--text-2);
 }
 
 .input {
-  border: var(--bw1) solid var(--grey-200);
+  border: var(--bw1) solid var(--bg-1);
   border-radius: var(--br2);
   font-weight: 700;
   text-align: center;
   font-size: var(--f4);
   width: var(--h3);
-  color: var(--grey-800);
+  color: var(--text-1);
+  background-color: var(--bg-2);
 }
 
 .input.active {
-  border-color: var(--grey-500);
+  border-color: var(--brand-grey);
 }

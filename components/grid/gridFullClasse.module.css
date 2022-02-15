@@ -3,7 +3,7 @@
   background-color: var(--box-color);
   padding: var(--p2) var(--p3);
   border-radius: var(--br-pill);
-  color: white;
+  color: var(--bg-2);
   margin: var(--p2);
   display: flex;
   align-items: center;
