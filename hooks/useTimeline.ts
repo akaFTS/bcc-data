@@ -1,4 +1,4 @@
-import { timeline } from 'data/course/timeline';
+import timeline from 'data/course/timeline.yml';
 import { YearEntry } from 'types/course';
 
 export default function useTimeline(): YearEntry[] {
