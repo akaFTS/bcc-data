@@ -29,6 +29,7 @@
   display: inline-block;
   font-size: initial;
   margin: var(--p2);
+  vertical-align: top;
 }
 
 .container::before {
@@ -36,7 +37,15 @@
   width: 1.75rem;
   float: left;
   height: 100%;
-  shape-outside: repeating-linear-gradient(#0000 0 6rem, #000 0 8rem);
+  shape-outside: repeating-linear-gradient(
+    transparent 0.1% 6rem,
+    #000000 0% 8rem
+  );
+}
+
+.container > div:last-child::after {
+  content: '';
+  clear: both;
 }
 
 .placeholder {
