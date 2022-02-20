@@ -1,0 +1,983 @@
+- code: MAC0101
+  area: OTHERS
+  beginYear: 2015
+  endYear: 2018
+  names:
+    - start: 2015
+      name: Introdução à Ciência da Computação
+    - start: 2016
+      name: Integração na Universidade e na Profissão
+
+- code: MAC0102
+  area: OTHERS
+  beginYear: 2016
+  endYear: 2018
+  names:
+    - start: 2016
+      name: Caminhos no Bacharelado em Ciência da Computação
+
+- code: MAC0105
+  area: THEORY
+  beginYear: 2015
+  endYear: 2018
+  names:
+    - start: 2015
+      name: Fundamentos de Matemática para a Computação
+
+- code: MAC0110
+  area: SOFTWARE
+  beginYear: 1972
+  endYear: 2018
+  names:
+    - start: 1972
+      name: Introdução à Ciência da Computação
+    - start: 1990
+      name: Introdução à Computação
+
+- code: MAC0121
+  area: SOFTWARE
+  beginYear: 2015
+  endYear: 2018
+  names:
+    - start: 2015
+      name: Algoritmos e Estruturas de Dados I
+
+- code: MAC0122
+  area: THEORY
+  beginYear: 1982
+  endYear: 2014
+  names:
+    - start: 1982
+      name: Princípios de Desenvolvimento de Algoritmos
+
+- code: MAC0209
+  area: ESCIENCE
+  beginYear: 2016
+  endYear: 2018
+  names:
+    - start: 2016
+      name: Modelagem e Simulação
+
+- code: MAC0210
+  area: THEORY
+  beginYear: 2016
+  endYear: 2018
+  names:
+    - start: 2016
+      name: Laboratório de Métodos Numéricos
+
+- code: MAC0211
+  area: SOFTWARE
+  beginYear: 1972
+  endYear: 2015
+  names:
+    - start: 1972
+      name: Laboratório de Programação
+    - start: 1998
+      name: Laboratório de Programação I
+
+- code: MAC0213
+  area: OTHERS
+  beginYear: 2015
+  endYear: 2018
+  names:
+    - start: 2015
+      name: Atividade Curricular em Comunidade
+
+- code: MAC0214
+  area: OTHERS
+  beginYear: 2015
+  endYear: 2018
+  names:
+    - start: 2015
+      name: Atividade Curricular em Cultura e Extensão
+
+- code: MAC0215
+  area: OTHERS
+  beginYear: 2015
+  endYear: 2018
+  names:
+    - start: 2015
+      name: Atividade Curricular em Pesquisa
+
+- code: MAC0216
+  area: SOFTWARE
+  beginYear: 2016
+  endYear: 2018
+  names:
+    - start: 2016
+      name: Técnicas de Programação I
+
+- code: MAC0218
+  area: SOFTWARE
+  beginYear: 2017
+  endYear: 2018
+  names:
+    - start: 2017
+      name: Técnicas de Programação II
+
+- code: MAC0219
+  area: SOFTWARE
+  beginYear: 2018
+  endYear: 2018
+  names:
+    - start: 2018
+      name: Programação Concorrente e Paralela
+
+- code: MAC0221
+  area: THEORY
+  beginYear: 1972
+  endYear: 2005
+  names:
+    - start: 1972
+      name: Programação em Linguagem de Montagem
+    - start: 1974
+      name: Linguagem de Montagem
+    - start: 1990
+      name: Construção de Montadores
+
+- code: MAC0222
+  area: SOFTWARE
+  beginYear: 1989
+  endYear: 2004
+  names:
+    - start: 1989
+      name: Sistemas de Programação
+
+- code: MAC0228
+  area: THEORY
+  beginYear: 1995
+  endYear: 2018
+  names:
+    - start: 1995
+      name: Combinatória e Grafos
+    - start: 2003
+      name: Combinatória e Teoria dos Grafos
+
+- code: MAC0230
+  area: THEORY
+  beginYear: 1997
+  endYear: 2013
+  names:
+    - start: 1997
+      name: Elementos de Matemática Discreta
+
+- code: MAC0239
+  area: AI
+  beginYear: 1998
+  endYear: 2018
+  names:
+    - start: 1998
+      name: Métodos Formais em Programação
+    - start: 2016
+      name: Introdução à Lógica e Verificação de Programas
+
+- code: MAC0242
+  area: SOFTWARE
+  beginYear: 1998
+  endYear: 2016
+  names:
+    - start: 1998
+      name: Laboratório de Programação II
+
+- code: MAC0300
+  area: THEORY
+  beginYear: 1998
+  endYear: 2018
+  names:
+    - start: 1998
+      name: Métodos Numéricos da Álgebra Linear
+
+- code: MAC0310
+  area: THEORY
+  beginYear: 1983
+  endYear: 2015
+  names:
+    - start: 1983
+      name: Princípios de Enumeração
+    - start: 1997
+      name: Matemática Concreta
+
+- code: MAC0312
+  area: SOFTWARE
+  beginYear: 1972
+  endYear: 1997
+  names:
+    - start: 1972
+      name: Programação Comercial
+    - start: 1990
+      name: Processamento de Dados Administrativos
+
+- code: MAC0315
+  area: THEORY
+  beginYear: 1973
+  endYear: 2018
+  names:
+    - start: 1973
+      name: Programação Matemática I
+    - start: 1997
+      name: Programação Linear
+
+- code: MAC0316
+  area: SOFTWARE
+  beginYear: 1994
+  endYear: 2018
+  names:
+    - start: 1994
+      name: Conceitos Fundamentais de Linguagens de Programação
+
+- code: MAC0317
+  area: ESCIENCE
+  beginYear: 2014
+  endYear: 2018
+  names:
+    - start: 2014
+      name: Algoritmos para Processamento de Áudio, Imagem e Vídeo
+
+- code: MAC0318
+  area: AI
+  beginYear: 2014
+  endYear: 2018
+  names:
+    - start: 2014
+      name: Introdução à Programação de Robôs Móveis
+
+- code: MAC0319
+  area: SOFTWARE
+  beginYear: 2014
+  endYear: 2018
+  names:
+    - start: 2014
+      name: Programação Funcional Contemporânea
+
+- code: MAC0320
+  area: THEORY
+  beginYear: 2010
+  endYear: 2018
+  names:
+    - start: 2010
+      name: Introdução à Teoria dos Grafos
+
+- code: MAC0321
+  area: SOFTWARE
+  beginYear: 2014
+  endYear: 2018
+  names:
+    - start: 2014
+      name: Laboratório de Programação Orientada a Objetos
+
+- code: MAC0322
+  area: SOFTWARE
+  beginYear: 1972
+  endYear: 2018
+  names:
+    - start: 1972
+      name: Introdução à Análise de Sistemas
+
+- code: MAC0323
+  area: THEORY
+  beginYear: 1972
+  endYear: 2018
+  names:
+    - start: 1972
+      name: Estruturas de Dados
+
+- code: MAC0325
+  area: THEORY
+  beginYear: 1973
+  endYear: 2018
+  names:
+    - start: 1973
+      name: Programação Matemática II
+    - start: 1997
+      name: Otimização Combinatória
+
+- code: MAC0326
+  area: ESCIENCE
+  beginYear: 2006
+  endYear: 2018
+  names:
+    - start: 2006
+      name: Computação, Cibernética e Sistemas Cognitivos
+
+- code: MAC0327
+  area: THEORY
+  beginYear: 2006
+  endYear: 2018
+  names:
+    - start: 2006
+      name: Desafios de Programação
+
+- code: MAC0328
+  area: THEORY
+  beginYear: 1974
+  endYear: 2018
+  names:
+    - start: 1974
+      name: Introdução à Teoria dos Grafos
+    - start: 1999
+      name: Teoria dos Grafos
+    - start: 2000
+      name: Algoritmos em Grafos
+
+- code: MAC0329
+  area: AI
+  beginYear: 1974
+  endYear: 2018
+  names:
+    - start: 1974
+      name: Álgebra Booleana e Aplicações
+
+- code: MAC0330
+  area: THEORY
+  beginYear: 1977
+  endYear: 2015
+  names:
+    - start: 1977
+      name: Algoritmos Algébricos
+
+- code: MAC0331
+  area: THEORY
+  beginYear: 2000
+  endYear: 2018
+  names:
+    - start: 2000
+      name: Geometria Computacional
+
+- code: MAC0332
+  area: SOFTWARE
+  beginYear: 1997
+  endYear: 2018
+  names:
+    - start: 1997
+      name: Engenharia de Software
+
+- code: MAC0333
+  area: SOFTWARE
+  beginYear: 1986
+  endYear: 2018
+  names:
+    - start: 1986
+      name: Armazenamento e Recuperação da Informação
+
+- code: MAC0335
+  area: OTHERS
+  beginYear: 2002
+  endYear: 2018
+  names:
+    - start: 2002
+      name: Leitura Dramática
+
+- code: MAC0336
+  area: SOFTWARE
+  beginYear: 2002
+  endYear: 2018
+  names:
+    - start: 2002
+      name: Criptografia para Segurança de Dados
+
+- code: MAC0337
+  area: ESCIENCE
+  beginYear: 2009
+  endYear: 2018
+  names:
+    - start: 2009
+      name: Computação Musical
+
+- code: MAC0338
+  area: THEORY
+  beginYear: 1998
+  endYear: 2018
+  names:
+    - start: 1998
+      name: Introdução à Análise de Algoritmos
+    - start: 1999
+      name: Análise de Algoritmos
+
+- code: MAC0339
+  area: SOFTWARE
+  beginYear: 2000
+  endYear: 2018
+  names:
+    - start: 2000
+      name: Informação, Comunicação e a Sociedade do Conhecimento
+
+- code: MAC0340
+  area: SOFTWARE
+  beginYear: 2009
+  endYear: 2018
+  names:
+    - start: 2009
+      name: Laboratório de Engenharia de Software
+
+- code: MAC0341
+  area: ESCIENCE
+  beginYear: 2016
+  endYear: 2018
+  names:
+    - start: 2016
+      name: Introdução à Bioinformática
+
+- code: MAC0342
+  area: SOFTWARE
+  beginYear: 2006
+  endYear: 2017
+  names:
+    - start: 2006
+      name: Laboratório de Programação Extrema
+
+- code: MAC0343
+  area: THEORY
+  beginYear: 2016
+  endYear: 2018
+  names:
+    - start: 2016
+      name: Programação Semidefinida e Aplicações
+
+- code: MAC0344
+  area: SOFTWARE
+  beginYear: 2017
+  endYear: 2018
+  names:
+    - start: 2017
+      name: Arquitetura de Computadores
+
+- code: MAC0350
+  area: SOFTWARE
+  beginYear: 2016
+  endYear: 2018
+  names:
+    - start: 2016
+      name: Introdução ao Desenvolvimento de Sistemas de Software
+
+- code: MAC0351
+  area: ESCIENCE
+  beginYear: 2016
+  endYear: 2018
+  names:
+    - start: 2016
+      name: Algoritmos em Bioinformática
+
+- code: MAC0352
+  area: SOFTWARE
+  beginYear: 2016
+  endYear: 2018
+  names:
+    - start: 2016
+      name: Redes e Sistemas Distribuídos
+
+- code: MAC0375
+  area: ESCIENCE
+  beginYear: 2016
+  endYear: 2018
+  names:
+    - start: 2016
+      name: Biologia de Sistemas
+
+- code: MAC0410
+  area: SOFTWARE
+  beginYear: 1973
+  endYear: 2009
+  names:
+    - start: 1973
+      name: Introdução à Compilação
+
+- code: MAC0412
+  area: SOFTWARE
+  beginYear: 1972
+  endYear: 2016
+  names:
+    - start: 1972
+      name: Organização de Computadores e Álgebra de Boole
+    - start: 1973
+      name: Organização de Computadores
+
+- code: MAC0413
+  area: SOFTWARE
+  beginYear: 2002
+  endYear: 2018
+  names:
+    - start: 2002
+      name: Tópicos de Programação Orientada a Objetos
+
+- code: MAC0414
+  area: THEORY
+  beginYear: 1974
+  endYear: 2018
+  names:
+    - start: 1974
+      name: Introdução à Teoria de Automata Finitos
+    - start: 1978
+      name: Introdução à Teoria de Autômatos Finitos
+    - start: 1998
+      name: Autômatos e Linguagens Formais
+    - start: 2003
+      name: Linguagens Formais e Autômatos
+    - start: 2016
+      name: Autômatos, Computabilidade e Complexidade
+
+- code: MAC0415
+  area: SOFTWARE
+  beginYear: 1999
+  endYear: 2018
+  names:
+    - start: 1999
+      name: Projeto de Compiladores
+
+- code: MAC0416
+  area: SOFTWARE
+  beginYear: 2002
+  endYear: 2018
+  names:
+    - start: 2002
+      name: Tópicos em Sistemas Distribuídos
+
+- code: MAC0417
+  area: ESCIENCE
+  beginYear: 2000
+  endYear: 2018
+  names:
+    - start: 2000
+      name: Visão e Processamento de Imagens
+
+- code: MAC0418
+  area: THEORY
+  beginYear: 1981
+  endYear: 2015
+  names:
+    - start: 1981
+      name: Tópicos Especiais de Programação Matemática
+
+- code: MAC0419
+  area: ESCIENCE
+  beginYear: 1995
+  endYear: 2018
+  names:
+    - start: 1995
+      name: Métodos de Otimização em Finanças
+
+- code: MAC0420
+  area: ESCIENCE
+  beginYear: 1988
+  endYear: 2018
+  names:
+    - start: 1988
+      name: Introdução à Computação Gráfica
+
+- code: MAC0421
+  area: ESCIENCE
+  beginYear: 1996
+  endYear: 2015
+  names:
+    - start: 1996
+      name: Computação Gráfica
+
+- code: MAC0422
+  area: SOFTWARE
+  beginYear: 1972
+  endYear: 2018
+  names:
+    - start: 1972
+      name: Sistemas Operacionais
+
+- code: MAC0423
+  area: THEORY
+  beginYear: 1974
+  endYear: 2015
+  names:
+    - start: 1974
+      name: Introdução a Teoria da Computabilidade
+
+- code: MAC0424
+  area: SOFTWARE
+  beginYear: 1974
+  endYear: 2018
+  names:
+    - start: 1974
+      name: O Computador na Sociedade e na Empresa
+
+- code: MAC0425
+  area: AI
+  beginYear: 1976
+  endYear: 2018
+  names:
+    - start: 1976
+      name: Introdução à Inteligência Artificial
+    - start: 2004
+      name: Inteligência Artificial
+
+- code: MAC0426
+  area: SOFTWARE
+  beginYear: 1978
+  endYear: 2018
+  names:
+    - start: 1978
+      name: Sistemas Administradores de Base de Dados
+    - start: 1990
+      name: Sistemas de Banco de Dados
+
+- code: MAC0427
+  area: THEORY
+  beginYear: 1981
+  endYear: 2018
+  names:
+    - start: 1981
+      name: Programação Não-Linear
+
+- code: MAC0428
+  area: SOFTWARE
+  beginYear: 1982
+  endYear: 1989
+  names:
+    - start: 1982
+      name: Redes de Computadores
+
+- code: MAC0429
+  area: SOFTWARE
+  beginYear: 1982
+  endYear: 1989
+  names:
+    - start: 1982
+      name: Sistemas em Tempo Real
+
+- code: MAC0430
+  area: THEORY
+  beginYear: 1995
+  endYear: 2018
+  names:
+    - start: 1995
+      name: Algoritmos e Complexidade de Computação
+
+- code: MAC0431
+  area: SOFTWARE
+  beginYear: 1996
+  endYear: 2016
+  names:
+    - start: 1996
+      name: Introdução à Computação Paralela e Distribuída
+
+- code: MAC0432
+  area: ESCIENCE
+  beginYear: 1997
+  endYear: 2018
+  names:
+    - start: 1997
+      name: 'Processamento Digital de Imagens: Teoria e Aplicações'
+
+- code: MAC0433
+  area: SOFTWARE
+  beginYear: 1997
+  endYear: 2013
+  names:
+    - start: 1997
+      name: Administração de Sistemas UNIX
+
+- code: MAC0434
+  area: SOFTWARE
+  beginYear: 1997
+  endYear: 2018
+  names:
+    - start: 1997
+      name: Tópicos de Sistemas de Computação
+
+- code: MAC0435
+  area: SOFTWARE
+  beginYear: 1997
+  endYear: 2018
+  names:
+    - start: 1997
+      name: Métodos Formais para Especificação e Construção de Programas
+
+- code: MAC0436
+  area: THEORY
+  beginYear: 1997
+  endYear: 2018
+  names:
+    - start: 1997
+      name: Tópicos de Matemática Discreta
+
+- code: MAC0437
+  area: SOFTWARE
+  beginYear: 1997
+  endYear: 2015
+  names:
+    - start: 1997
+      name: Redes de Dados
+
+- code: MAC0438
+  area: SOFTWARE
+  beginYear: 1998
+  endYear: 2018
+  names:
+    - start: 1998
+      name: Programação Concorrente
+
+- code: MAC0439
+  area: SOFTWARE
+  beginYear: 2000
+  endYear: 2018
+  names:
+    - start: 2000
+      name: Laboratório de Banco de Dados
+
+- code: MAC0440
+  area: SOFTWARE
+  beginYear: 1998
+  endYear: 2015
+  names:
+    - start: 1998
+      name: Sistemas de Objetos Distribuídos
+
+- code: MAC0441
+  area: SOFTWARE
+  beginYear: 1998
+  endYear: 2018
+  names:
+    - start: 1998
+      name: Programação Orientada a Objetos
+
+- code: MAC0442
+  area: SOFTWARE
+  beginYear: 2000
+  endYear: 2015
+  names:
+    - start: 2000
+      name: Análise Orientada a Objetos
+
+- code: MAC0443
+  area: SOFTWARE
+  beginYear: 2000
+  endYear: 2015
+  names:
+    - start: 2000
+      name: Projeto Orientado a Objetos
+
+- code: MAC0444
+  area: AI
+  beginYear: 2004
+  endYear: 2018
+  names:
+    - start: 2004
+      name: Sistemas Baseados em Conhecimento
+
+- code: MAC0445
+  area: SOFTWARE
+  beginYear: 2000
+  endYear: 2015
+  names:
+    - start: 2000
+      name: Laboratório de Análise e Projeto Orientado a Objetos
+
+- code: MAC0446
+  area: SOFTWARE
+  beginYear: 2000
+  endYear: 2018
+  names:
+    - start: 2000
+      name: Princípios de Interação Humano-Computador
+
+- code: MAC0447
+  area: THEORY
+  beginYear: 2000
+  endYear: 2018
+  names:
+    - start: 2000
+      name: 'Análise e Reconhecimento de Formas: Teoria e Prática'
+
+- code: MAC0448
+  area: SOFTWARE
+  beginYear: 2000
+  endYear: 2018
+  names:
+    - start: 2000
+      name: 'Redes de Computadores: uma Perspectiva de Sistemas de Software'
+    - start: 2003
+      name: Programação para Redes de Computadores
+
+- code: MAC0449
+  area: SOFTWARE
+  beginYear: 2002
+  endYear: 2015
+  names:
+    - start: 2002
+      name: Sistemas Operacionais Distribuídos
+
+- code: MAC0450
+  area: THEORY
+  beginYear: 2004
+  endYear: 2018
+  names:
+    - start: 2004
+      name: Algoritmos de Aproximação
+
+- code: MAC0451
+  area: SOFTWARE
+  beginYear: 2010
+  endYear: 2018
+  names:
+    - start: 2010
+      name: Tópicos Especiais em Desenvolvimento para Web
+
+- code: MAC0452
+  area: THEORY
+  beginYear: 2004
+  endYear: 2018
+  names:
+    - start: 2004
+      name: Tópicos de Otimização Combinatória
+
+- code: MAC0453
+  area: SOFTWARE
+  beginYear: 2004
+  endYear: 2018
+  names:
+    - start: 2004
+      name: Princípios de Pesquisa Operacional e Logística
+
+- code: MAC0454
+  area: SOFTWARE
+  beginYear: 2009
+  endYear: 2015
+  names:
+    - start: 2009
+      name: Sistemas de Middleware
+
+- code: MAC0455
+  area: SOFTWARE
+  beginYear: 2009
+  endYear: 2015
+  names:
+    - start: 2009
+      name: Desenvolvimento de Sistemas Colaborativos
+
+- code: MAC0456
+  area: SOFTWARE
+  beginYear: 2010
+  endYear: 2018
+  names:
+    - start: 2010
+      name: Tópicos Especiais em Engenharia de Software
+
+- code: MAC0457
+  area: SOFTWARE
+  beginYear: 2010
+  endYear: 2018
+  names:
+    - start: 2010
+      name: Engenharia de Software Empírica
+
+- code: MAC0458
+  area: SOFTWARE
+  beginYear: 2014
+  endYear: 2018
+  names:
+    - start: 2014
+      name: Direito e Software Livre
+
+- code: MAC0459
+  area: ESCIENCE
+  beginYear: 2014
+  endYear: 2018
+  names:
+    - start: 2014
+      name: Ciência e Engenharia de Dados
+
+- code: MAC0460
+  area: AI
+  beginYear: 2006
+  endYear: 2018
+  names:
+    - start: 2006
+      name: 'Aprendizado de Máquina: Modelos, Algoritmos e Aplicações'
+    - start: 2018
+      name: Introdução ao Aprendizado de Máquina
+
+- code: MAC0461
+  area: SOFTWARE
+  beginYear: 2006
+  endYear: 2015
+  names:
+    - start: 2006
+      name: Introdução ao Escalonamento e Aplicações
+
+- code: MAC0462
+  area: SOFTWARE
+  beginYear: 2006
+  endYear: 2015
+  names:
+    - start: 2006
+      name: Sistemas de Middleware Avançados
+
+- code: MAC0463
+  area: SOFTWARE
+  beginYear: 2006
+  endYear: 2018
+  names:
+    - start: 2006
+      name: Computação Móvel
+
+- code: MAC0464
+  area: SOFTWARE
+  beginYear: 2014
+  endYear: 2018
+  names:
+    - start: 2014
+      name: Sistemas Humano-Computacionais
+
+- code: MAC0465
+  area: ESCIENCE
+  beginYear: 2006
+  endYear: 2018
+  names:
+    - start: 2006
+      name: Biologia Computacional
+
+- code: MAC0466
+  area: THEORY
+  beginYear: 2014
+  endYear: 2018
+  names:
+    - start: 2014
+      name: Teoria dos Jogos Algorítmica
+
+- code: MAC0467
+  area: SOFTWARE
+  beginYear: 2014
+  endYear: 2018
+  names:
+    - start: 2014
+      name: Empreendedorismo para Ciência da Computação
+    - start: 2016
+      name: Empreendedorismo Digital
+
+- code: MAC0468
+  area: ESCIENCE
+  beginYear: 2014
+  endYear: 2018
+  names:
+    - start: 2014
+      name: Tópicos em Computação Gráfica
+
+- code: MAC0470
+  area: SOFTWARE
+  beginYear: 2014
+  endYear: 2018
+  names:
+    - start: 2014
+      name: Desenvolvimento de Software Livre
+
+- code: MAC0472
+  area: SOFTWARE
+  beginYear: 2018
+  endYear: 2018
+  names:
+    - start: 2018
+      name: Laboratório de Métodos Ágeis
+
+- code: MAC0499
+  area: OTHERS
+  beginYear: 1998
+  endYear: 2018
+  names:
+    - start: 1998
+      name: Trabalho de Formatura Supervisionado
