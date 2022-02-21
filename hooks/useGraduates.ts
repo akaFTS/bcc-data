@@ -1,5 +1,4 @@
-import { maleGraduatesByYear } from 'data/students/maleGraduates';
-import { femaleGraduatesByYear } from 'data/students/femaleGraduates';
+import graduatesByYear from 'data/students/graduates.yml';
 import { Epoch, YearGraduates } from 'types/students';
 
 function getYearRangeFromEpoch(epoch: Epoch) {
@@ -9,27 +8,23 @@ function getYearRangeFromEpoch(epoch: Epoch) {
   return [30, 44];
 }
 
-const kFirstYear = 1974;
-const kLastYear = 2018;
-
 export default function useGraduates(currentEpoch: Epoch): YearGraduates[] {
-  const yearRange = [...Array(kLastYear - kFirstYear).keys()];
+  const slicedGraduates = graduatesByYear.slice(
+    ...getYearRangeFromEpoch(currentEpoch),
+  );
 
-  const graduatesByYear: YearGraduates[] = yearRange.map((index) => ({
-    year: index + kFirstYear,
-    males: 0,
-    females: 0,
-  }));
+  const accumulatedGraduates: YearGraduates[] = [];
+  slicedGraduates.reduce(
+    (acc: YearGraduates, current: YearGraduates, i: number): YearGraduates => {
+      const tempYearGraduates = { ...acc };
+      tempYearGraduates.year = current.year;
+      tempYearGraduates.males += current.males;
+      tempYearGraduates.females += current.females;
+      accumulatedGraduates[i] = tempYearGraduates;
+      return tempYearGraduates;
+    },
+    { males: 0, females: 0, year: 0 },
+  );
 
-  maleGraduatesByYear.reduce((accumulated, year, index) => {
-    graduatesByYear[index].males = accumulated + year;
-    return graduatesByYear[index].males;
-  }, 0);
-
-  femaleGraduatesByYear.reduce((accumulated, year, index) => {
-    graduatesByYear[index].females = accumulated + year;
-    return graduatesByYear[index].females;
-  }, 0);
-
-  return graduatesByYear.slice(...getYearRangeFromEpoch(currentEpoch));
+  return accumulatedGraduates;
 }

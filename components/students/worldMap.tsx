@@ -6,7 +6,7 @@ import {
   Marker,
 } from 'react-simple-maps';
 import worldMap from 'data/students/world.json';
-import { citySpecs } from 'data/students/citySpecs';
+import citySpecs from 'data/students/citySpecs.yml';
 import { City } from 'types/students';
 import styles from './worldMap.module.css';
 
