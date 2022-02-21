@@ -1,0 +1,1848 @@
+- year: 1972
+  levels:
+    MS1:
+      - geraldo
+      - istvan
+      - pf
+      - routo
+      - siang
+      - silvio
+    MS2:
+      - simon
+    MS3:
+      - setzer
+
+- year: 1973
+  levels:
+    MS1:
+      - chumes
+      - geraldo
+      - istvan
+      - pf
+      - rene
+      - routo
+      - siang
+      - silvio
+    MS2:
+      - simon
+    MS3:
+      - setzer
+
+- year: 1974
+  levels:
+    MS1:
+      - chumes
+      - geraldo
+      - graca
+      - pf
+      - rene
+      - routo
+      - siang
+      - zwicker
+    MS2:
+      - istvan
+    MS3:
+      - setzer
+      - simon
+      - waldo
+
+- year: 1975
+  levels:
+    MS1:
+      - chumes
+      - geraldo
+      - graca
+      - rene
+      - routo
+      - siang
+      - stolfi
+      - zwicker
+    MS2:
+      - istvan
+      - pf
+      - silvio
+    MS3:
+      - setzer
+      - simon
+      - waldo
+
+- year: 1976
+  levels:
+    MS1:
+      - chumes
+      - graca
+      - ines
+      - mandel
+      - marcilio
+      - rene
+      - stolfi
+      - yoshiko
+      - zwicker
+    MS2:
+      - geraldo
+      - istvan
+      - pf
+      - routo
+      - siang
+    MS3:
+      - setzer
+      - silvio
+      - simon
+      - tomasz
+      - waldo
+
+- year: 1977
+  levels:
+    MS1:
+      - bete
+      - chumes
+      - edna
+      - graca
+      - ines
+      - marcilio
+      - mariaangela
+      - rene
+      - stolfi
+      - yoshiko
+      - zwicker
+    MS2:
+      - geraldo
+      - istvan
+      - mandel
+      - pf
+      - routo
+      - siang
+    MS3:
+      - setzer
+      - silvio
+      - simon
+      - tomasz
+      - waldo
+
+- year: 1978
+  levels:
+    MS1:
+      - anselmo
+      - bete
+      - chumes
+      - edna
+      - graca
+      - ines
+      - marcilio
+      - mariaangela
+      - stolfi
+      - wagner
+      - zwicker
+    MS2:
+      - geraldo
+      - mandel
+      - pf
+      - rene
+      - routo
+      - siang
+      - yoshiko
+    MS3:
+      - istvan
+      - setzer
+      - simon
+      - tomasz
+      - waldo
+
+- year: 1979
+  levels:
+    MS1:
+      - anselmo
+      - bete
+      - edna
+      - ines
+      - marcilio
+      - miguel
+      - stolfi
+      - wagner
+      - zwicker
+    MS2:
+      - graca
+      - mandel
+      - mariaangela
+      - pf
+      - rene
+      - routo
+      - siang
+      - yoshiko
+    MS3:
+      - chumes
+      - istvan
+      - tomasz
+      - waldo
+    MS5:
+      - setzer
+      - simon
+
+- year: 1980
+  levels:
+    MS1:
+      - anselmo
+      - edna
+      - miguel
+      - nami
+      - wagner
+    MS2:
+      - bete
+      - graca
+      - ines
+      - mandel
+      - marcilio
+      - mariaangela
+      - pf
+      - rene
+      - routo
+      - siang
+      - stolfi
+      - yoshiko
+      - zwicker
+    MS3:
+      - chumes
+      - istvan
+      - tomasz
+      - waldo
+    MS5:
+      - setzer
+      - simon
+
+- year: 1981
+  levels:
+    MS1:
+      - edna
+      - miguel
+      - nami
+    MS2:
+      - bete
+      - graca
+      - ines
+      - mandel
+      - marcilio
+      - mariaangela
+      - pf
+      - rene
+      - siang
+      - stolfi
+      - wagner
+      - yoshiko
+      - zwicker
+    MS3:
+      - chumes
+      - istvan
+      - routo
+      - tomasz
+      - waldo
+    MS5:
+      - setzer
+      - simon
+
+- year: 1982
+  levels:
+    MS1:
+      - miguel
+      - nami
+    MS2:
+      - bete
+      - graca
+      - ines
+      - mandel
+      - marcilio
+      - mariaangela
+      - pf
+      - rene
+      - siang
+      - stolfi
+      - wagner
+      - yoshiko
+      - zwicker
+    MS3:
+      - chumes
+      - istvan
+      - routo
+      - tomasz
+      - waldo
+    MS5:
+      - setzer
+      - simon
+
+- year: 1983
+  levels:
+    MS1:
+      - celma
+      - marfiza
+      - nami
+    MS2:
+      - bete
+      - graca
+      - ines
+      - marcilio
+      - mariaangela
+      - miguel
+      - pf
+      - rene
+      - stolfi
+      - wagner
+      - yoshiko
+    MS3:
+      - chumes
+      - istvan
+      - mandel
+      - routo
+      - siang
+      - tomasz
+      - waldo
+    MS5:
+      - setzer
+      - simon
+
+- year: 1984
+  levels:
+    MS1:
+      - celma
+    MS2:
+      - bete
+      - decio
+      - graca
+      - ines
+      - marcilio
+      - marfiza
+      - mariaangela
+      - miguel
+      - nami
+      - pf
+      - rene
+      - stern
+      - stolfi
+      - wagner
+      - yoshiko
+    MS3:
+      - chumes
+      - istvan
+      - mandel
+      - routo
+      - siang
+      - waldo
+    MS5:
+      - setzer
+      - simon
+
+- year: 1985
+  levels:
+    MS1:
+      - celma
+    MS2:
+      - bete
+      - decio
+      - graca
+      - ines
+      - marcilio
+      - marfiza
+      - mariaangela
+      - miguel
+      - nami
+      - rene
+      - stern
+      - stolfi
+      - wagner
+      - yoshiko
+    MS3:
+      - chumes
+      - istvan
+      - mandel
+      - pf
+      - routo
+      - siang
+      - waldo
+    MS5:
+      - setzer
+    MS6:
+      - simon
+
+- year: 1986
+  levels:
+    MS1:
+      - afonso
+      - alan
+      - celma
+      - denise
+      - yoshi
+    MS2:
+      - bete
+      - decio
+      - graca
+      - ines
+      - marcilio
+      - marfiza
+      - mariaangela
+      - miguel
+      - nami
+      - rene
+      - stern
+      - stolfi
+      - wagner
+      - yoshiko
+    MS3:
+      - chumes
+      - istvan
+      - mandel
+      - pf
+      - routo
+      - siang
+      - waldo
+    MS5:
+      - setzer
+    MS6:
+      - simon
+
+- year: 1987
+  levels:
+    MS1:
+      - alan
+      - denise
+      - ramos
+    MS2:
+      - afonso
+      - decio
+      - graca
+      - ines
+      - marcilio
+      - marfiza
+      - mariaangela
+      - miguel
+      - nami
+      - rene
+      - reverbel
+      - stern
+      - wagner
+      - yoshi
+      - yoshiko
+    MS3:
+      - chumes
+      - istvan
+      - mandel
+      - pf
+      - routo
+      - siang
+      - waldo
+    MS5:
+      - setzer
+    MS6:
+      - simon
+
+- year: 1988
+  levels:
+    MS1:
+      - carlinhos
+      - coelho
+      - dilma
+      - gubi
+      - kunio
+      - leucio
+      - pinhanez
+    MS2:
+      - afonso
+      - alan
+      - decio
+      - denise
+      - marcilio
+      - marfiza
+      - mariaangela
+      - nami
+      - ramos
+      - rene
+      - reverbel
+      - stern
+      - yoshi
+    MS3:
+      - chumes
+      - mandel
+      - pf
+      - siang
+      - waldo
+      - yoshiko
+    MS5:
+      - routo
+      - setzer
+    MS6:
+      - simon
+
+- year: 1989
+  levels:
+    MS1:
+      - carlinhos
+      - coelho
+      - cris
+      - dilma
+      - haeyong
+      - kunio
+      - pinhanez
+    MS2:
+      - afonso
+      - alan
+      - denise
+      - gubi
+      - leucio
+      - marcilio
+      - marfiza
+      - mariaangela
+      - nami
+      - ramos
+      - rene
+      - reverbel
+      - stern
+      - yoshi
+    MS3:
+      - arnaldo
+      - mandel
+      - pf
+      - siang
+      - yoshiko
+    MS5:
+      - chumes
+      - routo
+      - setzer
+    MS6:
+      - simon
+
+- year: 1990
+  levels:
+    MS1:
+      - alair
+      - coelho
+      - cris
+      - dilma
+      - haeyong
+      - robertocarlos
+    MS2:
+      - afonso
+      - alan
+      - carlinhos
+      - denise
+      - gubi
+      - kunio
+      - leucio
+      - marcilio
+      - mariaangela
+      - nami
+      - pinhanez
+      - ramos
+      - rene
+      - reverbel
+      - stern
+      - yoshi
+    MS3:
+      - arnaldo
+      - mandel
+      - pf
+      - siang
+      - yoshiko
+    MS5:
+      - chumes
+      - routo
+      - setzer
+    MS6:
+      - simon
+
+- year: 1991
+  levels:
+    MS1:
+      - alair
+      - cris
+      - danielpanario
+      - haeyong
+      - leonidas
+      - robertocarlos
+      - ronaldo
+      - tito
+    MS2:
+      - alan
+      - carlinhos
+      - coelho
+      - denise
+      - dilma
+      - gubi
+      - kunio
+      - leucio
+      - marcilio
+      - mariaangela
+      - nami
+      - pinhanez
+      - ramos
+      - reverbel
+      - stern
+      - yoshi
+    MS3:
+      - afonso
+      - mandel
+      - pf
+      - siang
+      - yoshiko
+    MS5:
+      - chumes
+      - routo
+      - setzer
+    MS6:
+      - simon
+
+- year: 1992
+  levels:
+    MS1:
+      - cris
+      - haeyong
+      - leonidas
+      - robertocarlos
+      - ronaldo
+      - tito
+    MS2:
+      - alair
+      - alan
+      - carlinhos
+      - celma
+      - coelho
+      - danielpanario
+      - denise
+      - dilma
+      - gubi
+      - kunio
+      - leucio
+      - marcilio
+      - mariaangela
+      - nami
+      - pinhanez
+      - ramos
+      - reverbel
+    MS3:
+      - afonso
+      - mandel
+      - pf
+      - stern
+      - yoshi
+      - yoshiko
+    MS5:
+      - chumes
+      - routo
+      - setzer
+      - siang
+    MS6:
+      - simon
+
+- year: 1993
+  levels:
+    MS1:
+      - leonidas
+      - ronaldo
+    MS2:
+      - alair
+      - alan
+      - carlinhos
+      - coelho
+      - cris
+      - dilma
+      - gubi
+      - haeyong
+      - kunio
+      - leucio
+      - marcilio
+      - pinhanez
+      - reverbel
+      - robertocarlos
+      - tito
+    MS3:
+      - afonso
+      - barrera
+      - mandel
+      - mariaangela
+      - nami
+      - pf
+      - ramos
+      - stern
+      - yoshi
+      - yoshiko
+    MS5:
+      - chumes
+      - routo
+      - siang
+    MS6:
+      - setzer
+      - simon
+
+- year: 1994
+  levels:
+    MS1:
+      - gold
+      - leonidas
+      - ronaldo
+    MS2:
+      - alair
+      - alan
+      - carlinhos
+      - coelho
+      - cris
+      - dilma
+      - gubi
+      - haeyong
+      - kon
+      - kunio
+      - leucio
+      - marcilio
+      - pinhanez
+      - pomeranz
+      - reverbel
+      - robertocarlos
+    MS3:
+      - afonso
+      - barrera
+      - flavio
+      - mandel
+      - mariaangela
+      - nami
+      - pf
+      - ramos
+      - stern
+      - yoshi
+      - yoshiko
+    MS5:
+      - chumes
+      - routo
+      - siang
+    MS6:
+      - setzer
+      - simon
+
+- year: 1995
+  levels:
+    MS2:
+      - alair
+      - alan
+      - coelho
+      - cris
+      - dilma
+      - gold
+      - gubi
+      - haeyong
+      - kon
+      - kunio
+      - leonidas
+      - marcilio
+      - paulogeraldo
+      - pomeranz
+      - reverbel
+      - robertocarlos
+      - ronaldo
+    MS3:
+      - barrera
+      - carlinhos
+      - endler
+      - flavio
+      - leucio
+      - mandel
+      - mariaangela
+      - nami
+      - pf
+      - ramos
+      - stern
+      - yoshi
+      - yoshiko
+    MS5:
+      - chumes
+      - routo
+      - siang
+    MS6:
+      - setzer
+      - simon
+
+- year: 1996
+  levels:
+    MS0:
+      - setzer
+    MS2:
+      - alair
+      - alan
+      - cris
+      - dilma
+      - gold
+      - gubi
+      - haeyong
+      - kon
+      - kunio
+      - leonidas
+      - marcilio
+      - paulogeraldo
+      - pomeranz
+      - robertocarlos
+      - ronaldo
+    MS3:
+      - barrera
+      - carlinhos
+      - coelho
+      - endler
+      - flavio
+      - leucio
+      - mandel
+      - mariaangela
+      - nami
+      - pf
+      - ramos
+      - reverbel
+      - stern
+      - yoshi
+    MS5:
+      - routo
+      - yoshiko
+    MS6:
+      - chumes
+      - siang
+      - simon
+
+- year: 1997
+  levels:
+    MS0:
+      - setzer
+    MS2:
+      - alair
+      - cris
+      - gold
+      - leonidas
+      - marcilio
+      - paulogeraldo
+      - robertocarlos
+      - ronaldo
+    MS3:
+      - acvm
+      - alan
+      - barrera
+      - carlinhos
+      - coelho
+      - dilma
+      - endler
+      - finger
+      - flavio
+      - gubi
+      - kunio
+      - leucio
+      - mandel
+      - mariaangela
+      - nami
+      - pf
+      - ramos
+      - reverbel
+      - stern
+    MS5:
+      - routo
+      - yoshi
+      - yoshiko
+    MS6:
+      - chumes
+      - siang
+      - simon
+
+- year: 1998
+  levels:
+    MS0:
+      - setzer
+    MS2:
+      - alair
+      - gold
+      - leonidas
+      - marcilio
+      - paulogeraldo
+      - robertocarlos
+      - ronaldo
+    MS3:
+      - acvm
+      - alan
+      - barrera
+      - carlinhos
+      - coelho
+      - cris
+      - dilma
+      - endler
+      - finger
+      - flavio
+      - gubi
+      - hernan
+      - kunio
+      - leucio
+      - mandel
+      - mariaangela
+      - nami
+      - pf
+      - ramos
+      - reverbel
+      - stern
+    MS5:
+      - yoshi
+      - yoshiko
+    MS6:
+      - chumes
+      - routo
+      - siang
+      - simon
+
+- year: 1999
+  levels:
+    MS0:
+      - setzer
+    MS2:
+      - gold
+      - leonidas
+      - marcilio
+      - paulogeraldo
+      - ronaldo
+    MS3:
+      - acvm
+      - alair
+      - alan
+      - coelho
+      - cris
+      - dilma
+      - endler
+      - finger
+      - flavio
+      - gubi
+      - hernan
+      - hitoshi
+      - jef
+      - kunio
+      - leliane
+      - marcondes
+      - nami
+      - pf
+      - ramos
+      - reverbel
+      - stern
+    MS5:
+      - barrera
+      - carlinhos
+      - mandel
+      - yoshi
+      - yoshiko
+    MS6:
+      - chumes
+      - routo
+      - siang
+      - simon
+
+- year: 2000
+  levels:
+    MS0:
+      - setzer
+    MS2:
+      - marcilio
+      - paulogeraldo
+      - ronaldo
+    MS3:
+      - acvm
+      - alair
+      - alan
+      - coelho
+      - cris
+      - dilma
+      - endler
+      - ernesto
+      - finger
+      - gold
+      - gubi
+      - hernan
+      - hitoshi
+      - jef
+      - kunio
+      - leliane
+      - leonidas
+      - marcondes
+      - nami
+      - pf
+      - ramos
+      - reverbel
+      - stern
+    MS5:
+      - barrera
+      - carlinhos
+      - flavio
+      - mandel
+      - yoshi
+      - yoshiko
+    MS6:
+      - chumes
+      - routo
+      - siang
+      - simon
+
+- year: 2001
+  levels:
+    MS0:
+      - setzer
+    MS2:
+      - marcilio
+    MS3:
+      - acvm
+      - alair
+      - alan
+      - coelho
+      - cris
+      - endler
+      - ernesto
+      - finger
+      - gold
+      - gubi
+      - hitoshi
+      - jef
+      - kunio
+      - leliane
+      - leonidas
+      - marcondes
+      - nami
+      - pf
+      - ramos
+      - reverbel
+      - ronaldo
+      - stern
+    MS5:
+      - barrera
+      - carlinhos
+      - flavio
+      - mandel
+      - yoshi
+      - yoshiko
+    MS6:
+      - chumes
+      - routo
+      - siang
+      - simon
+
+- year: 2002
+  levels:
+    MS0:
+      - setzer
+    MS2:
+      - marcilio
+    MS3:
+      - acvm
+      - alair
+      - alan
+      - coelho
+      - cris
+      - endler
+      - ernesto
+      - finger
+      - gold
+      - gubi
+      - hitoshi
+      - jef
+      - kunio
+      - leliane
+      - leonidas
+      - marcondes
+      - nami
+      - pf
+      - ramos
+      - reverbel
+      - ronaldo
+      - stern
+    MS5:
+      - barrera
+      - carlinhos
+      - flavio
+      - mandel
+      - yoshi
+      - yoshiko
+    MS6:
+      - chumes
+      - routo
+      - siang
+      - simon
+
+- year: 2003
+  levels:
+    MS0:
+      - setzer
+    MS2:
+      - marcilio
+    MS3:
+      - acvm
+      - alair
+      - alan
+      - coelho
+      - cris
+      - ernesto
+      - gold
+      - gubi
+      - hitoshi
+      - jef
+      - kon
+      - kunio
+      - leliane
+      - leonidas
+      - marcondes
+      - nami
+      - nina
+      - paulojose
+      - pf
+      - queiroz
+      - ramos
+      - renata
+      - reverbel
+      - ronaldo
+      - stern
+    MS5:
+      - barrera
+      - carlinhos
+      - finger
+      - flavio
+      - mandel
+      - yoshi
+      - yoshiko
+    MS6:
+      - chumes
+      - routo
+      - siang
+      - simon
+
+- year: 2004
+  levels:
+    MS0:
+      - pf
+      - setzer
+      - simon
+    MS2:
+      - marcilio
+    MS3:
+      - acvm
+      - alair
+      - alan
+      - coelho
+      - cris
+      - ernesto
+      - gold
+      - gubi
+      - hitoshi
+      - jef
+      - kon
+      - kunio
+      - leliane
+      - leonidas
+      - marcondes
+      - nami
+      - nina
+      - paulojose
+      - queiroz
+      - ramos
+      - renata
+      - reverbel
+      - ronaldo
+    MS5:
+      - barrera
+      - carlinhos
+      - finger
+      - flavio
+      - mandel
+      - stern
+      - yoshi
+      - yoshiko
+    MS6:
+      - chumes
+      - routo
+      - siang
+
+- year: 2005
+  levels:
+    MS0:
+      - pf
+      - setzer
+      - simon
+    MS2:
+      - marcilio
+    MS3:
+      - acvm
+      - alair
+      - alan
+      - coelho
+      - gold
+      - gubi
+      - hirata
+      - hitoshi
+      - jef
+      - kon
+      - kunio
+      - leliane
+      - leonidas
+      - mascarenhas
+      - nami
+      - nina
+      - paulojose
+      - queiroz
+      - ramos
+      - renata
+      - reverbel
+      - ronaldo
+    MS5:
+      - barrera
+      - carlinhos
+      - cris
+      - ernesto
+      - finger
+      - flavio
+      - mandel
+      - marcondes
+      - stern
+      - yoshiko
+    MS6:
+      - chumes
+      - routo
+      - siang
+      - yoshi
+
+- year: 2006
+  levels:
+    MS0:
+      - pf
+      - setzer
+      - simon
+    MS2:
+      - marcilio
+    MS3:
+      - acvm
+      - alair
+      - alan
+      - coelho
+      - gubi
+      - hirata
+      - hitoshi
+      - jef
+      - kunio
+      - leliane
+      - leonidas
+      - marcel
+      - mascarenhas
+      - nami
+      - nina
+      - paulojose
+      - queiroz
+      - ramos
+      - renata
+      - reverbel
+      - ronaldo
+    MS5:
+      - carlinhos
+      - cris
+      - ernesto
+      - finger
+      - flavio
+      - gold
+      - kon
+      - mandel
+      - marcondes
+      - stern
+      - yoshiko
+    MS6:
+      - barrera
+      - chumes
+      - routo
+      - siang
+      - yoshi
+
+- year: 2007
+  levels:
+    MS0:
+      - pf
+      - setzer
+      - siang
+      - simon
+    MS2:
+      - marcilio
+    MS3:
+      - acvm
+      - alair
+      - alan
+      - coelho
+      - gubi
+      - hirata
+      - hitoshi
+      - jef
+      - kunio
+      - leliane
+      - leonidas
+      - marcel
+      - mascarenhas
+      - nami
+      - nina
+      - paulojose
+      - queiroz
+      - reverbel
+      - ronaldo
+    MS5:
+      - carlinhos
+      - cris
+      - ernesto
+      - finger
+      - flavio
+      - gold
+      - kon
+      - mandel
+      - marcondes
+      - ramos
+      - renata
+      - stern
+    MS6:
+      - barrera
+      - chumes
+      - routo
+      - yoshi
+      - yoshiko
+
+- year: 2008
+  levels:
+    MS0:
+      - pf
+      - setzer
+      - siang
+      - simon
+    MS2:
+      - marcilio
+    MS3:
+      - acvm
+      - alair
+      - alan
+      - coelho
+      - gubi
+      - hirata
+      - hitoshi
+      - jef
+      - kunio
+      - leliane
+      - leonidas
+      - marcel
+      - mascarenhas
+      - nami
+      - nina
+      - queiroz
+      - reverbel
+      - ronaldo
+    MS5:
+      - carlinhos
+      - cris
+      - ernesto
+      - finger
+      - flavio
+      - gold
+      - kon
+      - mandel
+      - paulojose
+      - ramos
+      - renata
+      - stern
+    MS6:
+      - barrera
+      - chumes
+      - marcondes
+      - routo
+      - yoshi
+      - yoshiko
+
+- year: 2009
+  levels:
+    MS0:
+      - pf
+      - setzer
+      - siang
+      - simon
+    MS2:
+      - marcilio
+    MS3:
+      - acvm
+      - alair
+      - alan
+      - coelho
+      - gerosa
+      - gubi
+      - hirata
+      - hitoshi
+      - jef
+      - kunio
+      - leliane
+      - leonidas
+      - marcel
+      - mascarenhas
+      - nami
+      - nina
+      - queiroz
+      - reverbel
+      - ronaldo
+    MS5:
+      - carlinhos
+      - cris
+      - ernesto
+      - finger
+      - flavio
+      - gold
+      - kon
+      - mandel
+      - paulojose
+      - ramos
+      - renata
+    MS6:
+      - barrera
+      - chumes
+      - marcondes
+      - routo
+      - yoshi
+      - yoshiko
+
+- year: 2010
+  levels:
+    MS0:
+      - pf
+      - setzer
+      - siang
+    MS2:
+      - marcilio
+    MS3:
+      - acvm
+      - alair
+      - alan
+      - coelho
+      - gerosa
+      - gubi
+      - hirata
+      - hitoshi
+      - kunio
+      - leonidas
+      - marcel
+      - mascarenhas
+      - nami
+      - nina
+      - queiroz
+      - reverbel
+      - ronaldo
+    MS5:
+      - cris
+      - ernesto
+      - finger
+      - flavio
+      - gold
+      - jef
+      - kon
+      - leliane
+      - mandel
+      - paulojose
+      - ramos
+      - renata
+    MS6:
+      - carlinhos
+      - chumes
+      - marcondes
+      - routo
+      - yoshi
+      - yoshiko
+
+- year: 2011
+  levels:
+    MS0:
+      - pf
+      - setzer
+      - siang
+    MS2:
+      - marcilio
+    MS3:
+      - acvm
+      - alair
+      - alan
+      - coelho
+      - gerosa
+      - gubi
+      - hirata
+      - hitoshi
+      - kunio
+      - leonidas
+      - marcel
+      - mascarenhas
+      - nami
+      - nina
+      - queiroz
+      - reverbel
+    MS5:
+      - cris
+      - ernesto
+      - flavio
+      - gold
+      - jef
+      - kon
+      - leliane
+      - mandel
+      - paulojose
+      - ramos
+      - renata
+      - ronaldo
+    MS6:
+      - carlinhos
+      - chumes
+      - finger
+      - marcondes
+      - routo
+      - yoshi
+      - yoshiko
+
+- year: 2012
+  levels:
+    MS0:
+      - pf
+      - setzer
+      - siang
+    MS2:
+      - marcilio
+    MS3:
+      - alair
+      - alan
+      - coelho
+      - daniel
+      - fujita
+      - gerosa
+      - gubi
+      - hirata
+      - hitoshi
+      - kunio
+      - leonidas
+      - marcel
+      - nami
+      - paulomiranda
+      - queiroz
+      - reverbel
+    MS5:
+      - acvm
+      - cris
+      - ernesto
+      - flavio
+      - gold
+      - jef
+      - leliane
+      - mandel
+      - mascarenhas
+      - nina
+      - paulojose
+      - ramos
+      - renata
+      - ronaldo
+    MS6:
+      - barrera
+      - carlinhos
+      - chumes
+      - finger
+      - kon
+      - marcondes
+      - routo
+      - yoshi
+      - yoshiko
+
+- year: 2013
+  levels:
+    MS0:
+      - pf
+      - setzer
+      - siang
+    MS2:
+      - marcilio
+    MS3:
+      - alair
+      - alan
+      - coelho
+      - daniel
+      - fujita
+      - gerosa
+      - gubi
+      - hirata
+      - hitoshi
+      - kelly
+      - kunio
+      - leonidas
+      - marcel
+      - nami
+      - paulomiranda
+      - reverbel
+    MS5:
+      - acvm
+      - cris
+      - ernesto
+      - flavio
+      - gold
+      - jef
+      - leliane
+      - mandel
+      - mascarenhas
+      - nina
+      - paulojose
+      - queiroz
+      - ramos
+      - renata
+      - ronaldo
+    MS6:
+      - barrera
+      - carlinhos
+      - chumes
+      - finger
+      - kon
+      - marcondes
+      - routo
+      - yoshi
+      - yoshiko
+
+- year: 2014
+  levels:
+    MS0:
+      - chumes
+      - pf
+      - setzer
+      - siang
+    MS2:
+      - marcilio
+    MS3:
+      - alair
+      - alan
+      - coelho
+      - daniel
+      - fujita
+      - gubi
+      - hitoshi
+      - kelly
+      - kunio
+      - leonidas
+      - marcel
+      - nami
+      - paulomiranda
+      - reverbel
+    MS5:
+      - acvm
+      - cris
+      - ernesto
+      - flavio
+      - gerosa
+      - gold
+      - hirata
+      - jef
+      - leliane
+      - mandel
+      - mascarenhas
+      - nina
+      - queiroz
+      - ramos
+      - renata
+      - ronaldo
+    MS6:
+      - barrera
+      - carlinhos
+      - finger
+      - kon
+      - marcondes
+      - routo
+      - yoshi
+      - yoshiko
+
+- year: 2015
+  levels:
+    MS0:
+      - chumes
+      - pf
+      - setzer
+      - siang
+    MS2:
+      - marcilio
+    MS3:
+      - alair
+      - coelho
+      - daniel
+      - denis
+      - fujita
+      - gubi
+      - hitoshi
+      - kelly
+      - kunio
+      - leonidas
+      - marcel
+      - marcelk
+      - nami
+      - paulomiranda
+    MS5:
+      - acvm
+      - alan
+      - cris
+      - flavio
+      - gerosa
+      - gold
+      - hirata
+      - jef
+      - leliane
+      - mandel
+      - mascarenhas
+      - nina
+      - queiroz
+      - ramos
+      - renata
+      - ronaldo
+    MS6:
+      - barrera
+      - carlinhos
+      - ernesto
+      - finger
+      - kon
+      - marcondes
+      - routo
+      - yoshi
+      - yoshiko
+
+- year: 2016
+  levels:
+    MS0:
+      - chumes
+      - pf
+      - setzer
+      - siang
+    MS2:
+      - marcilio
+    MS3:
+      - alair
+      - coelho
+      - daniel
+      - denis
+      - fmario
+      - fujita
+      - gubi
+      - hitoshi
+      - kelly
+      - kunio
+      - leonidas
+      - marcel
+      - marcelk
+      - nami
+      - paulomiranda
+    MS5:
+      - acvm
+      - alan
+      - cris
+      - flavio
+      - gerosa
+      - gold
+      - hirata
+      - jef
+      - leliane
+      - mandel
+      - mascarenhas
+      - nina
+      - queiroz
+      - renata
+      - ronaldo
+    MS6:
+      - barrera
+      - carlinhos
+      - ernesto
+      - finger
+      - kon
+      - marcondes
+      - routo
+      - yoshi
+      - yoshiko
+
+- year: 2017
+  levels:
+    MS0:
+      - chumes
+      - pf
+      - setzer
+      - siang
+    MS2:
+      - marcilio
+    MS3:
+      - alair
+      - coelho
+      - daniel
+      - denis
+      - fmario
+      - gubi
+      - hitoshi
+      - kelly
+      - kunio
+      - leonidas
+      - marcel
+      - marcelk
+      - nami
+      - paulomiranda
+    MS5:
+      - acvm
+      - alan
+      - cris
+      - flavio
+      - fujita
+      - gerosa
+      - gold
+      - hirata
+      - jef
+      - leliane
+      - mandel
+      - mascarenhas
+      - nina
+      - queiroz
+      - renata
+      - ronaldo
+    MS6:
+      - barrera
+      - carlinhos
+      - ernesto
+      - finger
+      - kon
+      - marcondes
+      - routo
+      - sinai
+      - yoshi
+      - yoshiko
+
+- year: 2018
+  levels:
+    MS0:
+      - chumes
+      - pf
+      - routo
+      - setzer
+      - siang
+    MS2:
+      - marcilio
+    MS3:
+      - alair
+      - coelho
+      - denis
+      - gubi
+      - hitoshi
+      - kelly
+      - kunio
+      - leonidas
+      - marcelk
+      - nami
+      - paulomiranda
+    MS5:
+      - acvm
+      - alan
+      - cris
+      - daniel
+      - flavio
+      - fujita
+      - gold
+      - hirata
+      - jef
+      - leliane
+      - mandel
+      - marcel
+      - mascarenhas
+      - nina
+      - queiroz
+      - renata
+      - ronaldo
+    MS6:
+      - barrera
+      - carlinhos
+      - ernesto
+      - finger
+      - kon
+      - marcondes
+      - sinai
+      - yoshi
+      - yoshiko

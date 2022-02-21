@@ -18,6 +18,11 @@ export type Professor = {
 
 export type Level = 'MS0' | 'MS1' | 'MS2' | 'MS3' | 'MS5' | 'MS6';
 
-export type ProfessorYearEntry = {
+export type LevelList = {
   [level in Level]?: string[];
+};
+
+export type ProfessorYearEntry = {
+  year: number;
+  levels: LevelList;
 };

@@ -1,6 +1,6 @@
-import { group1974 } from 'data/students/group1974';
-import { group1989 } from 'data/students/group1989';
-import { group2004 } from 'data/students/group2004';
+import group1974 from 'data/students/group1974.yml';
+import group1989 from 'data/students/group1989.yml';
+import group2004 from 'data/students/group2004.yml';
 import { Epoch } from 'types/students';
 
 export default function useStudents(epoch: Epoch) {

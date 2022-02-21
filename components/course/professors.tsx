@@ -7,14 +7,14 @@ import {
   faStar,
   faStarHalf,
 } from '@fortawesome/free-solid-svg-icons';
-import { ProfessorYearEntry } from 'types/course';
-import * as professorYears from 'data/course/professors/importYears';
+import { LevelList } from 'types/course';
+import professorLevels from 'data/course/professorLevels.yml';
 import ContentBox from '../layout/contentBox';
 import ProfessorCanvas from './professorCanvas';
 import YearPicker from '../layout/yearPicker';
 import styles from './professors.module.css';
 
-function getProfessorListForAnimation(yearData: ProfessorYearEntry) {
+function getProfessorListForAnimation(yearData: LevelList) {
   function listFromLevel(level: string) {
     return `${level}:${yearData[level] ? yearData[level].join('.') : ''}:`;
   }
@@ -29,14 +29,14 @@ function getProfessorListForAnimation(yearData: ProfessorYearEntry) {
 
 export default function Professors() {
   const [currentYear, setCurrentYear] = useState<number | null>(null);
-  const currentYearData: ProfessorYearEntry =
-    professorYears[`p${currentYear}`] || {};
+  const currentYearLevels: LevelList =
+    professorLevels.find((entry) => entry.year === currentYear)?.levels || {};
 
   return (
     <ContentBox title="Professores" color="brand-purple">
       <YearPicker onYearChanged={setCurrentYear} />
       <div className={styles.container}>
-        <Flipper flipKey={getProfessorListForAnimation(currentYearData)}>
+        <Flipper flipKey={getProfessorListForAnimation(currentYearLevels)}>
           <ProfessorCanvas
             title="Titular"
             color="brand-red"
@@ -53,7 +53,7 @@ export default function Professors() {
                 />
               </span>
             }
-            professors={currentYearData.MS6 || []}
+            professors={currentYearLevels.MS6 || []}
           />
           <ProfessorCanvas
             title="Associado"
@@ -70,13 +70,13 @@ export default function Professors() {
                 />
               </span>
             }
-            professors={currentYearData.MS5 || []}
+            professors={currentYearLevels.MS5 || []}
           />
           <ProfessorCanvas
             title="Doutor"
             color="brand-yellow"
             icon={<FontAwesomeIcon icon={faStar} transform="shrink-3" />}
-            professors={currentYearData.MS3 || []}
+            professors={currentYearLevels.MS3 || []}
           />
           <ProfessorCanvas
             title="Assistente"
@@ -84,19 +84,19 @@ export default function Professors() {
             icon={
               <FontAwesomeIcon icon={faStarHalf} transform="right-3 shrink-3" />
             }
-            professors={currentYearData.MS2 || []}
+            professors={currentYearLevels.MS2 || []}
           />
           <ProfessorCanvas
             title="Auxiliar"
             color="brand-light-blue"
             icon={<FontAwesomeIcon icon={faCircle} transform="shrink-7" />}
-            professors={currentYearData.MS1 || []}
+            professors={currentYearLevels.MS1 || []}
           />
           <ProfessorCanvas
             title="Sênior"
             color="brand-grey"
             icon={<FontAwesomeIcon icon={faMoon} transform="shrink-3" />}
-            professors={currentYearData.MS0 || []}
+            professors={currentYearLevels.MS0 || []}
           />
         </Flipper>
       </div>

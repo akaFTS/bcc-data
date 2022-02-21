@@ -1,4 +1,4 @@
-import { classes } from 'data/classes/classes';
+import classes from 'data/classes/classes.yml';
 import { Area } from 'types/classes';
 
 export default function useClasses(
