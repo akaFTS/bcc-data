@@ -31,13 +31,12 @@ export default function Summary() {
           estilo, foram usados CSS Modules. Ambas são tecnologias open-source
           que permitem ao código ser bastante modularizado e simples de
           entender. Não há um back-end fornecendo as informações; elas estão
-          salvas em arquivos JSON na pasta
-          <span className={styles.italic}> data/</span>do projeto, enquanto as
+          salvas em arquivos YAML, que são bem estruturados e fáceis de
+          entender, na pasta
+          <span className={styles.italic}> data/</span>. Enquanto isso, as
           imagens estão na pasta
-          <span className={styles.italic}> public/</span>. Os formatos de cada
-          arquivo de dados variam; alguns dados são representados por um único
-          arquivo e outros por um arquivo para cada ano. Uma explicação de quais
-          dados são usados no sistema, para qual fim e de onde eles foram
+          <span className={styles.italic}> public/</span>. Uma explicação de
+          quais dados são usados no sistema, para qual fim e de onde eles foram
           retirados está na caixa &quot;Dados&quot; nesta página.
         </p>
         <p className={styles.endOfSection}>
@@ -45,8 +44,8 @@ export default function Summary() {
           <span className={styles.italic}> components/</span>, separado por
           módulo. A pasta
           <span className={styles.italic}> pages/</span> mantém os arquivos que
-          definem cada página do sistema. Os dados são lidos e repassados para
-          os componentes com o uso de React Hooks.
+          definem cada página do sistema. Alguns dos dados são lidos e
+          processados em Hooks antes de serem fornecidos para os componentes.
         </p>
         <h3 className={styles.title}>Contribuindo</h3>
         <p>
