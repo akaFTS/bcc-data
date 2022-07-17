@@ -14,10 +14,6 @@
     "arrowParens": "always",
     "trailingComma": "all"
   },
-  "pre-commit": [
-    "lint",
-    "typecheck"
-  ],
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
@@ -45,6 +41,7 @@
     "eslint-config-next": "12.0.7",
     "eslint-config-prettier": "^8.3.0",
     "husky": "^7.0.0",
+    "prettier": "^2.7.1",
     "typescript": "^4.5.4"
   }
 }
