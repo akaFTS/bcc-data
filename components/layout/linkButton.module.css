@@ -1,3 +1,7 @@
+.link {
+  text-decoration: none;
+}
+
 .button {
   background-color: var(--btn-color);
   color: var(--bg-2);
@@ -6,7 +10,6 @@
   padding: var(--p3);
   border-radius: var(--br-pill);
   font-weight: 600;
-  text-decoration: none;
   margin: var(--p1);
 }
 
