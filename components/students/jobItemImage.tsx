@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import { Job } from 'types/students';
 import santanderImg from 'public/brands/santander.png';
 import totvsImg from 'public/brands/totvs.png';
