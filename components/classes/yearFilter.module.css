@@ -1,5 +1,5 @@
 .label {
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: var(--p1);
   font-size: var(--f5);
   color: var(--text-2);
@@ -8,7 +8,7 @@
 .input {
   border: var(--bw1) solid var(--bg-1);
   border-radius: var(--br2);
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
   font-size: var(--f4);
   width: var(--h3);

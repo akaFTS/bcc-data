@@ -8,7 +8,7 @@
 .button {
   width: 25%;
   text-align: center;
-  font-weight: 700;
+  font-weight: 600;
   border: 0;
   padding: var(--p1) 0;
 }

@@ -8,10 +8,6 @@ class MyDocument extends Document {
           <link rel="manifest" href="/manifest.json" />
           <meta name="theme-color" content="#d32f2f" />
           <link
-            href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin-ext&display=swap"
-            rel="stylesheet"
-          />
-          <link
             rel="apple-touch-icon"
             sizes="180x180"
             href="/icons/apple-icon-180x180.png"

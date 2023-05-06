@@ -1,9 +1,12 @@
 import React from 'react';
+import { Open_Sans } from 'next/font/google';
 import cx from 'classnames';
 import { Classe } from 'types/classes';
 import Modal from 'react-responsive-modal';
 import ClassTimespan from './classTimespan';
 import styles from './classNamesModal.module.css';
+
+const openSans = Open_Sans({ subsets: ['latin-ext'] });
 
 type Props = {
   isOpen: boolean;
@@ -29,7 +32,10 @@ export default function ClassNamesModal({
       onClose={onCloseModal}
       classNames={{ modal: styles.modal }}
     >
-      <div className={styles.container} style={colorVar}>
+      <div
+        className={cx(styles.container, openSans.className)}
+        style={colorVar}
+      >
         <div className={styles.pill}>{classe.code}</div>
         <div role="list">
           {classe.names.map((entry, index) => (

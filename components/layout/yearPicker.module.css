@@ -6,7 +6,7 @@
 
 .input {
   font-size: var(--f3);
-  font-weight: 700;
+  font-weight: 600;
   margin: 0 var(--p4);
   color: var(--text-2);
   border: var(--bw1) solid var(--bg-1);
