@@ -27,8 +27,8 @@
     "react-dom": "^18.2.0",
     "react-flip-toolkit": "^7.0.13",
     "react-responsive-modal": "^6.4.1",
-    "react-simple-maps": "^2.3.0",
-    "recharts": "^2.1.8",
+    "react-simple-maps": "^3.0.0",
+    "recharts": "~2.5",
     "sharp": "^0.29.3"
   },
   "devDependencies": {
