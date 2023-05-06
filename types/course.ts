@@ -1,3 +1,5 @@
+import { StaticImageData } from 'next/image';
+
 export type Record = {
   year: number;
   text: string;

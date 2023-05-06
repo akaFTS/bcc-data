@@ -3,6 +3,7 @@ import Header from 'components/layout/header';
 import Footer from 'components/layout/footer';
 import Navbar from 'components/layout/navbar';
 import Head from 'next/head';
+import { Open_Sans } from 'next/font/google';
 import { AppProps } from 'next/app';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
@@ -16,9 +17,11 @@ import styles from './_app.module.css';
 // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
 config.autoAddCss = false;
 
+const openSans = Open_Sans({ subsets: ['latin-ext'] });
+
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <main className={openSans.className}>
       <Head>
         <meta
           name="viewport"
@@ -26,11 +29,11 @@ export default function App({ Component, pageProps }: AppProps) {
         />
       </Head>
       <Header />
-      <main className={styles.main}>
+      <div className={styles.main}>
         <Navbar />
         <Component {...pageProps} />
-      </main>
+      </div>
       <Footer />
-    </>
+    </main>
   );
 }

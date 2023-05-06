@@ -3,14 +3,14 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html lang="pt-BR">
         <Head>
-          <link rel="manifest" href="/manifest.json" />
-          <meta name="theme-color" content="#d32f2f" />
           <link
-            href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin-ext&display=swap"
-            rel="stylesheet"
+            rel="manifest"
+            href="/manifest.json"
+            crossOrigin="use-credentials"
           />
+          <meta name="theme-color" content="#d32f2f" />
           <link
             rel="apple-touch-icon"
             sizes="180x180"
@@ -33,6 +33,10 @@ class MyDocument extends Document {
             type="image/png"
             sizes="16x16"
             href="/icons/favicon-16x16.png"
+          />
+          <meta
+            name="description"
+            content="A evolução do BCC IME-USP desde sua fundação até 2018, em diversas áreas."
           />
         </Head>
         <body>

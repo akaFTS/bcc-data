@@ -14,7 +14,7 @@
 }
 
 .percentage {
-  font-weight: 700;
+  font-weight: 600;
   font-size: var(--f2);
   color: var(--brand-blue);
 }

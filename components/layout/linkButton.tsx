@@ -15,7 +15,7 @@ export default function LinkButton({ path, color, icon, text }: Props) {
   const colorVar = { '--btn-color': `var(--${color})` } as React.CSSProperties;
 
   return (
-    <Link passHref href={path} prefetch={false}>
+    <Link passHref href={path} prefetch={false} className={styles.link}>
       <div className={styles.button} style={colorVar}>
         <FontAwesomeIcon icon={icon} className={styles.icon} />
         <span>{text}</span>

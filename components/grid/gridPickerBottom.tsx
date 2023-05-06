@@ -21,7 +21,12 @@ export default function GridPickerBottom({
 }: Props) {
   return (
     <div className={styles.container}>
-      <button className={styles.button} onClick={onMoveLeft} type="button">
+      <button
+        className={styles.button}
+        onClick={onMoveLeft}
+        type="button"
+        aria-label="Grade Anterior"
+      >
         <FontAwesomeIcon icon={faChevronLeft} className={styles.chevron} />
       </button>
       <div className={styles.containerInner}>
@@ -33,7 +38,12 @@ export default function GridPickerBottom({
           return <div key={index} className={styles.dot} />;
         })}
       </div>
-      <button className={styles.button} onClick={onMoveRight} type="button">
+      <button
+        className={styles.button}
+        onClick={onMoveRight}
+        type="button"
+        aria-label="Próxima Grade"
+      >
         <FontAwesomeIcon icon={faChevronRight} className={styles.chevron} />
       </button>
     </div>

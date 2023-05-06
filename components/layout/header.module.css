@@ -7,6 +7,7 @@
   text-align: center;
   font-size: var(--f2);
   color: var(--brand-red);
+  font-weight: 600;
 }
 
 .subtitle {
