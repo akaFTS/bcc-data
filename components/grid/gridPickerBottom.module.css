@@ -11,8 +11,8 @@
 }
 
 .chevron {
-  padding: var(--p2);
-  font-size: var(--f2);
+  padding: var(--p2) var(--p3);
+  font-size: var(--f2-3);
   color: var(--text-1);
 }
 
@@ -24,7 +24,8 @@
 .button {
   background-color: var(--bg-2);
   border: 0;
-  margin: 0 var(--p4);
+  padding: 0;
+  margin: 0;
 }
 
 .dot {

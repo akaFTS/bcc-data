@@ -10,7 +10,6 @@
   padding: var(--p3);
   border-radius: var(--br-pill);
   font-weight: 600;
-  margin: var(--p1);
 }
 
 .button:hover {
@@ -20,11 +19,4 @@
 
 .icon {
   margin-right: var(--p2);
-}
-
-@media (min-width: 60em) {
-  .button {
-    margin: 0;
-    margin-right: var(--p3);
-  }
 }

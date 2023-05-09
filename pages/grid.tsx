@@ -14,7 +14,7 @@ export default function Grid() {
   const activeGrid = grids[activeGridIndex];
 
   return (
-    <main className={styles.main}>
+    <main>
       <Head>
         <title>Grade • bcc-data</title>
       </Head>
