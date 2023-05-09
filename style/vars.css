@@ -10,6 +10,9 @@
   --f6: 0.875rem;
   --f7: 0.75rem;
 
+  --f2-3: clamp(var(--f3), 1.05rem + 2.4vw, var(--f2));
+  --f4-5: clamp(var(--f5), 0.85rem + 0.8vw, var(--f4));
+
   --bw0: 0;
   --bw1: 0.125rem;
   --bw2: 0.25rem;

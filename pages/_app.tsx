@@ -21,19 +21,21 @@ const openSans = Open_Sans({ subsets: ['latin-ext'] });
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={openSans.className}>
-      <Head>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-      </Head>
-      <Header />
-      <div className={styles.main}>
-        <Navbar />
-        <Component {...pageProps} />
-      </div>
-      <Footer />
-    </main>
+    <div className={styles.wrapper}>
+      <main className={openSans.className}>
+        <Head>
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+          />
+        </Head>
+        <Header />
+        <div className={styles.main}>
+          <Navbar />
+          <Component {...pageProps} />
+        </div>
+        <Footer />
+      </main>
+    </div>
   );
 }

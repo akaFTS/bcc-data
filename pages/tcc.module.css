@@ -1,24 +1,11 @@
 .main {
+  display: grid;
+  gap: var(--p2);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 40ch), 1fr));
+}
+
+.main > div {
   display: flex;
-  flex-wrap: wrap;
-}
-
-.leftPanel {
-  width: 100%;
-  padding: 0 var(--p2);
-}
-
-.rightPanel {
-  width: 100%;
-  padding: 0 var(--p2);
-}
-
-@media (min-width: 60em) {
-  .leftPanel {
-    width: 50%;
-  }
-
-  .rightPanel {
-    width: 50%;
-  }
+  flex-direction: column;
+  gap: var(--p2);
 }
