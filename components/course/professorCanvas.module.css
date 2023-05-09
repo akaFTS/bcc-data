@@ -36,16 +36,11 @@
   content: '';
   width: 1.75rem;
   float: left;
-  height: 100%;
+  height: 120%;
   shape-outside: repeating-linear-gradient(
-    transparent 0.1% 6rem,
-    #000000 0% 8rem
+    #0000 0 calc(9rem - 3px),
+    #000 0 calc(9rem)
   );
-}
-
-.container > div:last-child::after {
-  content: '';
-  clear: both;
 }
 
 .placeholder {

@@ -8,6 +8,8 @@
   border-radius: var(--br-circle);
   border: var(--bw1) solid var(--bubble-color);
   overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 .subtitleWrap {

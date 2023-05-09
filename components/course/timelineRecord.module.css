@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 var(--p4);
+  margin: 0 calc(var(--p3) + var(--p2));
 }
 
 .separator {
@@ -30,9 +30,9 @@
 }
 
 .date {
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: var(--p1);
-  color: var(--text-1);
+  color: var(--text-2);
 }
 
 .featured {
@@ -42,8 +42,8 @@
 }
 
 .default {
-  font-weight: 300;
-  line-height: var(--lh-copy);
+  font-weight: 400;
+  line-height: var(--lh-title);
   font-size: var(--f6);
   color: var(--text-1);
 }
