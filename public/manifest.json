@@ -51,5 +51,49 @@
       "type": "image/png",
       "purpose": "any"
     }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/classes-wide.png",
+      "sizes": "2736x1824",
+      "type": "image/png",
+      "platform": "wide",
+      "label": "Screenshot of Classes page"
+    },
+    {
+      "src": "screenshots/course-wide.png",
+      "sizes": "2736x1824",
+      "type": "image/png",
+      "platform": "wide",
+      "label": "Screenshot of Course page"
+    },
+    {
+      "src": "screenshots/students-wide.png",
+      "sizes": "2736x1824",
+      "type": "image/png",
+      "platform": "wide",
+      "label": "Screenshot of Students page"
+    },
+    {
+      "src": "screenshots/classes-narrow.png",
+      "sizes": "828x1792",
+      "type": "image/png",
+      "platform": "narrow",
+      "label": "Screenshot of Classes page"
+    },
+    {
+      "src": "screenshots/course-narrow.png",
+      "sizes": "828x1792",
+      "type": "image/png",
+      "platform": "narrow",
+      "label": "Screenshot of Course page"
+    },
+    {
+      "src": "screenshots/grid-narrow.png",
+      "sizes": "828x1792",
+      "type": "image/png",
+      "platform": "narrow",
+      "label": "Screenshot of Grid page"
+    }
   ]
 }
