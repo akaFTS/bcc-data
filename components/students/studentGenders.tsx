@@ -24,7 +24,9 @@ export default function StudentGenders({
         onEpochSelected={onEpochSelected}
       />
       <div className={styles.container}>
-        <GenderChart graduatesByYear={graduatesByYear} />
+        <div className={styles.inner}>
+          <GenderChart graduatesByYear={graduatesByYear} />
+        </div>
       </div>
     </ContentBox>
   );

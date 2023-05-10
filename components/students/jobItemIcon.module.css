@@ -1,4 +1,4 @@
 .icon {
-  font-size: var(--f3);
+  font-size: clamp(0.9rem, 0.4rem + 2.6vw, 1.4rem);
   color: var(--icon-color);
 }

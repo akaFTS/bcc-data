@@ -35,7 +35,7 @@ export default function StudentDataPicker({
         onClick={() => onEpochSelected('1974')}
         type="button"
       >
-        1974-1988
+        1974–1988
       </button>
       <button
         className={cx(
@@ -45,7 +45,7 @@ export default function StudentDataPicker({
         onClick={() => onEpochSelected('1989')}
         type="button"
       >
-        1989-2003
+        1989–2003
       </button>
       <button
         className={cx(
@@ -55,7 +55,7 @@ export default function StudentDataPicker({
         onClick={() => onEpochSelected('2004')}
         type="button"
       >
-        2004-2017
+        2004–2017
       </button>
     </div>
   );

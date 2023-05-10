@@ -1,5 +1,5 @@
 .item {
-  height: var(--h2);
+  height: clamp(1.5rem, 1rem + 2.6vw, 2rem);
   display: flex;
   justify-content: center;
   align-items: center;

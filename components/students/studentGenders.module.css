@@ -1,3 +1,9 @@
 .container {
-  margin: var(--p3);
+  margin-top: var(--p3);
+  display: flex;
+}
+
+.inner {
+  width: 0;
+  flex: 1;
 }

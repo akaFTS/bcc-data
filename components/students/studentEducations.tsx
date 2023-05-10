@@ -63,22 +63,24 @@ export default function StudentEducations({
         onEpochSelected={onEpochSelected}
       />
       <div className={styles.container}>
-        <ResponsiveContainer height={300} width="100%">
-          <PieChart>
-            <Legend
-              height={30}
-              verticalAlign="top"
-              formatter={(value: string) => (
-                <span className={styles.subtitle}>{value}</span>
-              )}
-            />
-            <Pie data={educationData} dataKey="value" nameKey="name">
-              {educationData.map((ed, index) => (
-                <Cell key={ed.name} fill={colors[index]} />
-              ))}
-            </Pie>
-          </PieChart>
-        </ResponsiveContainer>
+        <div className={styles.inner}>
+          <ResponsiveContainer height={300} width="99%">
+            <PieChart>
+              <Legend
+                height={60}
+                verticalAlign="bottom"
+                formatter={(value: string) => (
+                  <span className={styles.subtitle}>{value}</span>
+                )}
+              />
+              <Pie data={educationData} dataKey="value" nameKey="name">
+                {educationData.map((ed, index) => (
+                  <Cell key={ed.name} fill={colors[index]} />
+                ))}
+              </Pie>
+            </PieChart>
+          </ResponsiveContainer>
+        </div>
       </div>
     </ContentBox>
   );

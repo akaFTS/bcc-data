@@ -9,8 +9,9 @@
   width: 25%;
   text-align: center;
   font-weight: 600;
+  font-size: var(--f6);
   border: 0;
-  padding: var(--p1) 0;
+  padding: var(--p2) var(--p2);
 }
 
 .selected {
@@ -26,10 +27,4 @@
 .unselected:hover {
   background-color: var(--bg-1);
   cursor: pointer;
-}
-
-@media (min-width: 60em) {
-  .container {
-    margin: 0 var(--p3);
-  }
 }
