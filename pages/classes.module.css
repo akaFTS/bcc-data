@@ -1,24 +1,13 @@
 .main {
   display: flex;
+  gap: var(--p2);
   flex-wrap: wrap-reverse;
 }
 
-.leftPanel {
-  width: 100%;
-  padding: 0 var(--p2);
+.main > :first-child {
+  flex: min(100%, 50ch);
 }
 
-.rightPanel {
-  width: 100%;
-  padding: 0 var(--p2);
-}
-
-@media (min-width: 60em) {
-  .leftPanel {
-    width: 66.6%;
-  }
-
-  .rightPanel {
-    width: 33.3%;
-  }
+.main > :last-child {
+  flex: min(100%, 30ch);
 }

@@ -1,9 +1,14 @@
 .modal {
   border-radius: var(--br4);
-  width: 100%;
+  margin: 1.2rem;
+  width: calc(100% - 2 * 1.2rem);
   padding-left: 0;
   padding-right: 0;
   background-color: var(--bg-2);
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .container {
@@ -15,6 +20,7 @@
   align-items: center;
   justify-content: space-between;
   padding: var(--p3);
+  gap: var(--p2);
 }
 
 .entry.stripe {
@@ -22,11 +28,11 @@
 }
 
 .pill {
-  width: var(--h4);
+  display: inline-block;
   text-align: center;
-  padding: var(--p1) var(--p2);
+  padding: var(--p1) var(--p3);
   color: var(--bg-2);
-  font-size: var(--f4);
+  font-size: var(--f5);
   font-weight: 600;
   margin-bottom: var(--p4);
   border-radius: var(--br-pill);
@@ -34,14 +40,8 @@
 }
 
 .name {
-  font-weight: 400;
-  padding-right: var(--p2);
   color: var(--text-1);
   line-height: var(--lh-title);
-}
-
-@media (min-width: 60em) {
-  .modal {
-    width: 70%;
-  }
+  font-weight: 600;
+  font-size: var(--f6);
 }

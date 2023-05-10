@@ -45,9 +45,9 @@ export default function ClassEntry({
       role="listitem"
       aria-label={`Matéria da área: ${areaName}`}
     >
-      <div className={styles.codePill}>{classe.code}</div>
       <div className={styles.container}>
-        <div className={styles.name}>{classeName}</div>
+        <div className={styles.codePill}>{classe.code}</div>
+        <ClassTimespan beginYear={classe.beginYear} endYear={classe.endYear} />
         {classe.names.length > 1 && (
           <>
             <button
@@ -75,7 +75,7 @@ export default function ClassEntry({
           </>
         )}
       </div>
-      <ClassTimespan beginYear={classe.beginYear} endYear={classe.endYear} />
+      <div className={styles.name}>{classeName}</div>
     </div>
   );
 }

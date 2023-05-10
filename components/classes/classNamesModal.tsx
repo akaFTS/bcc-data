@@ -30,7 +30,7 @@ export default function ClassNamesModal({
       center
       open={isOpen}
       onClose={onCloseModal}
-      classNames={{ modal: styles.modal }}
+      classNames={{ modal: styles.modal, overlay: styles.overlay }}
     >
       <div
         className={cx(styles.container, openSans.className)}

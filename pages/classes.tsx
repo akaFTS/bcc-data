@@ -10,12 +10,8 @@ export default function Classes() {
       <Head>
         <title>Matérias • bcc-data</title>
       </Head>
-      <div className={styles.leftPanel}>
-        <ClassList />
-      </div>
-      <div className={styles.rightPanel}>
-        <AreaBubbles />
-      </div>
+      <ClassList />
+      <AreaBubbles />
     </main>
   );
 }
