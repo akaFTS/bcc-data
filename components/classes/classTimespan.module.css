@@ -10,15 +10,14 @@
 
 .container {
   display: flex;
-  margin-top: var(--p3);
 }
 
 .begin {
   color: var(--bg-2);
   border-radius: var(--br2) 0 0 var(--br2);
   padding: var(--p1) 0 var(--p1) var(--p2);
-  font-size: var(--f5);
-  font-weight: 600;
+  font-size: var(--f7);
+  font-weight: 700;
   background-color: var(--begin-color);
 }
 
@@ -26,8 +25,8 @@
   color: var(--bg-2);
   border-radius: 0 var(--br2) var(--br2) 0;
   padding: var(--p1) var(--p2);
-  font-size: var(--f5);
-  font-weight: 600;
+  font-size: var(--f7);
+  font-weight: 700;
   position: relative;
   background-color: var(--end-color);
 }
@@ -40,10 +39,4 @@
   border-left: 6px solid var(--begin-color);
   border-top: 12px solid transparent;
   border-bottom: 12px solid transparent;
-}
-
-@media (min-width: 60em) {
-  .container {
-    margin-top: 0;
-  }
 }

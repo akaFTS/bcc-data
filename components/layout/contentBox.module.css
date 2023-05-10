@@ -19,7 +19,6 @@
   border-radius: 0 0 var(--br4) var(--br4);
   width: 90%;
   margin: 0 auto;
-  margin-bottom: var(--p4);
   background-color: var(--bg-2);
   overflow: hidden;
 }

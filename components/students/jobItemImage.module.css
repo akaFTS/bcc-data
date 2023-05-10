@@ -1,4 +1,4 @@
 .container {
-  height: 1.4rem;
-  width: 1.4rem;
+  height: clamp(0.9rem, 0.4rem + 2.6vw, 1.4rem);
+  width: clamp(0.9rem, 0.4rem + 2.6vw, 1.4rem);
 }

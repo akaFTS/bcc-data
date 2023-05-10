@@ -10,12 +10,8 @@ export default function Course() {
       <Head>
         <title>Curso • bcc-data</title>
       </Head>
-      <div className={styles.leftPanel}>
-        <Timeline />
-      </div>
-      <div className={styles.rightPanel}>
-        <Professors />
-      </div>
+      <Timeline />
+      <Professors />
     </main>
   );
 }

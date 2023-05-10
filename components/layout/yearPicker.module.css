@@ -7,7 +7,7 @@
 .input {
   font-size: var(--f3);
   font-weight: 600;
-  margin: 0 var(--p4);
+  margin: 0 var(--p3);
   color: var(--text-2);
   border: var(--bw1) solid var(--bg-1);
   border-radius: var(--br2);
@@ -20,9 +20,10 @@
 .button {
   background-color: var(--bg-2);
   border: 0;
-  width: var(--h2);
+  width: calc(var(--h2) + var(--h1));
   display: flex;
   justify-content: center;
+  padding: var(--p2);
 }
 
 .icon {
@@ -36,5 +37,5 @@
 }
 
 .empty {
-  width: var(--h2);
+  width: calc(var(--h2) + var(--h1));
 }

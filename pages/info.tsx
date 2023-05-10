@@ -10,12 +10,8 @@ export default function Information() {
       <Head>
         <title>Informações • bcc-data</title>
       </Head>
-      <div className={styles.leftPanel}>
-        <Summary />
-      </div>
-      <div className={styles.rightPanel}>
-        <Data />
-      </div>
+      <Summary />
+      <Data />
     </main>
   );
 }

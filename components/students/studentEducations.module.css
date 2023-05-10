@@ -1,5 +1,11 @@
 .container {
   margin-top: var(--p3);
+  display: flex;
+}
+
+.inner {
+  width: 0;
+  flex: 1;
 }
 
 .subtitle {

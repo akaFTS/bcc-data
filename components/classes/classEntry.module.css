@@ -1,7 +1,4 @@
 .entry {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   padding: var(--p3);
   color: var(--text-1);
 }
@@ -14,9 +11,8 @@
   color: var(--bg-2);
   padding: var(--p1) var(--p2);
   border-radius: var(--br-pill);
-  font-weight: 600;
-  font-size: var(--f5);
-  margin-bottom: var(--p3);
+  font-weight: 700;
+  font-size: var(--f7);
   background-color: var(--pill-color);
 }
 
@@ -24,24 +20,25 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: var(--p2);
   align-items: center;
 }
 
 .name {
   flex: 1 1 auto;
-  font-weight: 400;
-  padding-right: var(--p2);
+  font-weight: 600;
+  font-size: var(--f6);
   line-height: var(--lh-title);
+  margin-top: var(--p2);
 }
 
 .iconText {
   padding-bottom: var(--p1);
   color: var(--bg-2);
+  font-size: var(--f6);
 }
 
 .modalButton {
-  margin: 0 var(--p3);
   color: var(--text-1);
   background-color: transparent;
   border: 0;
@@ -50,16 +47,4 @@
 .modalButton:hover {
   cursor: pointer;
   color: var(--text-2);
-}
-
-@media (min-width: 60em) {
-  .entry {
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .codePill {
-    margin-bottom: 0;
-    margin-right: var(--p3);
-  }
 }

@@ -1,6 +1,7 @@
 .filter {
-  margin: var(--p3) 0;
+  margin: var(--p4) 0 var(--p3);
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
+  flex-wrap: wrap-reverse;
+  gap: var(--p2);
 }

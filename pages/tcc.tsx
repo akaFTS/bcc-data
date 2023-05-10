@@ -12,11 +12,11 @@ export default function TCC() {
       <Head>
         <title>TCC • bcc-data</title>
       </Head>
-      <div className={styles.leftPanel}>
+      <div>
         <Propposal />
         <Evolution />
       </div>
-      <div className={styles.rightPanel}>
+      <div>
         <Schedule />
         <Sources />
       </div>

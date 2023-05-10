@@ -23,7 +23,7 @@ export default function ClassList() {
           <ClassEntry
             key={classe.code}
             classe={classe}
-            whiteStripe={index % 2 === 1}
+            whiteStripe={index % 2 === 0}
             currentYear={activeYear}
           />
         ))}

@@ -1,5 +1,7 @@
 .container {
   position: relative;
   height: var(--h5);
+  width: min(100%, 20rem);
+  margin: 0 auto;
   margin-bottom: var(--p5);
 }

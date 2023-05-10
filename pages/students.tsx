@@ -15,14 +15,14 @@ export default function Students() {
       <Head>
         <title>Alunos • bcc-data</title>
       </Head>
-      <div className={styles.leftPanel}>
+      <div>
         <StudentJobs currentSelection={epoch} onEpochSelected={setEpoch} />
         <StudentEducations
           currentSelection={epoch}
           onEpochSelected={setEpoch}
         />
       </div>
-      <div className={styles.rightPanel}>
+      <div>
         <StudentGenders currentSelection={epoch} onEpochSelected={setEpoch} />
         <StudentLocations currentSelection={epoch} onEpochSelected={setEpoch} />
       </div>

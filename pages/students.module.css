@@ -1,24 +1,12 @@
 .main {
   display: flex;
+  gap: var(--p2);
   flex-wrap: wrap;
 }
 
-.leftPanel {
-  width: 100%;
-  padding: 0 var(--p2);
-}
-
-.rightPanel {
-  width: 100%;
-  padding: 0 var(--p2);
-}
-
-@media (min-width: 60em) {
-  .leftPanel {
-    width: 50%;
-  }
-
-  .rightPanel {
-    width: 50%;
-  }
+.main > div {
+  flex: min(100%, 40ch);
+  display: flex;
+  flex-direction: column;
+  gap: var(--p2);
 }
