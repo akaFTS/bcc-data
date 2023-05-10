@@ -1,5 +1,9 @@
 .main {
-  display: grid;
+  display: flex;
   gap: var(--p2);
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 40ch), 1fr));
+  flex-wrap: wrap-reverse;
+}
+
+.main > * {
+  flex: min(100%, 40ch);
 }
