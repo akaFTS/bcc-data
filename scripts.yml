@@ -1,5 +1,0 @@
-scripts:
-  lint:
-    # Rule exclusion is temporary until anys are fixed
-    cmd: deno lint types/ hooks/ pages/ components/ data/ --rules-exclude=no-explicit-any
-    gitHook: pre-commit
