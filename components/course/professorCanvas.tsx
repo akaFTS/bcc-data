@@ -45,7 +45,6 @@ export default function ProfessorCanvas({
                 )}
               </Flipped>
             ))}
-          <div className={styles.placeholder} />
         </div>
       </main>
     </article>
